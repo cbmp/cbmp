@@ -54,9 +54,11 @@ const Grid = ({data}) => {
     };
 
     // getting keywords
-    const keywords = data.map(x => {
+    const nestedKeywords = data.map(x => {
         return x.node.keywords.split(", ")
-    }).flat(2).filter(x => x !== "");
+    })
+    const keywords = [].concat(...nestedKeywords).filter(x => x !== "");
+    //.flat(2).filter(x => x !== "");
     
     // getting options out of the keywords
     const keywordOptions = keywords.map(x => {return {'value': x, 'label': x}});
