@@ -46,6 +46,7 @@ const WebappsQuery = graphql`
                 node {
                     name
                     lab
+                    slug
                     short_desc
                     keywords
                 } 
@@ -63,7 +64,7 @@ const Webapps = () => (
                     render={data => (
                         <Fragment>
                             <h1>Webapps <span className="count">{data.allWebappsCsv.edges.length}</span></h1>
-                            <Grid data={data.allWebappsCsv.edges}/>
+                            <Grid data={data.allWebappsCsv.edges} type="web-apps"/>
                         </Fragment>
                     )}
                 />

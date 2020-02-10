@@ -11,7 +11,7 @@ const customFilterOption = (option, rawInput) => {
     );
 };
 
-const Grid = ({data}) => {
+const Grid = ({data, type}) => {
     const [gridData, setGridData] = useState(data);
     const [sortValue, setSortValue] = useState({'field': 'name', 'order': 'ASC'});
 
@@ -101,7 +101,7 @@ const Grid = ({data}) => {
                 {gridData.length > 0 &&
                     gridData.map((item,i) => (
                         <div className="grid-item" key={i}>
-                            <Link to="/">{item.node.name}</Link>
+                            <Link to={`/${type}/${item.node.slug}`}>{item.node.name}</Link>
                             <span className="desc">
                                 {item.node.short_desc}
                             </span>

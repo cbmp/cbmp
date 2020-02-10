@@ -46,6 +46,7 @@ const SoftwareQuery = graphql`
                 node {
                     name
                     lab
+                    slug
                     short_desc
                     keywords
                 } 
@@ -63,7 +64,7 @@ const Software = () => (
                     render={data => (
                         <Fragment>
                             <h1>Software <span className="count">{data.allSoftwareCsv.edges.length}</span></h1>
-                            <Grid data={data.allSoftwareCsv.edges}/>
+                            <Grid data={data.allSoftwareCsv.edges} type="software"/>
                         </Fragment>
                     )}
                 />

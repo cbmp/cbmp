@@ -47,6 +47,7 @@ const DatasetsQuery = graphql`
                 node {
                     name
                     lab
+                    slug
                     short_desc
                     keywords
                     num_samples
