@@ -2,10 +2,11 @@ const path = require('path');
 
 exports.createPages = async ({ graphql, actions }) => {
     const { createPage } = actions
-    const softwareTemplate = path.resolve(`src/templates/SoftwareTemplate.js`)
 
+    // software
+    const softwareTemplate = path.resolve(`src/templates/SoftwareTemplate.js`)
     const softwareQuery = await graphql(`
-    query SoftwareQuery {
+    query {
         allSoftwareCsv {
             edges {
                 node {
@@ -36,6 +37,44 @@ exports.createPages = async ({ graphql, actions }) => {
         createPage({
             path: `/software/${edge.node.slug}`,
             component: softwareTemplate,
+            context: {slug: edge.node.slug} // pass as props to component
+        })
+    })
+
+    // software
+    const webappsTemplate = path.resolve(`src/templates/WebappsTemplate.js`)
+    const webappsQuery = await graphql(`
+    query {
+        allWebappsCsv {
+            edges {
+                node {
+                    name
+                    lab
+                    slug
+                    long_desc
+                    version
+                    authors
+                    keywords
+                    licensing
+                    citation
+                    scholar_link
+                    scholar_link_cited
+                    major_pubs_cited
+                    download_link
+                    instruction_link
+                    download_stats_link
+                } 
+            }
+        }
+    }
+    `)
+
+    let webapps = webappsQuery.data.allWebappsCsv.edges;
+
+    webapps.forEach(edge => {
+        createPage({
+            path: `/web-apps/${edge.node.slug}`,
+            component: webappsTemplate,
             context: {slug: edge.node.slug} // pass as props to component
         })
     })

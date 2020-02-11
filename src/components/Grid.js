@@ -71,11 +71,6 @@ const Grid = ({data, type}) => {
         {'label': 'Lab name - descending', 'value': {'field': 'lab', 'order': 'DESC'}},
     ]
 
-    // {'label': 'Alphabetical - ascending', 'value': {'field': 'name', 'order': 'ASC'}},
-    //     {'label': 'Alphabetical - descending', 'value': 'name-DESC'},
-    //     {'label': 'Lab name - ascending', 'value': 'lab-ASC'},
-    //     {'label': 'Lab name - descending', 'value': 'lab-DESC'},
-
     return (
         <Fragment>
             <div className="select-container">
@@ -84,16 +79,12 @@ const Grid = ({data, type}) => {
                     filterOption={customFilterOption}
                     options={keywordOptions}
                     placeholder="Select keywords..."
-                    // components={{ Option: CustomOption }}
-                    // styles={customStyles}
                     onChange={handleKeywordsChange}
                 />
                 <Select
                     filterOption={customFilterOption}
                     options={sortOptions}
                     placeholder="Sort by..."
-                    // components={{ Option: CustomOption }}
-                    // styles={customStyles}
                     onChange={handleSortChange}
                 />
             </div>

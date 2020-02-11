@@ -3,7 +3,7 @@ import '../styles/index.css';
 import Layout from '../components/Layout';
 import styled from 'styled-components';
 
-const StyledSoftwareTemplate = styled.div`
+const StyledWebappsTemplate = styled.div`
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -45,7 +45,7 @@ const StyledSoftwareTemplate = styled.div`
 
 export const query = graphql`
   query ($slug: String!) {
-    softwareCsv( slug: { eq: $slug } ) {
+    webappsCsv( slug: { eq: $slug } ) {
         name 
         lab
         slug
@@ -65,11 +65,11 @@ export const query = graphql`
   }
 `
 
-const SoftwareTemplate = ({data}) => {
-    const item = data.softwareCsv
+const WebappsTemplate = ({data}) => {
+    const item = data.webappsCsv
     return (
-        <Layout page="SoftwareTemplate">
-            <StyledSoftwareTemplate>
+        <Layout page="WebappsTemplate">
+            <StyledWebappsTemplate>
                 <div className="container">
                     <h1>{item.name}</h1>
                     <div className="info">
@@ -85,10 +85,10 @@ const SoftwareTemplate = ({data}) => {
                         <span className="heading">Google Scholar Link - Cited by Papers:</span> [ <a href={item.scholar_link_cited}>Link</a> ] <p/>
                     </div>
                 </div>
-            </StyledSoftwareTemplate>
+            </StyledWebappsTemplate>
         </Layout>
       
     )
 }
 
-export default SoftwareTemplate;
+export default WebappsTemplate;
