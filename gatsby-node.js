@@ -3,7 +3,7 @@ const path = require('path');
 exports.createPages = async ({ graphql, actions }) => {
     const { createPage } = actions
 
-    // software
+    /* SOFTWARE */
     const softwareTemplate = path.resolve(`src/templates/SoftwareTemplate.js`)
     const softwareQuery = await graphql(`
     query {
@@ -41,7 +41,7 @@ exports.createPages = async ({ graphql, actions }) => {
         })
     })
 
-    // software
+    /* WEB APPS */
     const webappsTemplate = path.resolve(`src/templates/WebappsTemplate.js`)
     const webappsQuery = await graphql(`
     query {
@@ -75,6 +75,46 @@ exports.createPages = async ({ graphql, actions }) => {
         createPage({
             path: `/web-apps/${edge.node.slug}`,
             component: webappsTemplate,
+            context: {slug: edge.node.slug} // pass as props to component
+        })
+    })
+
+    /* DATASETS */
+    const datasetsTemplate = path.resolve(`src/templates/DatasetsTemplate.js`)
+    const datasetsQuery = await graphql(`
+    query {
+        allDatasetsCsv {
+            edges {
+                node {
+                    name
+                    lab
+                    year
+                    slug
+                    long_desc
+                    version
+                    authors
+                    keywords
+                    licensing
+                    num_samples
+                    technology
+                    citation
+                    scholar_link
+                    scholar_link_cited
+                    major_pubs_cited
+                    download_link
+                    download_stats_link
+                } 
+            }
+        }
+    }
+    `)
+
+    let datasets = datasetsQuery.data.allDatasetsCsv.edges;
+
+    datasets.forEach(edge => {
+        createPage({
+            path: `/datasets/${edge.node.slug}`,
+            component: datasetsTemplate,
             context: {slug: edge.node.slug} // pass as props to component
         })
     })

@@ -2,7 +2,7 @@ import React, {Fragment} from "react"
 import '../styles/index.css';
 import Layout from '../components/Layout';
 import styled from 'styled-components';
-import { StaticQuery, graphql } from "gatsby";
+import { StaticQuery, graphql, Link } from "gatsby";
 import ReactTable from 'react-table-6';
 import 'react-table-6/react-table.css';
 
@@ -84,7 +84,9 @@ const columns = [{
     Header: 'Name',
     accessor: 'node.name',
     sortable: true,
-    // Cell: (row) => (<Link to={`/genes/${row.original.id}`}>{row.value}</Link>),
+    Cell: (row) => {
+        return (<Link to={`/datasets/${row.original.node.slug}`}>{row.value}</Link>)
+    },
 }, {
     Header: 'Number of Samples',
     accessor: 'node.num_samples',
