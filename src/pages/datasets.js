@@ -49,6 +49,7 @@ const DatasetsQuery = graphql`
                     lab
                     slug
                     short_desc
+                    technology
                     keywords
                     num_samples
                     year
@@ -81,25 +82,39 @@ const filterCaseInsensitive = (filter, row) => {
 };
 
 const columns = [{
-    Header: 'Name',
-    accessor: 'node.name',
-    sortable: true,
-    Cell: (row) => {
-        return (<Link to={`/datasets/${row.original.node.slug}`}>{row.value}</Link>)
+        Header: 'Name',
+        accessor: 'node.name',
+        sortable: true,
+        Cell: (row) => {
+            return (<Link to={`/datasets/${row.original.node.slug}`}>{row.value}</Link>)
+        },
+    }, 
+    {
+        Header: 'Number of Samples',
+        accessor: 'node.num_samples',
+        sortable: true,
+    }, 
+    {
+        Header: 'Year',
+        accessor: 'node.year',
+        sortable: true,
     },
-}, {
-    Header: 'Number of Samples',
-    accessor: 'node.num_samples',
-    sortable: true,
-}, {
-    Header: 'Year',
-    accessor: 'node.year',
-    sortable: true,
-},{
-    Header: 'Lab',
-    accessor: 'node.lab',
-    sortable: true,
-}];
+    {
+        Header: 'Technology',
+        accessor: 'node.technology',
+        sortable: true,
+    },
+    {
+        Header: 'Short Description',
+        accessor: 'node.short_desc',
+        sortable: true,
+    },
+    {
+        Header: 'Lab',
+        accessor: 'node.lab',
+        sortable: true,
+    }
+];
 
 const Datasets = () => (
     <Layout page="Datasets">

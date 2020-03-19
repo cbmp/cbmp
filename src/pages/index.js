@@ -36,15 +36,15 @@ const StyledHome = styled.div`
 
   .intro {
     max-width: 65%;
-    font-size:calc(1.8vw + 0.7em);
+    font-size:calc(1.5vw + 0.5em);
     font-family: 'Rubik', sans-serif; 
     letter-spacing:1px;
-    line-height:calc(2vw + 1.5em);
-    padding-bottom:30px;
+    line-height:calc(2vw + 1.3em);
+    padding-bottom:25px;
   }
 
   .statement {
-    margin-top: 30px;
+    margin-top: 25px;
     padding: 30px 20px;
     max-width: 45%;
     color: white;
@@ -57,7 +57,7 @@ const StyledHome = styled.div`
 `
 
 const StyledButton = styled.button`
-  margin-top: 80px;
+  margin-top: 60px;
   margin-bottom: -80px;
   font-family: 'Orbitron', sans-serif;
   background: none;

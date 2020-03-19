@@ -79,10 +79,9 @@ const SoftwareTemplate = ({data}) => {
                         <span className="heading">Version:</span> {item.version} <p/>
                         <span className="heading">Keywords:</span> {item.keywords} <p/>
                         <span className="heading">Licensing:</span> {item.licensing} <p/>
-                        <span className="heading">Citation:</span> {item.citation} <p/>
-                        <span className="heading">Google Scholar Link:</span> [ <a href={item.scholar_link}>Link</a> ] <p/>
-                        <span className="heading">Download Link:</span> [ <a href={item.download_link}>Link</a> ] <p/>
-                        <span className="heading">Google Scholar Link - Cited by Papers:</span> [ <a href={item.scholar_link_cited}>Link</a> ] <p/>
+                        <span className="heading">Citation:</span> {item.citation} &nbsp;&nbsp;[<a href={item.scholar_link}>Google Scholar</a>] <p/>
+                        <span className="heading">Google Scholar Link - Cited by Papers:</span> [<a href={item.scholar_link_cited}>Link</a>] <p/>
+                        <span className="heading">Software package download:</span> [<a href={item.download_link}>Link</a>] <p/>
                     </div>
                 </div>
             </StyledSoftwareTemplate>

@@ -26,6 +26,7 @@ const StyledLogo = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: calc(0.2vw + 0.8em);
 
   & img {
     width: 70px;
