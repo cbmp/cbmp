@@ -47,6 +47,7 @@ const SoftwareQuery = graphql`
                     name
                     lab
                     slug
+                    licensing
                     short_desc
                     keywords
                 } 

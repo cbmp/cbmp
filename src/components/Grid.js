@@ -26,7 +26,7 @@ const Grid = ({data, type}) => {
                 return keywordArr.some(x => item.node.keywords.includes(x));
             }))
             const sortedGridData = sortItems(newGridData.flat([2]), sortValue);
-            setGridData(sortedGridData)
+            setGridData(sortedGridData);
         }
         
     };
@@ -44,6 +44,7 @@ const Grid = ({data, type}) => {
         });
         return newGridData;
     }
+
     // show data sorted by option
     const handleSortChange = (event) => {
         // set state so that other handlers can call sort
@@ -53,12 +54,28 @@ const Grid = ({data, type}) => {
         setGridData(sortItems(gridData, event.value));
     };
 
+    // show filtered data by licensing
+    const handleLicensingChange = (event) => {
+        if (event === null || event.length === 0) {
+            setGridData(data);
+        } else {
+            const licensingArr = event.map((x) => x.value);
+            const newGridData = [];
+            newGridData.push(data.filter((item) => {
+                return licensingArr.some(x => item.node.licensing.includes(x));
+            }))
+            const sortedGridData = sortItems(newGridData.flat([2]), sortValue);
+            setGridData(sortedGridData);
+        }
+        
+    };
+
     // getting keywords
     const nestedKeywords = data.map(x => {
         return x.node.keywords.split(", ")
     })
+
     const keywords = [].concat(...nestedKeywords).filter(x => x !== "");
-    //.flat(2).filter(x => x !== "");
     
     // getting options out of the keywords
     const keywordOptions = keywords.map(x => {return {'value': x, 'label': x}});
@@ -69,7 +86,11 @@ const Grid = ({data, type}) => {
         {'label': 'Alphabetical - descending', 'value': {'field': 'name', 'order': 'DESC'}},
         {'label': 'Lab name - ascending', 'value': {'field': 'lab', 'order': 'ASC'}},
         {'label': 'Lab name - descending', 'value': {'field': 'lab', 'order': 'DESC'}},
-    ]
+    ];
+
+    // getting licensing options
+    const licensing = [...new Set(data.map(x => x.node.licensing))]; 
+    const licensingOptions = licensing.map(x => {return {'value': x, 'label': x}});
 
     return (
         <Fragment>
@@ -86,6 +107,13 @@ const Grid = ({data, type}) => {
                     options={sortOptions}
                     placeholder="Sort by..."
                     onChange={handleSortChange}
+                />
+                <Select
+                    isMulti
+                    filterOption={customFilterOption}
+                    options={licensingOptions}
+                    placeholder="Select licensing..."
+                    onChange={handleLicensingChange}
                 />
             </div>
             <div className="grid-container">
