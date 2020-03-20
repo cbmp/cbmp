@@ -11,35 +11,86 @@ const StyledSoftwareTemplate = styled.div`
     flex-direction: column;
     margin-top:80px;
     padding: 30px 0px 80px 0px;
-
     h1 {
         font-size:calc(1.8vw + 1.5em);
         font-family: 'Rubik', sans-serif; 
-
-        span {
-            background: var(--main-color);
-            color: white;
-            font-size: calc(0.5vw + 0.5em);
-            padding: 10px;
-            border-radius: 50%;
+    }
+    h3 {
+        font-size:calc(0.8vw + 0.8em);
+        font-family: 'Rubik', sans-serif; 
+    }
+    h4 {
+        font-size:calc(0.7vw + 0.7em);
+        font-family: 'Rubik', sans-serif; 
+    }
+    a {
+        margin-top: 10px;
+        width: 25%;
+        text-align: center;
+        padding: 5px 10px;
+        background: var(--main-color-lighter);
+        color: white;
+        border-radius: 7px;
+        text-decoration: none;
+        font-family: 'Rubik', sans-serif;
+        font-size: calc(0.5vw + 0.5em);
+        border: 2px solid var(--main-color-lighter);
+        &:hover {
+            background:white;
+            color: var(--main-color-lighter);
         }
     }
+
+    // for each section
+    .container {
+        font-size:calc(0.5vw + 0.5em);
+        width: 80%;
+        margin-bottom:20px;
+        .section {
+            padding: 20px;
+            background: var(--contrast-bg);
+        }
+    }
+    .title {
+        margin-bottom:0px;
+    }
     .info {
+        display: flex;
+        justify-content: space-between;
+        line-height: 1.5em;
+        .section {
+            width: 45%;
+            position: relative;
+        } 
+        .download {
+            position:absolute;
+            bottom:20px;
+        }
+    }
+    .citation {
+        display: flex;
+        line-height: 1.5em;
+        .section {
+            width: 100%;
+        }
+    }
+    .links {
+        display:flex;
+        width: 40%;
+        justify-content: space-between;
+        margin-top:30px;
+    }
+
+    // for each item
+    .item-info {
         font-size:calc(1vw + 0.3em);
         line-height: calc(1vw + 0.8em);
     }
-    .heading {
+    .item-heading {
         font-weight: 700;
         margin-right: 10px;
-        text-decoration: underline;
     }
-    .container {
-        width: 80%;
-        // padding-top: 30px;
-    }
-    a {
-        color: var(--link-hov-dark)
-    }
+    
 
 `;
 
@@ -49,6 +100,7 @@ export const query = graphql`
         name 
         lab
         slug
+        short_desc
         long_desc
         version
         authors
@@ -70,18 +122,37 @@ const SoftwareTemplate = ({data}) => {
     return (
         <Layout page="SoftwareTemplate">
             <StyledSoftwareTemplate>
-                <div className="container">
+                <div className="container title">
                     <h1>{item.name}</h1>
-                    <div className="info">
-                        <span className="heading">Authors:</span> {item.authors} <p/>
-                        <span className="heading">Lab:</span> {item.lab} <p/>
-                        <span className="heading">Description:</span> {item.long_desc} <p/>
-                        <span className="heading">Version:</span> {item.version} <p/>
-                        <span className="heading">Keywords:</span> {item.keywords} <p/>
-                        <span className="heading">Licensing:</span> {item.licensing} <p/>
-                        <span className="heading">Citation:</span> {item.citation} &nbsp;&nbsp;[<a href={item.scholar_link}>Google Scholar</a>] <p/>
-                        <span className="heading">Google Scholar Link - Cited by Papers:</span> [<a href={item.scholar_link_cited}>Link</a>] <p/>
-                        <span className="heading">Software package download:</span> [<a href={item.download_link}>Link</a>] <p/>
+                    <h3>{item.short_desc}</h3>
+                </div>
+                <div className="container info">
+                    <div className="section">
+                        <span className="item-heading">Description:</span> {item.long_desc} <p/>
+                    </div>
+                    <div className="section">
+                        <span className="item-heading">Authors:</span> {item.authors} <p/>
+                        <span className="item-heading">Lab:</span> {item.lab} <p/>
+                        <span className="item-heading">Version:</span> {item.version} <p/>
+                        <span className="item-heading">Keywords:</span> {item.keywords} <p/>
+                        <span className="item-heading">Licensing:</span> {item.licensing} <p/>
+                        <div className="download">
+                        <a href={item.download_link}>Download</a>
+                        </div>
+                    </div>
+                </div>
+                <div className="container title">
+                    <h4>Citation</h4>
+                </div>
+                <div className="container citation">
+                    <div className="section">
+                        {item.citation}
+                        <div className="links">
+                            {/* TODO: PUT BACK IN AND CHANGE: width: 70% */}
+                            {/* <a href={`/`}>DOI</a> */} 
+                            <a href={item.scholar_link}>Google Scholar</a>
+                            <a href={item.scholar_link_cited}>Cited By</a>
+                        </div>
                     </div>
                 </div>
             </StyledSoftwareTemplate>
@@ -91,3 +162,4 @@ const SoftwareTemplate = ({data}) => {
 }
 
 export default SoftwareTemplate;
+
