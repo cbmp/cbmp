@@ -76,9 +76,14 @@ const StyledSoftwareTemplate = styled.div`
     }
     .links {
         display:flex;
-        width: 40%;
+        width: 25%;
         justify-content: space-between;
         margin-top:30px;
+        a {
+            width: 40%;
+            font-size: calc(0.5vw + 0.4em);
+            padding: 0px 3px;
+        }
     }
 
     // for each item
