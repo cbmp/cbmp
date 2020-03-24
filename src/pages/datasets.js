@@ -6,6 +6,8 @@ import { StaticQuery, graphql, Link } from "gatsby";
 import ReactTable from 'react-table-6';
 import 'react-table-6/react-table.css';
 
+import sortArrows from '../images/utils/sort-arrows.png'
+
 const StyledDatasets = styled.div`
     width: 100%;
     min-height: 100vh;
@@ -30,6 +32,14 @@ const StyledDatasets = styled.div`
     .container {
         width: 80%;
         // padding-top: 30px;
+    }
+
+    img {
+        width: 5px;
+        margin-left: 20px;
+        margin-top: 7px;
+        position: absolute;
+        float: right;
     }
 
     
@@ -82,7 +92,11 @@ const filterCaseInsensitive = (filter, row) => {
 };
 
 const columns = [{
-        Header: 'Name',
+        Header: () => (
+            <span>
+              Name <img src={sortArrows}/>
+            </span>
+        ),
         accessor: 'node.name',
         sortable: true,
         Cell: (row) => {
@@ -90,27 +104,47 @@ const columns = [{
         },
     }, 
     {
-        Header: 'Number of Samples',
+        Header: () => (
+            <span>
+              Number of Samples <img src={sortArrows}/>
+            </span>
+        ),
         accessor: 'node.num_samples',
         sortable: true,
     }, 
     {
-        Header: 'Year',
+        Header: () => (
+            <span>
+              Year <img src={sortArrows}/>
+            </span>
+        ),
         accessor: 'node.year',
         sortable: true,
     },
     {
-        Header: 'Technology',
+        Header: () => (
+            <span>
+              Technology <img src={sortArrows}/>
+            </span>
+        ),
         accessor: 'node.technology',
         sortable: true,
     },
     {
-        Header: 'Short Description',
+        Header: () => (
+            <span>
+              Short Description <img src={sortArrows}/>
+            </span>
+        ),
         accessor: 'node.short_desc',
         sortable: true,
     },
     {
-        Header: 'Lab',
+        Header: () => (
+            <span>
+              Lab <img src={sortArrows}/>
+            </span>
+        ),
         accessor: 'node.lab',
         sortable: true,
     }
