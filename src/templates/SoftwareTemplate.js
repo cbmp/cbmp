@@ -2,7 +2,6 @@ import React from "react"
 import '../styles/index.css';
 import Layout from '../components/Layout';
 import styled from 'styled-components';
-import useFetchDownloadStats from './Hooks/useFetchDownloadStats';
 
 const StyledSoftwareTemplate = styled.div`
     width: 100%;
@@ -123,11 +122,9 @@ export const query = graphql`
   }
 `
 
+
 const SoftwareTemplate = ({data}) => {
     const item = data.softwareCsv
-
-    // getting download stats
-    const {downloadStats, loading} = useFetchDownloadStats(item.name);
 
     return (
         <Layout page="SoftwareTemplate">
