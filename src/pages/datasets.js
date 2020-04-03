@@ -34,7 +34,7 @@ const StyledDatasets = styled.div`
         // padding-top: 30px;
     }
 
-    img {
+    img alt="arrow" {
         width: 5px;
         margin-left: 20px;
         margin-top: 7px;
@@ -94,7 +94,7 @@ const filterCaseInsensitive = (filter, row) => {
 const columns = [{
         Header: () => (
             <span>
-              Name <img src={sortArrows}/>
+              Name <img alt="arrow" src={sortArrows}/>
             </span>
         ),
         accessor: 'node.name',
@@ -106,7 +106,7 @@ const columns = [{
     {
         Header: () => (
             <span>
-              Number of Samples <img src={sortArrows}/>
+              Number of Samples <img alt="arrow" src={sortArrows}/>
             </span>
         ),
         accessor: 'node.num_samples',
@@ -115,7 +115,7 @@ const columns = [{
     {
         Header: () => (
             <span>
-              Year <img src={sortArrows}/>
+              Year <img alt="arrow" src={sortArrows}/>
             </span>
         ),
         accessor: 'node.year',
@@ -124,7 +124,7 @@ const columns = [{
     {
         Header: () => (
             <span>
-              Technology <img src={sortArrows}/>
+              Technology <img alt="arrow" src={sortArrows}/>
             </span>
         ),
         accessor: 'node.technology',
@@ -133,7 +133,7 @@ const columns = [{
     {
         Header: () => (
             <span>
-              Short Description <img src={sortArrows}/>
+              Short Description <img alt="arrow" src={sortArrows}/>
             </span>
         ),
         accessor: 'node.short_desc',
@@ -142,7 +142,7 @@ const columns = [{
     {
         Header: () => (
             <span>
-              Lab <img src={sortArrows}/>
+              Lab <img alt="arrow" src={sortArrows}/>
             </span>
         ),
         accessor: 'node.lab',

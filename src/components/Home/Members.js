@@ -1,6 +1,5 @@
 import React from "react";
 import styled from 'styled-components';
-import { Link } from "gatsby";
 import ben from '../../images/members/ben.png';
 import hoffman from '../../images/members/hoffman.png';
 import liu from '../../images/members/liu.png';
