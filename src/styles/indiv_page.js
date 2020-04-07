@@ -21,7 +21,6 @@ export const StyledIndivPage = styled.div`
         font-family: 'Rubik', sans-serif; 
     }
     a {
-        margin-top: 10px;
         width: 25%;
         text-align: center;
         padding: 5px 10px;
@@ -60,8 +59,7 @@ export const StyledIndivPage = styled.div`
             position: relative;
         } 
         .download {
-            position:absolute;
-            bottom:20px;
+            margin-top: 40px;
         }
     }
     .citation {
@@ -75,7 +73,7 @@ export const StyledIndivPage = styled.div`
         display:flex;
         width: 25%;
         justify-content: space-between;
-        margin-top:30px;
+        margin-top:40px;
         a {
             width: 40%;
             font-size: calc(0.5vw + 0.4em);
