@@ -16,6 +16,8 @@ export const query = graphql`
         keywords
         licensing
         citation
+        year
+        doi
         scholar_link
         scholar_link_cited
         major_pubs_cited
@@ -59,8 +61,7 @@ const SoftwareTemplate = ({data}) => {
                     <div className="section">
                         {item.citation}
                         <div className="links">
-                            {/* TODO: PUT BACK IN AND CHANGE: width: 70% */}
-                            {/* <a href={`/`}>DOI</a> */} 
+                            <a href={`http://doi.org/${item.doi}`}>DOI</a> 
                             <a href={item.scholar_link}>Google Scholar</a>
                             <a href={item.scholar_link_cited}>Cited By</a>
                         </div>

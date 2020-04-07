@@ -71,13 +71,13 @@ export const StyledIndivPage = styled.div`
     }
     .links {
         display:flex;
-        width: 25%;
-        justify-content: space-between;
+        justify-content: flex-start;
         margin-top:40px;
         a {
-            width: 40%;
+            width: 12%;
             font-size: calc(0.5vw + 0.4em);
             padding: 0px 3px;
+            margin-right: 20px;
         }
     }
 
