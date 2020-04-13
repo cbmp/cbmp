@@ -2,6 +2,7 @@ import React from "react"
 import '../styles/index.css';
 import Layout from '../components/Layout';
 import {StyledIndivPage} from '../styles/indiv_page'
+import { graphql } from 'gatsby';
 
 export const query = graphql`
   query ($slug: String!) {

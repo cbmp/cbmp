@@ -2,6 +2,7 @@ import React from "react"
 import '../styles/index.css';
 import Layout from '../components/Layout';
 import styled from 'styled-components';
+import { graphql } from 'gatsby';
 
 const StyledDatasetsTemplate = styled.div`
     width: 100%;

@@ -1,10 +1,15 @@
 import React from "react"
 import '../styles/index.css';
 import Layout from '../components/Layout';
+import { graphql } from 'gatsby';
 import {StyledIndivPage} from '../styles/indiv_page'
+import DownloadStatsPlot from '../components/Plots/DownloadStatsPlot';
 
+// This is a page query - Gatsby looks for one page
+// query per file. In components, use StaticQuery
+// more here: https://www.gatsbyjs.org/docs/page-query/
 export const query = graphql`
-  query ($slug: String!) {
+  query ($slug: String!, $name: String!) {
     softwareCsv( slug: { eq: $slug } ) {
         name 
         lab
@@ -25,12 +30,26 @@ export const query = graphql`
         instruction_link
         download_stats_link
     }
+    dlStatsJson(name: {eq: $name}) {
+        stats {
+          downloads
+          month
+          year
+        }
+    }
   }
 `
-
+// dlStatsJson(name: {eq: $name}) {
+//     stats {
+//       downloads
+//       month
+//       year
+//     }
+// }
 
 const SoftwareTemplate = ({data}) => {
     const item = data.softwareCsv
+    const stats = data.dlStatsJson
 
     return (
         <Layout page="SoftwareTemplate">
@@ -67,6 +86,10 @@ const SoftwareTemplate = ({data}) => {
                         </div>
                     </div>
                 </div>
+                <DownloadStatsPlot
+                    name={item.name}
+                    data={stats}
+                />
             </StyledIndivPage>
         </Layout>
       

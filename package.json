@@ -18,6 +18,7 @@
     "gatsby-plugin-transition-link": "^1.17.7",
     "gatsby-source-filesystem": "^2.1.47",
     "gatsby-transformer-csv": "^2.1.24",
+    "gatsby-transformer-json": "^2.3.1",
     "gatsby-transformer-sharp": "^2.3.13",
     "gsap": "^3.1.1",
     "prop-types": "^15.7.2",
@@ -30,7 +31,9 @@
   },
   "devDependencies": {
     "gh-pages": "^2.2.0",
-    "prettier": "^1.19.1"
+    "plotly.js": "^1.53.0",
+    "prettier": "^1.19.1",
+    "react-plotly.js": "^2.4.0"
   },
   "keywords": [
     "gatsby"

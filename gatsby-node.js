@@ -11,20 +11,7 @@ exports.createPages = async ({ graphql, actions }) => {
             edges {
                 node {
                     name
-                    lab
                     slug
-                    long_desc
-                    version
-                    authors
-                    keywords
-                    licensing
-                    citation
-                    scholar_link
-                    scholar_link_cited
-                    major_pubs_cited
-                    download_link
-                    instruction_link
-                    download_stats_link
                 } 
             }
         }
@@ -37,7 +24,7 @@ exports.createPages = async ({ graphql, actions }) => {
         createPage({
             path: `/software/${edge.node.slug}`,
             component: softwareTemplate,
-            context: {slug: edge.node.slug} // pass as props to component
+            context: {slug: edge.node.slug, name: edge.node.name} // pass as props to component
         })
     })
 
@@ -49,20 +36,7 @@ exports.createPages = async ({ graphql, actions }) => {
             edges {
                 node {
                     name
-                    lab
                     slug
-                    long_desc
-                    version
-                    authors
-                    keywords
-                    licensing
-                    citation
-                    scholar_link
-                    scholar_link_cited
-                    major_pubs_cited
-                    download_link
-                    instruction_link
-                    download_stats_link
                 } 
             }
         }
@@ -87,22 +61,7 @@ exports.createPages = async ({ graphql, actions }) => {
             edges {
                 node {
                     name
-                    lab
-                    year
                     slug
-                    long_desc
-                    version
-                    authors
-                    keywords
-                    licensing
-                    num_samples
-                    technology
-                    citation
-                    scholar_link
-                    scholar_link_cited
-                    major_pubs_cited
-                    download_link
-                    download_stats_link
                 } 
             }
         }
