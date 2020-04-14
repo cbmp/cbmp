@@ -34,8 +34,8 @@ const StyledDatasets = styled.div`
         // padding-top: 30px;
     }
 
-    img alt="arrow" {
-        width: 5px;
+    .arrow {
+        width: 5px !important;
         margin-left: 20px;
         margin-top: 7px;
         position: absolute;
@@ -94,7 +94,7 @@ const filterCaseInsensitive = (filter, row) => {
 const columns = [{
         Header: () => (
             <span>
-              Name <img alt="arrow" src={sortArrows}/>
+              Name <img class="arrow" alt="arrow" src={sortArrows}/>
             </span>
         ),
         accessor: 'node.name',
@@ -106,7 +106,7 @@ const columns = [{
     {
         Header: () => (
             <span>
-              Number of Samples <img alt="arrow" src={sortArrows}/>
+              Number of Samples <img class="arrow" alt="arrow" src={sortArrows}/>
             </span>
         ),
         accessor: 'node.num_samples',
@@ -115,7 +115,7 @@ const columns = [{
     {
         Header: () => (
             <span>
-              Year <img alt="arrow" src={sortArrows}/>
+              Year <img class="arrow" alt="arrow" src={sortArrows}/>
             </span>
         ),
         accessor: 'node.year',
@@ -124,7 +124,7 @@ const columns = [{
     {
         Header: () => (
             <span>
-              Technology <img alt="arrow" src={sortArrows}/>
+              Technology <img class="arrow" alt="arrow" src={sortArrows}/>
             </span>
         ),
         accessor: 'node.technology',
@@ -133,7 +133,7 @@ const columns = [{
     {
         Header: () => (
             <span>
-              Short Description <img alt="arrow" src={sortArrows}/>
+              Short Description <img class="arrow" alt="arrow" src={sortArrows}/>
             </span>
         ),
         accessor: 'node.short_desc',
@@ -142,7 +142,7 @@ const columns = [{
     {
         Header: () => (
             <span>
-              Lab <img alt="arrow" src={sortArrows}/>
+              Lab <img class="arrow" alt="arrow" src={sortArrows}/>
             </span>
         ),
         accessor: 'node.lab',
