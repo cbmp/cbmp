@@ -1,6 +1,6 @@
 import React, {Fragment} from "react";
 import styled from 'styled-components';
-import Plotly from 'react-plotly.js';
+// import Plotly from 'react-plotly.js';
 
 const StyledDownloadStatsPlot = styled.div`
     background: white;
