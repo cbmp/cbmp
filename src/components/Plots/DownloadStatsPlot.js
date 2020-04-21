@@ -1,10 +1,19 @@
-import React, {Fragment} from "react";
-import styled from 'styled-components';
-import Plotly from 'react-plotly.js';
+import React from 'react';
+import Loadable from 'react-loadable';
 
-const DownloadStatsPlot = (props) => {
+const Plotly = Loadable({
+    loader: () => import(`react-plotly.js`),
+    loading: ({ timedOut }) =>
+      timedOut ? (
+        <blockquote>Error: Loading Plotly timed out.</blockquote>
+      ) : (
+        <div>Loading... </div>
+      ),
+    timeout: 10000,
+});
+
+export const DownloadStatsPlot = (props) => {
     const { data, layout} = props;
-    console.log(data)
     return (
         <Plotly
             data={[data]}

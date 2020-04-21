@@ -1,6 +1,5 @@
 import React, {Fragment, useState} from "react";
 import styled from 'styled-components';
-// import { FormControl, FormControlLabel, FormLabel, RadioGroup, StyledRadio } from '@material-ui/core';
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
@@ -26,10 +25,10 @@ const StyledDownloadStatsContainer = styled.div`
 `;
 
 const DownloadStatsContainer = (props) => {
-    const { name, data } = props;
+    const { data } = props;
     // get all years
     const years = [...new Set(data.map(x => x.year))];
-    const [yearSelected, setYearSelected] = useState(years[years.length-3]);
+    const [yearSelected, setYearSelected] = useState(years[years.length >= 3 ? years.length-3 : 0]);
 
     const handleChange = (event) => {
       setYearSelected(event.target.value);
@@ -73,11 +72,16 @@ const DownloadStatsContainer = (props) => {
         })
 
         // making gradients for the bar charts to make it ~pretty~
-        monthData[year].marker.color = gradstop({
-            stops: monthData[year].x.length,
-            inputFormat: 'hex',
-            colorArray: ['#02577b','#78d9ff'] // reverse order
-        });
+        if (monthData[year].x.length < 2) {
+            monthData[year].marker.color = '#78d9ff'
+        } else {
+            monthData[year].marker.color = gradstop({
+                stops: monthData[year].x.length,
+                inputFormat: 'hex',
+                colorArray: ['#02577b','#78d9ff'] // reverse order
+            });
+        }
+        
         yearData.y.push(total);
     });
 
@@ -86,6 +90,9 @@ const DownloadStatsContainer = (props) => {
         autosize: true,
         font:{
           size: '1em',
+        },
+        xaxis: {
+            tickformat: 'd'
         },
         showlegend: false,
     };
@@ -99,12 +106,17 @@ const DownloadStatsContainer = (props) => {
     };
     
     // making gradients for the bar charts to make it ~pretty~
-    yearData.marker.color = gradstop({
-        stops: years.length,
-        inputFormat: 'hex',
-        colorArray: ['#78d9ff', '#02577b'] // reverse order
-    });
+    if (years.length < 2) {
+        yearData.marker.color = '#78d9ff'
+    } else {
+        yearData.marker.color = gradstop({
+            stops: years.length,
+            inputFormat: 'hex',
+            colorArray: ['#78d9ff', '#02577b'] // reverse order
+        });
+    }
     
+
     return (
         <StyledDownloadStatsContainer className="container">
             <Fragment>
@@ -121,7 +133,7 @@ const DownloadStatsContainer = (props) => {
                 <FormControl component="fieldset" className="toggle">
                     <FormLabel component="legend">Years</FormLabel>
                     <RadioGroup aria-label="year" name="year" value={yearSelected} onChange={handleChange}>
-                        {years.slice(years.length-3, years.length).map((y) => {
+                        {years.slice(years.length >= 3 ? years.length-3 : 0, years.length).map((y) => {
                             return <FormControlLabel key={y} value={y} control={<Radio color="primary"/>} label={y} />
                         })}
                     </RadioGroup>

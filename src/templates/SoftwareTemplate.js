@@ -78,7 +78,7 @@ const SoftwareTemplate = ({data}) => {
                 </div>
                 <div className="container citation">
                     <div className="section">
-                        {item.citation}
+                        {item.citation === '' ? 'Citation not available.' : item.citation}
                         <div className="links">
                             <a href={`http://doi.org/${item.doi}`}>DOI</a> 
                             <a href={item.scholar_link}>Google Scholar</a>
@@ -86,10 +86,12 @@ const SoftwareTemplate = ({data}) => {
                         </div>
                     </div>
                 </div>
-                <DownloadStatsContainer
-                    name={item.name}
-                    data={stats}
-                />
+                {stats.length === 0 ? null : (
+                    <DownloadStatsContainer
+                        name={item.name}
+                        data={stats}
+                    />
+                )}
             </StyledIndivPage>
         </Layout>
       
