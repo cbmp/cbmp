@@ -1,5 +1,6 @@
 const path = require('path');
 
+// https://elcess.us/Integrating-Plotly-with-Gatsby/ for build
 exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
     if (stage === 'build-html') {
       actions.setWebpackConfig({

@@ -3,7 +3,7 @@ import '../styles/index.css';
 import Layout from '../components/Layout';
 import { graphql } from 'gatsby';
 import {StyledIndivPage} from '../styles/indiv_page'
-import DownloadStatsPlot from '../components/Plots/DownloadStatsPlot';
+import DownloadStatsContainer from '../components/Plots/DownloadStatsContainer';
 
 // This is a page query - Gatsby looks for one page
 // query per file. In components, use StaticQuery
@@ -49,7 +49,7 @@ export const query = graphql`
 
 const SoftwareTemplate = ({data}) => {
     const item = data.softwareCsv
-    const stats = data.dlStatsJson
+    const stats = data.dlStatsJson.stats
 
     return (
         <Layout page="SoftwareTemplate">
@@ -86,7 +86,7 @@ const SoftwareTemplate = ({data}) => {
                         </div>
                     </div>
                 </div>
-                <DownloadStatsPlot
+                <DownloadStatsContainer
                     name={item.name}
                     data={stats}
                 />

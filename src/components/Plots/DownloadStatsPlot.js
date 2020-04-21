@@ -1,34 +1,20 @@
 import React, {Fragment} from "react";
 import styled from 'styled-components';
-// import Plotly from 'react-plotly.js';
-
-const StyledDownloadStatsPlot = styled.div`
-    background: white;
-`;
-
-// https://elcess.us/Integrating-Plotly-with-Gatsby/ for build
-const statsBarplot = () => {
-
-}
+import Plotly from 'react-plotly.js';
 
 const DownloadStatsPlot = (props) => {
-    const { name, data} = props;
+    const { data, layout} = props;
     console.log(data)
     return (
-        <StyledDownloadStatsPlot>
-            <Fragment>
-            {/* <Plotly
-                    data={data}
-                    layout={layout}
-                    graphDiv={plotId}
-                    config={{
-                        responsive: true,
-                        displayModeBar: false,
-                    }}
-                /> */}
-            </Fragment>
-        </StyledDownloadStatsPlot>
-    );
+        <Plotly
+            data={[data]}
+            layout={layout}
+            config={{
+                responsive: true,
+                displayModeBar: false,
+            }}
+        />
+    )
 }
 
 export default DownloadStatsPlot;

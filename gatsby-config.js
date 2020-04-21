@@ -34,7 +34,8 @@ module.exports = {
         fonts: [
           `lato\:400,700`,
           `rubik\:400`,
-          `orbitron\:400`, 
+          `orbitron\:400`,
+          `roboto\:300,400,500,700`, 
         ],
         display: 'swap'
       }
