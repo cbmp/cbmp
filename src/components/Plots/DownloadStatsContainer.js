@@ -122,7 +122,7 @@ const DownloadStatsContainer = (props) => {
                     <FormLabel component="legend">Years</FormLabel>
                     <RadioGroup aria-label="year" name="year" value={yearSelected} onChange={handleChange}>
                         {years.slice(years.length-3, years.length).map((y) => {
-                            return <FormControlLabel key={y} value={y} control={<Radio />} label={y} />
+                            return <FormControlLabel key={y} value={y} control={<Radio color="primary"/>} label={y} />
                         })}
                     </RadioGroup>
                 </FormControl>
