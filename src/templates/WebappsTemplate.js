@@ -21,6 +21,7 @@ export const query = graphql`
         scholar_link_cited
         major_pubs_cited
         download_link
+        source_code
         instruction_link
         download_stats_link
     }
@@ -47,7 +48,18 @@ const WebappsTemplate = ({data}) => {
                     <span className="item-heading">Keywords:</span> {item.keywords} <p/>
                     <span className="item-heading">Licensing:</span> {item.licensing} <p/>
                     <div className="download">
-                    <a href={item.download_link}>Download</a>
+                        {item.download_link === '' ? (
+                            <a className='disabled'>Link to App</a>
+                        ) : (
+                            <a target="_blank" rel="noopener noreferrer" href={item.download_link}>Link to App</a>
+                        )}
+                        {item.source_code === '' ? (
+                            <a className='disabled'>Source Code</a>
+                        ) : (
+                            <a target="_blank" rel="noopener noreferrer" href={item.source_code}>Source Code</a>
+                        )}
+                        
+                        
                     </div>
                 </div>
             </div>
@@ -56,12 +68,23 @@ const WebappsTemplate = ({data}) => {
             </div>
             <div className="container citation">
                 <div className="section">
-                    {item.citation}
+                    {item.citation === '' ? 'Citation not available.' : item.citation}
                     <div className="links">
-                        {/* TODO: PUT BACK IN AND CHANGE: width: 70% */}
-                        {/* <a href={`/`}>DOI</a> */} 
-                        <a href={item.scholar_link}>Google Scholar</a>
-                        <a href={item.scholar_link_cited}>Cited By</a>
+                        {item.doi === '' ? (
+                            <a className='disabled'>DOI</a>
+                        ) : (
+                            <a target="_blank" rel="noopener noreferrer" href={`http://doi.org/${item.doi}`}>DOI</a> 
+                        )}
+                        {item.scholar_link === '' ? (
+                            <a className='disabled'>Google Scholar</a>
+                        ) : (
+                            <a target="_blank" rel="noopener noreferrer" href={item.scholar_link}>Google Scholar</a>
+                        )}
+                        {item.scholar_link_cited === '' ? (
+                            <a className='disabled'>Cited By</a>
+                        ) : (
+                            <a target="_blank" rel="noopener noreferrer" href={item.scholar_link_cited}>Cited By</a>
+                        )}
                     </div>
                 </div>
             </div>

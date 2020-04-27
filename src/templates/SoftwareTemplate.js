@@ -69,7 +69,7 @@ const SoftwareTemplate = ({data}) => {
                         <span className="item-heading">Keywords:</span> {item.keywords} <p/>
                         <span className="item-heading">Licensing:</span> {item.licensing} <p/>
                         <div className="download">
-                        <a href={item.download_link}>Download</a>
+                        <a target="_blank" rel="noopener noreferrer" href={item.download_link}>Download</a>
                         </div>
                     </div>
                 </div>
@@ -83,17 +83,17 @@ const SoftwareTemplate = ({data}) => {
                             {item.doi === '' ? (
                                 <a className='disabled'>DOI</a>
                             ) : (
-                                <a href={`http://doi.org/${item.doi}`}>DOI</a> 
+                                <a target="_blank" rel="noopener noreferrer" href={`http://doi.org/${item.doi}`}>DOI</a> 
                             )}
                             {item.scholar_link === '' ? (
                                 <a className='disabled'>Google Scholar</a>
                             ) : (
-                                <a href={item.scholar_link}>Google Scholar</a>
+                                <a target="_blank" rel="noopener noreferrer" href={item.scholar_link}>Google Scholar</a>
                             )}
                             {item.scholar_link_cited === '' ? (
                                 <a className='disabled'>Cited By</a>
                             ) : (
-                                <a href={item.scholar_link_cited}>Cited By</a>
+                                <a target="_blank" rel="noopener noreferrer" href={item.scholar_link_cited}>Cited By</a>
                             )}
                         </div>
                     </div>

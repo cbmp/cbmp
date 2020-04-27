@@ -71,7 +71,15 @@ export const StyledIndivPage = styled.div`
             position: relative;
         } 
         .download {
-            margin-top: 40px;
+            display:flex;
+            justify-content: flex-start;
+            margin-top:40px;
+            a {
+                width: 20%;
+                font-size: calc(0.5vw + 0.4em);
+                padding: 0px 3px;
+                margin-right: 20px;
+            }
         }
     }
     .citation {
@@ -86,7 +94,7 @@ export const StyledIndivPage = styled.div`
         justify-content: flex-start;
         margin-top:40px;
         a {
-            width: 12%;
+            width: 10%;
             font-size: calc(0.5vw + 0.4em);
             padding: 0px 3px;
             margin-right: 20px;
