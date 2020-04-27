@@ -37,6 +37,18 @@ export const StyledIndivPage = styled.div`
         }
     }
 
+    // disabled link
+    .disabled {
+        cursor: default;
+        background: var(--disabled-link);
+        border-color: var(--disabled-link);
+        &:hover {
+            background: var(--disabled-link);
+            border-color: var(--disabled-link);
+            color: white;
+        }
+    }
+
     // for each section
     .container {
         font-size:calc(0.5vw + 0.5em);

@@ -80,9 +80,21 @@ const SoftwareTemplate = ({data}) => {
                     <div className="section">
                         {item.citation === '' ? 'Citation not available.' : item.citation}
                         <div className="links">
-                            <a href={`http://doi.org/${item.doi}`}>DOI</a> 
-                            <a href={item.scholar_link}>Google Scholar</a>
-                            <a href={item.scholar_link_cited}>Cited By</a>
+                            {item.doi === '' ? (
+                                <a className='disabled'>DOI</a>
+                            ) : (
+                                <a href={`http://doi.org/${item.doi}`}>DOI</a> 
+                            )}
+                            {item.scholar_link === '' ? (
+                                <a className='disabled'>Google Scholar</a>
+                            ) : (
+                                <a href={item.scholar_link}>Google Scholar</a>
+                            )}
+                            {item.scholar_link_cited === '' ? (
+                                <a className='disabled'>Cited By</a>
+                            ) : (
+                                <a href={item.scholar_link_cited}>Cited By</a>
+                            )}
                         </div>
                     </div>
                 </div>
