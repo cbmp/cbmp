@@ -5,7 +5,7 @@ import {StyledIndivPage} from '../styles/indiv_page'
 import { graphql } from 'gatsby';
 
 export const query = graphql`
-  query ($slug: String!) {
+  query ($slug: String!, $name: String!) {
     webappsCsv( slug: { eq: $slug } ) {
         name 
         lab
@@ -25,11 +25,15 @@ export const query = graphql`
         instruction_link
         download_stats_link
     }
+    gsWebappStatsJson(name: {eq: $name}) {
+        cited
+    }
   }
 `
 
 const WebappsTemplate = ({data}) => {
     const item = data.webappsCsv;
+    const citedBy = data.gsWebappStatsJson.cited;
     return (
         <Layout page="WebappsTemplate">
         <StyledIndivPage>
@@ -83,7 +87,7 @@ const WebappsTemplate = ({data}) => {
                         {item.scholar_link_cited === '' ? (
                             <a className='disabled'>Cited By</a>
                         ) : (
-                            <a target="_blank" rel="noopener noreferrer" href={item.scholar_link_cited}>Cited By</a>
+                            <a target="_blank" rel="noopener noreferrer" href={item.scholar_link_cited}>Cited By {citedBy}</a>
                         )}
                     </div>
                 </div>

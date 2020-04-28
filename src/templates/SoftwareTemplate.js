@@ -37,7 +37,7 @@ export const query = graphql`
           year
         }
     }
-    gsStatsJson(name: {eq: $name}) {
+    gsSoftwareStatsJson(name: {eq: $name}) {
         cited
     }
   }
@@ -53,7 +53,7 @@ export const query = graphql`
 const SoftwareTemplate = ({data}) => {
     const item = data.softwareCsv
     const stats = data.dlStatsJson.stats
-    const citedBy = data.gsStatsJson.cited
+    const citedBy = data.gsSoftwareStatsJson.cited
 
     return (
         <Layout page="SoftwareTemplate">

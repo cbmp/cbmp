@@ -65,7 +65,7 @@ exports.createPages = async ({ graphql, actions }) => {
         createPage({
             path: `/web-apps/${edge.node.slug}`,
             component: webappsTemplate,
-            context: {slug: edge.node.slug} // pass as props to component
+            context: {slug: edge.node.slug, name: edge.node.name} // pass as props to component
         })
     })
 

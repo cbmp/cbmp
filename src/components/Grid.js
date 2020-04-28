@@ -90,7 +90,12 @@ const Grid = ({data, type}) => {
 
     // getting licensing options
     const licensing = [...new Set(data.map(x => x.node.licensing))]; 
-    const licensingOptions = licensing.map(x => {return {'value': x, 'label': x}});
+    let licensingOptions = [];
+    licensing.forEach(x => {
+        if (x !== '') {
+            licensingOptions.push({'value': x, 'label': x});
+        }
+    });
 
     return (
         <Fragment>
