@@ -37,6 +37,9 @@ export const query = graphql`
           year
         }
     }
+    gsStatsJson(name: {eq: $name}) {
+        cited
+    }
   }
 `
 // dlStatsJson(name: {eq: $name}) {
@@ -50,6 +53,7 @@ export const query = graphql`
 const SoftwareTemplate = ({data}) => {
     const item = data.softwareCsv
     const stats = data.dlStatsJson.stats
+    const citedBy = data.gsStatsJson.cited
 
     return (
         <Layout page="SoftwareTemplate">
@@ -93,7 +97,7 @@ const SoftwareTemplate = ({data}) => {
                             {item.scholar_link_cited === '' ? (
                                 <a className='disabled'>Cited By</a>
                             ) : (
-                                <a target="_blank" rel="noopener noreferrer" href={item.scholar_link_cited}>Cited By</a>
+                            <a target="_blank" rel="noopener noreferrer" href={item.scholar_link_cited}>Cited By {citedBy}</a>
                             )}
                         </div>
                     </div>
