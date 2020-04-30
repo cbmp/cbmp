@@ -36,7 +36,8 @@ const StyledFooter = styled.div`
         flex-wrap: wrap;
 
         & a {
-            flex-basis: 33%;
+            // flex-basis: 33%;
+            flex-basis:50%;
             color: white;
             text-decoration: none;
             font-size: calc(0.2vw + 0.8em);
@@ -76,7 +77,7 @@ const Footer = () => (
         <div className="links">
             <Link to="/research">Research</Link>
             <Link to="/web-apps">Web Apps</Link>
-            <Link to="/publications">Publications/Achievements</Link>
+            {/* <Link to="/publications">Publications/Achievements</Link> */}
             <Link to="/software">Software</Link>
             <Link to="/datasets">Datasets</Link>
         </div>

@@ -66,7 +66,7 @@ const Header = ({page}) => (
         <Link to="/software">Software</Link>
         <Link to="/web-apps">Web Apps</Link>
         <Link to="/datasets">Datasets</Link>
-        <Link to="/publications">Publications/Achievements</Link>
+        {/* <Link to="/publications">Publications/Achievements</Link> */}
     </StyledLinks>
   </StyledHeader>
 )
