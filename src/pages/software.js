@@ -1,9 +1,15 @@
-import React, {Fragment} from "react"
+/* eslint-disable react/jsx-filename-extension */
+import React, { Fragment } from 'react';
 import '../styles/index.css';
-import Layout from '../components/Layout';
 import styled from 'styled-components';
-import { StaticQuery, graphql } from "gatsby";
+import { StaticQuery, graphql } from 'gatsby';
+import {
+  Tab, Tabs, TabList, TabPanel,
+} from 'react-tabs';
 import Grid from '../components/Grid';
+import Layout from '../components/layout';
+import 'react-tabs/style/react-tabs.css';
+import LabStatsContainer from '../components/Plots/LabStatsContainer';
 
 const StyledSoftware = styled.div`
     width: 100%;
@@ -24,13 +30,16 @@ const StyledSoftware = styled.div`
             font-size: calc(0.5vw + 0.5em);
             padding: 10px;
             border-radius: 50%;
+            margin-left: 10px;
         }
     }
     .container {
         width: 80%;
         // padding-top: 30px;
     }
-
+    .react-tabs__tab-list {
+      margin-bottom:30px;
+    }
     
 `;
 
@@ -53,26 +62,55 @@ const SoftwareQuery = graphql`
                 } 
             }
         }
+        allDlStatsJson {
+            edges {
+              node {
+                lab
+                stats {
+                  downloads
+                  month
+                  year
+                }
+              }
+            }
+            distinct(field: lab)
+          }
     }
-`
+`;
 
 const Software = () => (
-    <Layout page="Software">
-        <StyledSoftware>
-            <div className="container">
-                <StaticQuery
-                    query={SoftwareQuery}
-                    render={data => (
-                        <Fragment>
-                            <h1>Software <span className="count">{data.allSoftwareCsv.edges.length}</span></h1>
-                            <Grid data={data.allSoftwareCsv.edges} type="software"/>
-                        </Fragment>
-                    )}
-                />
-            </div>
-        </StyledSoftware>
-    </Layout>
-  
-)
+  <Layout page="Software">
+    <StyledSoftware>
+      <div className="container">
+        <StaticQuery
+          query={SoftwareQuery}
+          render={(data) => (
+            <>
+              <h1>
+                Software
+                <span className="count">{data.allSoftwareCsv.edges.length}</span>
+              </h1>
+              <Tabs>
+                <TabList>
+                  <Tab>All Software</Tab>
+                  <Tab>Download Stats by Lab</Tab>
+                </TabList>
+
+                <TabPanel>
+                  <Grid data={data.allSoftwareCsv.edges} type="software" />
+                </TabPanel>
+                <TabPanel>
+                  <LabStatsContainer data={data.allDlStatsJson.edges} pisRaw={data.allDlStatsJson.distinct} />
+                </TabPanel>
+              </Tabs>
+            </>
+          )}
+        />
+      </div>
+
+    </StyledSoftware>
+  </Layout>
+
+);
 
 export default Software;
