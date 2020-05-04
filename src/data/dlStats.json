@@ -64,6 +64,10 @@
 		"downloads": "256",
 		"year": "2020",
 		"month": "Mar"
+	}, {
+		"downloads": "22",
+		"year": "2020",
+		"month": "Apr"
 	}],
 	"lab": "Haibe-Kains"
 }, {
@@ -188,6 +192,10 @@
 		"downloads": "422",
 		"year": "2020",
 		"month": "Mar"
+	}, {
+		"downloads": "494",
+		"year": "2020",
+		"month": "Apr"
 	}],
 	"lab": "Haibe-Kains"
 }, {
@@ -256,6 +264,10 @@
 		"downloads": "379",
 		"year": "2020",
 		"month": "Mar"
+	}, {
+		"downloads": "417",
+		"year": "2020",
+		"month": "Apr"
 	}],
 	"lab": "Haibe-Kains"
 }, {
@@ -432,6 +444,10 @@
 		"year": "2020",
 		"month": "Mar",
 		"downloads": "341"
+	}, {
+		"year": "2020",
+		"month": "Apr",
+		"downloads": "349"
 	}],
 	"lab": "Haibe-Kains"
 }, {
@@ -796,6 +812,10 @@
 		"downloads": "2814",
 		"year": "2020",
 		"month": "Mar"
+	}, {
+		"downloads": "2718",
+		"year": "2020",
+		"month": "Apr"
 	}],
 	"lab": "Haibe-Kains"
 }, {
@@ -848,6 +868,10 @@
 		"year": "2020",
 		"month": "Mar",
 		"downloads": "159"
+	}, {
+		"year": "2020",
+		"month": "Apr",
+		"downloads": "99"
 	}],
 	"lab": "Haibe-Kains"
 }, {
@@ -872,6 +896,10 @@
 		"year": "2020",
 		"month": "Mar",
 		"downloads": "401"
+	}, {
+		"month": "Apr",
+		"downloads": "345",
+		"year": "2020"
 	}],
 	"lab": "Haibe-Kains"
 }, {
@@ -968,6 +996,10 @@
 		"year": "2020",
 		"month": "Feb",
 		"downloads": "156"
+	}, {
+		"year": "2020",
+		"month": "Apr",
+		"downloads": "128"
 	}],
 	"lab": "Hoffman"
 }, {
@@ -1104,6 +1136,10 @@
 		"year": "2020",
 		"month": "Feb",
 		"downloads": "419"
+	}, {
+		"year": "2020",
+		"month": "Apr",
+		"downloads": "423"
 	}],
 	"lab": "Hoffman"
 }, {
@@ -1244,6 +1280,10 @@
 		"year": "2020",
 		"month": "Feb",
 		"downloads": "428"
+	}, {
+		"year": "2020",
+		"month": "Apr",
+		"downloads": "414"
 	}],
 	"lab": "Hoffman"
 }, {
@@ -1292,11 +1332,19 @@
 		"year": "2020",
 		"month": "Mar",
 		"downloads": "345"
+	}, {
+		"month": "Apr",
+		"downloads": "361",
+		"year": "2020"
 	}],
 	"lab": "Hoffman"
 }, {
 	"name": "reportRX",
-	"stats": [],
+	"stats": [{
+		"downloads": "0",
+		"year": "2020",
+		"month": "Apr"
+	}],
 	"lab": "Xu"
 }, {
 	"name": "xlink",
@@ -1336,6 +1384,10 @@
 		"downloads": "374",
 		"year": "2020",
 		"month": "Mar"
+	}, {
+		"downloads": "421",
+		"year": "2020",
+		"month": "Apr"
 	}],
 	"lab": "Xu"
 }, {
@@ -1360,6 +1412,10 @@
 		"downloads": "335",
 		"year": "2020",
 		"month": "Mar"
+	}, {
+		"downloads": "390",
+		"year": "2020",
+		"month": "Apr"
 	}],
 	"lab": "Xu"
 }, {
