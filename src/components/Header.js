@@ -1,12 +1,12 @@
-import { Link } from "gatsby";
-import React from "react";
+import { Link } from 'gatsby';
+import React from 'react';
 import styled from 'styled-components';
 import logo from '../images/logo-white.png';
 
 const StyledHeader = styled.div`
-  position:${props => props.page === "home" ? "absolute" : "fixed"};
+  position:${(props) => (props.page === 'home' ? 'absolute' : 'fixed')};
   width:100%;
-  background: ${props => props.page === "home" ? "none" : "var(--header-bg)"};
+  background: ${(props) => (props.page === 'home' ? 'none' : 'var(--header-bg)')};
   padding:5px 0px;
   height: 70px;
   top: 0px;
@@ -16,7 +16,7 @@ const StyledHeader = styled.div`
     color: white;
     text-decoration: none;
   }
-`
+`;
 
 const StyledLogo = styled.div`
   margin-left: 40px;
@@ -33,7 +33,7 @@ const StyledLogo = styled.div`
     margin-right:10px;
   }
 `;
- 
+
 const StyledLinks = styled.div`
   margin-top:25px;
   float:right;
@@ -55,23 +55,27 @@ const StyledLinks = styled.div`
 `;
 
 
-const Header = ({page}) => (
+const Header = ({ page }) => (
   <StyledHeader page={page}>
     <StyledLogo>
-        <Link to="/"><img alt="logo" src={logo}/></Link>
-        <Link to="/">Computational Biology <br/> and Medicine Program</Link>
+      <Link to="/"><img alt="logo" src={logo} /></Link>
+      <Link to="/">
+        Computational Biology
+        {' '}
+        <br />
+        {' '}
+        and Medicine Program
+      </Link>
     </StyledLogo>
     <StyledLinks>
-        <Link to="/research">Research</Link>
-        <Link to="/software">Software</Link>
-        <Link to="/web-apps">Web Apps</Link>
-        <Link to="/datasets">Datasets</Link>
-        <Link to="/publications">Publications/Achievements</Link>
+      <Link to="/research">Research</Link>
+      <Link to="/software">Software</Link>
+      <Link to="/web-apps">Web Apps</Link>
+      <Link to="/datasets">Datasets</Link>
+      {/* <Link to="/publications">Publications/Achievements</Link> */}
     </StyledLinks>
   </StyledHeader>
-)
-  
-
+);
 
 
 export default Header;
