@@ -65,7 +65,7 @@ const NetworkPlot = (props) => {
         } else if (d.value >= 10 && d.value < 20) {
           size = d.value * 2.5;
         } else {
-          size = d.value / 2;
+          size = d.value / 1.8;
         }
 
         return size;
@@ -184,9 +184,9 @@ const NetworkPlot = (props) => {
     }
 
     function dragended(d) {
-      if (!d3.event.active) simulation.alphaTarget(0);
-      d.fx = null;
-      d.fy = null;
+    //   if (!d3.event.active) simulation.alphaTarget(0);
+    //   d.fx = null;
+    //   d.fy = null;
     }
 
     return function cleanup() {
