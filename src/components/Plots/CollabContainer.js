@@ -2,6 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import NetworkPlot from './NetworkPlot';
 
+const StyledCollabContainer = styled.div`
+  display:flex;
+  justify-content: center;
+`;
+
 const formatIntersectionData = (data) => {
   // compiling solo member data - how many publications per person
   const soloSets = [];
@@ -87,9 +92,9 @@ const CollabContainer = (props) => {
   // edges are mutated in network plot, and the mutation reflects here
   const networkEdges = formatNetworkData(intersections, data);
   return (
-    <>
+    <StyledCollabContainer>
       <NetworkPlot nodes={soloSets} links={networkEdges} plotId="networkPlot" />
-    </>
+    </StyledCollabContainer>
   );
 };
 
