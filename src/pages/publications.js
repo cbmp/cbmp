@@ -1,15 +1,18 @@
-import React from "react"
+import React, { useState, useEffect } from 'react';
+import { StaticQuery, graphql } from 'gatsby';
 import '../styles/index.css';
-import Layout from '../components/Layout';
 import styled from 'styled-components';
+import Layout from '../components/Layout';
+import CollabContainer from '../components/Plots/CollabContainer';
 
 const StyledPublications = styled.div`
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content; center;
-    flex-direction: column;
-    margin-top:80px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items:center;
+  flex-direction: column;
+  margin-top:80px;
+  padding: 30px 0px 80px 0px;
     
     h1 {
         font-size:calc(1.8vw + 0.7em);
@@ -18,26 +21,44 @@ const StyledPublications = styled.div`
 
     .container {
         // background: var(--contrast-bg);
-        width: 100%;
+        width: 80%;
         font-size: calc(0.3vw + 0.8em);
         line-height: calc(0.8vw + 1.3em);
-        display: flex;
-        align-items: center;
-        justify-content: center;
         padding: 30px 0px 80px 0px;
     }
 
 `;
 
+const PubsQuery = graphql`
+    {
+      allCollabStatsJson {
+        edges {
+          node {
+            name
+            pubs
+            query
+          }
+        }
+      }
+    }
+`;
+
 const Publications = () => (
-    <Layout page="Publications">
-        <StyledPublications>
-            <div className="container">
-                <h1>Coming Soon..</h1>
-            </div>
-        </StyledPublications>
-    </Layout>
-  
-)
+  <Layout page="Publications">
+    <StyledPublications>
+      <div className="container">
+        <h1>Collaborations</h1>
+        <StaticQuery
+          query={PubsQuery}
+          render={(data) => (
+            <CollabContainer
+              data={data}
+            />
+          )}
+        />
+      </div>
+    </StyledPublications>
+  </Layout>
+);
 
 export default Publications;
