@@ -14,7 +14,6 @@ const Plotly = Loadable({
 
 export const DownloadStatsPlot = (props) => {
   const { data, layout, className} = props;
-  console.log(data)
     return (
         <Plotly
             data={[data]}
