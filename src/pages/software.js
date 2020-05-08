@@ -7,7 +7,7 @@ import {
   Tab, Tabs, TabList, TabPanel,
 } from 'react-tabs';
 import Grid from '../components/Grid';
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import 'react-tabs/style/react-tabs.css';
 import LabStatsContainer from '../components/Plots/LabStatsContainer';
 
