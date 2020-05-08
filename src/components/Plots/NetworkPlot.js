@@ -1,13 +1,19 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import * as d3 from 'd3';
+import '../../styles/index.css';
 
 const StyledNetworkPlot = styled.div`
     line{
         fill: none;
-        stroke: #666;
-        stroke-width: 4px;
+        stroke: var(--main-color-lighter);
+        stroke-opacity: 0.5;
     }
+
+    circle {
+        opacity: 1;
+    }
+    font-size: 16px;
 `;
 
 const NetworkPlot = (props) => {
@@ -21,9 +27,10 @@ const NetworkPlot = (props) => {
       left: 70,
     };
 
-    const width = 1000;
+    const width = 800;
     const height = 600;
 
+    const color = d3.scaleOrdinal(d3.schemeTableau10);
     // Add the svg canvas
     const svg = d3.select(`#${plotId}`)
       .append('svg')
@@ -47,7 +54,22 @@ const NetworkPlot = (props) => {
       .data(links)
       .enter()
       .append('line')
-      .attr('stroke-width', (d) => Math.sqrt(d.value));
+      .attr('stroke-width', (d) => {
+        let size = 0;
+        if (d.value < 2) {
+          size = d.value * 6;
+        } else if (d.value < 6) {
+          size = d.value * 3.8;
+        } else if (d.value >= 6 && d.value < 10) {
+          size = d.value * 3;
+        } else if (d.value >= 10 && d.value < 20) {
+          size = d.value * 2.5;
+        } else {
+          size = d.value / 2;
+        }
+
+        return size;
+      });
 
     const node = svg.append('g')
       .attr('class', 'nodes')
@@ -56,9 +78,24 @@ const NetworkPlot = (props) => {
       .enter()
       .append('g');
 
+    console.log(nodes, links);
     const circles = node.append('circle')
-      .attr('r', 60)
-      .attr('fill', 'black')
+      .attr('r', (d) => {
+        let radius = 0;
+        if (d.value < 50) {
+          radius = 50;
+        } else if (d.value >= 50 && d.value < 100) {
+          radius = 60;
+        } else if (d.value >= 100 && d.value < 200) {
+          radius = 70;
+        } else if (d.value >= 200 && d.value < 300) {
+          radius = 75;
+        } else if (d.value >= 300 && d.value < 500) {
+          radius = 80;
+        }
+        return radius;
+      })
+      .attr('fill', (d) => color(d.value))
       .call(d3.drag()
         .on('start', dragstarted)
         .on('drag', dragged)
@@ -68,12 +105,53 @@ const NetworkPlot = (props) => {
       .text((d) => d.name)
       .attr('x', 0)
       .attr('y', 3)
+      .attr('font-size', (d) => {
+        let size = 0;
+        if (d.value < 100) {
+          size = 17;
+        } else if (d.value >= 100 && d.value < 200) {
+          size = 19;
+        } else if (d.value >= 200 && d.value < 300) {
+          size = 21;
+        } else if (d.value >= 300 && d.value < 500) {
+          size = 23;
+        }
+        return size;
+      })
       .attr('text-anchor', 'middle')
       .attr('fill', 'white');
 
-    // hover
-    node.append('title')
-      .text((d) => d.name);
+    // tooltip
+    const tooltip = d3.select(`#${plotId}`)
+      .append('div')
+      .style('position', 'absolute')
+      .style('z-index', '10')
+      .style('visibility', 'hidden')
+      .style('color', 'white')
+      .style('padding', '0px 10px')
+      .style('background', '#02577b')
+      .style('border-radius', '12px')
+      .text('hehe'); // it changes, don't worry
+
+    circles.on('mouseover', (d) => {
+      tooltip.text(`${d.name}: ${d.value} publications`).style('visibility', 'visible');
+    })
+      .on('mousemove', () => {
+        tooltip.style('top', `${d3.event.pageY - 10}px`).style('left', `${d3.event.pageX + 10}px`);
+      })
+      .on('mouseout', () => {
+        tooltip.style('visibility', 'hidden');
+      });
+
+    link.on('mouseover', (d) => {
+      tooltip.text(`${d.name}: ${d.value} collaboration${d.value === 1 ? '' : 's'}`).style('visibility', 'visible');
+    })
+      .on('mousemove', () => {
+        tooltip.style('top', `${d3.event.pageY - 10}px`).style('left', `${d3.event.pageX + 10}px`);
+      })
+      .on('mouseout', () => {
+        tooltip.style('visibility', 'hidden');
+      });
 
     simulation
       .nodes(nodes)

@@ -69,20 +69,10 @@ const formatNetworkData = (intersections, data) => {
   // formatting to [{source: 0, target: 1, thickness: 3, value: 5}, ...]
   const edges = [];
   edgesRaw.forEach((x) => {
-    let thickness = 0;
-    if (x.value < 10) {
-      thickness = x.value * 3;
-    } else if (x.value > 10 && x.value < 20) {
-      thickness = x.value * 2;
-    } else {
-      thickness = x.value / 2.5;
-    }
-
     edges.push({
       source: x.name.split(' + ')[0], // nameStr.indexOf(x.setName[0])
       target: x.name.split(' + ')[1], // nameStr.indexOf(x.setName[1])
       name: x.name,
-      thickness,
       value: x.value,
     });
   });
