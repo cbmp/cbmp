@@ -47,7 +47,7 @@ const Publications = () => (
   <Layout page="Publications">
     <StyledPublications>
       <div className="container">
-        <h1>Collaborations</h1>
+        <h1>Collaborations on Publications</h1>
         <StaticQuery
           query={PubsQuery}
           render={(data) => (
