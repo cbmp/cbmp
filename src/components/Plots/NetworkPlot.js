@@ -27,8 +27,8 @@ const NetworkPlot = (props) => {
       left: 70,
     };
 
-    const width = 800;
-    const height = 600;
+    const width = 1000;
+    const height = 800;
 
     const color = d3.scaleOrdinal(d3.schemeTableau10);
     // Add the svg canvas

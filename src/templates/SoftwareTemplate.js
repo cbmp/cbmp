@@ -42,13 +42,6 @@ export const query = graphql`
     }
   }
 `;
-// dlStatsJson(name: {eq: $name}) {
-//     stats {
-//       downloads
-//       month
-//       year
-//     }
-// }
 
 const SoftwareTemplate = ({ data }) => {
   const item = data.softwareCsv;
