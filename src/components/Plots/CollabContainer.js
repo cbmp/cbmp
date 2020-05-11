@@ -1,10 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
+import Radio from '@material-ui/core/Radio';
+import RadioGroup from '@material-ui/core/RadioGroup';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import FormControl from '@material-ui/core/FormControl';
+import FormLabel from '@material-ui/core/FormLabel';
+import UpsetPlot from './UpsetPlot';
 import NetworkPlot from './NetworkPlot';
 
 const StyledCollabContainer = styled.div`
   display:flex;
   justify-content: center;
+  margin-top:50px;
+
+  #networkPlot, #upsetPlot {
+    display:flex;
+    justify-content:center;
+  }
+
+  .toggle {
+    width:15%;
+}
+  .plot-container {
+    width:85%;
+  }
 `;
 
 const formatIntersectionData = (data) => {
@@ -86,14 +105,43 @@ const formatNetworkData = (intersections, data) => {
 };
 
 const CollabContainer = (props) => {
+  const [viewSelected, setViewSelected] = useState('Graph Network');
   const data = props.data.allCollabStatsJson.edges;
   const { intersections, soloSets } = formatIntersectionData(data);
 
   // edges are mutated in network plot, and the mutation reflects here
   const networkEdges = formatNetworkData(intersections, data);
+
+  const handleChange = (event) => {
+    setViewSelected(event.target.value);
+  };
+
+  // choosing which plot to view
+  const views = ['Graph Network', 'Upset Plot'];
   return (
     <StyledCollabContainer>
-      <NetworkPlot nodes={soloSets} links={networkEdges} plotId="networkPlot" />
+      <FormControl component="fieldset" className="toggle">
+        <FormLabel component="legend">Choose the view:</FormLabel>
+        <RadioGroup aria-label="pis" name="pis" value={viewSelected} onChange={handleChange}>
+          {views.map((x) => <FormControlLabel key={x} value={x} control={<Radio color="primary" />} label={x} />)}
+        </RadioGroup>
+      </FormControl>
+      <div className="plot-container">
+        <NetworkPlot
+          nodes={soloSets}
+          links={networkEdges}
+          plotId="networkPlot"
+          hidden={viewSelected !== 'Graph Network'}
+        />
+        <UpsetPlot
+          data={intersections}
+          soloSets={soloSets}
+          plotId="upsetPlot"
+          hidden={viewSelected !== 'Upset Plot'}
+        />
+
+      </div>
+
     </StyledCollabContainer>
   );
 };

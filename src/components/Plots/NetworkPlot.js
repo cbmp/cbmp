@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import * as d3 from 'd3';
 import '../../styles/index.css';
@@ -14,10 +14,14 @@ const StyledNetworkPlot = styled.div`
         opacity: 1;
     }
     font-size: 16px;
+    display: ${(props) => props.display};
 `;
 
 const NetworkPlot = (props) => {
-  const { nodes, links, plotId } = props;
+  const {
+    nodes, links, plotId, hidden,
+  } = props;
+  const [display, setDisplay] = useState('none');
 
   useEffect(() => {
     const margin = {
@@ -78,7 +82,6 @@ const NetworkPlot = (props) => {
       .enter()
       .append('g');
 
-    console.log(nodes, links);
     const circles = node.append('circle')
       .attr('r', (d) => {
         let radius = 0;
@@ -137,20 +140,20 @@ const NetworkPlot = (props) => {
       tooltip.text(`${d.name}: ${d.value} publications`).style('visibility', 'visible');
     })
       .on('mousemove', () => {
-        tooltip.style('top', `${d3.event.pageY - 10}px`).style('left', `${d3.event.pageX + 10}px`);
+        tooltip.style('top', `${d3.event.pageY - 20}px`).style('left', `${d3.event.pageX + 20}px`);
       })
       .on('mouseout', () => {
         tooltip.style('visibility', 'hidden');
       });
 
     link.on('mouseover', (d) => {
-      tooltip.text(`${d.name}: ${d.value} collaboration${d.value === 1 ? '' : 's'}`).style('visibility', 'visible');
+      tooltip.text(`${d.name}: ${d.value} collaboration${d.value === 1 ? '' : 's'}`).style('display', 'visible');
     })
       .on('mousemove', () => {
-        tooltip.style('top', `${d3.event.pageY - 10}px`).style('left', `${d3.event.pageX + 10}px`);
+        tooltip.style('top', `${d3.event.pageY - 20}px`).style('left', `${d3.event.pageX + 20}px`);
       })
       .on('mouseout', () => {
-        tooltip.style('visibility', 'hidden');
+        tooltip.style('display', 'hidden');
       });
 
     simulation
@@ -190,11 +193,21 @@ const NetworkPlot = (props) => {
     }
 
     return function cleanup() {
+      console.log(d3.select(`#${plotId}`));
       d3.select(`#${plotId}`).remove();
     };
   }, []);
+
+  useEffect(() => {
+    if (hidden) {
+      setDisplay('none');
+    } else {
+      setDisplay('block');
+    }
+  }, [hidden]);
+
   return (
-    <StyledNetworkPlot>
+    <StyledNetworkPlot display={display}>
       <div id={plotId} className="plot" />
     </StyledNetworkPlot>
   );
