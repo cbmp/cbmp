@@ -7,7 +7,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 import gradstop from 'gradstop';
-import DownloadStatsPlot from './DownloadStatsPlot';
+import StatsPlot from './StatsPlot';
 
 const StyledLabStatsContainer = styled.div`
     background: white;
@@ -118,7 +118,7 @@ const LabStatsContainer = (props) => {
           {piData[piSelected].x.length === 0 ? (
             <span>No data available.</span>
           ) : (
-            <DownloadStatsPlot
+            <StatsPlot
               data={piData[piSelected]}
               layout={layout}
               className="piPlot"

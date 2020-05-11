@@ -6,9 +6,9 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 import gradstop from 'gradstop';
-import DownloadStatsPlot from './DownloadStatsPlot';
+import StatsPlot from './StatsPlot';
 
-const StyledDownloadStatsContainer = styled.div`
+const StyledStatsContainer = styled.div`
     background: white;
     display:flex;
     flex-direction: row;
@@ -24,8 +24,9 @@ const StyledDownloadStatsContainer = styled.div`
     }
 `;
 
-const DownloadStatsContainer = (props) => {
-  const { data } = props;
+const StatsContainer = (props) => {
+  const { data, statType } = props;
+  const stat = statType.toLowerCase();
   // get all years
   const years = [...new Set(data.map((x) => x.year))];
   const [yearSelected, setYearSelected] = useState(years[years.length >= 3 ? years.length - 3 : 0]);
@@ -62,11 +63,11 @@ const DownloadStatsContainer = (props) => {
     data.some((item) => {
       if (item.year === year) {
         // summing year data up
-        total += parseInt(item.downloads);
+        total += parseInt(item[stat]);
 
         // adding in month data
         monthData[year].x.push(item.month);
-        monthData[year].y.push(item.downloads);
+        monthData[year].y.push(item[stat]);
       }
       return item.year > year;
     });
@@ -86,7 +87,7 @@ const DownloadStatsContainer = (props) => {
   });
 
   const yearLayout = {
-    title: 'Downloads Per Year',
+    title: `${statType} Per Year`,
     autosize: true,
     font: {
       size: '1em',
@@ -97,7 +98,7 @@ const DownloadStatsContainer = (props) => {
     showlegend: false,
   };
   const monthLayout = {
-    title: 'Downloads Per Month',
+    title: `${statType} Per Month`,
     autosize: true,
     font: {
       size: '1em',
@@ -118,14 +119,14 @@ const DownloadStatsContainer = (props) => {
 
 
   return (
-    <StyledDownloadStatsContainer className="container">
+    <StyledStatsContainer className="container">
       <>
-        <DownloadStatsPlot
+        <StatsPlot
           data={yearData}
           layout={yearLayout}
           className="yearPlot"
         />
-        <DownloadStatsPlot
+        <StatsPlot
           data={monthData[yearSelected]}
           layout={monthLayout}
           className="monthPlot"
@@ -138,8 +139,8 @@ const DownloadStatsContainer = (props) => {
         </FormControl>
 
       </>
-    </StyledDownloadStatsContainer>
+    </StyledStatsContainer>
   );
 };
 
-export default DownloadStatsContainer;
+export default StatsContainer;

@@ -1,9 +1,9 @@
-import React from "react"
+import React from 'react';
 import '../styles/index.css';
-import Layout from '../components/Layout';
 import { graphql } from 'gatsby';
-import {StyledIndivPage} from '../styles/indiv_page'
-import DownloadStatsContainer from '../components/Plots/DownloadStatsContainer';
+import Layout from '../components/Layout';
+import { StyledIndivPage } from '../styles/indiv_page';
+import StatsContainer from '../components/Plots/StatsContainer';
 
 // This is a page query - Gatsby looks for one page
 // query per file. In components, use StaticQuery
@@ -41,7 +41,7 @@ export const query = graphql`
         cited
     }
   }
-`
+`;
 // dlStatsJson(name: {eq: $name}) {
 //     stats {
 //       downloads
@@ -50,69 +50,97 @@ export const query = graphql`
 //     }
 // }
 
-const SoftwareTemplate = ({data}) => {
-    const item = data.softwareCsv
-    const stats = data.dlStatsJson.stats
-    const citedBy = data.gsSoftwareStatsJson.cited
+const SoftwareTemplate = ({ data }) => {
+  const item = data.softwareCsv;
+  const { stats } = data.dlStatsJson;
+  const citedBy = data.gsSoftwareStatsJson.cited;
 
-    return (
-        <Layout page="SoftwareTemplate">
-            <StyledIndivPage>
-                <div className="container title">
-                    <h1>{item.name}</h1>
-                    <h3>{item.short_desc}</h3>
-                </div>
-                <div className="container info">
-                    <div className="section">
-                        <span className="item-heading">Description:</span> {item.long_desc} <p/>
-                    </div>
-                    <div className="section">
-                        <span className="item-heading">Authors:</span> {item.authors} <p/>
-                        <span className="item-heading">Lab:</span> {item.lab} <p/>
-                        <span className="item-heading">Version:</span> {item.version} <p/>
-                        <span className="item-heading">Keywords:</span> {item.keywords} <p/>
-                        <span className="item-heading">Licensing:</span> {item.licensing} <p/>
-                        <div className="download">
-                        <a target="_blank" rel="noopener noreferrer" href={item.download_link}>Download</a>
-                        </div>
-                    </div>
-                </div>
-                <div className="container title">
-                    <h4>Citation</h4>
-                </div>
-                <div className="container citation">
-                    <div className="section">
-                        {item.citation === '' ? 'Citation not available.' : item.citation}
-                        <div className="links">
-                            {item.doi === '' ? (
-                                <a className='disabled'>DOI</a>
-                            ) : (
-                                <a target="_blank" rel="noopener noreferrer" href={`http://doi.org/${item.doi}`}>DOI</a> 
-                            )}
-                            {item.scholar_link === '' ? (
-                                <a className='disabled'>Google Scholar</a>
-                            ) : (
-                                <a target="_blank" rel="noopener noreferrer" href={item.scholar_link}>Google Scholar</a>
-                            )}
-                            {item.scholar_link_cited === '' ? (
-                                <a className='disabled'>Cited By</a>
-                            ) : (
-                            <a target="_blank" rel="noopener noreferrer" href={item.scholar_link_cited}>Cited By {citedBy}</a>
-                            )}
-                        </div>
-                    </div>
-                </div>
-                {stats.length === 0 ? null : (
-                    <DownloadStatsContainer
-                        name={item.name}
-                        data={stats}
-                    />
-                )}
-            </StyledIndivPage>
-        </Layout>
-      
-    )
-}
+  return (
+    <Layout page="SoftwareTemplate">
+      <StyledIndivPage>
+        <div className="container title">
+          <h1>{item.name}</h1>
+          <h3>{item.short_desc}</h3>
+        </div>
+        <div className="container info">
+          <div className="section">
+            <span className="item-heading">Description:</span>
+            {' '}
+            {item.long_desc}
+            {' '}
+            <p />
+          </div>
+          <div className="section">
+            <span className="item-heading">Authors:</span>
+            {' '}
+            {item.authors}
+            {' '}
+            <p />
+            <span className="item-heading">Lab:</span>
+            {' '}
+            {item.lab}
+            {' '}
+            <p />
+            <span className="item-heading">Version:</span>
+            {' '}
+            {item.version}
+            {' '}
+            <p />
+            <span className="item-heading">Keywords:</span>
+            {' '}
+            {item.keywords}
+            {' '}
+            <p />
+            <span className="item-heading">Licensing:</span>
+            {' '}
+            {item.licensing}
+            {' '}
+            <p />
+            <div className="download">
+              <a target="_blank" rel="noopener noreferrer" href={item.download_link}>Download</a>
+            </div>
+          </div>
+        </div>
+        <div className="container title">
+          <h4>Citation</h4>
+        </div>
+        <div className="container citation">
+          <div className="section">
+            {item.citation === '' ? 'Citation not available.' : item.citation}
+            <div className="links">
+              {item.doi === '' ? (
+                <a className="disabled">DOI</a>
+              ) : (
+                <a target="_blank" rel="noopener noreferrer" href={`http://doi.org/${item.doi}`}>DOI</a>
+              )}
+              {item.scholar_link === '' ? (
+                <a className="disabled">Google Scholar</a>
+              ) : (
+                <a target="_blank" rel="noopener noreferrer" href={item.scholar_link}>Google Scholar</a>
+              )}
+              {item.scholar_link_cited === '' ? (
+                <a className="disabled">Cited By</a>
+              ) : (
+                <a target="_blank" rel="noopener noreferrer" href={item.scholar_link_cited}>
+                  Cited By
+                  {' '}
+                  {citedBy}
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+        {stats.length === 0 ? null : (
+          <StatsContainer
+            name={item.name}
+            data={stats}
+            statType="Downloads"
+          />
+        )}
+      </StyledIndivPage>
+    </Layout>
+
+  );
+};
 
 export default SoftwareTemplate;
-
