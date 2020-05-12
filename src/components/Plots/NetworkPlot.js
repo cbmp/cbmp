@@ -147,13 +147,13 @@ const NetworkPlot = (props) => {
       });
 
     link.on('mouseover', (d) => {
-      tooltip.text(`${d.name}: ${d.value} collaboration${d.value === 1 ? '' : 's'}`).style('display', 'visible');
+      tooltip.text(`${d.name}: ${d.value} collaboration${d.value === 1 ? '' : 's'}`).style('visibility', 'visible');
     })
       .on('mousemove', () => {
         tooltip.style('top', `${d3.event.pageY - 20}px`).style('left', `${d3.event.pageX + 20}px`);
       })
       .on('mouseout', () => {
-        tooltip.style('display', 'hidden');
+        tooltip.style('visibility', 'hidden');
       });
 
     simulation
