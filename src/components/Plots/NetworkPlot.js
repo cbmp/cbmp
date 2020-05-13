@@ -83,21 +83,20 @@ const NetworkPlot = (props) => {
       .append('g');
 
     const circles = node.append('circle')
-      .attr('r', (d) => {
-        let radius = 0;
-        if (d.value < 50) {
-          radius = 50;
-        } else if (d.value >= 50 && d.value < 100) {
-          radius = 60;
-        } else if (d.value >= 100 && d.value < 200) {
-          radius = 70;
-        } else if (d.value >= 200 && d.value < 300) {
-          radius = 75;
-        } else if (d.value >= 300 && d.value < 500) {
-          radius = 80;
-        }
-        return radius;
-      })
+      .attr('r', (d) =>
+        // let radius = 0;
+        // if (d.value < 50) {
+        //   radius = 50;
+        // } else if (d.value >= 50 && d.value < 100) {
+        //   radius = 60;
+        // } else if (d.value >= 100 && d.value < 200) {
+        //   radius = 70;
+        // } else if (d.value >= 200 && d.value < 300) {
+        //   radius = 75;
+        // } else if (d.value >= 300 && d.value < 500) {
+        //   radius = 80;
+        // }
+        60)
       .attr('fill', (d) => color(d.value))
       .call(d3.drag()
         .on('start', dragstarted)
@@ -108,19 +107,18 @@ const NetworkPlot = (props) => {
       .text((d) => d.name)
       .attr('x', 0)
       .attr('y', 3)
-      .attr('font-size', (d) => {
-        let size = 0;
-        if (d.value < 100) {
-          size = 17;
-        } else if (d.value >= 100 && d.value < 200) {
-          size = 19;
-        } else if (d.value >= 200 && d.value < 300) {
-          size = 21;
-        } else if (d.value >= 300 && d.value < 500) {
-          size = 23;
-        }
-        return size;
-      })
+      .attr('font-size', (d) =>
+        // let size = 0;
+        // if (d.value < 100) {
+        //   size = 17;
+        // } else if (d.value >= 100 && d.value < 200) {
+        //   size = 19;
+        // } else if (d.value >= 200 && d.value < 300) {
+        //   size = 21;
+        // } else if (d.value >= 300 && d.value < 500) {
+        //   size = 23;
+        // }
+        17)
       .attr('text-anchor', 'middle')
       .attr('fill', 'white');
 
