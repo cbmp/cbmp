@@ -7,6 +7,7 @@ import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 import UpsetPlot from './UpsetPlot';
 import NetworkPlot from './NetworkPlot';
+import CircosPlot from './CircosPlot';
 
 const StyledCollabContainer = styled.div`
   display:flex;
@@ -127,7 +128,8 @@ const CollabContainer = (props) => {
         </RadioGroup>
       </FormControl>
       <div className="plot-container">
-        <NetworkPlot
+        {console.log(intersections)}
+        {/* <NetworkPlot
           nodes={soloSets}
           links={networkEdges}
           plotId="networkPlot"
@@ -138,7 +140,8 @@ const CollabContainer = (props) => {
           soloSets={soloSets}
           plotId="upsetPlot"
           hidden={viewSelected !== 'Upset Plot'}
-        />
+        /> */}
+        <CircosPlot />
 
       </div>
 
