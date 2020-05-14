@@ -5,6 +5,7 @@ import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
+import * as d3 from 'd3';
 import UpsetPlot from './UpsetPlot';
 import NetworkPlot from './NetworkPlot';
 import CircosPlot from './CircosPlot';
@@ -105,20 +106,62 @@ const formatNetworkData = (intersections, data) => {
   return edges;
 };
 
+const formatCircosData = (edges, soloSets) => {
+  const circosLayout = [];
+  const circosChords = [];
+  const color = d3.scaleOrdinal(d3.schemeTableau10);
+  const length = 100;
+
+  soloSets.forEach((x) => {
+    circosLayout.push({
+      id: x.name,
+      label: x.name,
+      color: color(x.value),
+      len: length,
+      value: x.value,
+    });
+  });
+
+  // calculating thickness of edge by log scaling
+  const max = d3.max(edges.map((n) => n.value));
+  const thickest_edge = 20;
+  const halfway = length / 2;
+  const b = Math.pow(max, (1 / thickest_edge));
+
+  edges.forEach((x) => {
+    // log10(1) = 0, and there are 1s, so I added 1 to each value
+    const thickness = (Math.log10(x.value + 1)) / (Math.log10(b));
+    circosChords.push({
+      source: {
+        id: x.source,
+        start: halfway - thickness / 2,
+        end: halfway + thickness / 2,
+      },
+      target: {
+        id: x.target,
+        start: halfway - thickness / 2,
+        end: halfway + thickness / 2,
+      },
+    });
+  });
+  return { circosLayout, circosChords };
+};
+
 const CollabContainer = (props) => {
   const [viewSelected, setViewSelected] = useState('Graph Network');
   const data = props.data.allCollabStatsJson.edges;
   const { intersections, soloSets } = formatIntersectionData(data);
 
-  // edges are mutated in network plot, and the mutation reflects here
+  // NOTE: edges are mutated in network plot, and the mutation reflects here
   const networkEdges = formatNetworkData(intersections, data);
+  const { circosLayout, circosChords } = formatCircosData(networkEdges, soloSets);
 
   const handleChange = (event) => {
     setViewSelected(event.target.value);
   };
 
   // choosing which plot to view
-  const views = ['Graph Network', 'Upset Plot'];
+  const views = ['Graph Network', 'Upset Plot', 'Circos Plot'];
   return (
     <StyledCollabContainer>
       <FormControl component="fieldset" className="toggle">
@@ -128,8 +171,7 @@ const CollabContainer = (props) => {
         </RadioGroup>
       </FormControl>
       <div className="plot-container">
-        {console.log(intersections)}
-        {/* <NetworkPlot
+        <NetworkPlot
           nodes={soloSets}
           links={networkEdges}
           plotId="networkPlot"
@@ -140,8 +182,12 @@ const CollabContainer = (props) => {
           soloSets={soloSets}
           plotId="upsetPlot"
           hidden={viewSelected !== 'Upset Plot'}
-        /> */}
-        <CircosPlot />
+        />
+        <CircosPlot
+          chords={circosChords}
+          layout={circosLayout}
+          hidden={viewSelected !== 'Circos Plot'}
+        />
 
       </div>
 

@@ -31,7 +31,7 @@ const NetworkPlot = (props) => {
       left: 70,
     };
 
-    const width = 1000;
+    const width = 900;
     const height = 800;
 
     const color = d3.scaleOrdinal(d3.schemeTableau10);
