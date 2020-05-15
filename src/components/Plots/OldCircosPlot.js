@@ -53,6 +53,8 @@ const CircosPlot = (props) => {
             logScale: false,
             opacity: 0.5,
             color: '#1d7597',
+            tooltipContent: (d, i) => `${d.source.id} + ${d.target.id}: 
+                      ${d.value} publication${d.value === 1 ? '' : 's'}`,
           },
         }]}
         size={size}

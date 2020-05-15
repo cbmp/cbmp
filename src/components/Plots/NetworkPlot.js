@@ -58,22 +58,20 @@ const NetworkPlot = (props) => {
       .data(links)
       .enter()
       .append('line')
-      .attr('stroke-width', (d) => {
-        let size = 0;
-        if (d.value < 2) {
-          size = d.value * 6;
-        } else if (d.value < 6) {
-          size = d.value * 3.8;
-        } else if (d.value >= 6 && d.value < 10) {
-          size = d.value * 3;
-        } else if (d.value >= 10 && d.value < 20) {
-          size = d.value * 2.5;
-        } else {
-          size = d.value / 1.8;
-        }
-
-        return size;
-      });
+      .attr('stroke-width', (d) =>
+        // let size = 0;
+        // if (d.value < 2) {
+        //   size = d.value * 6;
+        // } else if (d.value < 6) {
+        //   size = d.value * 3.8;
+        // } else if (d.value >= 6 && d.value < 10) {
+        //   size = d.value * 3;
+        // } else if (d.value >= 10 && d.value < 20) {
+        //   size = d.value * 2.5;
+        // } else {
+        //   size = d.value / 1.8;
+        // }
+        d.thickness);
 
     const node = svg.append('g')
       .attr('class', 'nodes')

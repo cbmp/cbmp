@@ -8,7 +8,7 @@ import FormLabel from '@material-ui/core/FormLabel';
 import * as d3 from 'd3';
 import UpsetPlot from './UpsetPlot';
 import NetworkPlot from './NetworkPlot';
-import CircosPlot from './CircosPlot';
+import CircosPlot from './OldCircosPlot';
 
 const StyledCollabContainer = styled.div`
   display:flex;
@@ -92,17 +92,24 @@ const formatNetworkData = (intersections, data) => {
   const nameStr = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.substr(0, data.length);
   const edgesRaw = intersections.filter((x) => x.setName.length === 2);
 
+  // calculating thickness of edge by log scaling
+  const max = d3.max(edgesRaw.map((n) => n.value));
+  const thickest_edge = 40;
+  const halfway = length / 2;
+  const b = Math.pow(max, (1 / thickest_edge));
+
   // formatting to [{source: 0, target: 1, thickness: 3, value: 5}, ...]
   const edges = [];
   edgesRaw.forEach((x) => {
+    const thickness = (Math.log10(x.value + 1)) / (Math.log10(b));
     edges.push({
-      source: x.name.split(' + ')[0], // nameStr.indexOf(x.setName[0])
-      target: x.name.split(' + ')[1], // nameStr.indexOf(x.setName[1])
+      source: x.name.split(' + ')[0],
+      target: x.name.split(' + ')[1],
       name: x.name,
       value: x.value,
+      thickness,
     });
   });
-
   return edges;
 };
 
@@ -119,6 +126,8 @@ const formatCircosData = (edges, soloSets) => {
       color: color(x.value),
       len: length,
       value: x.value,
+      totalThickness: 0, // total space for chords
+      startFrom: 0, // chords start off from this value
     });
   });
 
@@ -128,21 +137,53 @@ const formatCircosData = (edges, soloSets) => {
   const halfway = length / 2;
   const b = Math.pow(max, (1 / thickest_edge));
 
+  // finding total chord space for each PI
   edges.forEach((x) => {
     // log10(1) = 0, and there are 1s, so I added 1 to each value
     const thickness = (Math.log10(x.value + 1)) / (Math.log10(b));
+
+    // find index of source and target to add to thickness
+    // adding 0.5 for spacing
+    let ind = circosLayout.findIndex((item, i) => item.id === x.source);
+    circosLayout[ind].totalThickness += thickness + 0.5;
+
+    ind = circosLayout.findIndex((item, i) => item.id === x.target);
+    circosLayout[ind].totalThickness += thickness + 0.5;
+  });
+
+  // finding chord start for every PI
+  // starting from the middle of the arc, place all the chords
+  // in the middle, so find the half of total thickness and
+  // subtract it from the arc middle
+  circosLayout.forEach((x) => {
+    x.startFrom = x.len / 2 - x.totalThickness / 2;
+  });
+
+  edges.forEach((x) => {
+    // find index of source and target to add to startFrom
+    const sInd = circosLayout.findIndex((item, i) => item.id === x.source);
+    const tInd = circosLayout.findIndex((item, i) => item.id === x.target);
+
+    // log10(1) = 0, and there are 1s, so I added 1 to each value
+    const thickness = (Math.log10(x.value + 1)) / (Math.log10(b));
+
     circosChords.push({
       source: {
         id: x.source,
-        start: halfway - thickness / 2,
-        end: halfway + thickness / 2,
+        start: circosLayout[sInd].startFrom,
+        end: circosLayout[sInd].startFrom + thickness,
       },
       target: {
         id: x.target,
-        start: halfway - thickness / 2,
-        end: halfway + thickness / 2,
+        start: circosLayout[tInd].startFrom,
+        end: circosLayout[tInd].startFrom + thickness,
       },
+      value: x.value,
     });
+    // dynamically calculating the next startFrom point
+    // and adding 0.5 for spacing
+    circosLayout[sInd].startFrom += thickness + 0.5;
+    circosLayout[tInd].startFrom += thickness + 0.5;
   });
   return { circosLayout, circosChords };
 };
