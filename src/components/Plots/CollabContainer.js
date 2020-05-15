@@ -94,8 +94,8 @@ const formatNetworkData = (intersections, data) => {
 
   // calculating thickness of edge by log scaling
   const max = d3.max(edgesRaw.map((n) => n.value));
-  const thickest_edge = 40;
-  const b = Math.pow(max, (1 / thickest_edge));
+  const thickestEdge = 40;
+  const b = Math.pow(max, (1 / thickestEdge));
 
   // formatting to [{source: 0, target: 1, thickness: 3, value: 5}, ...]
   const edges = [];
@@ -116,14 +116,13 @@ const formatCircosData = (edges, soloSets) => {
   const circosLayout = [];
   const circosChords = [];
   const color = d3.scaleOrdinal(d3.schemeTableau10);
-  const length = 100;
 
   soloSets.forEach((x) => {
     circosLayout.push({
       id: x.name,
       label: x.name,
       color: color(x.value),
-      len: length,
+      len: 0, // calculated based on the person with the most collaborations
       value: x.value,
       totalThickness: 0, // total space for chords
       startFrom: 0, // chords start off from this value
@@ -132,9 +131,8 @@ const formatCircosData = (edges, soloSets) => {
 
   // calculating thickness of edge by log scaling
   const max = d3.max(edges.map((n) => n.value));
-  const thickest_edge = 20;
-  const halfway = length / 2;
-  const b = Math.pow(max, (1 / thickest_edge));
+  const thickestEdge = 20;
+  const b = Math.pow(max, (1 / thickestEdge));
 
   // finding total chord space for each PI
   edges.forEach((x) => {
@@ -143,11 +141,17 @@ const formatCircosData = (edges, soloSets) => {
 
     // find index of source and target to add to thickness
     // adding 0.5 for spacing
-    let ind = circosLayout.findIndex((item, i) => item.id === x.source);
+    let ind = circosLayout.findIndex((item) => item.id === x.source);
     circosLayout[ind].totalThickness += thickness + 0.5;
 
-    ind = circosLayout.findIndex((item, i) => item.id === x.target);
+    ind = circosLayout.findIndex((item) => item.id === x.target);
     circosLayout[ind].totalThickness += thickness + 0.5;
+  });
+
+  // find max total thickness for length
+  const maxThickness = d3.max(circosLayout.map((x) => x.totalThickness));
+  circosLayout.forEach((x) => {
+    x.len = maxThickness - 0.5;
   });
 
   // finding chord start for every PI
@@ -160,8 +164,8 @@ const formatCircosData = (edges, soloSets) => {
 
   edges.forEach((x) => {
     // find index of source and target to add to startFrom
-    const sInd = circosLayout.findIndex((item, i) => item.id === x.source);
-    const tInd = circosLayout.findIndex((item, i) => item.id === x.target);
+    const sInd = circosLayout.findIndex((item) => item.id === x.source);
+    const tInd = circosLayout.findIndex((item) => item.id === x.target);
 
     // log10(1) = 0, and there are 1s, so I added 1 to each value
     const thickness = (Math.log10(x.value + 1)) / (Math.log10(b));
