@@ -186,6 +186,7 @@ const CollabContainer = (props) => {
         <CircosPlot
           chords={circosChords}
           layout={circosLayout}
+          plotId="circosPlot"
           hidden={viewSelected !== 'Circos Plot'}
         />
 
