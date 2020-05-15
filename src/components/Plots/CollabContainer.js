@@ -8,7 +8,7 @@ import FormLabel from '@material-ui/core/FormLabel';
 import * as d3 from 'd3';
 import UpsetPlot from './UpsetPlot';
 import NetworkPlot from './NetworkPlot';
-import CircosPlot from './OldCircosPlot';
+import CircosPlot from './CircosPlot';
 
 const StyledCollabContainer = styled.div`
   display:flex;
@@ -95,7 +95,6 @@ const formatNetworkData = (intersections, data) => {
   // calculating thickness of edge by log scaling
   const max = d3.max(edgesRaw.map((n) => n.value));
   const thickest_edge = 40;
-  const halfway = length / 2;
   const b = Math.pow(max, (1 / thickest_edge));
 
   // formatting to [{source: 0, target: 1, thickness: 3, value: 5}, ...]
