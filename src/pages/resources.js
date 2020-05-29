@@ -86,6 +86,9 @@ const Resources = () => {
             <div className="resource-container">
               Coming soon
             </div>
+             <div className="resource-container">
+              test
+            </div>
           ) : (
             <div className="pass-container">
               <FormControl className="password">
