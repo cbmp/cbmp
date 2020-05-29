@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import logo from '../images/logo-white.png';
 
 const StyledHeader = styled.div`
-  position:${(props) => (props.page === 'home' ? 'absolute' : 'fixed')};
+  position:${(props) => (props.page === 'home' ? 'absolute' : 'absolute')}; // second fixed
   width:100%;
   background: ${(props) => (props.page === 'home' ? 'none' : 'var(--header-bg)')};
   padding:5px 0px;
@@ -73,6 +73,7 @@ const Header = ({ page }) => (
       <Link to="/web-apps">Web Apps</Link>
       <Link to="/datasets">Datasets</Link>
       <Link to="/publications">Publications</Link>
+      <Link to="/contact">Contact</Link>
     </StyledLinks>
   </StyledHeader>
 );

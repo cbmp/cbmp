@@ -1,5 +1,5 @@
-import { Link } from "gatsby";
-import React from "react";
+import { Link } from 'gatsby';
+import React from 'react';
 import styled from 'styled-components';
 import logo from '../images/logo-white.png';
 
@@ -32,12 +32,10 @@ const StyledFooter = styled.div`
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        align-items: center;
-        flex-wrap: wrap;
+        align-items: flex-start;
 
-        & a {
-            // flex-basis: 33%;
-            flex-basis:50%;
+        & * {
+            flex-basis: 33%;
             color: white;
             text-decoration: none;
             font-size: calc(0.2vw + 0.8em);
@@ -49,6 +47,12 @@ const StyledFooter = styled.div`
 
     .links a:hover {
         color: #fab058;
+    }
+
+    .link-container {
+      display:flex;
+      align-items:flex-start;
+      flex-direction: column;
     }
 
     .contact {
@@ -70,27 +74,40 @@ const StyledFooter = styled.div`
 `;
 
 const Footer = () => (
-    <StyledFooter>
-        <div className="logo">
-            <Link to="/"><img alt="logo" src={logo}/></Link>
-        </div>
-        <div className="links">
-            <Link to="/research">Research</Link>
-            <Link to="/web-apps">Web Apps</Link>
-            {/* <Link to="/publications">Publications/Achievements</Link> */}
-            <Link to="/software">Software</Link>
-            <Link to="/datasets">Datasets</Link>
-        </div>
-        <div className="contact">
-            <h2>Contact</h2>
-            200 Elizabeth Street, <br/>
-            Toronto, Ontario <br/>
-            M5G 2C4 
-        </div>
-    </StyledFooter>
-)
-  
+  <StyledFooter>
+    <div className="logo">
+      <Link to="/"><img alt="logo" src={logo} /></Link>
+    </div>
+    <div className="links">
+      <div className="link-container">
+        <Link to="/research">Research</Link>
+        <Link to="/publications">Publications</Link>
+      </div>
 
+      <div className="link-container">
+        <Link to="/software">Software</Link>
+        <Link to="/web-apps">Web Apps</Link>
+        <Link to="/datasets">Datasets</Link>
+      </div>
+
+      <div className="link-container">
+        <Link to="/contact">Contact</Link>
+        <Link to="/resources">Resources</Link>
+      </div>
+
+    </div>
+    <div className="contact">
+      <h2>Contact</h2>
+      200 Elizabeth Street,
+      {' '}
+      <br />
+      Toronto, Ontario
+      {' '}
+      <br />
+      M5G 2C4
+    </div>
+  </StyledFooter>
+);
 
 
 export default Footer;
