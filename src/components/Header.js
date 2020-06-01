@@ -16,6 +16,10 @@ const StyledHeader = styled.div`
     color: white;
     text-decoration: none;
   }
+
+  .active {
+    border-bottom: 2px solid white;
+  }
 `;
 
 const StyledLogo = styled.div`
@@ -47,10 +51,12 @@ const StyledLinks = styled.div`
     margin: 0px 30px;
     letter-spacing: 1px;
     font-family: 'Lato', sans-serif;
+    padding-bottom:2px;
+    border-bottom: 2px solid transparent;
   }
 
   & a:hover {
-    color: var(--link-hov);
+    border-bottom: 2px solid white;
   }
 `;
 
@@ -68,12 +74,12 @@ const Header = ({ page }) => (
       </Link>
     </StyledLogo>
     <StyledLinks>
-      <Link to="/research">Research</Link>
-      <Link to="/software">Software</Link>
-      <Link to="/web-apps">Web Apps</Link>
-      <Link to="/datasets">Datasets</Link>
-      <Link to="/publications">Publications</Link>
-      <Link to="/contact">Contact</Link>
+      <Link activeClassName="active" to="/research">Research</Link>
+      <Link activeClassName="active" to="/software">Software</Link>
+      <Link activeClassName="active" to="/web-apps">Web Apps</Link>
+      <Link activeClassName="active" to="/datasets">Datasets</Link>
+      <Link activeClassName="active" to="/publications">Publications</Link>
+      <Link activeClassName="active" to="/contact">Contact</Link>
     </StyledLinks>
   </StyledHeader>
 );
