@@ -1,12 +1,18 @@
-import React, {Fragment} from "react"
+import React from 'react';
 import '../styles/index.css';
 import Layout from '../components/Layout';
 import styled from 'styled-components';
-import { StaticQuery, graphql, Link } from "gatsby";
+import { StaticQuery, graphql, Link } from 'gatsby';
 import ReactTable from 'react-table-6';
 import 'react-table-6/react-table.css';
 
-import sortArrows from '../images/utils/sort-arrows.png'
+import {
+  Tab, Tabs, TabList, TabPanel,
+} from 'react-tabs';
+import DatasetPlotContainer from '../components/Plots/DatasetPlotContainer';
+import 'react-tabs/style/react-tabs.css';
+
+import sortArrows from '../images/utils/sort-arrows.png';
 
 const StyledDatasets = styled.div`
     width: 100%;
@@ -27,6 +33,7 @@ const StyledDatasets = styled.div`
             font-size: calc(0.5vw + 0.5em);
             padding: 10px 12px;
             border-radius: 50%;
+            margin-left:10px;
         }
     }
     .container {
@@ -62,119 +69,147 @@ const DatasetsQuery = graphql`
                     technology
                     keywords
                     num_samples
-                    year
+                    year_created
                 } 
             }
         }
     }
-`
+`;
 
 const filterCaseInsensitive = (filter, row) => {
-    const id = filter.pivotId || filter.id;
-    switch (typeof row[id]) {
-    case 'object':
-        // checks for metastasis label
-        if (row[id] && row[id].origin) {
-            return String('metastasis').includes(filter.value.toLowerCase());
-        }
-        // checks for disease name (additional check is to filter out null values)
-        return row[id] && row[id].name
-            ? String(row[id].name.toLowerCase()).includes(filter.value.toLowerCase())
-            : false;
-    // handles age filtering
-    case 'number':
-        return row[id].toString().includes(filter.value);
-    case 'string':
-        return String(row[id].toLowerCase()).includes(filter.value.toLowerCase());
-    default:
-        return false;
+  const id = filter.pivotId || filter.id;
+  switch (typeof row[id]) {
+  case 'object':
+    // checks for metastasis label
+    if (row[id] && row[id].origin) {
+      return String('metastasis').includes(filter.value.toLowerCase());
     }
+    // checks for disease name (additional check is to filter out null values)
+    return row[id] && row[id].name
+      ? String(row[id].name.toLowerCase()).includes(filter.value.toLowerCase())
+      : false;
+    // handles age filtering
+  case 'number':
+    return row[id].toString().includes(filter.value);
+  case 'string':
+    return String(row[id].toLowerCase()).includes(filter.value.toLowerCase());
+  default:
+    return false;
+  }
 };
 
 const columns = [{
-        Header: () => (
-            <span>
-              Name <img class="arrow" alt="arrow" src={sortArrows}/>
-            </span>
-        ),
-        accessor: 'node.name',
-        sortable: true,
-        Cell: (row) => {
-            return (<Link to={`/datasets/${row.original.node.slug}`}>{row.value}</Link>)
-        },
-    }, 
-    {
-        Header: () => (
-            <span>
-              Number of Samples <img class="arrow" alt="arrow" src={sortArrows}/>
-            </span>
-        ),
-        accessor: 'node.num_samples',
-        sortable: true,
-    }, 
-    {
-        Header: () => (
-            <span>
-              Year <img class="arrow" alt="arrow" src={sortArrows}/>
-            </span>
-        ),
-        accessor: 'node.year',
-        sortable: true,
-    },
-    {
-        Header: () => (
-            <span>
-              Technology <img class="arrow" alt="arrow" src={sortArrows}/>
-            </span>
-        ),
-        accessor: 'node.technology',
-        sortable: true,
-    },
-    {
-        Header: () => (
-            <span>
-              Short Description <img class="arrow" alt="arrow" src={sortArrows}/>
-            </span>
-        ),
-        accessor: 'node.short_desc',
-        sortable: true,
-    },
-    {
-        Header: () => (
-            <span>
-              Lab <img class="arrow" alt="arrow" src={sortArrows}/>
-            </span>
-        ),
-        accessor: 'node.lab',
-        sortable: true,
-    }
+  Header: () => (
+    <span>
+      Name
+      {' '}
+      <img className="arrow" alt="arrow" src={sortArrows} />
+    </span>
+  ),
+  accessor: 'node.name',
+  sortable: true,
+  Cell: (row) => (<Link to={`/datasets/${row.original.node.slug}`}>{row.value}</Link>),
+},
+{
+  Header: () => (
+    <span>
+      Number of Samples
+      {' '}
+      <img className="arrow" alt="arrow" src={sortArrows} />
+    </span>
+  ),
+  accessor: 'node.num_samples',
+  sortable: true,
+},
+{
+  Header: () => (
+    <span>
+      Year
+      {' '}
+      <img className="arrow" alt="arrow" src={sortArrows} />
+    </span>
+  ),
+  accessor: 'node.year_created',
+  sortable: true,
+},
+{
+  Header: () => (
+    <span>
+      Technology
+      {' '}
+      <img className="arrow" alt="arrow" src={sortArrows} />
+    </span>
+  ),
+  accessor: 'node.technology',
+  sortable: true,
+},
+{
+  Header: () => (
+    <span>
+      Short Description
+      {' '}
+      <img className="arrow" alt="arrow" src={sortArrows} />
+    </span>
+  ),
+  accessor: 'node.short_desc',
+  sortable: true,
+},
+{
+  Header: () => (
+    <span>
+      Lab
+      {' '}
+      <img className="arrow" alt="arrow" src={sortArrows} />
+    </span>
+  ),
+  accessor: 'node.lab',
+  sortable: true,
+},
 ];
 
 const Datasets = () => (
-    <Layout page="Datasets">
-        <StyledDatasets>
-            <div className="container">
-                <StaticQuery
-                    query={DatasetsQuery}
-                    render={data => (
-                        <Fragment>
-                            <h1>Datasets <span className="count">{data.allDatasetsCsv.edges.length}</span></h1>
-                            <ReactTable
-                                data={data.allDatasetsCsv.edges}
-                                columns={columns}
-                                filterable
-                                defaultFilterMethod={filterCaseInsensitive}
-                                className="-highlight"
-                                showPagination={false}
-                                pageSize={data.allDatasetsCsv.edges.length}
-                            />
-                        </Fragment>
-                    )}
-                />
-            </div>
-        </StyledDatasets>
-    </Layout>
-  
-)
+  <Layout page="Datasets">
+    <StyledDatasets>
+      <div className="container">
+        <StaticQuery
+          query={DatasetsQuery}
+          render={(data) => (
+            <>
+              <h1>
+                Datasets
+                <span className="count">{data.allDatasetsCsv.edges.length}</span>
+              </h1>
+              <Tabs>
+                <TabList>
+                  <Tab>Summary Plots</Tab>
+                  <Tab>Table of Datasets</Tab>
+                </TabList>
+
+                <TabPanel>
+                  <DatasetPlotContainer
+                    data={data}
+                  />
+                </TabPanel>
+                <TabPanel>
+                  <ReactTable
+                    data={data.allDatasetsCsv.edges}
+                    columns={columns}
+                    filterable
+                    defaultFilterMethod={filterCaseInsensitive}
+                    className="-highlight"
+                    showPagination={false}
+                    pageSize={data.allDatasetsCsv.edges.length}
+                  />
+                </TabPanel>
+              </Tabs>
+
+            </>
+          )}
+        />
+      </div>
+    </StyledDatasets>
+  </Layout>
+
+);
 
 export default Datasets;

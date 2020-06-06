@@ -94,6 +94,8 @@ const StatsContainer = (props) => {
     },
     xaxis: {
       tickformat: 'd',
+      showticklabel: true,
+      type: 'category',
     },
     showlegend: false,
   };

@@ -1,8 +1,8 @@
-import React from "react"
+import React from 'react';
 import '../styles/index.css';
-import Layout from '../components/Layout';
 import styled from 'styled-components';
 import { graphql } from 'gatsby';
+import Layout from '../components/Layout';
 
 const StyledDatasetsTemplate = styled.div`
     width: 100%;
@@ -49,52 +49,119 @@ export const query = graphql`
     datasetsCsv( slug: { eq: $slug } ) {
         name
         lab
-        year
+        year_created
+        year_updated
         slug
         long_desc
-        version
         authors
         keywords
         licensing
         num_samples
+        sample_type
         technology
         citation
-        scholar_link
+        publication_link
         scholar_link_cited
-        major_pubs_cited
         download_link
-        download_stats_link
+        contact_name
+        contact_email
+        datatype
     }
   }
-`
+  `;
 
-const DatasetsTemplate = ({data}) => {
-    const item = data.datasetsCsv
-    return (
-        <Layout page="DatasetsTemplate">
-            <StyledDatasetsTemplate>
-                <div className="container">
-                    <h1>{item.name}</h1>
-                    <div className="info">
-                        <span className="heading">Authors:</span> {item.authors} <p/>
-                        <span className="heading">Lab:</span> {item.lab} <p/>
-                        <span className="heading">Year:</span> {item.year} <p/>
-                        <span className="heading">Description:</span> {item.long_desc} <p/>
-                        <span className="heading">Number of samples:</span> {item.num_samples} <p/>
-                        <span className="heading">Technology:</span> {item.technology} <p/>
-                        <span className="heading">Version:</span> {item.version} <p/>
-                        <span className="heading">Keywords:</span> {item.keywords} <p/>
-                        <span className="heading">Licensing:</span> {item.licensing} <p/>
-                        <span className="heading">Citation:</span> {item.citation} <p/>
-                        <span className="heading">Google Scholar Link:</span> [ <a href={item.scholar_link}>Link</a> ] <p/>
-                        <span className="heading">Download Link:</span> [ <a href={item.download_link}>Link</a> ] <p/>
-                        <span className="heading">Google Scholar Link - Cited by Papers:</span> [ <a href={item.scholar_link_cited}>Link</a> ] <p/>
-                    </div>
-                </div>
-            </StyledDatasetsTemplate>
-        </Layout>
-      
-    )
-}
+
+const DatasetsTemplate = ({ data }) => {
+  const item = data.datasetsCsv;
+  return (
+    <Layout page="DatasetsTemplate">
+      <StyledDatasetsTemplate>
+        <div className="container">
+          <h1>{item.name}</h1>
+          <div className="info">
+            <span className="heading">Authors:</span>
+            {' '}
+            {item.authors}
+            {' '}
+            <p />
+            <span className="heading">Lab:</span>
+            {' '}
+            {item.lab}
+            {' '}
+            <p />
+            <span className="heading">Year:</span>
+            {' '}
+            {item.year}
+            {' '}
+            <p />
+            <span className="heading">Description:</span>
+            {' '}
+            {item.long_desc}
+            {' '}
+            <p />
+            <span className="heading">Number of samples:</span>
+            {' '}
+            {item.num_samples}
+            {' '}
+            <p />
+            <span className="heading">Technology:</span>
+            {' '}
+            {item.technology}
+            {' '}
+            <p />
+            <span className="heading">Version:</span>
+            {' '}
+            {item.version}
+            {' '}
+            <p />
+            <span className="heading">Keywords:</span>
+            {' '}
+            {item.keywords}
+            {' '}
+            <p />
+            <span className="heading">Licensing:</span>
+            {' '}
+            {item.licensing}
+            {' '}
+            <p />
+            <span className="heading">Citation:</span>
+            {' '}
+            {item.citation}
+            {' '}
+            <p />
+            <span className="heading">Google Scholar Link:</span>
+            {' '}
+            [
+            {' '}
+            <a href={item.scholar_link}>Link</a>
+            {' '}
+            ]
+            {' '}
+            <p />
+            <span className="heading">Download Link:</span>
+            {' '}
+            [
+            {' '}
+            <a href={item.download_link}>Link</a>
+            {' '}
+            ]
+            {' '}
+            <p />
+            <span className="heading">Google Scholar Link - Cited by Papers:</span>
+            {' '}
+            [
+            {' '}
+            <a href={item.scholar_link_cited}>Link</a>
+            {' '}
+            ]
+            {' '}
+            <p />
+          </div>
+        </div>
+      </StyledDatasetsTemplate>
+    </Layout>
+
+  );
+};
 
 export default DatasetsTemplate;
