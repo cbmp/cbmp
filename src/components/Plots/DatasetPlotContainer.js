@@ -49,7 +49,7 @@ const formatSamplesData = (data, options) => {
   //     colorArray: ['#78d9ff', '#02577b'], // reverse order
   //   });
   // }
-  plotData.marker.color = ['#BEBADA', '#FB8072', '#80B1D3', '#FDB462', '#B3DE69', '#E78AC3', '#FCCDE5'];
+  plotData.marker.color = ['#5096B5', '#E15759', '#F28E2C', '#BC80BD', '#A6D854', '#FF9DA7'];
 
 
   return plotData;
@@ -68,6 +68,14 @@ const formatPlatformData = (data, options) => {
     textinfo: 'label',
     hole: 0.5,
     type: 'pie',
+    textfont: {
+      color: 'white',
+      size: '1.3em',
+    },
+    hoverfont: {
+      color: 'white',
+      size: '1.3em',
+    },
   };
 
   const platforms = [...new Set(rawData.map((x) => x.platform))].sort((a, b) => a - b);
@@ -83,7 +91,8 @@ const formatPlatformData = (data, options) => {
     });
     plotData.values.push(total);
   });
-  plotData.marker.colors = ['#BEBADA', '#FB8072', '#80B1D3', '#FDB462', '#B3DE69', '#E78AC3', '#FCCDE5'];
+  // plotData.marker.colors = ['#BEBADA', '#FB8072', '#80B1D3', '#FDB462', '#B3DE69', '#E78AC3', '#FCCDE5'];
+  plotData.marker.colors = ['#5096B5', '#E15759', '#F28E2C', '#BC80BD', '#A6D854', '#FF9DA7'];
   return plotData;
 };
 
