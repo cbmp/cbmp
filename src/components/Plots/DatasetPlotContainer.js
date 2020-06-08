@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Select from 'react-select';
+import gradstop from 'gradstop';
+import styled from 'styled-components';
 import StatsPlot from './StatsPlot';
 
 const customFilterOption = (option, rawInput) => {
@@ -36,26 +38,85 @@ const formatSamplesData = (data, options) => {
     });
     plotData.y.push(total);
   });
+
+  // // making gradients for the bar charts to make it ~pretty~
+  // if (plotData.x.length < 2) {
+  //   plotData.marker.color = '#78d9ff';
+  // } else {
+  //   plotData.marker.color = gradstop({
+  //     stops: plotData.x.length,
+  //     inputFormat: 'hex',
+  //     colorArray: ['#78d9ff', '#02577b'], // reverse order
+  //   });
+  // }
+  plotData.marker.color = ['#BEBADA', '#FB8072', '#80B1D3', '#FDB462', '#B3DE69', '#E78AC3', '#FCCDE5'];
+
+
   return plotData;
 };
 
+const formatPlatformData = (data, options) => {
+  let rawData = [];
+  options.forEach((x) => {
+    rawData = rawData.concat(data[x.value]);
+  });
+  const plotData = {
+    labels: [],
+    values: [],
+    marker: {},
+    hoverinfo: 'label+percent',
+    textinfo: 'label',
+    hole: 0.5,
+    type: 'pie',
+  };
+
+  const platforms = [...new Set(rawData.map((x) => x.platform))].sort((a, b) => a - b);
+  platforms.forEach((platform) => {
+    // adding in platform data
+    plotData.labels.push(platform);
+    // summing platform data up
+    let total = 0;
+    rawData.forEach((item) => {
+      if (item.platform === platform) {
+        total += 1;
+      }
+    });
+    plotData.values.push(total);
+  });
+  plotData.marker.colors = ['#BEBADA', '#FB8072', '#80B1D3', '#FDB462', '#B3DE69', '#E78AC3', '#FCCDE5'];
+  return plotData;
+};
+
+const StyledDatasetPlotContainer = styled.div`
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+
+  &* {
+    width: 48%;
+  }
+`;
+
 const DatasetPlotContainer = (props) => {
   const { data } = props;
-  const [samplesData, setSamplesData] = useState([]);
+  const [samplesData, setSamplesData] = useState({});
+  const [platformData, setPlatformData] = useState({});
   const memberData = {};
 
   // show filtered data based on selected members
   const handleMembersChange = (event) => {
     if (event === null || event.length === 0) {
-    //   setGridData(data);
-      console.log('null');
+      setSamplesData(formatSamplesData([], []));
+      setPlatformData(formatPlatformData([], []));
     } else {
       setSamplesData(formatSamplesData(memberData, event));
+      setPlatformData(formatPlatformData(memberData, event));
     }
   };
 
   // formatting data into {pi: [data], pi: [data],...}
-  data.allDatasetsCsv.edges.forEach((x) => {
+  data.forEach((x) => {
     if (Object.keys(memberData).indexOf(x.node.lab) === -1) {
       memberData[x.node.lab] = [x.node];
     } else {
@@ -67,7 +128,9 @@ const DatasetPlotContainer = (props) => {
 
   useEffect(() => {
     setSamplesData(formatSamplesData(memberData, memberOptions));
+    setPlatformData(formatPlatformData(memberData, memberOptions));
   }, []);
+
   const samplesLayout = {
     title: 'Number of Samples Per Year',
     autosize: true,
@@ -80,6 +143,16 @@ const DatasetPlotContainer = (props) => {
       type: 'category',
     },
     showlegend: false,
+    width: 550,
+    height: 500,
+  };
+
+  const platformLayout = {
+    title: 'Platforms Hosted On',
+    autosize: true,
+    showlegend: false,
+    width: 550,
+    height: 500,
   };
 
   return (
@@ -92,11 +165,19 @@ const DatasetPlotContainer = (props) => {
         placeholder="Select members to include..."
         onChange={handleMembersChange}
       />
-      <StatsPlot
-        data={samplesData}
-        layout={samplesLayout}
-        className="samplesPlot"
-      />
+      <StyledDatasetPlotContainer>
+
+        <StatsPlot
+          data={samplesData}
+          layout={samplesLayout}
+          className="samplesPlot"
+        />
+        <StatsPlot
+          data={platformData}
+          layout={platformLayout}
+          className="platformPlot"
+        />
+      </StyledDatasetPlotContainer>
     </>
   );
 };

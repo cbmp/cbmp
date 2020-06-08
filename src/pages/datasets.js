@@ -65,6 +65,7 @@ const DatasetsQuery = graphql`
                     name
                     lab
                     slug
+                    platform
                     short_desc
                     technology
                     keywords
@@ -187,7 +188,7 @@ const Datasets = () => (
 
                 <TabPanel>
                   <DatasetPlotContainer
-                    data={data}
+                    data={data.allDatasetsCsv.edges}
                   />
                 </TabPanel>
                 <TabPanel>

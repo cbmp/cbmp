@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import * as d3 from 'd3';
 import '../../styles/index.css';
 // import Circos from 'react-circos';
 import Loadable from 'react-loadable';
