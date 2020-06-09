@@ -1,3 +1,4 @@
+/* eslint-disable import/prefer-default-export */
 import styled from 'styled-components';
 
 export const StyledIndivPage = styled.div`
@@ -21,7 +22,7 @@ export const StyledIndivPage = styled.div`
         font-family: 'Rubik', sans-serif; 
     }
     a {
-        width: 25%;
+        // width: 25%;
         text-align: center;
         padding: 5px 10px;
         background: var(--main-color-lighter);
@@ -53,7 +54,7 @@ export const StyledIndivPage = styled.div`
     .container {
         font-size:calc(0.5vw + 0.5em);
         width: 80%;
-        margin-bottom:20px;
+        margin-bottom:40px;
         .section {
             padding: 20px;
             background: var(--contrast-bg);
@@ -66,37 +67,54 @@ export const StyledIndivPage = styled.div`
         display: flex;
         justify-content: space-between;
         line-height: 1.5em;
+        height: 35vh;
         .section {
-            width: 45%;
+            width: 46%;
             position: relative;
         } 
-        .download {
+        .info-section {
             display:flex;
-            justify-content: flex-start;
-            margin-top:40px;
+            flex-direction:column;
+            justify-content: space-between;
+        }
+        .info-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 80%;
+        }
+        .long-desc {
+            overflow-y: auto;
+        }
+        .download {
+            align-self: end;
             a {
-                width: 20%;
                 font-size: calc(0.5vw + 0.4em);
-                padding: 0px 3px;
+                padding: 3px 10px;
                 margin-right: 20px;
             }
         }
     }
+    .citation-contact {
+        h4 {
+            margin:10px 0 20px 0;
+        }
+        height:auto;
+    }
     .citation {
-        display: flex;
         line-height: 1.5em;
-        .section {
+        & .section {
             width: 100%;
         }
+        
     }
     .links {
         display:flex;
         justify-content: flex-start;
         margin-top:40px;
         a {
-            width: 10%;
             font-size: calc(0.5vw + 0.4em);
-            padding: 0px 3px;
+            padding: 3px 10px;
             margin-right: 20px;
         }
     }
@@ -111,5 +129,23 @@ export const StyledIndivPage = styled.div`
         margin-right: 10px;
     }
     
+    .stats {
+        display: flex;
+        flex-direction:column;
+        .section {
+            width: calc(100% - 40px);
+        }
+        h4 {
+            margin:10px 0 20px 0;
+        }
+        
+        .stats-list {
+            width:100%;
+            display:flex;
+            flex-direction:row;
+            flex-wrap:wrap;
+            justify-content: space-between;
+        }
+    }
 
 `;

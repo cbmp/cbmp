@@ -56,39 +56,49 @@ const SoftwareTemplate = ({ data }) => {
           <h3>{item.short_desc}</h3>
         </div>
         <div className="container info">
-          <div className="section">
+          <div className="section long-desc">
             <span className="item-heading">Description:</span>
             {' '}
             {item.long_desc}
             {' '}
-            <p />
           </div>
-          <div className="section">
-            <span className="item-heading">Authors:</span>
-            {' '}
-            {item.authors}
-            {' '}
-            <p />
-            <span className="item-heading">Lab:</span>
-            {' '}
-            {item.lab}
-            {' '}
-            <p />
-            <span className="item-heading">Version:</span>
-            {' '}
-            {item.version}
-            {' '}
-            <p />
-            <span className="item-heading">Keywords:</span>
-            {' '}
-            {item.keywords}
-            {' '}
-            <p />
-            <span className="item-heading">Licensing:</span>
-            {' '}
-            {item.licensing}
-            {' '}
-            <p />
+          <div className="section info-section">
+            <div className="info-list">
+              <div className="item">
+                <span className="item-heading">Authors:</span>
+                {' '}
+                {item.authors}
+                {' '}
+              </div>
+
+              <div className="item">
+                <span className="item-heading">Lab:</span>
+                {' '}
+                {item.lab}
+                {' '}
+              </div>
+
+              <div className="item">
+                <span className="item-heading">Version:</span>
+                {' '}
+                {item.version}
+                {' '}
+              </div>
+
+              <div className="item">
+                <span className="item-heading">Keywords:</span>
+                {' '}
+                {item.keywords}
+                {' '}
+              </div>
+
+              <div className="item">
+                <span className="item-heading">Licensing:</span>
+                {' '}
+                {item.licensing}
+                {' '}
+              </div>
+            </div>
             <div className="download">
               <a target="_blank" rel="noopener noreferrer" href={item.download_link}>Download</a>
             </div>
