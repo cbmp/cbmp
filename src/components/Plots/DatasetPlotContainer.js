@@ -32,7 +32,7 @@ const formatSamplesData = (data, options) => {
     // summing year data up
     let total = 0;
     rawData.forEach((item) => {
-      if (parseInt(item.year_created) === year && item.num_samples !== '') {
+      if (parseInt(item.year_created) === year && item.num_samples !== '-') {
         total += parseInt(item.num_samples);
       }
     });
