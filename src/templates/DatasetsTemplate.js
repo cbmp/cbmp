@@ -91,7 +91,7 @@ const DatasetsTemplate = ({ data }) => {
             <p />
             <span className="heading">Year:</span>
             {' '}
-            {item.year}
+            {item.year_created}
             {' '}
             <p />
             <span className="heading">Description:</span>
@@ -133,7 +133,7 @@ const DatasetsTemplate = ({ data }) => {
             {' '}
             [
             {' '}
-            <a href={item.scholar_link}>Link</a>
+            <a href={item.publication_link}>Link</a>
             {' '}
             ]
             {' '}
