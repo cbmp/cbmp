@@ -70,11 +70,14 @@ const formatPlatformData = (data, options) => {
     type: 'pie',
     textfont: {
       color: 'white',
-      size: '1.3em',
+      size: 14,
     },
-    hoverfont: {
-      color: 'white',
-      size: '1.3em',
+    hoverlabel: {
+      font: {
+        color: 'white',
+        size: 14,
+      },
+
     },
   };
 
@@ -103,7 +106,7 @@ const StyledDatasetPlotContainer = styled.div`
   margin-top: 20px;
 
   &* {
-    width: 48%;
+    width: 50%;
   }
 `;
 
