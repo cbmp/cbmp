@@ -13,6 +13,7 @@ export const query = graphql`
         year_created
         year_updated
         slug
+        short_desc
         long_desc
         authors
         doi
@@ -47,8 +48,8 @@ const DatasetsTemplate = ({ data }) => {
         <div className="container info">
           <div className="section long-desc">
 
-            {/* <span className="item-heading">Description:</span>
-            {' '} */}
+            <span className="item-heading">Description:</span>
+            {' '}
             {item.long_desc}
           </div>
           <div className="section info-section">
@@ -87,36 +88,7 @@ const DatasetsTemplate = ({ data }) => {
             </div>
           </div>
         </div>
-        <div className="container stats">
-          <div className="section">
-            {item.num_samples !== '-' ? (
-              <h4>
-                {item.num_samples}
-                {' '}
-                samples
-              </h4>
-            ) : null}
-            <div className="stats-list">
-              <div className="item">
-                <span className="item-heading">Technology:</span>
-                {item.technology}
-              </div>
-              <div className="item">
-                <span className="item-heading">Sample Type:</span>
-                {item.sample_type}
-              </div>
-              <div className="item">
-                <span className="item-heading">Species:</span>
-                {item.species}
-              </div>
-              <div className="item">
-                <span className="item-heading">Datatype:</span>
-                {item.datatype}
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="container info citation-contact">
+        <div className="container citation-contact">
           <div className="section">
             <h4>Citation</h4>
             {item.citation === '' ? 'Citation not available.' : item.citation}
@@ -133,11 +105,58 @@ const DatasetsTemplate = ({ data }) => {
               )}
             </div>
           </div>
+          <div className="section stats">
+            {item.num_samples !== '-' ? (
+              <h4>
+                {item.num_samples}
+                {' '}
+                samples
+              </h4>
+            ) : null}
+            <div className="stats-list">
+              <div className="item">
+                <span className="item-heading">Technology:</span>
+                {item.technology === '' ? (
+                  'N/A'
+                ) : (
+                  item.technology
+                )}
+              </div>
+              <br />
+              <div className="item">
+                <span className="item-heading">Sample Type:</span>
+                {item.sample_type === '' ? (
+                  'N/A'
+                ) : (
+                  item.sample_type
+                )}
+              </div>
+              <br />
+              <div className="item">
+                <span className="item-heading">Species:</span>
+                {item.species === '' ? (
+                  'N/A'
+                ) : (
+                  item.species
+                )}
+              </div>
+              <br />
+              <div className="item">
+                <span className="item-heading">Datatype:</span>
+                {item.datatype === '' ? (
+                  'N/A'
+                ) : (
+                  item.datatype
+                )}
+              </div>
+            </div>
+          </div>
           <div className="section contact">
+            <br />
             <div className="item">
               This dataset is
               {' '}
-              {item.public === 'Yes' ? 'public' : 'available by request only'}
+              <span className="bold">{item.public === 'Yes' ? 'public' : 'available by request only'}</span>
               .
             </div>
             <p />
@@ -151,7 +170,8 @@ const DatasetsTemplate = ({ data }) => {
             <div className="item">
               <span className="item-heading">Contact email:</span>
               {' '}
-              {item.contact_email}
+              <a href={`mailto:${item.contact_email}`}>Email</a>
+
               {' '}
             </div>
           </div>

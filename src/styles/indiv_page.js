@@ -31,10 +31,10 @@ export const StyledIndivPage = styled.div`
         text-decoration: none;
         font-family: 'Rubik', sans-serif;
         font-size: calc(0.5vw + 0.5em);
-        border: 2px solid var(--main-color-lighter);
+        // border: 2px solid var(--main-color-lighter);
         &:hover {
             background:white;
-            color: var(--main-color-lighter);
+            color: var(--main-color);
         }
     }
 
@@ -96,10 +96,16 @@ export const StyledIndivPage = styled.div`
         }
     }
     .citation-contact {
+        display: flex;
+        justify-content: space-between;
+        height:auto;
         h4 {
             margin:10px 0 20px 0;
         }
-        height:auto;
+        
+        .section {
+            width: 29%;
+        }
     }
     .citation {
         line-height: 1.5em;
@@ -142,9 +148,18 @@ export const StyledIndivPage = styled.div`
         .stats-list {
             width:100%;
             display:flex;
-            flex-direction:row;
-            flex-wrap:wrap;
+            flex-direction:column;
             justify-content: space-between;
+        }
+    }
+    .contact {
+        a {
+            padding: 3px 8px;
+            font-size: calc(0.4vw + 0.4em);
+        }
+        .bold {
+            font-weight: bold;
+            font-size: 0.97em;
         }
     }
 
