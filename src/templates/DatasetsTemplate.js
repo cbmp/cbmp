@@ -60,18 +60,21 @@ const DatasetsTemplate = ({ data }) => {
                 {item.authors}
                 {' '}
               </div>
+              <br />
               <div className="item">
                 <span className="item-heading">Lab:</span>
                 {' '}
                 {item.lab}
                 {' '}
               </div>
+              <br />
               <div className="item">
                 <span className="item-heading">Year:</span>
                 {' '}
                 {item.year_created}
                 {' '}
               </div>
+              <br />
               <div className="item">
                 <span className="item-heading">Keywords:</span>
                 {' '}
@@ -152,7 +155,7 @@ const DatasetsTemplate = ({ data }) => {
             </div>
           </div>
           <div className="section contact">
-            <br />
+            <h4>Contact</h4>
             <div className="item">
               This dataset is
               {' '}

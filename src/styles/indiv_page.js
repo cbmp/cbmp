@@ -78,10 +78,10 @@ export const StyledIndivPage = styled.div`
             justify-content: space-between;
         }
         .info-list {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 80%;
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: space-between;
+            // height: 80%;
         }
         .long-desc {
             overflow-y: auto;
@@ -100,7 +100,7 @@ export const StyledIndivPage = styled.div`
         justify-content: space-between;
         height:auto;
         h4 {
-            margin:10px 0 20px 0;
+            margin:0px 0 20px 0;
         }
         
         .section {
@@ -142,7 +142,7 @@ export const StyledIndivPage = styled.div`
             width: calc(100% - 40px);
         }
         h4 {
-            margin:10px 0 20px 0;
+            margin:0px 0 20px 0;
         }
         
         .stats-list {
@@ -160,6 +160,9 @@ export const StyledIndivPage = styled.div`
         .bold {
             font-weight: bold;
             font-size: 0.97em;
+        }
+        h4 {
+            margin:0px 0 20px 0;
         }
     }
 
