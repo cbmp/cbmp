@@ -2,6 +2,7 @@ import { Link } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
 import logo from '../images/logo-white.png';
+import BurgerMenu from './BurgerMenu';
 
 const StyledHeader = styled.div`
   position:${(props) => (props.page === 'home' ? 'absolute' : 'absolute')}; // second fixed
@@ -63,7 +64,7 @@ const StyledLinks = styled.div`
 
 
 const Header = ({ page }) => (
-  <StyledHeader page={page}>
+  <StyledHeader page={page} className="header">
     <StyledLogo>
       <Link to="/"><img alt="logo" src={logo} /></Link>
       <Link to="/">
@@ -74,6 +75,7 @@ const Header = ({ page }) => (
         and Medicine Program
       </Link>
     </StyledLogo>
+    <BurgerMenu />
     <StyledLinks className="header-links">
       <Link activeClassName="active" to="/research">Research</Link>
       <Link activeClassName="active" to="/software">Software</Link>

@@ -2,7 +2,6 @@ import React, { Fragment } from 'react';
 import { Helmet } from 'react-helmet';
 import Header from './Header';
 import Footer from './Footer';
-import BurgerMenu from './BurgerMenu';
 
 const Layout = ({ children, page }) => (
   <>
@@ -15,7 +14,6 @@ const Layout = ({ children, page }) => (
     ) : (
       <Header />
     )}
-    <BurgerMenu />
     <main>{children}</main>
     <Footer />
   </>

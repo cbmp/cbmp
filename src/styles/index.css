@@ -43,6 +43,9 @@ a:hover {
     .header-links {
         display: none;
     }
+    .header {
+        position:fixed !important;
+    }
 }
 
 /* Secondary pages */
