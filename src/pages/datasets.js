@@ -182,15 +182,10 @@ const Datasets = () => (
               </h1>
               <Tabs>
                 <TabList>
-                  <Tab>Summary Plots</Tab>
                   <Tab>Table of Datasets</Tab>
+                  <Tab>Summary Plots</Tab>
                 </TabList>
 
-                <TabPanel>
-                  <DatasetPlotContainer
-                    data={data.allDatasetsCsv.edges}
-                  />
-                </TabPanel>
                 <TabPanel>
                   <ReactTable
                     data={data.allDatasetsCsv.edges}
@@ -200,6 +195,11 @@ const Datasets = () => (
                     className="-highlight"
                     showPagination={false}
                     pageSize={data.allDatasetsCsv.edges.length}
+                  />
+                </TabPanel>
+                <TabPanel>
+                  <DatasetPlotContainer
+                    data={data.allDatasetsCsv.edges}
                   />
                 </TabPanel>
               </Tabs>

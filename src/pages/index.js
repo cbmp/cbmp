@@ -1,12 +1,12 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react';
+import styled from 'styled-components';
 import '../styles/index.css';
+import scrollTo from 'gatsby-plugin-smoothscroll';
 import Layout from '../components/Layout';
 // import Mission from '../components/Home/Mission';
 import Members from '../components/Home/Members';
 import bg from '../images/bg-dark.jpg';
 import Header from '../components/Header';
-import scrollTo from 'gatsby-plugin-smoothscroll';
 
 const StyledHome = styled.div`
   display: flex;
@@ -54,7 +54,7 @@ const StyledHome = styled.div`
     background: rgb(0,0,0,0.3);
     border-radius:30px;
   }
-`
+`;
 
 const StyledButton = styled.button`
   margin-top: 60px;
@@ -80,31 +80,31 @@ const StyledButton = styled.button`
 
 const IndexPage = () => (
   <Layout page="home">
-    <Header page="home"/>
+    {/* <Header page="home"/> */}
     <StyledHome>
       <div className="container">
         <div className="intro">
-            A home to scientists and clinicians 
-                focused on computational methods 
-                for fully exploiting cancer data.
+          A home to scientists and clinicians
+          focused on computational methods
+          for fully exploiting cancer data.
         </div>
         <div className="statement">
-              The Computational Biology and Medicine Program (CBMP) 
-              is home to scientists and clinicians focused on computational 
-              methods for fully exploiting cancer data. CBMP will formulate 
-              and test scientific hypotheses answerable by new computational 
-              methods that advance basic, translational, and clinical cancer 
-              research. The program will also inform the scope of institutional 
-              infrastructure projects and software to best support data science 
-              efforts.
+          The Computational Biology and Medicine Program (CBMP)
+          is home to scientists and clinicians focused on computational
+          methods for fully exploiting cancer data. CBMP will formulate
+          and test scientific hypotheses answerable by new computational
+          methods that advance basic, translational, and clinical cancer
+          research. The program will also inform the scope of institutional
+          infrastructure projects and software to best support data science
+          efforts.
         </div>
       </div>
       <StyledButton onClick={() => scrollTo('#members')}>v</StyledButton>
     </StyledHome>
     {/* <Mission/> */}
-    <Members/>
+    <Members />
   </Layout>
-  
-)
 
-export default IndexPage
+);
+
+export default IndexPage;

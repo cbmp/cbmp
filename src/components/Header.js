@@ -20,6 +20,7 @@ const StyledHeader = styled.div`
   .active {
     border-bottom: 2px solid white;
   }
+
 `;
 
 const StyledLogo = styled.div`
@@ -73,7 +74,7 @@ const Header = ({ page }) => (
         and Medicine Program
       </Link>
     </StyledLogo>
-    <StyledLinks>
+    <StyledLinks className="header-links">
       <Link activeClassName="active" to="/research">Research</Link>
       <Link activeClassName="active" to="/software">Software</Link>
       <Link activeClassName="active" to="/web-apps">Web Apps</Link>
