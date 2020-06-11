@@ -48,6 +48,15 @@ a:hover {
     }
 }
 
+.bm-item {
+    width:auto;
+    padding-left:10px;
+    border-left: 2px solid transparent;
+}
+.bm-item:hover{
+    border-left: 2px solid white;
+}
+
 /* Secondary pages */
 .section {
     width: 60%;

@@ -45,6 +45,7 @@ const BurgerMenu = () => {
     bmItem: {
       color: 'white',
       display: 'inline-block',
+      margin: '10px 0',
     },
     bmOverlay: {
       background: 'rgba(0, 0, 0, 0.3)',
@@ -52,7 +53,7 @@ const BurgerMenu = () => {
   };
 
   return (
-    <Menu className="burger-menu" styles={styles} noOverlay right isOpen={false}>
+    <Menu className="burger-menu" styles={styles} noOverlay right disableAutoFocus isOpen={false}>
       <Link to="/research">Research</Link>
       <Link to="/software">Software</Link>
       <Link to="/web-apps">Web Apps</Link>
