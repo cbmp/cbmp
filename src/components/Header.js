@@ -2,7 +2,7 @@ import { Link } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
 import logo from '../images/logo-white.png';
-import BurgerMenu from './BurgerMenu';
+
 
 const StyledHeader = styled.div`
   position:${(props) => (props.page === 'home' ? 'absolute' : 'absolute')}; // second fixed
@@ -17,6 +17,9 @@ const StyledHeader = styled.div`
     color: white;
     text-decoration: none;
   }
+  @media only screen and (max-width: 1081px) {
+    background: ${(props) => (props.page === 'home' ? 'rgb(2,87,123,0.2)' : 'var(--header-bg)')};
+  }
 
   .active {
     border-bottom: 2px solid white;
@@ -27,7 +30,6 @@ const StyledHeader = styled.div`
 const StyledLogo = styled.div`
   margin-left: 40px;
   float:left;
-  color: white;
   font-family: 'Lato', sans-serif;
   display: flex;
   justify-content: space-between;
@@ -75,7 +77,6 @@ const Header = ({ page }) => (
         and Medicine Program
       </Link>
     </StyledLogo>
-    <BurgerMenu />
     <StyledLinks className="header-links">
       <Link activeClassName="active" to="/research">Research</Link>
       <Link activeClassName="active" to="/software">Software</Link>
