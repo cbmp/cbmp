@@ -1,9 +1,10 @@
 :root {
-    --main-color: #02577b;
+    --main-color: #1d7597;
+    /* #02577b; */
     --main-color-lighter:#1d7597;
-    --header-bg:#02577b;
+    --header-bg:#11759c;
     --contrast-bg: #f7f7f7;
-    --footer-bg: #02577b;
+    --footer-bg: #11759c;
     --link-hov:#fab058;
     --link-hov-dark:#df861c;
     --disabled-link:#bfbfbf;
@@ -30,6 +31,10 @@ a {
 
 a:hover {
     transition: 0.3s;
+}
+
+h1 {
+    color: var(--main-color);
 }
 
 /* Burger Menu */

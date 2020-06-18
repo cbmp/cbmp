@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/index.css';
-import Layout from '../components/Layout';
 import styled from 'styled-components';
 import { StaticQuery, graphql, Link } from 'gatsby';
 import ReactTable from 'react-table-6';
@@ -11,6 +10,10 @@ import {
 } from 'react-tabs';
 import DatasetPlotContainer from '../components/Plots/DatasetPlotContainer';
 import 'react-tabs/style/react-tabs.css';
+
+import { Popup } from 'semantic-ui-react';
+import Layout from '../components/Layout';
+import 'semantic-ui-css/semantic.min.css';
 
 import sortArrows from '../images/utils/sort-arrows.png';
 
@@ -49,6 +52,20 @@ const StyledDatasets = styled.div`
         float: right;
     }
 
+    .name-cell {
+      display:flex;
+      align-items:center;
+      flex-direction:row;
+      justify-content:flex-start;
+      
+      .qmark {
+        font-size: 0.7em;
+        font-weight: bold;
+        align-self: flex-start;
+        cursor: pointer;
+        margin-left:6px;
+      }
+    }
     
 `;
 
@@ -109,7 +126,16 @@ const columns = [{
   ),
   accessor: 'node.name',
   sortable: true,
-  Cell: (row) => (<Link to={`/datasets/${row.original.node.slug}`}>{row.value}</Link>),
+  Cell: (row) => (
+    <div className="name-cell">
+      <Link to={`/datasets/${row.original.node.slug}`}>{row.value}</Link>
+      <Popup hoverable trigger={<div className="qmark">(?)</div>}>
+        <Popup.Content>
+          {row.original.node.short_desc}
+        </Popup.Content>
+      </Popup>
+    </div>
+  ),
 },
 {
   Header: () => (
@@ -119,6 +145,7 @@ const columns = [{
       <img className="arrow" alt="arrow" src={sortArrows} />
     </span>
   ),
+  sortMethod(a, b) { return b - a; },
   accessor: 'node.num_samples',
   sortable: true,
 },
@@ -132,6 +159,7 @@ const columns = [{
   ),
   accessor: 'node.year_created',
   sortable: true,
+  sortMethod(a, b) { return b - a; },
 },
 {
   Header: () => (
@@ -142,17 +170,6 @@ const columns = [{
     </span>
   ),
   accessor: 'node.technology',
-  sortable: true,
-},
-{
-  Header: () => (
-    <span>
-      Short Description
-      {' '}
-      <img className="arrow" alt="arrow" src={sortArrows} />
-    </span>
-  ),
-  accessor: 'node.short_desc',
   sortable: true,
 },
 {

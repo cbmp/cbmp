@@ -9,7 +9,6 @@ const StyledHeader = styled.div`
   width:100%;
   background: ${(props) => (props.page === 'home' ? 'none' : 'var(--header-bg)')};
   padding:5px 0px;
-  height: 70px;
   top: 0px;
   z-index:999;
 

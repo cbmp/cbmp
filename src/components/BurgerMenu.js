@@ -2,6 +2,7 @@ import { slide as Menu } from 'react-burger-menu';
 import { Link } from 'gatsby';
 import React from 'react';
 
+
 const BurgerMenu = () => {
   const showSettings = (event) => {
     event.preventDefault();

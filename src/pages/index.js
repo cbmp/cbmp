@@ -5,7 +5,7 @@ import scrollTo from 'gatsby-plugin-smoothscroll';
 import Layout from '../components/Layout';
 // import Mission from '../components/Home/Mission';
 import Members from '../components/Home/Members';
-import bg from '../images/bg-dark.jpg';
+import bg from '../images/bg.jpg';
 import Header from '../components/Header';
 
 const StyledHome = styled.div`
