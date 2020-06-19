@@ -83,7 +83,7 @@ const Grid = ({ data, type }) => {
   const licensing = [...new Set(data.map((x) => x.node.licensing))];
   const licensingOptions = [];
   licensing.forEach((x) => {
-    if (x !== '') {
+    if (x !== '-') {
       licensingOptions.push({ value: x, label: x });
     }
   });

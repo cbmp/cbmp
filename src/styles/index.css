@@ -33,7 +33,7 @@ a:hover {
     transition: 0.3s;
 }
 
-h1 {
+h1, h2 {
     color: var(--main-color);
 }
 

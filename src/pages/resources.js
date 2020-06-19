@@ -18,6 +18,11 @@ const StyledResources = styled.div`
     // justify-content; center;
     flex-direction: column;
     margin-top:80px;
+    color: var(--main-color);
+
+    a {
+      color: var(--link-hov-dark);
+    }
     
     h1 {
         font-size:calc(1.8vw + 0.7em);
@@ -67,6 +72,12 @@ const StyledResources = styled.div`
         display:flex;
         justify-content:center;
         align-items: center;
+    }
+
+    iframe {
+      width:800px;
+      margin: auto;
+      height:800px;
     }
     
 `;
