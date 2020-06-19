@@ -152,6 +152,17 @@ const Resources = () => {
                 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfl8cTz1akPFjMg1uUBvTuKPoo18flFUTk8r_rkt495OYZLyA/viewform?embedded=true" width="700" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
               </div>
             </div>
+
+            <div className="container">
+              <div className="resource-container">
+                <h2>Enabling Google Analytics on your Website or Web App</h2>
+                <span>
+                This document provides a brief overview on the set-up procedure to enable google analytics on your website or web app. This allows CBMP to accurately collect usage statistics for your web app.
+                <br/><br/>
+                </span>
+                <iframe src="https://docs.google.com/document/d/e/2PACX-1vRxzJ5psM3DU__cErsfWaRyg-Zp6OeKI4r7pD0p1YnmEcfYO4lRKdwWjqH6hjoLNQJnWzTonFy2R8QM/pub?embedded=true"> width="800" height="800" frameborder="1" marginheight="0" marginwidth="0">Loading…></iframe>
+              </div>
+            </div>
             </>
 
           ) : (
