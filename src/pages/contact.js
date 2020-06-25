@@ -19,11 +19,12 @@ const StyledContact = styled.div`
     // justify-content; center;
     flex-direction: column;
     margin-top:80px;
-    
+    color: var(--main-color);
     h1 {
         font-size:calc(1.8vw + 0.7em);
         font-family: 'Rubik', sans-serif; 
     }
+
     img {
       max-width: 300px;
     }

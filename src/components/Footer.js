@@ -63,6 +63,7 @@ const StyledFooter = styled.div`
             font-weight: none;
             border-bottom: 1px solid white;
             padding-bottom:3px;
+            color: white;
         }
         text-align: center;
         color: white;
