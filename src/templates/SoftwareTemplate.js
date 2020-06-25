@@ -45,6 +45,7 @@ export const query = graphql`
 
 const SoftwareTemplate = ({ data }) => {
   const item = data.softwareCsv;
+  console.log(data.dlStatsJson);
   const { stats } = data.dlStatsJson;
   const citedBy = data.gsSoftwareStatsJson.cited;
 
@@ -109,19 +110,19 @@ const SoftwareTemplate = ({ data }) => {
         </div>
         <div className="container citation">
           <div className="section">
-            {item.citation === '' ? 'Citation not available.' : item.citation}
+            {item.citation === '-' ? 'Citation not available.' : item.citation}
             <div className="links">
-              {item.doi === '' ? (
+              {item.doi === '-' ? (
                 <a className="disabled">DOI</a>
               ) : (
                 <a target="_blank" rel="noopener noreferrer" href={`http://doi.org/${item.doi}`}>DOI</a>
               )}
-              {item.scholar_link === '' ? (
+              {item.scholar_link === '-' ? (
                 <a className="disabled">Google Scholar</a>
               ) : (
                 <a target="_blank" rel="noopener noreferrer" href={item.scholar_link}>Google Scholar</a>
               )}
-              {item.scholar_link_cited === '' ? (
+              {item.scholar_link_cited === '-' ? (
                 <a className="disabled">Cited By</a>
               ) : (
                 <a target="_blank" rel="noopener noreferrer" href={item.scholar_link_cited}>

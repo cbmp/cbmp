@@ -126,7 +126,7 @@ export const StyledIndivPage = styled.div`
         margin-top:40px;
         a {
             font-size: calc(0.5vw + 0.4em);
-            padding: 3px 10px;
+            padding: 0px 10px;
             margin-right: 20px;
         }
     }

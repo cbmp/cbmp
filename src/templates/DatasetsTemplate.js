@@ -94,14 +94,14 @@ const DatasetsTemplate = ({ data }) => {
         <div className="container citation-contact">
           <div className="section">
             <h4>Citation</h4>
-            {item.citation === '' ? 'Citation not available.' : item.citation}
+            {item.citation === '-' || item.citation === '' ? 'Citation not available.' : item.citation}
             <div className="links">
-              {item.doi === '' ? (
+              {item.doi === '-' || item.doi === '' ? (
                 <a className="disabled">DOI</a>
               ) : (
                 <a target="_blank" rel="noopener noreferrer" href={`http://doi.org/${item.doi}`}>DOI</a>
               )}
-              {item.publication_link === '' ? (
+              {item.publication_link === '-' || item.publication_link === '' ? (
                 <a className="disabled">Publication Link</a>
               ) : (
                 <a target="_blank" rel="noopener noreferrer" href={item.publication_link}>Publication Link</a>
@@ -109,7 +109,7 @@ const DatasetsTemplate = ({ data }) => {
             </div>
           </div>
           <div className="section stats">
-            {item.num_samples !== '-' ? (
+            {item.num_samples !== '-' || item.num_samples !== '' ? (
               <h4>
                 {item.num_samples}
                 {' '}
@@ -119,7 +119,7 @@ const DatasetsTemplate = ({ data }) => {
             <div className="stats-list">
               <div className="item">
                 <span className="item-heading">Technology:</span>
-                {item.technology === '' ? (
+                {item.technology === '-' || item.technology === '' ? (
                   'N/A'
                 ) : (
                   item.technology
@@ -128,7 +128,7 @@ const DatasetsTemplate = ({ data }) => {
 
               <div className="item">
                 <span className="item-heading">Sample Type:</span>
-                {item.sample_type === '' ? (
+                {item.sample_type === '-' || item.sample_type === '' ? (
                   'N/A'
                 ) : (
                   item.sample_type
@@ -137,7 +137,7 @@ const DatasetsTemplate = ({ data }) => {
 
               <div className="item">
                 <span className="item-heading">Species:</span>
-                {item.species === '' ? (
+                {item.species === '-' || item.species === '' ? (
                   'N/A'
                 ) : (
                   item.species
@@ -146,7 +146,7 @@ const DatasetsTemplate = ({ data }) => {
 
               <div className="item">
                 <span className="item-heading">Datatype:</span>
-                {item.datatype === '' ? (
+                {item.datatype === '-' || item.datatype === '' ? (
                   'N/A'
                 ) : (
                   item.datatype
