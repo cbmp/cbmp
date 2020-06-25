@@ -14,7 +14,7 @@ body {
     overflow-x:hidden;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    color:var(--main-color);
+    color:var(--main-color) !important;
 }
 
 main {
