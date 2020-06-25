@@ -125,7 +125,7 @@ const DatasetsTemplate = ({ data }) => {
                   item.technology
                 )}
               </div>
-              <br />
+
               <div className="item">
                 <span className="item-heading">Sample Type:</span>
                 {item.sample_type === '' ? (
@@ -134,7 +134,7 @@ const DatasetsTemplate = ({ data }) => {
                   item.sample_type
                 )}
               </div>
-              <br />
+
               <div className="item">
                 <span className="item-heading">Species:</span>
                 {item.species === '' ? (
@@ -143,7 +143,7 @@ const DatasetsTemplate = ({ data }) => {
                   item.species
                 )}
               </div>
-              <br />
+
               <div className="item">
                 <span className="item-heading">Datatype:</span>
                 {item.datatype === '' ? (

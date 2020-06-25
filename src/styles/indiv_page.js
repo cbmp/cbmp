@@ -9,17 +9,22 @@ export const StyledIndivPage = styled.div`
     flex-direction: column;
     margin-top:80px;
     padding: 30px 0px 80px 0px;
+    color:var(--main-color);
+
     h1 {
+        margin-top:40px;
         font-size:calc(1.8vw + 1.5em);
         font-family: 'Rubik', sans-serif; 
     }
     h3 {
         font-size:calc(0.8vw + 0.8em);
         font-family: 'Rubik', sans-serif; 
+        margin-bottom:20px;
     }
     h4 {
         font-size:calc(0.7vw + 0.7em);
         font-family: 'Rubik', sans-serif; 
+        margin-bottom:20px;
     }
     a {
         // width: 25%;
@@ -58,6 +63,7 @@ export const StyledIndivPage = styled.div`
         .section {
             padding: 20px;
             background: var(--contrast-bg);
+            line-height:2em;
         }
     }
     .title {
@@ -149,7 +155,6 @@ export const StyledIndivPage = styled.div`
             width:100%;
             display:flex;
             flex-direction:column;
-            justify-content: space-between;
         }
     }
     .contact {
