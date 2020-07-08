@@ -176,10 +176,15 @@
 		"year": "2020",
 		"month": "May"
 	}, {
-		"pageviews": "833",
-		"users": "111",
+		"pageviews": "6925",
+		"users": "458",
 		"year": "2020",
 		"month": "Jun"
+	}, {
+		"pageviews": "1200",
+		"users": "138",
+		"year": "2020",
+		"month": "Jul"
 	}]
 }, {
 	"name": "SYNERGxDB",
@@ -189,10 +194,15 @@
 		"year": "2020",
 		"month": "May"
 	}, {
-		"pageviews": "44",
-		"users": "17",
+		"pageviews": "245",
+		"users": "113",
 		"year": "2020",
 		"month": "Jun"
+	}, {
+		"pageviews": "35",
+		"users": "25",
+		"year": "2020",
+		"month": "Jul"
 	}]
 }, {
 	"name": "ToxicoDB",
@@ -202,10 +212,15 @@
 		"year": "2020",
 		"month": "May"
 	}, {
-		"pageviews": "24",
-		"users": "15",
+		"pageviews": "132",
+		"users": "73",
 		"year": "2020",
 		"month": "Jun"
+	}, {
+		"pageviews": "75",
+		"users": "40",
+		"year": "2020",
+		"month": "Jul"
 	}]
 }, {
 	"name": "XevaDB",
@@ -215,9 +230,14 @@
 		"year": "2020",
 		"month": "May"
 	}, {
-		"pageviews": "31",
-		"users": "12",
+		"pageviews": "44",
+		"users": "21",
 		"year": "2020",
 		"month": "Jun"
+	}, {
+		"pageviews": "8",
+		"users": "4",
+		"year": "2020",
+		"month": "Jul"
 	}]
 }]

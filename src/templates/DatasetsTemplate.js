@@ -91,6 +91,7 @@ const DatasetsTemplate = ({ data }) => {
             </div>
           </div>
         </div>
+        <div className="line-horiz" />
         <div className="container citation-contact">
           <div className="section">
             <h4>Citation</h4>

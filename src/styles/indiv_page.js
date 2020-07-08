@@ -101,6 +101,12 @@ export const StyledIndivPage = styled.div`
             }
         }
     }
+    .line-horiz {
+        width: 80%;
+        height: 2px;
+        background: var(--main-color);
+        margin-bottom: 40px;
+    }
     .citation-contact {
         display: flex;
         justify-content: space-between;
@@ -110,7 +116,7 @@ export const StyledIndivPage = styled.div`
         }
         
         .section {
-            width: 29%;
+            width: 32%;
         }
     }
     .citation {

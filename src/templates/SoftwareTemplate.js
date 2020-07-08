@@ -45,7 +45,6 @@ export const query = graphql`
 
 const SoftwareTemplate = ({ data }) => {
   const item = data.softwareCsv;
-  console.log(data.dlStatsJson);
   const { stats } = data.dlStatsJson;
   const citedBy = data.gsSoftwareStatsJson.cited;
 
