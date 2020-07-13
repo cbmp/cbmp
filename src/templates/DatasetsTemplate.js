@@ -22,6 +22,7 @@ export const query = graphql`
         num_samples
         sample_type
         citation
+        public
         publication_link
         scholar_link_cited
         download_link
@@ -145,6 +146,7 @@ const DatasetsTemplate = ({ data }) => {
           <div className="section contact">
             <h4>Contact</h4>
             <div className="item">
+              {console.log(item)}
               This dataset is
               {' '}
               <span className="bold">{item.public === 'Yes' ? 'public' : 'available by request only'}</span>
