@@ -25,7 +25,7 @@ const StyledResearch = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 30px 0px 80px 0px;
+        padding: 60px 0px 60px 0px;
     }
 
     .container:nth-child(odd) {

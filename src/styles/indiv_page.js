@@ -19,7 +19,7 @@ export const StyledIndivPage = styled.div`
     h3 {
         font-size:calc(0.8vw + 0.8em);
         font-family: 'Rubik', sans-serif; 
-        margin-bottom:20px;
+        margin: 30px 0 40px 0;
     }
     h4 {
         font-size:calc(0.7vw + 0.7em);
