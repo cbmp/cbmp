@@ -1,8 +1,8 @@
-import React, {Fragment} from "react"
+import React, { Fragment } from 'react';
 import '../styles/index.css';
-import Layout from '../components/Layout';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from "gatsby";
+import Layout from '../components/Layout';
 import Grid from '../components/Grid';
 
 const StyledWebapps = styled.div`
@@ -11,7 +11,7 @@ const StyledWebapps = styled.div`
     display: flex;
     align-items:center;
     flex-direction: column;
-    margin-top:80px;
+    margin-top:120px;
     padding: 30px 0px 80px 0px;
     
     h1 {
@@ -54,25 +54,25 @@ const WebappsQuery = graphql`
             }
         }
     }
-`
+`;
 
 const Webapps = () => (
-    <Layout page="Webapps">
-        <StyledWebapps>
-            <div className="container">
-                <StaticQuery
-                    query={WebappsQuery}
-                    render={data => (
-                        <Fragment>
+  <Layout page="Webapps">
+    <StyledWebapps>
+      <div className="container">
+        <StaticQuery
+          query={WebappsQuery}
+          render={(data) => (
+            <>
                             <h1>Webapps <span className="count">{data.allWebappsCsv.edges.length}</span></h1>
                             <Grid data={data.allWebappsCsv.edges} type="web-apps"/>
-                        </Fragment>
-                    )}
-                />
-            </div>
-        </StyledWebapps>
-    </Layout>
-  
-)
+                        </>
+          )}
+        />
+      </div>
+    </StyledWebapps>
+  </Layout>
+
+);
 
 export default Webapps;

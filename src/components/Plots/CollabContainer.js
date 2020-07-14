@@ -205,7 +205,7 @@ const CollabContainer = (props) => {
   };
 
   // choosing which plot to view
-  const views = ['Graph Network', 'Circos Plot', 'Upset Plot'];
+  const views = ['Circos Plot', 'Graph Network', 'Upset Plot'];
   return (
     <StyledCollabContainer>
       <FormControl component="fieldset" className="toggle">

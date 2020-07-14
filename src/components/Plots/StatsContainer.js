@@ -28,7 +28,7 @@ const StatsContainer = (props) => {
   const { data, statType } = props;
   const stat = statType.toLowerCase();
   // get all years
-  const years = [...new Set(data.map((x) => x.year))];
+  const years = [...new Set(data.map((x) => x.year))].sort((a, b) => b - a);
   const [yearSelected, setYearSelected] = useState(years[years.length >= 3 ? years.length - 3 : 0]);
 
   const handleChange = (event) => {
@@ -136,7 +136,7 @@ const StatsContainer = (props) => {
         <FormControl component="fieldset" className="toggle">
           <FormLabel component="legend">Years</FormLabel>
           <RadioGroup aria-label="year" name="year" value={yearSelected} onChange={handleChange}>
-            {years.slice(years.length >= 3 ? years.length - 3 : 0, years.length).map((y) => <FormControlLabel key={y} value={y} control={<Radio color="primary" />} label={y} />)}
+            {years.slice(0, years.length >= 3 ? 3 : years.length).map((y) => <FormControlLabel key={y} value={y} control={<Radio color="primary" />} label={y} />)}
           </RadioGroup>
         </FormControl>
 

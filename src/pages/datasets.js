@@ -23,7 +23,7 @@ const StyledDatasets = styled.div`
     display: flex;
     align-items:center;
     flex-direction: column;
-    margin-top:80px;
+    margin-top:120px;
     padding: 30px 0px 80px 0px;
     
     h1 {
@@ -123,6 +123,7 @@ const columns = [{
       <img className="arrow" alt="arrow" src={sortArrows} />
     </span>
   ),
+  width: 500,
   accessor: 'node.name',
   sortable: true,
   Cell: (row) => (
