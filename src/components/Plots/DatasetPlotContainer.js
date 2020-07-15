@@ -1,7 +1,13 @@
+/* eslint-disable radix */
 import React, { useState, useEffect } from 'react';
 import Select from 'react-select';
 import gradstop from 'gradstop';
 import styled from 'styled-components';
+import Radio from '@material-ui/core/Radio';
+import RadioGroup from '@material-ui/core/RadioGroup';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import FormControl from '@material-ui/core/FormControl';
+import FormLabel from '@material-ui/core/FormLabel';
 import StatsPlot from './StatsPlot';
 
 const customFilterOption = (option, rawInput) => {
@@ -19,16 +25,16 @@ const formatSamplesData = (data, options) => {
     rawData = rawData.concat(data[x.value]);
   });
 
-  const plotData = {
+  // calculating discrete data
+  const discreteData = {
     x: [],
     y: [],
-    type: 'bar',
-    marker: {},
+    mode: 'lines+markers',
   };
   const years = [...new Set(rawData.map((x) => parseInt(x.year_created)))].sort((a, b) => a - b);
   years.forEach((year) => {
     // adding in year data
-    plotData.x.push(year);
+    discreteData.x.push(year);
     // summing year data up
     let total = 0;
     rawData.forEach((item) => {
@@ -36,23 +42,30 @@ const formatSamplesData = (data, options) => {
         total += parseInt(item.num_samples);
       }
     });
-    plotData.y.push(total);
+    discreteData.y.push(total);
   });
 
-  // // making gradients for the bar charts to make it ~pretty~
-  // if (plotData.x.length < 2) {
-  //   plotData.marker.color = '#78d9ff';
-  // } else {
-  //   plotData.marker.color = gradstop({
-  //     stops: plotData.x.length,
-  //     inputFormat: 'hex',
-  //     colorArray: ['#78d9ff', '#02577b'], // reverse order
-  //   });
-  // }
-  plotData.marker.color = ['#5096B5', '#E15759', '#F28E2C', '#BC80BD', '#A6D854', '#FF9DA7'];
+  // calculating cumulative data based on discrete
+  const cumulData = {
+    x: [],
+    y: [],
+    mode: 'lines+markers',
+  };
 
+  // for each discreteData value, add the one before it
+  cumulData.x = discreteData.x;
+  discreteData.y.forEach((d, i) => {
+    if (i === 0) {
+      cumulData.y.push(d);
+    } else {
+      cumulData.y.push(d + cumulData.y[i - 1]);
+    }
+  });
 
-  return plotData;
+  return {
+    cumulative: cumulData,
+    discrete: discreteData,
+  };
 };
 
 const formatPlatformData = (data, options) => {
@@ -108,12 +121,18 @@ const StyledDatasetPlotContainer = styled.div`
   &* {
     width: 50%;
   }
+  
+  .samples-container {
+    display:flex;
+    flex-direction:column;
+  }
 `;
 
 const DatasetPlotContainer = (props) => {
   const { data } = props;
   const [samplesData, setSamplesData] = useState({});
   const [platformData, setPlatformData] = useState({});
+  const [sampleModeSelected, setSampleModeSelected] = useState('cumulative');
   const memberData = {};
 
   // show filtered data based on selected members
@@ -125,6 +144,11 @@ const DatasetPlotContainer = (props) => {
       setSamplesData(formatSamplesData(memberData, event));
       setPlatformData(formatPlatformData(memberData, event));
     }
+  };
+
+  // for sample toggle
+  const handleSampleChange = (event) => {
+    setSampleModeSelected(event.target.value);
   };
 
   // formatting data into {pi: [data], pi: [data],...}
@@ -155,7 +179,7 @@ const DatasetPlotContainer = (props) => {
       type: 'category',
     },
     showlegend: false,
-    width: 550,
+    width: 500,
     height: 500,
   };
 
@@ -163,7 +187,7 @@ const DatasetPlotContainer = (props) => {
     title: 'Platforms Hosted On',
     autosize: true,
     showlegend: false,
-    width: 550,
+    width: 500,
     height: 500,
   };
 
@@ -179,11 +203,20 @@ const DatasetPlotContainer = (props) => {
       />
       <StyledDatasetPlotContainer>
 
-        <StatsPlot
-          data={samplesData}
-          layout={samplesLayout}
-          className="samplesPlot"
-        />
+        <div className="samples-container">
+          <StatsPlot
+            data={samplesData[sampleModeSelected]}
+            layout={samplesLayout}
+            className="samplesPlot"
+          />
+          <FormControl component="fieldset" className="toggle">
+            <FormLabel component="legend">Mode</FormLabel>
+            <RadioGroup aria-label="Mode" name="Mode" value={sampleModeSelected} onChange={handleSampleChange}>
+              <FormControlLabel value="discrete" control={<Radio color="primary" />} label="discrete" />
+              <FormControlLabel value="cumulative" control={<Radio color="primary" />} label="cumulative" />
+            </RadioGroup>
+          </FormControl>
+        </div>
         <StatsPlot
           data={platformData}
           layout={platformLayout}
