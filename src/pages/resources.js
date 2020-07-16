@@ -9,6 +9,7 @@ import FormControl from '@material-ui/core/FormControl';
 import Visibility from '@material-ui/icons/Visibility';
 import VisibilityOff from '@material-ui/icons/VisibilityOff';
 import Layout from '../components/Layout';
+import ScrollToTop from "react-scroll-to-top";
 
 const StyledResources = styled.div`
     width: 100%;
@@ -19,6 +20,7 @@ const StyledResources = styled.div`
     flex-direction: column;
     margin-top:80px;
     color: var(--main-color);
+    font-size:1em;
 
     a {
       color: var(--link-hov-dark);
@@ -27,6 +29,10 @@ const StyledResources = styled.div`
     h1 {
         font-size:calc(1.8vw + 0.7em);
         font-family: 'Rubik', sans-serif; 
+    }
+
+    h2 {
+      font-size:calc(0.7vw + 0.7em);
     }
 
     .titlecontainer {
@@ -38,7 +44,30 @@ const StyledResources = styled.div`
         flex-direction:column;
         padding: 30px 0 0 0;
     }
-
+    .page {
+      display:flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .content {
+      width: 89% !important;
+    }
+    .toc {
+      width: 10%;
+      margin-top:40px;
+      
+      a {
+        display:block;
+        text-align:right;
+        border-right: 3px solid var(--main-color);
+        padding:20px 20px 20px 10px;
+        color: var(--main-color);
+      }
+      a:hover {
+        color: var(--link-hov-dark);
+        border-right: 3px solid var(--link-hov-dark);
+      }
+    }
     .container {
         background: white;
         width: 100%;
@@ -59,7 +88,7 @@ const StyledResources = styled.div`
     }
 
     .resource-container {
-        width: 80%;
+        width: 90%;
         font-size: calc(0.3vw + 0.8em);
         line-height: calc(0.8vw + 1.3em);
         display: flex;
@@ -117,6 +146,7 @@ const Resources = () => {
 
   return (
     <Layout page="Resources">
+      <ScrollToTop smooth />
       <StyledResources>
         <div className="titlecontainer">
           <h1>Resources</h1>
@@ -125,57 +155,62 @@ const Resources = () => {
 
         <div className="container">
           {values.showDiv ? (
-            
-            <>
-           
-            <div className="container">
-              <div className="resource-container">
-                <h2>Introduction to HPC4Health & Slurm</h2>
-                <span>
-                This document provides a brief overview on the set-up procedure and basic operation of Slurm, to help new staff/trainees access computing resources through HPC4Health.
-                To suggest improvements or comment on this document, <a href="https://docs.google.com/document/d/1y37VyEkHi4mQKkVderDFi2RlZrIklGO2eKF-QuMVD5E/edit?usp=sharing" target="_blank"> <b>click here</b></a>.
-                <br/><br/>
-                </span>
-                <iframe src="https://docs.google.com/document/d/e/2PACX-1vT1LVlyaWTbyR_9Dbvj55S3kayzI-7Y1WtaRqsiYYAT26QK9PBGQnwIfQsMjVGCzVayglm0FHktcPtg/pub?embedded=true" width="800" height="800" frameborder="1" marginheight="0" marginwidth="0">Loading…></iframe>
+            <div className="page">
+              <div className="toc">
+                <a href="#hpc4health">HPC4Health/Slurm</a>
+                <a href="#grant">Grant Opportunities</a>
+                <a href="#data_sharing">Data Sharing</a>
+                <a href="#analytics">Enabling Google Analytics</a>
               </div>
-            </div>
-            
-            <div className="container">
-              <div className="resource-container">
-                <h2>CBMP Grant Opportunties</h2>
-                <span>
-                To view and comment on the full document outlining potential grant opportunities for CBMP, <a href="https://docs.google.com/document/d/1hGsq7C6YxIr8mb4fCf1yAQtJOazlaHBU0gXmveEEEgM/edit?usp=sharing" target="_blank"> <b>click here</b></a>. 
-                <br/>
-                To view recently discussed grants, see below. 
-                <br/><br/>
-                </span>
-                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSO0W9cV3ILkkuivB1IV4yJ2d6f7HZVRb463HD3lA8QMTTliBueoDlm-f963xVVgSKyOSypmXrWFTEx/embed?start=false&loop=false&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-              </div>
-            </div>
-           
-            <div className="container">
-              <div className="resource-container">
-                <h2>Data Sharing</h2>
-                <span>
-                To submit information about a dataset for inclusion in the CBMP dataset catalogue, use the form below or <a href="https://docs.google.com/forms/d/e/1FAIpQLSfl8cTz1akPFjMg1uUBvTuKPoo18flFUTk8r_rkt495OYZLyA/viewform?usp=sf_link" target="_blank"> <b>click here</b></a>.
-                <br/><br/>
-                </span>
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfl8cTz1akPFjMg1uUBvTuKPoo18flFUTk8r_rkt495OYZLyA/viewform?embedded=true" width="700" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-              </div>
-            </div>
+              <div className="container content">
+                <div className="container">
+                  <div id="hpc4health" className="resource-container">
+                    <h2>Introduction to HPC4Health & Slurm</h2>
+                    <span>
+                    This document provides a brief overview on the set-up procedure and basic operation of Slurm, to help new staff/trainees access computing resources through HPC4Health.
+                    To suggest improvements or comment on this document, <a href="https://docs.google.com/document/d/1y37VyEkHi4mQKkVderDFi2RlZrIklGO2eKF-QuMVD5E/edit?usp=sharing" target="_blank"> <b>click here</b></a>.
+                    <br/><br/>
+                    </span>
+                    <iframe src="https://docs.google.com/document/d/e/2PACX-1vT1LVlyaWTbyR_9Dbvj55S3kayzI-7Y1WtaRqsiYYAT26QK9PBGQnwIfQsMjVGCzVayglm0FHktcPtg/pub?embedded=true" width="800" height="800" frameborder="1" marginheight="0" marginwidth="0">Loading…></iframe>
+                  </div>
+                </div>
+                
+                <div id="grant" className="container">
+                  <div className="resource-container">
+                    <h2>CBMP Grant Opportunities</h2>
+                    <span>
+                    To view and comment on the full document outlining potential grant opportunities for CBMP, <a href="https://docs.google.com/document/d/1hGsq7C6YxIr8mb4fCf1yAQtJOazlaHBU0gXmveEEEgM/edit?usp=sharing" target="_blank"> <b>click here</b></a>. 
+                    <br/>
+                    To view recently discussed grants, see below. 
+                    <br/><br/>
+                    </span>
+                    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSO0W9cV3ILkkuivB1IV4yJ2d6f7HZVRb463HD3lA8QMTTliBueoDlm-f963xVVgSKyOSypmXrWFTEx/embed?start=false&loop=false&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                  </div>
+                </div>
+              
+                <div id="data_sharing" className="container">
+                  <div className="resource-container">
+                    <h2>Data Sharing</h2>
+                    <span>
+                    To submit information about a dataset for inclusion in the CBMP dataset catalogue, use the form below or <a href="https://docs.google.com/forms/d/e/1FAIpQLSfl8cTz1akPFjMg1uUBvTuKPoo18flFUTk8r_rkt495OYZLyA/viewform?usp=sf_link" target="_blank"> <b>click here</b></a>.
+                    <br/><br/>
+                    </span>
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfl8cTz1akPFjMg1uUBvTuKPoo18flFUTk8r_rkt495OYZLyA/viewform?embedded=true" width="700" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                  </div>
+                </div>
 
-            <div className="container">
-              <div className="resource-container">
-                <h2>Enabling Google Analytics on your Website or Web App</h2>
-                <span>
-                This document provides a brief overview on the set-up procedure to enable google analytics on your website or web app. This allows CBMP to accurately collect usage statistics for your web app.
-                <br/><br/>
-                </span>
-                <iframe src="https://docs.google.com/document/d/e/2PACX-1vRxzJ5psM3DU__cErsfWaRyg-Zp6OeKI4r7pD0p1YnmEcfYO4lRKdwWjqH6hjoLNQJnWzTonFy2R8QM/pub?embedded=true"> width="800" height="800" frameborder="1" marginheight="0" marginwidth="0">Loading…></iframe>
+                <div id="analytics" className="container">
+                  <div className="resource-container">
+                    <h2>Enabling Google Analytics on your Website or Web App</h2>
+                    <span>
+                    This document provides a brief overview on the set-up procedure to enable google analytics on your website or web app. This allows CBMP to accurately collect usage statistics for your web app.
+                    <br/><br/>
+                    </span>
+                    <iframe src="https://docs.google.com/document/d/e/2PACX-1vRxzJ5psM3DU__cErsfWaRyg-Zp6OeKI4r7pD0p1YnmEcfYO4lRKdwWjqH6hjoLNQJnWzTonFy2R8QM/pub?embedded=true"> width="800" height="800" frameborder="1" marginheight="0" marginwidth="0">Loading…></iframe>
+                  </div>
+                </div>
               </div>
             </div>
-            </>
-
           ) : (
 
             <div className="pass-container">
