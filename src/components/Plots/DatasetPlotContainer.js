@@ -25,8 +25,8 @@ const formatSamplesData = (data, options) => {
     rawData = rawData.concat(data[x.value]);
   });
 
-  // calculating discrete data
-  const discreteData = {
+  // calculating yearly data
+  const yearlyData = {
     x: [],
     y: [],
     mode: 'lines+markers',
@@ -34,7 +34,7 @@ const formatSamplesData = (data, options) => {
   const years = [...new Set(rawData.map((x) => parseInt(x.year_created)))].sort((a, b) => a - b);
   years.forEach((year) => {
     // adding in year data
-    discreteData.x.push(year);
+    yearlyData.x.push(year);
     // summing year data up
     let total = 0;
     rawData.forEach((item) => {
@@ -42,19 +42,19 @@ const formatSamplesData = (data, options) => {
         total += parseInt(item.num_samples);
       }
     });
-    discreteData.y.push(total);
+    yearlyData.y.push(total);
   });
 
-  // calculating cumulative data based on discrete
+  // calculating cumulative data based on yearly
   const cumulData = {
     x: [],
     y: [],
     mode: 'lines+markers',
   };
 
-  // for each discreteData value, add the one before it
-  cumulData.x = discreteData.x;
-  discreteData.y.forEach((d, i) => {
+  // for each yearlyData value, add the one before it
+  cumulData.x = yearlyData.x;
+  yearlyData.y.forEach((d, i) => {
     if (i === 0) {
       cumulData.y.push(d);
     } else {
@@ -62,9 +62,10 @@ const formatSamplesData = (data, options) => {
     }
   });
 
+
   return {
     cumulative: cumulData,
-    discrete: discreteData,
+    yearly: yearlyData,
   };
 };
 
@@ -178,6 +179,12 @@ const DatasetPlotContainer = (props) => {
       showticklabel: true,
       type: 'category',
     },
+    yaxis: {
+      type: 'log',
+      // autorange: true,
+      dtick: 1,
+      range: [0, 5],
+    },
     showlegend: false,
     width: 500,
     height: 500,
@@ -212,8 +219,8 @@ const DatasetPlotContainer = (props) => {
           <FormControl component="fieldset" className="toggle">
             <FormLabel component="legend">Mode</FormLabel>
             <RadioGroup aria-label="Mode" name="Mode" value={sampleModeSelected} onChange={handleSampleChange}>
-              <FormControlLabel value="discrete" control={<Radio color="primary" />} label="discrete" />
               <FormControlLabel value="cumulative" control={<Radio color="primary" />} label="cumulative" />
+              <FormControlLabel value="yearly" control={<Radio color="primary" />} label="yearly" />
             </RadioGroup>
           </FormControl>
         </div>
