@@ -84,6 +84,7 @@ const DatasetsQuery = graphql`
                     slug
                     platform
                     short_desc
+                    technology
                     keywords
                     num_samples
                     year_created
@@ -147,6 +148,16 @@ const columns = [{
   ),
   sortMethod(a, b) { return b - a; },
   accessor: 'node.num_samples',
+  sortable: true,
+}, {
+  Header: () => (
+    <span>
+      Technology
+      {' '}
+      <img className="arrow" alt="arrow" src={sortArrows} />
+    </span>
+  ),
+  accessor: 'node.technology',
   sortable: true,
 },
 {

@@ -21,6 +21,7 @@ export const query = graphql`
         licensing
         num_samples
         sample_type
+        technology
         citation
         public
         publication_link
@@ -139,6 +140,15 @@ const DatasetsTemplate = ({ data }) => {
                   'N/A'
                 ) : (
                   item.datatype
+                )}
+              </div>
+
+              <div className="item">
+                <span className="item-heading">Technology:</span>
+                {item.technology === '-' || item.technology === '' ? (
+                  'N/A'
+                ) : (
+                  item.technology
                 )}
               </div>
             </div>
