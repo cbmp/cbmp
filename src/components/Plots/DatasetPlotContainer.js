@@ -129,6 +129,9 @@ const StyledDatasetPlotContainer = styled.div`
   }
 `;
 
+/**
+ * Dataset plot container (with line chart and donut)
+ */
 const DatasetPlotContainer = (props) => {
   const { data } = props;
   const [samplesData, setSamplesData] = useState({});

@@ -36,6 +36,10 @@ const StyledLabStatsContainer = styled.div`
     }
 `;
 
+/**
+ * Shows a bar plot with total stats of the lab, with a selection for PI.
+ *
+ */
 const LabStatsContainer = (props) => {
   const { data, pisRaw } = props;
   const pis = pisRaw.sort((a, b) => a - b);

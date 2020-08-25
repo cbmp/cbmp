@@ -80,7 +80,6 @@ const StyledButton = styled.button`
 
 const IndexPage = () => (
   <Layout page="home">
-    {/* <Header page="home"/> */}
     <StyledHome>
       <div className="container">
         <div className="intro">
@@ -101,7 +100,6 @@ const IndexPage = () => (
       </div>
       <StyledButton onClick={() => scrollTo('#members')}>v</StyledButton>
     </StyledHome>
-    {/* <Mission/> */}
     <Members />
   </Layout>
 

@@ -9,6 +9,7 @@ const StyledCircosPlot = styled.div`
     margin-left: 10vw;
 `;
 
+// need this so it doesn't interfere with SSR
 const CircosLoaded = Loadable({
   loader: () => import(`react-circos`),
   loading: ({ timedOut }) =>
@@ -20,7 +21,7 @@ const CircosLoaded = Loadable({
   timeout: 10000,
 });
 
-export const CircosPlot = (props) => {
+const CircosPlot = (props) => {
   const { chords, layout, hidden } = props;
   const [display, setDisplay] = useState('none');
 

@@ -4,9 +4,6 @@ import React from 'react';
 
 
 const BurgerMenu = () => {
-  const showSettings = (event) => {
-    event.preventDefault();
-  };
   const styles = {
     bmBurgerButton: {
       position: 'fixed',
@@ -61,7 +58,6 @@ const BurgerMenu = () => {
       <Link to="/datasets">Datasets</Link>
       <Link to="/publications">Publications</Link>
       <Link to="/contact">Contact</Link>
-      <a onClick={showSettings} className="menu-item--small" href="">Settings</a>
     </Menu>
   );
 };

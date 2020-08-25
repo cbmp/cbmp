@@ -11,6 +11,10 @@ const customFilterOption = (option, rawInput) => {
   );
 };
 
+/**
+ * Grid that contains the entire list of software/web apps.
+ * @param {Array} data the array of objects to be shown in the grid
+ */
 const Grid = ({ data, type }) => {
   const [gridData, setGridData] = useState(data);
   const [sortValue, setSortValue] = useState({ field: 'name', order: 'ASC' });
@@ -29,9 +33,9 @@ const Grid = ({ data, type }) => {
   };
 
   // external sort by value {field, order} so I can call in both handlers
-  const sortItems = (data, value) => {
+  const sortItems = (sortData, value) => {
     // creating copy of data
-    const newGridData = Array.from(data);
+    const newGridData = Array.from(sortData);
     newGridData.sort((a, b) => {
       if (value.order === 'ASC') {
         return a.node[value.field].localeCompare(b.node[value.field]);

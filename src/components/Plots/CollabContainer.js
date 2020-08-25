@@ -191,8 +191,11 @@ const formatCircosData = (edges, soloSets) => {
   return { circosLayout, circosChords };
 };
 
+/**
+ * Publications/Collaborations container, with selection for 3 plot views.
+ */
 const CollabContainer = (props) => {
-  const [viewSelected, setViewSelected] = useState('Graph Network');
+  const [viewSelected, setViewSelected] = useState('Circos Plot');
   const data = props.data.allCollabStatsJson.edges;
   const { intersections, soloSets } = formatIntersectionData(data);
 

@@ -24,6 +24,9 @@ const StyledStatsContainer = styled.div`
     }
 `;
 
+/**
+ * Shows year and month plots for individual packages/web apps
+ */
 const StatsContainer = (props) => {
   const { data, statType } = props;
   const stat = statType.toLowerCase();

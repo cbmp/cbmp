@@ -4,6 +4,9 @@ import Header from './Header';
 import Footer from './Footer';
 import BurgerMenu from './BurgerMenu';
 
+/**
+ * Layout component to include on every page as a wrapper.
+ */
 const Layout = ({ children, page }) => (
   <>
     <Helmet>
