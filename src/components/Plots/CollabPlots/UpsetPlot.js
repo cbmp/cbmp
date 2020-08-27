@@ -142,6 +142,7 @@ const UpsetPlot = (props) => {
           });
       });
 
+      // lines between circles
       upsetCircles.append('line')
         .attr('id', `setline${i}`)
         .attr('x1', i * (rad * 2.7))
