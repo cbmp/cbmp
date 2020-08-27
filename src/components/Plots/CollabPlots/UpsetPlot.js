@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import * as d3 from 'd3';
-import '../../styles/index.css';
+import '../../../styles/index.css';
 
 const StyledUpsetPlot = styled.div`
     display: ${(props) => props.display};

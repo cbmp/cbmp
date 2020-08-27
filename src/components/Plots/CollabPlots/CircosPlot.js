@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import '../../styles/index.css';
+import '../../../styles/index.css';
 // import Circos from 'react-circos';
 import Loadable from 'react-loadable';
 

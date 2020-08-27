@@ -36,7 +36,9 @@ export const query = graphql`
   }
   `;
 
-
+/**
+ * Template for jndividual dataset pages.
+ */
 const DatasetsTemplate = ({ data }) => {
   const item = data.datasetsCsv;
   return (

@@ -12,7 +12,7 @@ const Plotly = Loadable({
     timeout: 10000,
 });
 
-export const StatsPlot = (props) => {
+const StatsPlot = (props) => {
   const { data, layout, className} = props;
     return (
         <Plotly

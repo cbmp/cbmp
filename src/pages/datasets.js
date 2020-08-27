@@ -8,7 +8,7 @@ import 'react-table-6/react-table.css';
 import {
   Tab, Tabs, TabList, TabPanel,
 } from 'react-tabs';
-import DatasetPlotContainer from '../components/Plots/DatasetPlotContainer';
+import DatasetPlotContainer from '../components/Plots/DatasetStats/DatasetPlotContainer';
 import 'react-tabs/style/react-tabs.css';
 
 import { Popup } from 'semantic-ui-react';

@@ -3,7 +3,7 @@ import '../styles/index.css';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import { StyledIndivPage } from '../styles/indiv_page';
-import StatsContainer from '../components/Plots/StatsContainer';
+import StatsContainer from '../components/Plots/Stats/StatsContainer';
 
 // This is a page query - Gatsby looks for one page
 // query per file. In components, use StaticQuery
@@ -43,6 +43,9 @@ export const query = graphql`
   }
 `;
 
+/**
+ * Template for jndividual software pages.
+ */
 const SoftwareTemplate = ({ data }) => {
   const item = data.softwareCsv;
   const { stats } = data.dlStatsJson;

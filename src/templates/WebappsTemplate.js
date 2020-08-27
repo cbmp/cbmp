@@ -3,7 +3,7 @@ import '../styles/index.css';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import { StyledIndivPage } from '../styles/indiv_page';
-import StatsContainer from '../components/Plots/StatsContainer';
+import StatsContainer from '../components/Plots/Stats/StatsContainer';
 
 export const query = graphql`
   query ($slug: String!, $name: String!) {
@@ -40,6 +40,9 @@ export const query = graphql`
   }
 `;
 
+/**
+ * Template for jndividual webapp pages.
+ */
 const WebappsTemplate = ({ data }) => {
   const item = data.webappsCsv;
   let stats = [];

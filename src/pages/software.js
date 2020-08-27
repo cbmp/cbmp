@@ -9,7 +9,7 @@ import {
 import 'react-tabs/style/react-tabs.css';
 import Grid from '../components/Grid';
 import Layout from '../components/Layout';
-import LabStatsContainer from '../components/Plots/LabStatsContainer';
+import LabStatsContainer from '../components/Plots/Stats/LabStatsContainer';
 
 const StyledSoftware = styled.div`
     width: 100%;

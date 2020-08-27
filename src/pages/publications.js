@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import '../styles/index.css';
 import styled from 'styled-components';
 import Layout from '../components/Layout';
-import CollabContainer from '../components/Plots/CollabContainer';
+import CollabContainer from '../components/Plots/CollabPlots/CollabContainer';
 
 const StyledPublications = styled.div`
   width: 100%;
