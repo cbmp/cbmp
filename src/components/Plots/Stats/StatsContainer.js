@@ -139,7 +139,7 @@ const StatsContainer = (props) => {
         <FormControl component="fieldset" className="toggle">
           <FormLabel component="legend">Years</FormLabel>
           <RadioGroup aria-label="year" name="year" value={yearSelected} onChange={handleChange}>
-            {years.slice(0, years.length >= 3 ? 3 : years.length).map((y) => <FormControlLabel key={y} value={y} control={<Radio color="primary" />} label={y} />)}
+            {years.slice(0, years.length >= 10 ? 10 : years.length).map((y) => <FormControlLabel key={y} value={y} control={<Radio color="primary" />} label={y} />)}
           </RadioGroup>
         </FormControl>
 
