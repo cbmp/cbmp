@@ -31,7 +31,7 @@ const StatsContainer = (props) => {
   const { data, statType } = props;
   const stat = statType.toLowerCase();
   // get all years
-  const years = [...new Set(data.map((x) => x.year))].sort((a, b) => b - a);
+  const years = [...new Set(data.map((x) => x.year))].sort((a, b) => a - b);
   const [yearSelected, setYearSelected] = useState(years[years.length >= 3 ? years.length - 3 : 0]);
 
   const handleChange = (event) => {
