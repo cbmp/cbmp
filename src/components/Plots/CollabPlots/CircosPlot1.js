@@ -42,6 +42,8 @@ const CircosPlot = (props) => {
     const arcChords = chord(arcs);
     const ribbons = chord(data);
     // calculating area for each node
+    // maxArc + 1 -> 1 must be changed based on a correct value, I just chose 1
+    // because it works for now. but it has to be changed with new PIs
     const area = 2 * Math.PI/ (nodes.length * (maxArc + 1));
     // Calculate ribbons angles for each ribbon
     // uses circosChords calculations in collabContainer for scaling
