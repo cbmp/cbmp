@@ -188,7 +188,8 @@ const formatCircosData = (edges, soloSets) => {
   // find max total thickness for length
   const maxThickness = d3.max(circosLayout.map((x) => x.totalThickness));
   circosLayout.forEach((x) => {
-    x.len = maxThickness - 0.5;
+    // x.len = maxThickness - 0.5; //Wasn't sure to deduct 0.5
+    x.len = maxThickness; // this way works better, fixes start point for max node
   });
 
   // finding chord start for every PI

@@ -41,22 +41,21 @@ const CircosPlot = (props) => {
 
     const arcChords = chord(arcs);
     const ribbons = chord(data);
-    // calculating area for each node
-    // maxArc + 1.1 -> 1.1 must be changed based on a correct value, I just chose 1
-    // because it works for now. but it has to be changed with new PIs
-    const area = 2 * Math.PI/ (nodes.length * (maxArc + 1.1));
+    // calculating length of each node
+    const totalPadding = chord.padAngle() * nodes.length; // deducting padding gaps
+    const coef = ((2 * Math.PI) - totalPadding) / (nodes.length * (maxArc));
     // Calculate ribbons angles for each ribbon
     // uses circosChords calculations in collabContainer for scaling
     for (let i = 0; i < ribbons.length; i += 1) {
       const sIndex = nodes.findIndex((item) => item === chords[i].source.id);
       const tIndex = nodes.findIndex((item) => item === chords[i].target.id);
-      ribbons[i].source.startAngle = chords[i].source.start * area
+      ribbons[i].source.startAngle = chords[i].source.start * coef
                 + arcChords.groups[sIndex].startAngle;
-      ribbons[i].source.endAngle = chords[i].source.end * area
+      ribbons[i].source.endAngle = chords[i].source.end * coef
                 + arcChords.groups[sIndex].startAngle;
-      ribbons[i].target.startAngle = chords[i].target.start * area
+      ribbons[i].target.startAngle = chords[i].target.start * coef
                 + arcChords.groups[tIndex].startAngle;
-      ribbons[i].target.endAngle = chords[i].target.end * area
+      ribbons[i].target.endAngle = chords[i].target.end * coef
                 + arcChords.groups[tIndex].startAngle;
     }
     console.log(ribbons);
