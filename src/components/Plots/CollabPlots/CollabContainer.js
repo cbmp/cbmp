@@ -8,7 +8,7 @@ import FormLabel from '@material-ui/core/FormLabel';
 import * as d3 from 'd3';
 import UpsetPlot from './UpsetPlot';
 import NetworkPlot from './NetworkPlot';
-import CircosPlot from './CircosPlot';
+import CircosPlot from './CircosPlot1';
 
 const StyledCollabContainer = styled.div`
   display:flex;
@@ -112,6 +112,43 @@ const formatNetworkData = (intersections, data) => {
   return edges;
 };
 
+const formatChordData = (data, pairs) => {
+  const chordData = {};
+  const nodes = [];
+  data.forEach((x) => {
+    nodes.push(x.node.name);
+  });
+  chordData.chordNodes = nodes;
+
+  const links = [];
+  const chord = [];
+  nodes.forEach(() => {
+    const pair = [];
+    nodes.forEach(() => {
+      pair.push(0);
+    });
+    links.push(pair);
+  });
+
+  nodes.forEach(() => {
+    const pair = [];
+    nodes.forEach(() => {
+      pair.push(1);
+    });
+    chord.push(pair);
+  });
+  chordData.chordArcs = chord;
+
+  pairs.forEach((z) => {
+    const source = nodes.findIndex((item) => item === z.source.id);
+    const target = nodes.findIndex((item) => item === z.target.id);
+    links[source][target] = z.value;
+    links[target][source] = z.value;
+  });
+  chordData.chordLinks = links;
+  return chordData;
+};
+
 const formatCircosData = (edges, soloSets) => {
   const circosLayout = [];
   const circosChords = [];
@@ -151,7 +188,8 @@ const formatCircosData = (edges, soloSets) => {
   // find max total thickness for length
   const maxThickness = d3.max(circosLayout.map((x) => x.totalThickness));
   circosLayout.forEach((x) => {
-    x.len = maxThickness - 0.5;
+    // x.len = maxThickness - 0.5; //Wasn't sure to deduct 0.5
+    x.len = maxThickness; // this way works better, fixes start point for max node
   });
 
   // finding chord start for every PI
@@ -188,7 +226,7 @@ const formatCircosData = (edges, soloSets) => {
     circosLayout[sInd].startFrom += thickness + 0.5;
     circosLayout[tInd].startFrom += thickness + 0.5;
   });
-  return { circosLayout, circosChords };
+  return { circosLayout, circosChords, maxThickness };
 };
 
 /**
@@ -201,7 +239,8 @@ const CollabContainer = (props) => {
 
   // NOTE: edges are mutated in network plot, and the mutation reflects here
   const networkEdges = formatNetworkData(intersections, data);
-  const { circosLayout, circosChords } = formatCircosData(networkEdges, soloSets);
+  const { circosLayout, circosChords, maxThickness } = formatCircosData(networkEdges, soloSets);
+  const chordData = formatChordData(data, circosChords);
 
   const handleChange = (event) => {
     setViewSelected(event.target.value);
@@ -231,12 +270,12 @@ const CollabContainer = (props) => {
           hidden={viewSelected !== 'Upset Plot'}
         />
         <CircosPlot
+          chordData={chordData}
           chords={circosChords}
-          layout={circosLayout}
-          plotId="circosPlot"
+          maxArc={maxThickness}
+          plotId="chordPlot"
           hidden={viewSelected !== 'Circos Plot'}
         />
-
       </div>
 
     </StyledCollabContainer>
