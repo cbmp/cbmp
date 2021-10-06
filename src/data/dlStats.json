@@ -106,6 +106,16 @@
         "year": "2021",
         "month": "Jul",
         "downloads": "82"
+      },
+      {
+        "year": "2021",
+        "month": "Aug",
+        "downloads": "64"
+      },
+      {
+        "year": "2021",
+        "month": "Sep",
+        "downloads": "97"
       }
     ],
     "lab": "Haibe-Kains"
@@ -242,6 +252,16 @@
         "downloads": "17",
         "year": "2021",
         "month": "Jul"
+      },
+      {
+        "downloads": "22",
+        "year": "2021",
+        "month": "Aug"
+      },
+      {
+        "downloads": "16",
+        "year": "2021",
+        "month": "Sep"
       }
     ],
     "lab": "Haibe-Kains"
@@ -478,6 +498,16 @@
         "downloads": "322",
         "year": "2021",
         "month": "Jul"
+      },
+      {
+        "downloads": "460",
+        "year": "2021",
+        "month": "Aug"
+      },
+      {
+        "downloads": "306",
+        "year": "2021",
+        "month": "Sep"
       }
     ],
     "lab": "Haibe-Kains"
@@ -644,6 +674,16 @@
         "downloads": "278",
         "year": "2021",
         "month": "Jul"
+      },
+      {
+        "downloads": "378",
+        "year": "2021",
+        "month": "Aug"
+      },
+      {
+        "downloads": "254",
+        "year": "2021",
+        "month": "Sep"
       }
     ],
     "lab": "Haibe-Kains"
@@ -945,6 +985,16 @@
         "year": "2021",
         "month": "Jul",
         "downloads": "304"
+      },
+      {
+        "year": "2021",
+        "month": "Aug",
+        "downloads": "251"
+      },
+      {
+        "year": "2021",
+        "month": "Sep",
+        "downloads": "246"
       }
     ],
     "lab": "Haibe-Kains"
@@ -1481,6 +1531,16 @@
         "downloads": "2424",
         "year": "2021",
         "month": "Jul"
+      },
+      {
+        "downloads": "2246",
+        "year": "2021",
+        "month": "Aug"
+      },
+      {
+        "downloads": "2787",
+        "year": "2021",
+        "month": "Sep"
       }
     ],
     "lab": "Haibe-Kains"
@@ -1627,6 +1687,16 @@
         "year": "2021",
         "month": "Jul",
         "downloads": "131"
+      },
+      {
+        "year": "2021",
+        "month": "Aug",
+        "downloads": "77"
+      },
+      {
+        "year": "2021",
+        "month": "Sep",
+        "downloads": "126"
       }
     ],
     "lab": "Haibe-Kains"
@@ -1929,6 +1999,16 @@
         "year": "2021",
         "month": "Jul",
         "downloads": "260"
+      },
+      {
+        "year": "2021",
+        "month": "Aug",
+        "downloads": "292"
+      },
+      {
+        "year": "2021",
+        "month": "Sep",
+        "downloads": "382"
       }
     ],
     "lab": "Hoffman"
@@ -2185,6 +2265,16 @@
         "year": "2021",
         "month": "Jul",
         "downloads": "585"
+      },
+      {
+        "year": "2021",
+        "month": "Aug",
+        "downloads": "660"
+      },
+      {
+        "year": "2021",
+        "month": "Sep",
+        "downloads": "717"
       }
     ],
     "lab": "Hoffman"
@@ -2446,6 +2536,16 @@
         "year": "2021",
         "month": "Jul",
         "downloads": "572"
+      },
+      {
+        "year": "2021",
+        "month": "Aug",
+        "downloads": "640"
+      },
+      {
+        "year": "2021",
+        "month": "Sep",
+        "downloads": "812"
       }
     ],
     "lab": "Hoffman"
@@ -2698,6 +2798,16 @@
         "downloads": "270",
         "year": "2021",
         "month": "Jul"
+      },
+      {
+        "downloads": "395",
+        "year": "2021",
+        "month": "Aug"
+      },
+      {
+        "downloads": "252",
+        "year": "2021",
+        "month": "Sep"
       }
     ],
     "lab": "Xu"
@@ -2809,6 +2919,16 @@
         "downloads": "322",
         "year": "2021",
         "month": "Jul"
+      },
+      {
+        "downloads": "433",
+        "year": "2021",
+        "month": "Aug"
+      },
+      {
+        "downloads": "289",
+        "year": "2021",
+        "month": "Sep"
       }
     ],
     "lab": "Xu"
@@ -2872,10 +2992,5 @@
     "name": "MEMOS",
     "stats": [],
     "lab": "Lupien"
-  },
-  {
-    "name": "Cytoscape",
-    "stats": [],
-    "lab": "Bader"
   }
 ]
