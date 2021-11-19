@@ -116,6 +116,11 @@
         "year": "2021",
         "month": "Sep",
         "downloads": "97"
+      },
+      {
+        "year": "2021",
+        "month": "Oct",
+        "downloads": "87"
       }
     ],
     "lab": "Haibe-Kains"
@@ -262,6 +267,11 @@
         "downloads": "16",
         "year": "2021",
         "month": "Sep"
+      },
+      {
+        "downloads": "24",
+        "year": "2021",
+        "month": "Oct"
       }
     ],
     "lab": "Haibe-Kains"
@@ -508,6 +518,11 @@
         "downloads": "306",
         "year": "2021",
         "month": "Sep"
+      },
+      {
+        "downloads": "509",
+        "year": "2021",
+        "month": "Oct"
       }
     ],
     "lab": "Haibe-Kains"
@@ -684,6 +699,11 @@
         "downloads": "254",
         "year": "2021",
         "month": "Sep"
+      },
+      {
+        "downloads": "404",
+        "year": "2021",
+        "month": "Oct"
       }
     ],
     "lab": "Haibe-Kains"
@@ -995,6 +1015,11 @@
         "year": "2021",
         "month": "Sep",
         "downloads": "246"
+      },
+      {
+        "year": "2021",
+        "month": "Oct",
+        "downloads": "288"
       }
     ],
     "lab": "Haibe-Kains"
@@ -1541,6 +1566,11 @@
         "downloads": "2787",
         "year": "2021",
         "month": "Sep"
+      },
+      {
+        "downloads": "3074",
+        "year": "2021",
+        "month": "Oct"
       }
     ],
     "lab": "Haibe-Kains"
@@ -1697,6 +1727,11 @@
         "year": "2021",
         "month": "Sep",
         "downloads": "126"
+      },
+      {
+        "year": "2021",
+        "month": "Oct",
+        "downloads": "109"
       }
     ],
     "lab": "Haibe-Kains"
@@ -1787,36 +1822,6 @@
       {
         "month": "Mar",
         "downloads": "1617",
-        "year": "2021"
-      },
-      {
-        "month": "Apr",
-        "downloads": "2101",
-        "year": "2021"
-      },
-      {
-        "month": "May",
-        "downloads": "2933",
-        "year": "2021"
-      },
-      {
-        "month": "Jun",
-        "downloads": "2796",
-        "year": "2021"
-      },
-      {
-        "month": "Jul",
-        "downloads": "2541",
-        "year": "2021"
-      },
-      {
-        "month": "Aug",
-        "downloads": "3151",
-        "year": "2021"
-      },
-      {
-        "month": "Sep",
-        "downloads": "2309",
         "year": "2021"
       }
     ],
@@ -2039,6 +2044,11 @@
         "year": "2021",
         "month": "Sep",
         "downloads": "382"
+      },
+      {
+        "year": "2021",
+        "month": "Oct",
+        "downloads": "267"
       }
     ],
     "lab": "Hoffman"
@@ -2305,6 +2315,11 @@
         "year": "2021",
         "month": "Sep",
         "downloads": "717"
+      },
+      {
+        "year": "2021",
+        "month": "Oct",
+        "downloads": "592"
       }
     ],
     "lab": "Hoffman"
@@ -2576,6 +2591,11 @@
         "year": "2021",
         "month": "Sep",
         "downloads": "812"
+      },
+      {
+        "year": "2021",
+        "month": "Oct",
+        "downloads": "644"
       }
     ],
     "lab": "Hoffman"
@@ -2696,36 +2716,6 @@
       {
         "month": "Mar",
         "downloads": "195",
-        "year": "2021"
-      },
-      {
-        "month": "Apr",
-        "downloads": "360",
-        "year": "2021"
-      },
-      {
-        "month": "May",
-        "downloads": "460",
-        "year": "2021"
-      },
-      {
-        "month": "Jun",
-        "downloads": "440",
-        "year": "2021"
-      },
-      {
-        "month": "Jul",
-        "downloads": "475",
-        "year": "2021"
-      },
-      {
-        "month": "Aug",
-        "downloads": "468",
-        "year": "2021"
-      },
-      {
-        "month": "Sep",
-        "downloads": "360",
         "year": "2021"
       }
     ],
@@ -2868,6 +2858,11 @@
         "downloads": "252",
         "year": "2021",
         "month": "Sep"
+      },
+      {
+        "downloads": "409",
+        "year": "2021",
+        "month": "Oct"
       }
     ],
     "lab": "Xu"
@@ -2989,6 +2984,11 @@
         "downloads": "289",
         "year": "2021",
         "month": "Sep"
+      },
+      {
+        "downloads": "454",
+        "year": "2021",
+        "month": "Oct"
       }
     ],
     "lab": "Xu"
@@ -3052,10 +3052,5 @@
     "name": "MEMOS",
     "stats": [],
     "lab": "Lupien"
-   },
-   {
-     "name": "Cytoscape",
-     "stats": [],
-     "lab": "Bader"
-   }
+  }
 ]
