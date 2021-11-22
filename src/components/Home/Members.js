@@ -7,6 +7,9 @@ import minden from '../../images/members/minden.png';
 import moran from '../../images/members/moran.png';
 import pugh from '../../images/members/pugh.png';
 import wei from '../../images/members/wei.png';
+import gaiti from '../../images/members/gaiti.png';
+import kumar from '../../images/members/kumar.png';
+import schwartz from '../../images/members/schwartz.png';
 
 const StyledMembers = styled.div`
     background: var(--contrast-bg);
@@ -89,7 +92,7 @@ const Members = ({id}) => (
                 <span><a href="https://www.cbmp.ca">Federico Gaiti</a></span>
             </div>
             <div className="member">
-                <a href="https://www.cbmp.ca"><img alt="member" src={Kumar}/></a>
+                <a href="https://www.cbmp.ca"><img alt="member" src={kumar}/></a>
                 <span><a href="https://www.cbmp.ca">Sushant Kumar</a></span>
             </div>
         </div>
