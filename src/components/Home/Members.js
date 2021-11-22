@@ -80,6 +80,18 @@ const Members = ({id}) => (
                 <a href="https://www.uhnresearch.ca/researcher/wei-xu"><img alt="member" src={wei}/></a>
                 <span><a href="https://www.uhnresearch.ca/researcher/wei-xu">Wei Xu</a></span>
             </div>
+            <div className="member">
+                <a href="https://www.cbmp.ca"><img alt="member" src={schwartz}/></a>
+                <span><a href="https://www.cbmp.ca">Gregory Schwartz</a></span>
+            </div>
+            <div className="member">
+                <a href="https://www.cbmp.ca"><img alt="member" src={gaiti}/></a>
+                <span><a href="https://www.cbmp.ca">Federico Gaiti</a></span>
+            </div>
+            <div className="member">
+                <a href="https://www.cbmp.ca"><img alt="member" src={Kumar}/></a>
+                <span><a href="https://www.cbmp.ca">Sushant Kumar</a></span>
+            </div>
         </div>
     </StyledMembers>
 )
