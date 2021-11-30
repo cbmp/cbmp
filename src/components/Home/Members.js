@@ -72,8 +72,8 @@ const Members = ({id}) => (
                 <span><a href="https://medbio.utoronto.ca/faculty/minden">Mark Minden</a></span>
             </div>
             <div className="member">
-                <a href="http://www.sickkids.ca/AboutSickKids/Directory/People/M/Michael-Moran%20.html"><img alt="member" src={moran}/></a>
-                <span><a href="http://www.sickkids.ca/AboutSickKids/Directory/People/M/Michael-Moran%20.html">Michael Moran</a></span>
+                <a href="https://www.sickkids.ca/en/staff/m/michael-f-moran/"><img alt="member" src={moran}/></a>
+                <span><a href="https://www.sickkids.ca/en/staff/m/michael-f-moran/">Michael Moran</a></span>
             </div>
             <div className="member">
                 <a href="http://pughlab.org/"><img alt="member" src={pugh}/></a>
@@ -84,21 +84,21 @@ const Members = ({id}) => (
                 <span><a href="https://www.uhnresearch.ca/researcher/wei-xu">Wei Xu</a></span>
             </div>
             <div className="member">
-                <a href="https://www.cbmp.ca"><img alt="member" src={schwartz}/></a>
-                <span><a href="https://www.cbmp.ca">Gregory Schwartz</a></span>
+                <a href="https://www.uhnresearch.ca/researcher/gregory-schwartz"><img alt="member" src={schwartz}/></a>
+                <span><a href="https://www.uhnresearch.ca/researcher/gregory-schwartz">Gregory Schwartz</a></span>
             </div>
             <div className="member">
-                <a href="https://www.cbmp.ca"><img alt="member" src={gaiti}/></a>
-                <span><a href="https://www.cbmp.ca">Federico Gaiti</a></span>
+                <a href="https://www.uhnresearch.ca/researcher/federico-gaiti"><img alt="member" src={gaiti}/></a>
+                <span><a href="https://www.uhnresearch.ca/researcher/federico-gaiti">Federico Gaiti</a></span>
             </div>
             <div className="member">
-                <a href="https://www.cbmp.ca"><img alt="member" src={kumar}/></a>
-                <span><a href="https://www.cbmp.ca">Sushant Kumar</a></span>
+                <a href="https://medbio.utoronto.ca/faculty/kumar"><img alt="member" src={kumar}/></a>
+                <span><a href="https://medbio.utoronto.ca/faculty/kumar">Sushant Kumar</a></span>
             </div>
         </div>
     </StyledMembers>
 )
-  
+
 
 
 
