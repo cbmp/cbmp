@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import styled from 'styled-components';
 import ben from '../../images/members/ben.png';
 import hoffman from '../../images/members/hoffman.png';
@@ -51,55 +51,53 @@ const StyledMembers = styled.div`
     }
 `;
 
-const Members = ({id}) => (
-    <StyledMembers id="members">
-        <h1>Members</h1>
-        <div className="member-container">
-            <div className="member">
-                <a href="https://www.pmgenomics.ca/bhklab/"><img alt="member" src={ben}/></a>
-                <span><a href="https://www.pmgenomics.ca/bhklab/">Benjamin Haibe-Kains</a></span>
-            </div>
-            <div className="member">
-                <a href="https://hoffmanlab.org/"><img alt="member" src={hoffman}/></a>
-                <span><a href="https://hoffmanlab.org/">Michael Hoffman</a></span>
-            </div>
-            <div className="member">
-                <a href="https://www.uhnresearch.ca/researcher/geoffrey-liu"><img alt="member" src={liu}/></a>
-                <span><a href="https://www.uhnresearch.ca/researcher/geoffrey-liu">Geoffrey Liu</a></span>
-            </div>
-            <div className="member">
-                <a href="https://medbio.utoronto.ca/faculty/minden"><img alt="member" src={minden}/></a>
-                <span><a href="https://medbio.utoronto.ca/faculty/minden">Mark Minden</a></span>
-            </div>
-            <div className="member">
-                <a href="https://www.sickkids.ca/en/staff/m/michael-f-moran/"><img alt="member" src={moran}/></a>
-                <span><a href="https://www.sickkids.ca/en/staff/m/michael-f-moran/">Michael Moran</a></span>
-            </div>
-            <div className="member">
-                <a href="http://pughlab.org/"><img alt="member" src={pugh}/></a>
-                <span><a href="http://pughlab.org/">Trevor Pugh</a></span>
-            </div>
-            <div className="member">
-                <a href="https://www.uhnresearch.ca/researcher/wei-xu"><img alt="member" src={wei}/></a>
-                <span><a href="https://www.uhnresearch.ca/researcher/wei-xu">Wei Xu</a></span>
-            </div>
-            <div className="member">
-                <a href="https://www.uhnresearch.ca/researcher/gregory-schwartz"><img alt="member" src={schwartz}/></a>
-                <span><a href="https://www.uhnresearch.ca/researcher/gregory-schwartz">Gregory Schwartz</a></span>
-            </div>
-            <div className="member">
-                <a href="https://www.uhnresearch.ca/researcher/federico-gaiti"><img alt="member" src={gaiti}/></a>
-                <span><a href="https://www.uhnresearch.ca/researcher/federico-gaiti">Federico Gaiti</a></span>
-            </div>
-            <div className="member">
-                <a href="https://medbio.utoronto.ca/faculty/kumar"><img alt="member" src={kumar}/></a>
-                <span><a href="https://medbio.utoronto.ca/faculty/kumar">Sushant Kumar</a></span>
-            </div>
-        </div>
-    </StyledMembers>
-)
-
-
+const Members = ({ id }) => (
+  <StyledMembers id="members">
+    <h1>Members</h1>
+    <div className="member-container">
+      <div className="member">
+        <a href="https://www.uhnresearch.ca/researcher/federico-gaiti"><img alt="member" src={gaiti} /></a>
+        <span><a href="https://www.uhnresearch.ca/researcher/federico-gaiti">Federico Gaiti</a></span>
+      </div>
+      <div className="member">
+        <a href="https://www.pmgenomics.ca/bhklab/"><img alt="member" src={ben} /></a>
+        <span><a href="https://www.pmgenomics.ca/bhklab/">Benjamin Haibe-Kains</a></span>
+      </div>
+      <div className="member">
+        <a href="https://hoffmanlab.org/"><img alt="member" src={hoffman} /></a>
+        <span><a href="https://hoffmanlab.org/">Michael Hoffman</a></span>
+      </div>
+      <div className="member">
+        <a href="https://medbio.utoronto.ca/faculty/kumar"><img alt="member" src={kumar} /></a>
+        <span><a href="https://medbio.utoronto.ca/faculty/kumar">Sushant Kumar</a></span>
+      </div>
+      <div className="member">
+        <a href="https://www.uhnresearch.ca/researcher/geoffrey-liu"><img alt="member" src={liu} /></a>
+        <span><a href="https://www.uhnresearch.ca/researcher/geoffrey-liu">Geoffrey Liu</a></span>
+      </div>
+      <div className="member">
+        <a href="https://medbio.utoronto.ca/faculty/minden"><img alt="member" src={minden} /></a>
+        <span><a href="https://medbio.utoronto.ca/faculty/minden">Mark Minden</a></span>
+      </div>
+      <div className="member">
+        <a href="https://www.sickkids.ca/en/staff/m/michael-f-moran/"><img alt="member" src={moran} /></a>
+        <span><a href="https://www.sickkids.ca/en/staff/m/michael-f-moran/">Michael Moran</a></span>
+      </div>
+      <div className="member">
+        <a href="http://pughlab.org/"><img alt="member" src={pugh} /></a>
+        <span><a href="http://pughlab.org/">Trevor Pugh</a></span>
+      </div>
+      <div className="member">
+        <a href="https://www.uhnresearch.ca/researcher/gregory-schwartz"><img alt="member" src={schwartz} /></a>
+        <span><a href="https://www.uhnresearch.ca/researcher/gregory-schwartz">Gregory Schwartz</a></span>
+      </div>
+      <div className="member">
+        <a href="https://www.uhnresearch.ca/researcher/wei-xu"><img alt="member" src={wei} /></a>
+        <span><a href="https://www.uhnresearch.ca/researcher/wei-xu">Wei Xu</a></span>
+      </div>
+    </div>
+  </StyledMembers>
+);
 
 
 export default Members;
