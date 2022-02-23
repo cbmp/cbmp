@@ -52,6 +52,7 @@ const WebappsTemplate = ({ data }) => {
   if (data.gaWebappsStatsJson !== null) {
     stats = data.gaWebappsStatsJson.stats;
   }
+  console.log(data);
   const citedBy = data.gsWebappStatsJson.cited;
 
   return (
