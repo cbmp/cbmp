@@ -46,13 +46,9 @@ export const query = graphql`
 const WebappsTemplate = ({ data }) => {
   const item = data.webappsCsv;
   let stats = [];
-  // if (item.name === 'PharmacoDB') {
-  //   stats = data.gaWebappsStatsJson.stats;
-  // }
   if (data.gaWebappsStatsJson !== null) {
     stats = data.gaWebappsStatsJson.stats;
   }
-  console.log(data);
   const citedBy = data.gsWebappStatsJson.cited;
 
   return (

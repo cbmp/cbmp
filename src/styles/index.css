@@ -148,12 +148,12 @@ h1, h2 {
 /* Selects */
 .select-container {
     display: flex;
-    width: 80%;
+    width: 90%;
     justify-content: space-between;
 
 }
 
 .select-container > * {
-    width: 30%;
+    width: 20%;
 }
 

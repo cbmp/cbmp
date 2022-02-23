@@ -55,6 +55,19 @@ const Grid = ({ data, type }) => {
   };
 
   // show filtered data by licensing
+  const handleLabChange = (event) => {
+    if (event === null || event.length === 0) {
+      setGridData(data);
+    } else {
+      const labArr = event.map((x) => x.value);
+      const newGridData = [];
+      newGridData.push(data.filter((item) => labArr.some((x) => item.node.lab.includes(x))));
+      const sortedGridData = sortItems(newGridData.flat([2]), sortValue);
+      setGridData(sortedGridData);
+    }
+  };
+
+  // show filtered data by licensing
   const handleLicensingChange = (event) => {
     if (event === null || event.length === 0) {
       setGridData(data);
@@ -83,6 +96,15 @@ const Grid = ({ data, type }) => {
     { label: 'Lab name - descending', value: { field: 'lab', order: 'DESC' } },
   ];
 
+  // getting lab options
+  const lab = [...new Set(data.map((x) => x.node.lab))];
+  const labOptions = [];
+  lab.forEach((x) => {
+    if (x !== '-') {
+      labOptions.push({ value: x, label: x });
+    }
+  });
+
   // getting licensing options
   const licensing = [...new Set(data.map((x) => x.node.licensing))];
   const licensingOptions = [];
@@ -107,6 +129,13 @@ const Grid = ({ data, type }) => {
           options={sortOptions}
           placeholder="Sort by..."
           onChange={handleSortChange}
+        />
+        <Select
+          isMulti
+          filterOption={customFilterOption}
+          options={labOptions}
+          placeholder="Select lab..."
+          onChange={handleLabChange}
         />
         <Select
           isMulti
