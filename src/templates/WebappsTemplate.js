@@ -25,6 +25,7 @@ export const query = graphql`
         source_code
         instruction_link
         download_stats_link
+        doi
     }
     gsWebappStatsJson(name: {eq: $name}) {
         cited
@@ -50,7 +51,6 @@ const WebappsTemplate = ({ data }) => {
     stats = data.gaWebappsStatsJson.stats;
   }
   const citedBy = data.gsWebappStatsJson.cited;
-
   return (
     <Layout page="WebappsTemplate">
       <StyledIndivPage>
@@ -105,12 +105,12 @@ const WebappsTemplate = ({ data }) => {
             </div>
 
             <div className="download">
-              {item.download_link === '' ? (
+              {item.download_link.trim() === ''  || item.download_link.trim() === '-' ? (
                 <a className="disabled">Link to App</a>
               ) : (
                 <a target="_blank" rel="noopener noreferrer" href={item.download_link}>Link to App</a>
               )}
-              {item.source_code === '' ? (
+              {item.source_code.trim() === '' || item.source_code.trim() === '-'? (
                 <a className="disabled">Source Code</a>
               ) : (
                 <a target="_blank" rel="noopener noreferrer" href={item.source_code}>Source Code</a>
@@ -127,17 +127,17 @@ const WebappsTemplate = ({ data }) => {
           <div className="section">
             {item.citation === '' ? 'Citation not available.' : item.citation}
             <div className="links">
-              {item.doi === '' ? (
+              {item.doi === '' || item.doi === '-'? (
                 <a className="disabled">DOI</a>
               ) : (
-                <a target="_blank" rel="noopener noreferrer" href={`http://doi.org/${item.doi}`}>DOI</a>
+                <a target="_blank" rel="noopener noreferrer" href={`https://doi.org/${item.doi}`}>DOI</a>
               )}
-              {item.scholar_link === '' ? (
+              {item.scholar_link === '' || item.scholar_link === '-' ? (
                 <a className="disabled">Google Scholar</a>
               ) : (
                 <a target="_blank" rel="noopener noreferrer" href={item.scholar_link}>Google Scholar</a>
               )}
-              {item.scholar_link_cited === '' ? (
+              {item.scholar_link_cited === '' || item.scholar_link_cited === '-'? (
                 <a className="disabled">Cited By</a>
               ) : (
                 <a target="_blank" rel="noopener noreferrer" href={item.scholar_link_cited}>

@@ -114,7 +114,7 @@ const Grid = ({ data, type }) => {
       licensingOptions.push({ value: x, label: x });
     }
   });
-  console.log(Object.values(labs).filter(x=> x.lab === "Haibe-Kains")[0]["website"]);
+  console.log(Object.values(labs).filter((x) => x.lab === 'Haibe-Kains')[0].website);
   return (
     <>
       <div className="select-container">
@@ -157,15 +157,15 @@ const Grid = ({ data, type }) => {
                         <span className="lab-name">
                           [
                           {' '}
-                          {Object.values(labs).filter(x=> x.lab === item.node.lab)[0] ?
-                            <a href={Object.values(labs).filter(x=> x.lab === item.node.lab)[0]["website"]}>
-                              {item.node.lab}
-                              {' '}
-                              Lab
-                            </a>
-                            :
-                            ''
-                          }
+                          {Object.values(labs).filter((x) => x.lab === item.node.lab)[0]
+                            ? (
+                              <a href={Object.values(labs).filter((x) => x.lab === item.node.lab)[0].website}>
+                                {item.node.lab}
+                                {' '}
+                                Lab
+                              </a>
+                            )
+                            : ''}
                           {' '}
                           ]
                         </span>
