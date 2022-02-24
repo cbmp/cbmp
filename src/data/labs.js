@@ -1,4 +1,9 @@
 const labs = {
+  Bader: {
+    lab: 'Bader',
+    PI: 'Gary D. Bader',
+    website: 'https://baderlab.org/',
+  },
   Gaiti: {
     lab: 'Gaiti',
     PI: 'Federico Gaiti',

@@ -55,7 +55,7 @@ const Grid = ({ data, type }) => {
     setGridData(sortItems(gridData, event.value));
   };
 
-  // show filtered data by licensing
+  // show filtered data by lab
   const handleLabChange = (event) => {
     if (event === null || event.length === 0) {
       setGridData(data);
@@ -114,7 +114,6 @@ const Grid = ({ data, type }) => {
       licensingOptions.push({ value: x, label: x });
     }
   });
-  console.log(Object.values(labs).filter((x) => x.lab === 'Haibe-Kains')[0].website);
   return (
     <>
       <div className="select-container">
