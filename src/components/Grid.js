@@ -2,6 +2,7 @@ import React, { Fragment, useState } from 'react';
 import '../styles/index.css';
 import { Link } from 'gatsby';
 import Select from 'react-select';
+import labs from '../data/labs';
 
 const customFilterOption = (option, rawInput) => {
   const words = rawInput.split(' ');
@@ -113,7 +114,7 @@ const Grid = ({ data, type }) => {
       licensingOptions.push({ value: x, label: x });
     }
   });
-
+  console.log(Object.values(labs).filter(x=> x.lab === "Haibe-Kains")[0]["website"]);
   return (
     <>
       <div className="select-container">
@@ -156,11 +157,15 @@ const Grid = ({ data, type }) => {
                         <span className="lab-name">
                           [
                           {' '}
-                          <Link to="/">
-                            {item.node.lab}
-                            {' '}
-                            Lab
-                          </Link>
+                          {Object.values(labs).filter(x=> x.lab === item.node.lab)[0] ?
+                            <a href={Object.values(labs).filter(x=> x.lab === item.node.lab)[0]["website"]}>
+                              {item.node.lab}
+                              {' '}
+                              Lab
+                            </a>
+                            :
+                            ''
+                          }
                           {' '}
                           ]
                         </span>

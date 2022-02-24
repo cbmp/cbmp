@@ -10,6 +10,7 @@ import wei from '../../images/members/wei.png';
 import gaiti from '../../images/members/gaiti.png';
 import kumar from '../../images/members/kumar.png';
 import schwartz from '../../images/members/schwartz.png';
+import labs from '../../data/labs';
 
 const StyledMembers = styled.div`
     background: var(--contrast-bg);
@@ -56,44 +57,44 @@ const Members = ({ id }) => (
     <h1>Members</h1>
     <div className="member-container">
       <div className="member">
-        <a href="https://www.uhnresearch.ca/researcher/federico-gaiti"><img alt="member" src={gaiti} /></a>
-        <span><a href="https://www.uhnresearch.ca/researcher/federico-gaiti">Federico Gaiti</a></span>
+        <a href={labs.Gaiti.website}><img alt="member" src={gaiti} /></a>
+        <span><a href={labs.Gaiti.website}>Federico Gaiti</a></span>
       </div>
       <div className="member">
-        <a href="https://www.pmgenomics.ca/bhklab/"><img alt="member" src={ben} /></a>
-        <span><a href="https://www.pmgenomics.ca/bhklab/">Benjamin Haibe-Kains</a></span>
+        <a href={labs['Haibe-Kains'].website}><img alt="member" src={ben} /></a>
+        <span><a href={labs['Haibe-Kains'].website}>Benjamin Haibe-Kains</a></span>
       </div>
       <div className="member">
-        <a href="https://hoffmanlab.org/"><img alt="member" src={hoffman} /></a>
-        <span><a href="https://hoffmanlab.org/">Michael Hoffman</a></span>
+        <a href={labs.Hoffman.website}><img alt="member" src={hoffman} /></a>
+        <span><a href={labs.Hoffman.website}>Michael Hoffman</a></span>
       </div>
       <div className="member">
-        <a href="https://medbio.utoronto.ca/faculty/kumar"><img alt="member" src={kumar} /></a>
-        <span><a href="https://medbio.utoronto.ca/faculty/kumar">Sushant Kumar</a></span>
+        <a href={labs.CCG.website}><img alt="member" src={kumar} /></a>
+        <span><a href={labs.CCG.website}>Sushant Kumar</a></span>
       </div>
       <div className="member">
-        <a href="https://www.uhnresearch.ca/researcher/geoffrey-liu"><img alt="member" src={liu} /></a>
-        <span><a href="https://www.uhnresearch.ca/researcher/geoffrey-liu">Geoffrey Liu</a></span>
+        <a href={labs.Liu.website}><img alt="member" src={liu} /></a>
+        <span><a href={labs.Liu.website}>Geoffrey Liu</a></span>
       </div>
       <div className="member">
-        <a href="https://medbio.utoronto.ca/faculty/minden"><img alt="member" src={minden} /></a>
-        <span><a href="https://medbio.utoronto.ca/faculty/minden">Mark Minden</a></span>
+        <a href={labs.Minden.website}><img alt="member" src={minden} /></a>
+        <span><a href={labs.Minden.website}>Mark Minden</a></span>
       </div>
       <div className="member">
-        <a href="https://www.sickkids.ca/en/staff/m/michael-f-moran/"><img alt="member" src={moran} /></a>
-        <span><a href="https://www.sickkids.ca/en/staff/m/michael-f-moran/">Michael Moran</a></span>
+        <a href={labs.Moran.website}><img alt="member" src={moran} /></a>
+        <span><a href={labs.Moran.website}>Michael Moran</a></span>
       </div>
       <div className="member">
-        <a href="http://pughlab.org/"><img alt="member" src={pugh} /></a>
-        <span><a href="http://pughlab.org/">Trevor Pugh</a></span>
+        <a href={labs.Pugh.website}><img alt="member" src={pugh} /></a>
+        <span><a href={labs.Pugh.website}>Trevor Pugh</a></span>
       </div>
       <div className="member">
-        <a href="https://www.uhnresearch.ca/researcher/gregory-schwartz"><img alt="member" src={schwartz} /></a>
-        <span><a href="https://www.uhnresearch.ca/researcher/gregory-schwartz">Gregory Schwartz</a></span>
+        <a href={labs.Schwartz.website}><img alt="member" src={schwartz} /></a>
+        <span><a href={labs.Schwartz.website}>Gregory Schwartz</a></span>
       </div>
       <div className="member">
-        <a href="https://www.uhnresearch.ca/researcher/wei-xu"><img alt="member" src={wei} /></a>
-        <span><a href="https://www.uhnresearch.ca/researcher/wei-xu">Wei Xu</a></span>
+        <a href={labs.Xu.website}><img alt="member" src={wei} /></a>
+        <span><a href={labs.Xu.website}>Wei Xu</a></span>
       </div>
     </div>
   </StyledMembers>
