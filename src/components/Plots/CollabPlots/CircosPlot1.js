@@ -150,7 +150,7 @@ const CircosPlot = (props) => {
       .attr('transform', (d) => `rotate(${((d.angle) * 180 / Math.PI - 90)})`
                 + `translate(${innerRadius * 0.95}) rotate(${180 - (d.angle) * 180 / Math.PI - 90})`)
       .text((d) => `${d.source.value}`)
-      .style('fill', '#001f21')
+      .style('fill', 'white')
       .attr('font-size', 12);
     // Labels for targets
     svg.append('g')
@@ -164,7 +164,7 @@ const CircosPlot = (props) => {
       .attr('transform', (d) => `rotate(${((d.angle) * 180 / Math.PI - 90)})`
                 + `translate(${innerRadius * 0.95}) rotate(${(180 - (d.angle) * 180 / Math.PI - 90)})`)
       .text((d) => `${d.target.value}`)
-      .style('fill', '#001f21')
+      .style('fill', 'white')
       .attr('font-size', 12);
 
     // unmount network
