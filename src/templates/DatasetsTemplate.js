@@ -97,12 +97,12 @@ const DatasetsTemplate = ({ data }) => {
             <h4>Citation</h4>
             {item.citation === '-' || item.citation === '' ? 'Citation not available.' : item.citation}
             <div className="links">
-              {item.doi === '-' || item.doi === '' ? (
+              {item.doi.trim() === '-' || item.doi.trim() === '' ? (
                 <a className="disabled">DOI</a>
               ) : (
                 <a target="_blank" rel="noopener noreferrer" href={`http://doi.org/${item.doi}`}>DOI</a>
               )}
-              {item.publication_link === '-' || item.publication_link === '' ? (
+              {item.publication_link.trim() === '-' || item.publication_link.trim() === '' ? (
                 <a className="disabled">Publication Link</a>
               ) : (
                 <a target="_blank" rel="noopener noreferrer" href={item.publication_link}>Publication Link</a>
