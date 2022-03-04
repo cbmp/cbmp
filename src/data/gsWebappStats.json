@@ -1,6 +1,6 @@
 [{
 	"name": "PharmacoDB",
-	"cited": "40"
+	"cited": "102"
 }, {
 	"name": "SYNERGxDB",
 	"cited": "0"
@@ -12,17 +12,17 @@
 	"cited": "0"
 }, {
 	"name": "DNF Explorer",
-	"cited": "24"
+	"cited": "32"
 }, {
 	"name": "DNAmod",
-	"cited": "11"
+	"cited": "41"
 }, {
 	"name": "cBioPortal.ca",
-	"cited": "5833"
-}, {
-	"name": "ORCESTRA",
-	"cited": "0"
+	"cited": "9445"
 }, {
 	"name": "CReSCENT",
+	"cited": "7"
+},{
+	"name": "ORCESTRA",
 	"cited": "0"
 }]
