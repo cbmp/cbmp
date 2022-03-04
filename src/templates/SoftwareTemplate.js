@@ -119,12 +119,12 @@ const SoftwareTemplate = ({ data }) => {
               ) : (
                 <a target="_blank" rel="noopener noreferrer" href={`http://doi.org/${item.doi}`}>DOI</a>
               )}
-              {item.scholar_link === '-' ? (
+              {item.scholar_link.trim() === '-' || item.scholar_link.trim() ===''? (
                 <a className="disabled">Google Scholar</a>
               ) : (
                 <a target="_blank" rel="noopener noreferrer" href={item.scholar_link}>Google Scholar</a>
               )}
-              {item.scholar_link_cited === '-' ? (
+              {item.scholar_link_cited.trim() === '-' || item.scholar_link_cited.trim() === '' ? (
                 <a className="disabled">Cited By</a>
               ) : (
                 <a target="_blank" rel="noopener noreferrer" href={item.scholar_link_cited}>
