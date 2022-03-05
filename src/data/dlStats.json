@@ -136,6 +136,11 @@
         "year": "2022",
         "month": "Jan",
         "downloads": "70"
+      },
+      {
+        "year": "2022",
+        "month": "Feb",
+        "downloads": "70"
       }
     ],
     "lab": "Haibe-Kains"
@@ -302,6 +307,11 @@
         "downloads": "14",
         "year": "2022",
         "month": "Jan"
+      },
+      {
+        "year": "2022",
+        "month": "Feb",
+        "downloads": "57"
       }
     ],
     "lab": "Haibe-Kains"
@@ -568,6 +578,11 @@
         "downloads": "211",
         "year": "2022",
         "month": "Jan"
+      },
+      {
+        "downloads": "232",
+        "year": "2022",
+        "month": "Feb"
       }
     ],
     "lab": "Haibe-Kains"
@@ -1095,6 +1110,11 @@
         "year": "2022",
         "month": "Jan",
         "downloads": "235"
+      },
+      {
+        "year": "2022",
+        "month": "Feb",
+        "downloads": "204"
       }
     ],
     "lab": "Haibe-Kains"
@@ -1661,6 +1681,11 @@
         "downloads": "2257",
         "year": "2022",
         "month": "Jan"
+      },
+      {
+        "downloads": "2480",
+        "year": "2022",
+        "month": "Feb"
       }
     ],
     "lab": "Haibe-Kains"
@@ -1837,6 +1862,11 @@
         "year": "2022",
         "month": "Jan",
         "downloads": "54"
+      },
+      {
+        "year": "2022",
+        "month": "Feb",
+        "downloads": "72"
       }
     ],
     "lab": "Haibe-Kains"
@@ -1977,6 +2007,11 @@
       {
         "month": "Jan",
         "downloads": "2537",
+        "year": "2022"
+      },
+      {
+        "month": "Feb",
+        "downloads": "3226",
         "year": "2022"
       }
     ],
@@ -2219,6 +2254,11 @@
         "year": "2022",
         "month": "Jan",
         "downloads": "228"
+      },
+      {
+        "year": "2022",
+        "month": "Feb",
+        "downloads": "327"
       }
     ],
     "lab": "Hoffman"
@@ -2505,6 +2545,11 @@
         "year": "2022",
         "month": "Jan",
         "downloads": "640"
+      },
+      {
+        "year": "2022",
+        "month": "Feb",
+        "downloads": "735"
       }
     ],
     "lab": "Hoffman"
@@ -2796,17 +2841,17 @@
         "year": "2022",
         "month": "Jan",
         "downloads": "396"
+      },
+      {
+        "year": "2022",
+        "month": "Feb",
+        "downloads": "461"
       }
     ],
     "lab": "Hoffman"
   },
   {
     "name": "Umap and Bismap",
-    "stats": [],
-    "lab": "Hoffman"
-  },
-  {
-    "name": "BEHST",
     "stats": [],
     "lab": "Hoffman"
   },
@@ -2966,6 +3011,11 @@
       {
         "month": "Jan",
         "downloads": "347",
+        "year": "2022"
+      },
+      {
+        "month": "Feb",
+        "downloads": "615",
         "year": "2022"
       }
     ],
@@ -3128,6 +3178,11 @@
         "downloads": "168",
         "year": "2022",
         "month": "Jan"
+      },
+      {
+        "downloads": "190",
+        "year": "2022",
+        "month": "Feb"
       }
     ],
     "lab": "Xu"
@@ -3269,6 +3324,11 @@
         "downloads": "181",
         "year": "2022",
         "month": "Jan"
+      },
+      {
+        "downloads": "216",
+        "year": "2022",
+        "month": "Feb"
       }
     ],
     "lab": "Xu"
@@ -3295,11 +3355,6 @@
   },
   {
     "name": "Bamgineer",
-    "stats": [],
-    "lab": "Pugh"
-  },
-  {
-    "name": "CReSCENT",
     "stats": [],
     "lab": "Pugh"
   },
