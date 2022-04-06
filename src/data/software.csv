@@ -39,7 +39,7 @@ Haibe-Kains,Software,RLOBICO,rlobico,R implementation of logic optimization for 
   parameters of Cplex Solver, which leads to better performance than the
   standard Matlab package",0.1.0,"Bo Li, Wail Ba-Alawi, Christopher Eeles and Benjamin Haibe-Kains","RLOBICO, LOBICO, optimal mapping, ILP, R, C++",GPL-3,Manuscript In Development,-,"-
 
-","-","-","-
+","-","-","-Integrative pharmacogenomics analysis of patient-derived xenografts
 
 ",https://github.com/bhklab/RLOBICO,https://github.com/bhklab/RLOBICO/blob/master/vignettes/modelling-example.pdf,-
 Hoffman,Software,Segtools,segtools,Visualizing and analyzing genomic segmentations,"The software efficiently calculates a variety of summary statistics and produces corresponding publication quality visualizations. The overall goal of Segtools is to provide a bird's-eye view of complex genomic data sets, allowing researchers to easily generate and confirm hypotheses.

@@ -1,28 +1,30 @@
-[{
-	"name": "PharmacoDB",
-	"cited": "102"
-}, {
-	"name": "SYNERGxDB",
-	"cited": "0"
-}, {
-	"name": "ToxicoDB",
-	"cited": "0"
-}, {
-	"name": "XevaDB",
-	"cited": "0"
-}, {
-	"name": "DNF Explorer",
-	"cited": "32"
-}, {
-	"name": "DNAmod",
-	"cited": "41"
-}, {
-	"name": "cBioPortal.ca",
-	"cited": "9445"
-}, {
-	"name": "CReSCENT",
-	"cited": "7"
-},{
-	"name": "ORCESTRA",
-	"cited": "0"
-}]
+[
+	{
+		"name": "PharmacoDB",
+		"cited": "105"
+	}, {
+		"name": "SYNERGxDB",
+		"cited": "0"
+	}, {
+		"name": "ToxicoDB",
+		"cited": "0"
+	}, {
+		"name": "XevaDB",
+		"cited": "0"
+	}, {
+		"name": "DNF Explorer",
+		"cited": "33"
+	}, {
+		"name": "ORCESTRA",
+		"cited": "0"
+	}, {
+		"name": "DNAmod",
+		"cited": "40"
+	}, {
+		"name": "cBioPortal.ca",
+		"cited": "9632"
+	}, {
+		"name": "CReSCENT",
+		"cited": "7"
+	}
+]
