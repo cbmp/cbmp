@@ -63,7 +63,7 @@ const labs = {
     lab: 'Schwartz',
     PI: 'Gregory Schwartz',
     website: 'https://medbio.utoronto.ca/faculty/schwartz',
-    scholar_id: '',
+    scholar_id: 'zNWiqkUAAAAJ',
   },
   Xu: {
     lab: 'Xu',

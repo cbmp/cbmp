@@ -3462,5 +3462,40 @@
     "name": "Cytoscape",
     "stats": [],
     "lab": "Bader"
+  },
+  {
+    "name": "inteGREAT",
+    "stats": [],
+    "lab": "Schwartz"
+  },
+  {
+    "name": "HeatITup",
+    "stats": [],
+    "lab": "Schwartz"
+  },
+  {
+    "name": "TooManyCells",
+    "stats": [],
+    "lab": "Schwartz"
+  },
+  {
+    "name": "diversity",
+    "stats": [],
+    "lab": "Schwartz"
+  },
+  {
+    "name": "find-clumpiness",
+    "stats": [],
+    "lab": "Schwartz"
+  },
+  {
+    "name": "fasta",
+    "stats": [],
+    "lab": "Schwartz"
+  },
+  {
+    "name": "ploterific",
+    "stats": [],
+    "lab": "Schwartz"
   }
 ]
