@@ -146,6 +146,11 @@
         "year": "2022",
         "month": "Mar",
         "downloads": "70"
+      },
+      {
+        "year": "2022",
+        "month": "Apr",
+        "downloads": "73"
       }
     ],
     "lab": "Haibe-Kains"
@@ -322,6 +327,11 @@
         "downloads": "28",
         "year": "2022",
         "month": "Mar"
+      },
+      {
+        "downloads": "29",
+        "year": "2022",
+        "month": "Apr"
       }
     ],
     "lab": "Haibe-Kains"
@@ -598,6 +608,11 @@
         "downloads": "325",
         "year": "2022",
         "month": "Mar"
+      },
+      {
+        "downloads": "271",
+        "year": "2022",
+        "month": "Apr"
       }
     ],
     "lab": "Haibe-Kains"
@@ -799,6 +814,11 @@
         "downloads": "275",
         "year": "2022",
         "month": "Mar"
+      },
+      {
+        "downloads": "250",
+        "year": "2022",
+        "month": "Apr"
       }
     ],
     "lab": "Haibe-Kains"
@@ -1140,6 +1160,11 @@
         "year": "2022",
         "month": "Mar",
         "downloads": "197"
+      },
+      {
+        "year": "2022",
+        "month": "Apr",
+        "downloads": "209"
       }
     ],
     "lab": "Haibe-Kains"
@@ -1716,6 +1741,11 @@
         "downloads": "2798",
         "year": "2022",
         "month": "Mar"
+      },
+      {
+        "downloads": "2620",
+        "year": "2022",
+        "month": "Apr"
       }
     ],
     "lab": "Haibe-Kains"
@@ -1902,6 +1932,11 @@
         "year": "2022",
         "month": "Mar",
         "downloads": "77"
+      },
+      {
+        "year": "2022",
+        "month": "Apr",
+        "downloads": "82"
       }
     ],
     "lab": "Haibe-Kains"
@@ -2052,6 +2087,11 @@
       {
         "month": "Mar",
         "downloads": "4475",
+        "year": "2022"
+      },
+      {
+        "month": "Apr",
+        "downloads": "2126",
         "year": "2022"
       }
     ],
@@ -2304,6 +2344,11 @@
         "year": "2022",
         "month": "Mar",
         "downloads": "304"
+      },
+      {
+        "year": "2022",
+        "month": "Apr",
+        "downloads": "376"
       }
     ],
     "lab": "Hoffman"
@@ -2600,6 +2645,11 @@
         "year": "2022",
         "month": "Mar",
         "downloads": "676"
+      },
+      {
+        "year": "2022",
+        "month": "Apr",
+        "downloads": "909"
       }
     ],
     "lab": "Hoffman"
@@ -2901,6 +2951,11 @@
         "year": "2022",
         "month": "Mar",
         "downloads": "620"
+      },
+      {
+        "year": "2022",
+        "month": "Apr",
+        "downloads": "889"
       }
     ],
     "lab": "Hoffman"
@@ -3077,6 +3132,11 @@
         "month": "Mar",
         "downloads": "794",
         "year": "2022"
+      },
+      {
+        "month": "Apr",
+        "downloads": "398",
+        "year": "2022"
       }
     ],
     "lab": "Hoffman"
@@ -3248,6 +3308,11 @@
         "downloads": "258",
         "year": "2022",
         "month": "Mar"
+      },
+      {
+        "downloads": "214",
+        "year": "2022",
+        "month": "Apr"
       }
     ],
     "lab": "Xu"
@@ -3399,6 +3464,11 @@
         "downloads": "315",
         "year": "2022",
         "month": "Mar"
+      },
+      {
+        "downloads": "260",
+        "year": "2022",
+        "month": "Apr"
       }
     ],
     "lab": "Xu"
@@ -3462,40 +3532,5 @@
     "name": "Cytoscape",
     "stats": [],
     "lab": "Bader"
-  },
-  {
-    "name": "inteGREAT",
-    "stats": [],
-    "lab": "Schwartz"
-  },
-  {
-    "name": "HeatITup",
-    "stats": [],
-    "lab": "Schwartz"
-  },
-  {
-    "name": "TooManyCells",
-    "stats": [],
-    "lab": "Schwartz"
-  },
-  {
-    "name": "diversity",
-    "stats": [],
-    "lab": "Schwartz"
-  },
-  {
-    "name": "find-clumpiness",
-    "stats": [],
-    "lab": "Schwartz"
-  },
-  {
-    "name": "fasta",
-    "stats": [],
-    "lab": "Schwartz"
-  },
-  {
-    "name": "ploterific",
-    "stats": [],
-    "lab": "Schwartz"
   }
 ]

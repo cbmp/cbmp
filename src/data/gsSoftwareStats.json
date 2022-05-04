@@ -1,7 +1,7 @@
 [
   {
     "name": "Cytoscape",
-    "cited": "28546"
+    "cited": "28792"
   },
   {
     "name": "ToxicoGx",
@@ -21,15 +21,15 @@
   },
   {
     "name": "PharmacoGx",
-    "cited": "175"
+    "cited": "177"
   },
   {
     "name": "mRMRe",
-    "cited": "162"
+    "cited": "164"
   },
   {
     "name": "Xeva",
-    "cited": "20"
+    "cited": "21"
   },
   {
     "name": "PymRMRe",
@@ -45,7 +45,7 @@
   },
   {
     "name": "Segway",
-    "cited": "618"
+    "cited": "620"
   },
   {
     "name": "Genomedata",
@@ -73,7 +73,7 @@
   },
   {
     "name": "ABC",
-    "cited": "20"
+    "cited": "21"
   },
   {
     "name": "VSE",
@@ -85,11 +85,11 @@
   },
   {
     "name": "MEMOS",
-    "cited": "29"
+    "cited": "31"
   },
   {
     "name": "ConsensusCruncher",
-    "cited": "43"
+    "cited": "44"
   },
   {
     "name": "VisCap",
@@ -121,7 +121,7 @@
   },
   {
     "name": "find-clumpiness",
-    "cited": "8"
+    "cited": "9"
   },
   {
     "name": "fasta",
