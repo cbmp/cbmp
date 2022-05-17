@@ -102,7 +102,6 @@ const SoftwareTemplate = ({ data }) => {
               </div>
             </div>
             <div className="download">
-              {/* <a target="_blank" rel="noopener noreferrer" href={item.download_link}>Download</a> */}
               {item.download_link.trim() === '' || item.download_link.trim() === '-' ? (
                 <a className="disabled">Download</a>
               ) : (
