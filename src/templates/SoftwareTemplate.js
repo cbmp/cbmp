@@ -110,13 +110,13 @@ const SoftwareTemplate = ({ data }) => {
               {
                 item.instruction_link.trim() === '' || item.instruction_link.trim() === '-'
                   ? item.download_stats_link.trim() === '' || item.download_stats_link.trim() === '-' // no link
-                    ? (<a className="disabled">Package Info</a>)
+                    ? (<a className="disabled">Info</a>)
                     : (<a target="_blank" rel="noopener noreferrer" href={item.download_stats_link}>Info</a>)
                   : item.download_link.includes('github') && item.instruction_link.includes('github')
                     ? !(item.download_stats_link.trim() === '' || item.download_stats_link.trim() === '-')
                       ? (<a target="_blank" rel="noopener noreferrer" href={item.download_stats_link}>Info</a>)
                     : (<a target="_blank" rel="noopener noreferrer" href={item.instruction_link}>Info</a>)
-                  : (<a target="_blank" rel="noopener noreferrer" href={item.instruction_link}>Package Info</a>)
+                  : (<a target="_blank" rel="noopener noreferrer" href={item.instruction_link}>Info</a>)
               }
             </div>
 
