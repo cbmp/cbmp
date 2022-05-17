@@ -3475,7 +3475,13 @@
   },
   {
     "name": "GENmatic",
-    "stats": [],
+    "stats": [
+      {
+      "downloads": "",
+      "year": "2022",
+      "month": "Feb"
+    }
+    ],
     "lab": "Xu"
   },
   {
@@ -3535,37 +3541,79 @@
   },
   {
     "name": "inteGREAT",
-    "stats": [],
+    "stats": [
+      {
+        "downloads": "8",
+        "year": "2022",
+        "month": "Apr"
+      }
+    ],
     "lab": "Schwartz"
   },
   {
     "name": "HeatITup",
-    "stats": [],
+    "stats": [
+      {
+        "downloads": "14",
+        "year": "2022",
+        "month": "Apr"
+      }
+    ],
     "lab": "Schwartz"
   },
   {
     "name": "TooManyCells",
-    "stats": [],
+    "stats": [
+      {
+        "downloads": "113",
+        "year": "2022",
+        "month": "Apr"
+      }
+    ],
     "lab": "Schwartz"
   },
   {
     "name": "diversity",
-    "stats": [],
+    "stats": [
+      {
+        "downloads": "76",
+        "year": "2022",
+        "month": "Apr"
+      }
+    ],
     "lab": "Schwartz"
   },
   {
     "name": "find-clumpiness",
-    "stats": [],
+    "stats": [
+      {
+        "downloads": "32",
+        "year": "2022",
+        "month": "Apr"
+      }
+    ],
     "lab": "Schwartz"
   },
   {
     "name": "fasta",
-    "stats": [],
+    "stats": [
+      {
+        "downloads": "92",
+        "year": "2022",
+        "month": "Apr"
+      }
+    ],
     "lab": "Schwartz"
   },
   {
     "name": "ploterific",
-    "stats": [],
+    "stats": [
+      {
+        "downloads": "42",
+        "year": "2022",
+        "month": "Apr"
+      }
+    ],
     "lab": "Schwartz"
   }
 ]

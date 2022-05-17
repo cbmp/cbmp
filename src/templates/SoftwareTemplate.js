@@ -50,7 +50,6 @@ const SoftwareTemplate = ({ data }) => {
   const item = data.softwareCsv;
   const { stats } = data.dlStatsJson;
   const citedBy = data.gsSoftwareStatsJson.cited;
-
   return (
     <Layout page="SoftwareTemplate">
       <StyledIndivPage>
@@ -103,8 +102,25 @@ const SoftwareTemplate = ({ data }) => {
               </div>
             </div>
             <div className="download">
-              <a target="_blank" rel="noopener noreferrer" href={item.download_link}>Download</a>
+              {/* <a target="_blank" rel="noopener noreferrer" href={item.download_link}>Download</a> */}
+              {item.download_link.trim() === '' || item.download_link.trim() === '-' ? (
+                <a className="disabled">Download</a>
+              ) : (
+                <a target="_blank" rel="noopener noreferrer" href={item.download_link}>Download</a>
+              )}
+              {
+                item.instruction_link.trim() === '' || item.instruction_link.trim() === '-'
+                  ? item.download_stats_link.trim() === '' || item.download_stats_link.trim() === '-' // no link
+                    ? (<a className="disabled">Package Info</a>)
+                    : (<a target="_blank" rel="noopener noreferrer" href={item.download_stats_link}>Info</a>)
+                  : item.download_link.includes('github') && item.instruction_link.includes('github')
+                    ? !(item.download_stats_link.trim() === '' || item.download_stats_link.trim() === '-')
+                      ? (<a target="_blank" rel="noopener noreferrer" href={item.download_stats_link}>Info</a>)
+                    : (<a target="_blank" rel="noopener noreferrer" href={item.instruction_link}>Info</a>)
+                  : (<a target="_blank" rel="noopener noreferrer" href={item.instruction_link}>Package Info</a>)
+              }
             </div>
+
           </div>
         </div>
         <div className="container title">
@@ -119,7 +135,7 @@ const SoftwareTemplate = ({ data }) => {
               ) : (
                 <a target="_blank" rel="noopener noreferrer" href={`http://doi.org/${item.doi}`}>DOI</a>
               )}
-              {item.scholar_link.trim() === '-' || item.scholar_link.trim() ===''? (
+              {item.scholar_link.trim() === '-' || item.scholar_link.trim() === '' ? (
                 <a className="disabled">Google Scholar</a>
               ) : (
                 <a target="_blank" rel="noopener noreferrer" href={item.scholar_link}>Google Scholar</a>

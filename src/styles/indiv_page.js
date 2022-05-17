@@ -73,7 +73,7 @@ export const StyledIndivPage = styled.div`
         display: flex;
         justify-content: space-between;
         line-height: 1.5em;
-        height: 35vh;
+        max-height: 46vh;
         .section {
             width: 46%;
             position: relative;

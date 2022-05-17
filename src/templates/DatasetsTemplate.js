@@ -102,11 +102,6 @@ const DatasetsTemplate = ({ data }) => {
               ) : (
                 <a target="_blank" rel="noopener noreferrer" href={`http://doi.org/${item.doi}`}>DOI</a>
               )}
-              {item.publication_link.trim() === '-' || item.publication_link.trim() === '' ? (
-                <a className="disabled">Publication Link</a>
-              ) : (
-                <a target="_blank" rel="noopener noreferrer" href={item.publication_link}>Publication Link</a>
-              )}
             </div>
           </div>
           <div className="section stats">
