@@ -151,6 +151,11 @@
         "year": "2022",
         "month": "Apr",
         "downloads": "73"
+      },
+      {
+        "year": "2022",
+        "month": "May",
+        "downloads": "79"
       }
     ],
     "lab": "Haibe-Kains"
@@ -332,6 +337,11 @@
         "downloads": "29",
         "year": "2022",
         "month": "Apr"
+      },
+      {
+        "downloads": "24",
+        "year": "2022",
+        "month": "May"
       }
     ],
     "lab": "Haibe-Kains"
@@ -613,6 +623,11 @@
         "downloads": "271",
         "year": "2022",
         "month": "Apr"
+      },
+      {
+        "downloads": "292",
+        "year": "2022",
+        "month": "May"
       }
     ],
     "lab": "Haibe-Kains"
@@ -819,6 +834,11 @@
         "downloads": "250",
         "year": "2022",
         "month": "Apr"
+      },
+      {
+        "downloads": "285",
+        "year": "2022",
+        "month": "May"
       }
     ],
     "lab": "Haibe-Kains"
@@ -1165,6 +1185,11 @@
         "year": "2022",
         "month": "Apr",
         "downloads": "209"
+      },
+      {
+        "year": "2022",
+        "month": "May",
+        "downloads": "211"
       }
     ],
     "lab": "Haibe-Kains"
@@ -1746,6 +1771,11 @@
         "downloads": "2620",
         "year": "2022",
         "month": "Apr"
+      },
+      {
+        "downloads": "2937",
+        "year": "2022",
+        "month": "May"
       }
     ],
     "lab": "Haibe-Kains"
@@ -1937,6 +1967,11 @@
         "year": "2022",
         "month": "Apr",
         "downloads": "82"
+      },
+      {
+        "year": "2022",
+        "month": "May",
+        "downloads": "62"
       }
     ],
     "lab": "Haibe-Kains"
@@ -2092,6 +2127,11 @@
       {
         "month": "Apr",
         "downloads": "2126",
+        "year": "2022"
+      },
+      {
+        "month": "May",
+        "downloads": "1658",
         "year": "2022"
       }
     ],
@@ -2349,6 +2389,11 @@
         "year": "2022",
         "month": "Apr",
         "downloads": "376"
+      },
+      {
+        "year": "2022",
+        "month": "May",
+        "downloads": "378"
       }
     ],
     "lab": "Hoffman"
@@ -2650,6 +2695,11 @@
         "year": "2022",
         "month": "Apr",
         "downloads": "909"
+      },
+      {
+        "year": "2022",
+        "month": "May",
+        "downloads": "840"
       }
     ],
     "lab": "Hoffman"
@@ -2956,6 +3006,11 @@
         "year": "2022",
         "month": "Apr",
         "downloads": "889"
+      },
+      {
+        "year": "2022",
+        "month": "May",
+        "downloads": "635"
       }
     ],
     "lab": "Hoffman"
@@ -3137,6 +3192,11 @@
         "month": "Apr",
         "downloads": "398",
         "year": "2022"
+      },
+      {
+        "month": "May",
+        "downloads": "277",
+        "year": "2022"
       }
     ],
     "lab": "Hoffman"
@@ -3313,6 +3373,11 @@
         "downloads": "214",
         "year": "2022",
         "month": "Apr"
+      },
+      {
+        "downloads": "241",
+        "year": "2022",
+        "month": "May"
       }
     ],
     "lab": "Xu"
@@ -3469,14 +3534,18 @@
         "downloads": "260",
         "year": "2022",
         "month": "Apr"
+      },
+      {
+        "downloads": "276",
+        "year": "2022",
+        "month": "May"
       }
     ],
     "lab": "Xu"
   },
   {
     "name": "GENmatic",
-    "stats": [
-    ],
+    "stats": [],
     "lab": "Xu"
   },
   {
@@ -3541,6 +3610,11 @@
         "downloads": "8",
         "year": "2022",
         "month": "Apr"
+      },
+      {
+        "downloads": "7",
+        "year": "2022",
+        "month": "May"
       }
     ],
     "lab": "Schwartz"
@@ -3552,6 +3626,11 @@
         "downloads": "14",
         "year": "2022",
         "month": "Apr"
+      },
+      {
+        "downloads": "19",
+        "year": "2022",
+        "month": "May"
       }
     ],
     "lab": "Schwartz"
@@ -3563,6 +3642,11 @@
         "downloads": "113",
         "year": "2022",
         "month": "Apr"
+      },
+      {
+        "downloads": "101",
+        "year": "2022",
+        "month": "May"
       }
     ],
     "lab": "Schwartz"
@@ -3574,6 +3658,11 @@
         "downloads": "76",
         "year": "2022",
         "month": "Apr"
+      },
+      {
+        "downloads": "67",
+        "year": "2022",
+        "month": "May"
       }
     ],
     "lab": "Schwartz"
@@ -3585,6 +3674,11 @@
         "downloads": "32",
         "year": "2022",
         "month": "Apr"
+      },
+      {
+        "downloads": "24",
+        "year": "2022",
+        "month": "May"
       }
     ],
     "lab": "Schwartz"
@@ -3596,6 +3690,11 @@
         "downloads": "92",
         "year": "2022",
         "month": "Apr"
+      },
+      {
+        "downloads": "82",
+        "year": "2022",
+        "month": "May"
       }
     ],
     "lab": "Schwartz"
@@ -3607,6 +3706,11 @@
         "downloads": "42",
         "year": "2022",
         "month": "Apr"
+      },
+      {
+        "downloads": "31",
+        "year": "2022",
+        "month": "May"
       }
     ],
     "lab": "Schwartz"
