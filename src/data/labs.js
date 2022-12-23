@@ -24,7 +24,7 @@ const labs = {
     scholar_id: '96r1DYUAAAAJ',
   },
   CCG: {
-    lab: 'CCG',
+    lab: 'Kumar',
     PI: 'Sushant Kumar',
     website: 'https://ccglab-uhn.github.io/',
     scholar_id: 'ujvDsFUAAAAJ',
@@ -70,7 +70,7 @@ const labs = {
     PI: 'Wei Xu',
     website: 'https://www.dlsph.utoronto.ca/faculty-profile/xu-wei/',
     scholar_id: 'bD0-KagAAAAJ',
-  },
+  }
 };
 
 export default labs;

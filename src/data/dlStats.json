@@ -3969,6 +3969,11 @@
         "lab": "Xu"
     },
     {
+        "name": "LDCT NER",
+        "stats": [],
+        "lab": "Xu"
+    },
+    {
         "name": "ConsensusCruncher",
         "stats": [],
         "lab": "Pugh"
@@ -4344,5 +4349,25 @@
             }
         ],
         "lab": "Schwartz"
+    },
+    {
+        "name": "Bi-LSTM 1 (LDCT Report NLP Model)",
+        "stats": [],
+        "lab": "Liu"
+    },
+    {
+        "name": "Frustration",
+        "stats": [],
+        "lab": "Kumar"
+    },
+    {
+        "name": "HotCommics",
+        "stats": [],
+        "lab": "Kumar"
+    },
+    {
+        "name": "SVFX",
+        "stats": [],
+        "lab": "Kumar"
     }
 ]

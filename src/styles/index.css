@@ -88,6 +88,7 @@ h1, h2 {
     display: inline-block;
     /* align-items: center; */
     /* flex-direction: column; */
+    line-height: 30px;
     margin: 20px 0px;
     text-align:center;
     padding-bottom: 70px;
