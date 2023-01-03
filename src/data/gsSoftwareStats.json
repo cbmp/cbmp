@@ -1,7 +1,7 @@
 [
   {
     "name": "Cytoscape",
-    "cited": "32545"
+    "cited": "33078"
   },
   {
     "name": "ToxicoGx",
@@ -21,15 +21,15 @@
   },
   {
     "name": "PharmacoGx",
-    "cited": "203"
+    "cited": "207"
   },
   {
     "name": "mRMRe",
-    "cited": "188"
+    "cited": "193"
   },
   {
     "name": "Xeva",
-    "cited": "27"
+    "cited": "28"
   },
   {
     "name": "PymRMRe",
@@ -45,7 +45,7 @@
   },
   {
     "name": "Segway",
-    "cited": "653"
+    "cited": "663"
   },
   {
     "name": "Genomedata",
@@ -53,7 +53,7 @@
   },
   {
     "name": "Umap and Bismap",
-    "cited": "105"
+    "cited": "106"
   },
   {
     "name": "Virchip",
@@ -68,6 +68,22 @@
     "cited": "0"
   },
   {
+    "name": "Frustration",
+    "cited": "0"
+  },
+  {
+    "name": "HotCommics",
+    "cited": "0"
+  },
+  {
+    "name": "SVFX",
+    "cited": "0"
+  },
+  {
+    "name": "Bi-LSTM 1 (LDCT Report NLP Model)",
+    "cited": "0"
+  },
+  {
     "name": "SMuRF",
     "cited": "3"
   },
@@ -77,7 +93,7 @@
   },
   {
     "name": "VSE",
-    "cited": "19"
+    "cited": "20"
   },
   {
     "name": "C3D",
@@ -85,7 +101,7 @@
   },
   {
     "name": "MEMOS",
-    "cited": "39"
+    "cited": "41"
   },
   {
     "name": "ConsensusCruncher",
@@ -93,7 +109,7 @@
   },
   {
     "name": "VisCap",
-    "cited": "62"
+    "cited": "63"
   },
   {
     "name": "VisCapCancer",
@@ -109,15 +125,15 @@
   },
   {
     "name": "HeatITup",
-    "cited": "13"
+    "cited": "15"
   },
   {
     "name": "TooManyCells",
-    "cited": "45"
+    "cited": "47"
   },
   {
     "name": "diversity",
-    "cited": "21"
+    "cited": "23"
   },
   {
     "name": "find-clumpiness",
@@ -137,26 +153,10 @@
   },
   {
     "name": "remss",
-    "cited": "11"
+    "cited": "12"
   },
   {
     "name": "GENmatic",
-    "cited": "0"
-  },
-  {
-    "name": "Frustration",
-    "cited": "0"
-  },
-  {
-    "name": "HotCommics",
-    "cited": "0"
-  },
-  {
-    "name": "SVFX",
-    "cited": "0"
-  },
-  {
-    "name": "Bi-LSTM 1 (LDCT Report NLP Model)",
     "cited": "0"
   },
   {
