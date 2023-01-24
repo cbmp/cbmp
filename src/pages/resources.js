@@ -108,7 +108,6 @@ const StyledResources = styled.div`
       margin: auto;
       height:800px;
     }
-    
 `;
 
 const Resources = () => {
@@ -158,7 +157,6 @@ const Resources = () => {
             <div className="page">
               <div className="toc">
                 <a href="#hpc4health">HPC4Health/Slurm</a>
-                <a href="#grant">Grant Opportunities</a>
                 <a href="#data_sharing">Data Sharing</a>
                 <a href="#analytics">Enabling Google Analytics</a>
               </div>
@@ -174,20 +172,7 @@ const Resources = () => {
                     <iframe src="https://docs.google.com/document/d/e/2PACX-1vT1LVlyaWTbyR_9Dbvj55S3kayzI-7Y1WtaRqsiYYAT26QK9PBGQnwIfQsMjVGCzVayglm0FHktcPtg/pub?embedded=true" width="800" height="800" frameborder="1" marginheight="0" marginwidth="0">Loading…></iframe>
                   </div>
                 </div>
-                
-                <div id="grant" className="container">
-                  <div className="resource-container">
-                    <h2>CBMP Grant Opportunities</h2>
-                    <span>
-                    To view and comment on the full document outlining potential grant opportunities for CBMP, <a href="https://docs.google.com/document/d/1hGsq7C6YxIr8mb4fCf1yAQtJOazlaHBU0gXmveEEEgM/edit?usp=sharing" target="_blank"> <b>click here</b></a>. 
-                    <br/>
-                    To view recently discussed grants, see below. 
-                    <br/><br/>
-                    </span>
-                    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSO0W9cV3ILkkuivB1IV4yJ2d6f7HZVRb463HD3lA8QMTTliBueoDlm-f963xVVgSKyOSypmXrWFTEx/embed?start=false&loop=false&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                  </div>
-                </div>
-              
+
                 <div id="data_sharing" className="container">
                   <div className="resource-container">
                     <h2>Data Sharing</h2>
