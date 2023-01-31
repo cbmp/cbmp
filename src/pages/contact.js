@@ -47,10 +47,16 @@ const StyledContact = styled.div`
 
     span {
       flex-basis: 50%;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
       min-width: 310px;
     }
-
+    .name {
+      display: flex;
+      flex-direction: row;
+      & b {
+        min-width: 165px;
+      }
+    }
     .addr-container {
       width: 48%;
 
@@ -105,7 +111,52 @@ const Contact = () => (
 
         <div className="contact-cont">
           <div className="members">
-            <span>
+            <span className="name">
+              <b>Gary Bader</b>
+              <a href="mailto:gary.bader@utoronto.ca">
+                <StyledEmail>
+                  <img alt="email" src={Email} />
+                  <div className="email"><div className="text">gary.bader@utoronto.ca</div></div>
+                </StyledEmail>
+              </a>
+            </span>
+            <span className="name">
+              <b>Philippe Bedard</b>
+              <a href="mailto:philippe.bedard@uhn.ca">
+                <StyledEmail>
+                  <img alt="email" src={Email} />
+                  <div className="email"><div className="text">philippe.bedard@uhn.ca</div></div>
+                </StyledEmail>
+              </a>
+            </span>
+            <span className="name">
+              <b>Alejandro Berlin</b>
+              <a href="mailto:alejandro.berlin@rmp.uhn.ca">
+                <StyledEmail>
+                  <img alt="email" src={Email} />
+                  <div className="email"><div className="text">alejandro.berlin@rmp.uhn.ca</div></div>
+                </StyledEmail>
+              </a>
+            </span>
+            <span className="name">
+              <b>Michael Brudno</b>
+              <a href="mailto:brudno@cs.toronto.edu">
+                <StyledEmail>
+                  <img alt="email" src={Email} />
+                  <div className="email"><div className="text">brudno@cs.toronto.edu​</div></div>
+                </StyledEmail>
+              </a>
+            </span>
+            <span className="name">
+              <b>David Cescon</b>
+              <a href="mailto:dave.cescon@uhn.ca">
+                <StyledEmail>
+                  <img alt="email" src={Email} />
+                  <div className="email"><div className="text">dave.cescon@uhn.ca</div></div>
+                </StyledEmail>
+              </a>
+            </span>
+            <span className="name">
               <b>Federico Gaiti</b>
               <a href="mailto:Federico.Gaiti@uhnresearch.ca">
                 <StyledEmail>
@@ -114,8 +165,17 @@ const Contact = () => (
                 </StyledEmail>
               </a>
             </span>
-            <span>
-              <b>Benjamin Haibe-Kains (Chair)</b>
+            <span className="name">
+              <b>Robert Grant</b>
+              <a href="mailto:robert.grant@uhn.ca">
+                <StyledEmail>
+                  <img alt="email" src={Email} />
+                  <div className="email"><div className="text">robert.grant@uhn.ca</div></div>
+                </StyledEmail>
+              </a>
+            </span>
+            <span className="name">
+              <b>Benjamin Haibe-Kains</b>
               <a href="mailto:benjamin.haibe-kains@uhnresearch.ca">
                 <StyledEmail>
                   <img alt="email" src={Email} />
@@ -123,8 +183,26 @@ const Contact = () => (
                 </StyledEmail>
               </a>
             </span>
-            <span>
-              <b>Michael Hoffman</b>
+            <span className="name">
+              <b>Masoom Haider</b>
+              <a href="mailto:m.haider@utoronto.ca">
+                <StyledEmail>
+                  <img alt="email" src={Email} />
+                  <div className="email"><div className="text">m.haider@utoronto.ca</div></div>
+                </StyledEmail>
+              </a>
+            </span>
+            <span className="name">
+              <b>Andrew Hope</b>
+              <a href="mailto:Andrew.Hope@uhn.ca">
+                <StyledEmail>
+                  <img alt="email" src={Email} />
+                  <div className="email"><div className="text">Andrew.Hope@uhn.ca</div></div>
+                </StyledEmail>
+              </a>
+            </span>
+            <span className="name">
+              <b>Michael Hoffman (Chair)</b>
               <a href="mailto:michael.hoffman@utoronto.ca">
                 <StyledEmail>
                   <img alt="email" src={Email} />
@@ -132,7 +210,16 @@ const Contact = () => (
                 </StyledEmail>
               </a>
             </span>
-            <span>
+            <span className="name">
+              <b>Robert Kridel</b>
+              <a href="mailto:robert.kridel@uhn.ca">
+                <StyledEmail>
+                  <img alt="email" src={Email} />
+                  <div className="email"><div className="text">robert.kridel@uhn.ca</div></div>
+                </StyledEmail>
+              </a>
+            </span>
+            <span className="name">
               <b>Sushant Kumar</b>
               <a href="mailto:Sushant.Kumar@uhnresearch.ca">
                 <StyledEmail>
@@ -141,7 +228,25 @@ const Contact = () => (
                 </StyledEmail>
               </a>
             </span>
-            <span>
+            <span className="name">
+              <b>Natasha Leighl</b>
+              <a href="mailto:">
+                <StyledEmail>
+                  <img alt="email" src={Email} />
+                  <div className="email"><div className="text">natasha.leighl@uhn.ca</div></div>
+                </StyledEmail>
+              </a>
+            </span>
+            <span className="name">
+              <b>Fei-Fei Liu</b>
+              <a href="mailto:Fei-Fei.Liu@uhn.ca">
+                <StyledEmail>
+                  <img alt="email" src={Email} />
+                  <div className="email"><div className="text">Fei-Fei.Liu@uhn.ca</div></div>
+                </StyledEmail>
+              </a>
+            </span>
+            <span className="name">
               <b>Geoffrey Liu</b>
               <a href="mailto:geoffrey.liu@uhn.ca">
                 <StyledEmail>
@@ -150,7 +255,7 @@ const Contact = () => (
                 </StyledEmail>
               </a>
             </span>
-            <span>
+            <span className="name">
               <b>Mark Minden</b>
               <a href="mailto:mark.minden@uhn.ca">
                 <StyledEmail>
@@ -159,7 +264,7 @@ const Contact = () => (
                 </StyledEmail>
               </a>
             </span>
-            <span>
+            <span className="name">
               <b>Michael Moran</b>
               <a href="mailto:m.moran@utoronto.ca">
                 <StyledEmail>
@@ -168,7 +273,7 @@ const Contact = () => (
                 </StyledEmail>
               </a>
             </span>
-            <span>
+            <span className="name">
               <b>Trevor Pugh</b>
               <a href="mailto:trevor.pugh@uhn.ca">
                 <StyledEmail>
@@ -177,7 +282,7 @@ const Contact = () => (
                 </StyledEmail>
               </a>
             </span>
-            <span>
+            <span className="name">
               <b>Gregory Schwartz</b>
               <a href="mailto:Gregory.Schwartz@uhnresearch.ca">
                 <StyledEmail>
@@ -186,7 +291,16 @@ const Contact = () => (
                 </StyledEmail>
               </a>
             </span>
-            <span>
+            <span className="name">
+              <b>Jan Seuntjens</b>
+              <a href="mailto:jan.seuntjens@rmp.uhn.ca">
+                <StyledEmail>
+                  <img alt="email" src={Email} />
+                  <div className="email"><div className="text">jan.seuntjens@rmp.uhn.ca</div></div>
+                </StyledEmail>
+              </a>
+            </span>
+            <span className="name">
               <b>Wei Xu</b>
               <a href="mailto:wei.xu@uhnresearch.ca">
                 <StyledEmail>
@@ -215,11 +329,11 @@ const Contact = () => (
                 <img src={CBMP} />
               </a> */}
               <span>
-                <b>For general inquiries:</b>
-                <a href="mailto:pm.cbmp@gmail.com">
+                <b>For general inquiries, contact Paul Brogee (Program Manager):</b>
+                <a href="mailto:paul.brogee@uhnresearch.ca">
                   <StyledEmail>
                     <img alt="email" src={Email} />
-                    <div className="email"><div className="text">pm.cbmp@gmail.com</div></div>
+                    <div className="email"><div className="text">paul.brogee@uhnresearch.ca</div></div>
                   </StyledEmail>
                 </a>
               </span>
