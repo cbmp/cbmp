@@ -5,11 +5,41 @@ const labs = {
     website: 'https://baderlab.org/',
     scholar_id: '22M9eisAAAAJ',
   },
+  Bedard: {
+    lab: 'Bedard',
+    PI: 'Philippe Bedard',
+    website: 'https://www.uhnresearch.ca/researcher/philippe-bedard',
+    scholar_id: 'Tp-NMz0AAAAJ',
+  },
+  Berlin: {
+    lab: 'Berlin',
+    PI: 'Alejandro Berlin',
+    website: 'https://radonc.utoronto.ca/faculty/alejandro-berlin',
+    scholar_id: '6RuFEicAAAAJ',
+  },
+  Brudno: {
+    lab: 'Brudno',
+    PI: 'Michael Brudno',
+    website: 'https://brudno.uhndata.io/',
+    scholar_id: 'xoNrEqUAAAAJ',
+  },
+  Cescon: {
+    lab: 'Cescon',
+    PI: 'David Cescon',
+    website: 'https://www.uhnresearch.ca/researcher/david-cescon',
+    scholar_id: 'c2PH_FoAAAAJ',
+  },
   Gaiti: {
     lab: 'Gaiti',
     PI: 'Federico Gaiti',
     website: 'https://www.gaitilab.com/team',
     scholar_id: 'MRlCOU4AAAAJ',
+  },
+  Grant: {
+    lab: 'Grant',
+    PI: 'Robert Grant',
+    website: '',
+    scholar_id: '',
   },
   'Haibe-Kains': {
     lab: 'Haibe-Kains',
@@ -17,11 +47,29 @@ const labs = {
     website: 'https://www.pmgenomics.ca/bhklab/',
     scholar_id: 'hfGa2RMAAAAJ',
   },
+  Haider: {
+    lab: 'Haider',
+    PI: 'Masoom Haider',
+    website: 'https://medical-imaging.utoronto.ca/faculty/masoom-haider',
+    scholar_id: '5gnQmpAAAAAJ',
+  },
   Hoffman: {
     lab: 'Hoffman',
     PI: 'Michael Hoffman',
     website: 'https://hoffmanlab.org/',
     scholar_id: '96r1DYUAAAAJ',
+  },
+  Hope: {
+    lab: 'Hope',
+    PI: 'Andrew Hope',
+    website: 'https://www.uhnresearch.ca/researcher/andrew-hope',
+    scholar_id: '',
+  },
+  Kridel: {
+    lab: 'Kridel',
+    PI: 'Robert Kridel',
+    website: 'https://www.uhnresearch.ca/researcher/robert-kridel',
+    scholar_id: 'JFRauOgAAAAJ',
   },
   CCG: {
     lab: 'Kumar',
@@ -29,11 +77,23 @@ const labs = {
     website: 'https://ccglab-uhn.github.io/',
     scholar_id: 'ujvDsFUAAAAJ',
   },
-  Liu: {
-    lab: 'Liu',
+  Leighl: {
+    lab: 'Leighl',
+    PI: 'Natasha Leighl',
+    website: 'https://www.uhnresearch.ca/researcher/natasha-b-leighl',
+    scholar_id: 'H0im8BwAAAAJ',
+  },
+  LiuF: {
+    lab: 'Liu, F',
+    PI: 'Fei-Fei Liu',
+    website: 'http://wwwlabs.uhnresearch.ca/liu/',
+    scholar_id: '45MCKfkAAAAJ',
+  },
+  LiuG: {
+    lab: 'Liu, G',
     PI: 'Geoffrey Liu',
     website: 'https://www.uhncombiel.com/about-the-liu-lab',
-    scholar_id: '',
+    scholar_id: 'Zjy1VdkAAAAJ',
   },
   Lupien: {
     lab: 'Lupien',
@@ -65,12 +125,18 @@ const labs = {
     website: 'https://medbio.utoronto.ca/faculty/schwartz',
     scholar_id: 'zNWiqkUAAAAJ',
   },
+  Seuntjens: {
+    lab: 'Seuntjens',
+    PI: 'Jan Seuntjens',
+    website: 'https://medbio.utoronto.ca/faculty/seuntjens',
+    scholar_id: 'U65WeBcAAAAJ',
+  },
   Xu: {
     lab: 'Xu',
     PI: 'Wei Xu',
     website: 'https://www.dlsph.utoronto.ca/faculty-profile/xu-wei/',
     scholar_id: 'bD0-KagAAAAJ',
-  }
+  },
 };
 
 export default labs;

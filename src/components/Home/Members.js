@@ -1,15 +1,28 @@
 import React from 'react';
 import styled from 'styled-components';
-import ben from '../../images/members/ben.png';
-import hoffman from '../../images/members/hoffman.png';
-import liu from '../../images/members/liu.png';
-import minden from '../../images/members/minden.png';
-import moran from '../../images/members/moran.png';
-import pugh from '../../images/members/pugh.png';
-import wei from '../../images/members/wei.png';
-import gaiti from '../../images/members/gaiti.png';
-import kumar from '../../images/members/kumar.png';
-import schwartz from '../../images/members/schwartz.png';
+
+import Gary from '../../images/members/all/Gary_Bader_headshot_lores.png';
+import Philippe from '../../images/members/all/Philippe_Bedard_headshot_lores.png';
+import Alejandro from '../../images/members/all/Alejandro_Berlin_headshot_lores.png';
+import MichaelB from '../../images/members/all/Michael_Brudno_headshot_lores.png';
+import David from '../../images/members/all/David_Cescon_headshot_lores.png';
+import Federico from '../../images/members/all/Federico_Gaiti_headshot_lores.png';
+import RobertG from '../../images/members/all/Robert_Grant_headshot_lores.png';
+import Benjamin from '../../images/members/all/Benjamin_Haibe-Kains_headshot_lores.png';
+import Masoom from '../../images/members/all/Masoom_Haider_headshot_lores.png';
+import MichaelH from '../../images/members/all/Michael_Hoffman_headshot_lores.png';
+import Andrew from '../../images/members/all/Andrew_Hope_headshot_lores.png';
+import RobertK from '../../images/members/all/Robert_Kridel_headshot_lores.png';
+import Sushant from '../../images/members/all/Sushant_Kumar_headshot_lores.png';
+import Natasha from '../../images/members/all/Natasha_Leighl_headshot_lores.png';
+import FeiFei from '../../images/members/all/Fei-Fei_Liu_headshot_lores.png';
+import Geoffrey from '../../images/members/all/Geoffrey_Liu_headshot_lores.png';
+import Mark from '../../images/members/all/Mark_Minden_headshot_lores.png';
+import Mike from '../../images/members/all/Mike_Moran_headshot_lores.png';
+import Trevor from '../../images/members/all/Trevor_Pugh_headshot_lores.png';
+import Gregory from '../../images/members/all/Gregory_Schwartz.png';
+import Jan from '../../images/members/all/Jan_Seuntjens_headshot_lores.png';
+import Wei from '../../images/members/all/Wei_Xu_headshot_lores.png';
 import labs from '../../data/labs';
 
 const StyledMembers = styled.div`
@@ -32,7 +45,7 @@ const StyledMembers = styled.div`
     }
     
     .member {
-        flex-basis: 21%;
+        flex-basis: 10%;
         margin: 50px 30px 80px 30px;
         width: 180px;
         display: flex;
@@ -57,43 +70,91 @@ const Members = ({ id }) => (
     <h1>Members</h1>
     <div className="member-container">
       <div className="member">
-        <a href={labs.Gaiti.website}><img alt="member" src={gaiti} /></a>
+        <a href={labs.Bader.website}><img alt="member" src={Gary} /></a>
+        <span><a href={labs.Bader.website}>Gary Bader</a></span>
+      </div>
+      <div className="member">
+        <a href={labs.Bedard.website}><img alt="member" src={Philippe} /></a>
+        <span><a href={labs.Bedard.website}>Philippe Bedard</a></span>
+      </div>
+      <div className="member">
+        <a href={labs.Berlin.website}><img alt="member" src={Alejandro} /></a>
+        <span><a href={labs.Berlin.website}>Alejandro Berlin</a></span>
+      </div>
+      <div className="member">
+        <a href={labs.Brudno.website}><img alt="member" src={MichaelB} /></a>
+        <span><a href={labs.Brudno.website}>Michael Brudno</a></span>
+      </div>
+      <div className="member">
+        <a href={labs.Cescon.website}><img alt="member" src={David} /></a>
+        <span><a href={labs.Cescon.website}>David Cescon</a></span>
+      </div>
+      <div className="member">
+        <a href={labs.Gaiti.website}><img alt="member" src={Federico} /></a>
         <span><a href={labs.Gaiti.website}>Federico Gaiti</a></span>
       </div>
       <div className="member">
-        <a href={labs['Haibe-Kains'].website}><img alt="member" src={ben} /></a>
+        <a href={labs.Grant.website}><img alt="member" src={RobertG} /></a>
+        <span><a href={labs.Grant.website}>Robert Grant</a></span>
+      </div>
+      <div className="member">
+        <a href={labs['Haibe-Kains'].website}><img alt="member" src={Benjamin} /></a>
         <span><a href={labs['Haibe-Kains'].website}>Benjamin Haibe-Kains</a></span>
       </div>
       <div className="member">
-        <a href={labs.Hoffman.website}><img alt="member" src={hoffman} /></a>
-        <span><a href={labs.Hoffman.website}>Michael Hoffman</a></span>
+        <a href={labs.Haider.website}><img alt="member" src={Masoom} /></a>
+        <span><a href={labs.Haider.website}>Masoom Haider</a></span>
       </div>
       <div className="member">
-        <a href={labs.CCG.website}><img alt="member" src={kumar} /></a>
+        <a href={labs.Hope.website}><img alt="member" src={Andrew} /></a>
+        <span><a href={labs.Hope.website}>Andrew Hope</a></span>
+      </div>
+      <div className="member">
+        <a href={labs.Hoffman.website}><img alt="member" src={MichaelH} /></a>
+        <span><a href={labs.Hoffman.website}>Michael Hoffman (Chair)</a></span>
+      </div>
+      <div className="member">
+        <a href={labs.Kridel.website}><img alt="member" src={RobertK} /></a>
+        <span><a href={labs.Kridel.website}>Robert Kridel</a></span>
+      </div>
+      <div className="member">
+        <a href={labs.CCG.website}><img alt="member" src={Sushant} /></a>
         <span><a href={labs.CCG.website}>Sushant Kumar</a></span>
       </div>
       <div className="member">
-        <a href={labs.Liu.website}><img alt="member" src={liu} /></a>
-        <span><a href={labs.Liu.website}>Geoffrey Liu</a></span>
+        <a href={labs.Leighl.website}><img alt="member" src={Natasha} /></a>
+        <span><a href={labs.Leighl.website}>Natasha Leighl</a></span>
       </div>
       <div className="member">
-        <a href={labs.Minden.website}><img alt="member" src={minden} /></a>
+        <a href={labs.LiuF.website}><img alt="member" src={FeiFei} /></a>
+        <span><a href={labs.LiuF.website}>Fei-Fei Liu</a></span>
+      </div>
+      <div className="member">
+        <a href={labs.LiuG.website}><img alt="member" src={Geoffrey} /></a>
+        <span><a href={labs.LiuG.website}>Geoffrey Liu</a></span>
+      </div>
+      <div className="member">
+        <a href={labs.Minden.website}><img alt="member" src={Mark} /></a>
         <span><a href={labs.Minden.website}>Mark Minden</a></span>
       </div>
       <div className="member">
-        <a href={labs.Moran.website}><img alt="member" src={moran} /></a>
+        <a href={labs.Moran.website}><img alt="member" src={Mike} /></a>
         <span><a href={labs.Moran.website}>Michael Moran</a></span>
       </div>
       <div className="member">
-        <a href={labs.Pugh.website}><img alt="member" src={pugh} /></a>
+        <a href={labs.Pugh.website}><img alt="member" src={Trevor} /></a>
         <span><a href={labs.Pugh.website}>Trevor Pugh</a></span>
       </div>
       <div className="member">
-        <a href={labs.Schwartz.website}><img alt="member" src={schwartz} /></a>
+        <a href={labs.Schwartz.website}><img alt="member" src={Gregory} /></a>
         <span><a href={labs.Schwartz.website}>Gregory Schwartz</a></span>
       </div>
       <div className="member">
-        <a href={labs.Xu.website}><img alt="member" src={wei} /></a>
+        <a href={labs.Seuntjens.website}><img alt="member" src={Jan} /></a>
+        <span><a href={labs.Seuntjens.website}>Jan Seuntjens</a></span>
+      </div>
+      <div className="member">
+        <a href={labs.Xu.website}><img alt="member" src={Wei} /></a>
         <span><a href={labs.Xu.website}>Wei Xu</a></span>
       </div>
     </div>
