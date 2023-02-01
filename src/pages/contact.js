@@ -43,22 +43,22 @@ const StyledContact = styled.div`
       width: 48%;
       min-width: 400px;
       display:flex;
-      flex-direction: row;
-      flex-wrap: wrap;
+      flex-direction: column;
+      flex-wrap: nowrap;
       justify-content: space-between;
     }
 
     span {
       min-width: 300px;
       flex-basis: 50%;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       min-width: 310px;
     }
     .name {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       & b {
-        min-width: 165px;
+        min-width: 170px;
       }
     }
     .addr-container {

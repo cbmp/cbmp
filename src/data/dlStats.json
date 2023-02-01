@@ -196,6 +196,11 @@
                 "year": "2022",
                 "month": "Dec",
                 "downloads": "52"
+            },
+            {
+                "year": "2023",
+                "month": "Jan",
+                "downloads": "58"
             }
         ],
         "lab": "Haibe-Kains"
@@ -422,6 +427,11 @@
                 "downloads": "16",
                 "year": "2022",
                 "month": "Dec"
+            },
+            {
+                "downloads": "18",
+                "year": "2023",
+                "month": "Jan"
             }
         ],
         "lab": "Haibe-Kains"
@@ -748,6 +758,11 @@
                 "downloads": "157",
                 "year": "2022",
                 "month": "Dec"
+            },
+            {
+                "downloads": "181",
+                "year": "2023",
+                "month": "Jan"
             }
         ],
         "lab": "Haibe-Kains"
@@ -999,6 +1014,11 @@
                 "downloads": "132",
                 "year": "2022",
                 "month": "Dec"
+            },
+            {
+                "downloads": "140",
+                "year": "2023",
+                "month": "Jan"
             }
         ],
         "lab": "Haibe-Kains"
@@ -1390,6 +1410,11 @@
                 "year": "2022",
                 "month": "Dec",
                 "downloads": "213"
+            },
+            {
+                "year": "2023",
+                "month": "Jan",
+                "downloads": "148"
             }
         ],
         "lab": "Haibe-Kains"
@@ -2016,6 +2041,11 @@
                 "downloads": "1410",
                 "year": "2022",
                 "month": "Dec"
+            },
+            {
+                "downloads": "1142",
+                "year": "2023",
+                "month": "Jan"
             }
         ],
         "lab": "Haibe-Kains"
@@ -2252,6 +2282,11 @@
                 "year": "2022",
                 "month": "Dec",
                 "downloads": "68"
+            },
+            {
+                "year": "2023",
+                "month": "Jan",
+                "downloads": "49"
             }
         ],
         "lab": "Haibe-Kains"
@@ -2453,6 +2488,11 @@
                 "month": "Dec",
                 "downloads": "1102",
                 "year": "2022"
+            },
+            {
+                "month": "Jan",
+                "downloads": "1025",
+                "year": "2023"
             }
         ],
         "lab": "Haibe-Kains"
@@ -3677,6 +3717,11 @@
                 "month": "Dec",
                 "downloads": "224",
                 "year": "2022"
+            },
+            {
+                "month": "Jan",
+                "downloads": "172",
+                "year": "2023"
             }
         ],
         "lab": "Hoffman"
@@ -3898,6 +3943,11 @@
                 "downloads": "105",
                 "year": "2022",
                 "month": "Dec"
+            },
+            {
+                "downloads": "117",
+                "year": "2023",
+                "month": "Jan"
             }
         ],
         "lab": "Xu"
@@ -4099,6 +4149,11 @@
                 "downloads": "118",
                 "year": "2022",
                 "month": "Dec"
+            },
+            {
+                "downloads": "124",
+                "year": "2023",
+                "month": "Jan"
             }
         ],
         "lab": "Xu"
