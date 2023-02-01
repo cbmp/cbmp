@@ -3,7 +3,6 @@ import '../styles/index.css';
 import styled from 'styled-components';
 import Layout from '../components/Layout';
 import Email from '../images/emails/email.png';
-import CBMP from '../images/emails/CBMPemail.png';
 
 const StyledContact = styled.div`
     width: 100%;
@@ -36,9 +35,12 @@ const StyledContact = styled.div`
       display: flex;
       flex-direction:row;
       justify-content: space-between;
+      flex-wrap: wrap;
+      flex-shrink: 0;
     }
     .members {
       width: 48%;
+      min-width: 400px;
       display:flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -46,6 +48,7 @@ const StyledContact = styled.div`
     }
 
     span {
+      min-width: 300px;
       flex-basis: 50%;
       margin-bottom: 30px;
       min-width: 310px;
@@ -143,7 +146,7 @@ const Contact = () => (
               <a href="mailto:brudno@cs.toronto.edu">
                 <StyledEmail>
                   <img alt="email" src={Email} />
-                  <div className="email"><div className="text">brudno@cs.toronto.edu​</div></div>
+                  <div className="email"><div className="text">brudno@cs.toronto.edu</div></div>
                 </StyledEmail>
               </a>
             </span>
