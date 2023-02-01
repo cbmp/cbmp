@@ -3,6 +3,7 @@
     "name": "Haibe-Kains",
     "query": "Haibe-Kains+Benjamin%5BAU%5D",
     "pubs": [
+      "36688707",
       "36409930",
       "36280687",
       "36070391",
@@ -378,6 +379,7 @@
     "name": "Hoffman",
     "query": "Hoffman%20Michael%20M%5Bau%5D%20OR%20Hoffman%20Michael%20M%5Bir%5D%20OR%20International%20Chicken%20Genome%20Sequencing%20Consortium%5Bcn%5D",
     "pubs": [
+      "36693044",
       "36160046",
       "35681170",
       "35575355",
@@ -422,6 +424,10 @@
     "name": "Liu",
     "query": "Liu+G%5BAU%5D+AND+Toronto%5BAD%5D+OR+23291255%5BPMID%5D+NOT+%28Liu+GC%5BAU%5D+OR+Liu+GY%5BAU%5D+OR+Liu+GK%5BAU%5D%29",
     "pubs": [
+      "36694401",
+      "36688707",
+      "36653915",
+      "36631713",
       "36535627",
       "36535300",
       "36439025",
@@ -920,6 +926,7 @@
     "name": "Minden",
     "query": "Minden+MD%5BAU%5D+OR+%28Minden+M%5BAU%5D+AND+Toronto%29+OR+8401592%5BPMID%5D",
     "pubs": [
+      "36652477",
       "36542101",
       "36394085",
       "36242827",
@@ -1542,6 +1549,8 @@
     "name": "Xu",
     "query": "(Xu%2C%20Wei%5BFull%20Author%20Name%5D%20OR%20Wei%2C%20Xu%5BFull%20Author%20Name%5D%20OR%20Xu%2C%20Wei%5BFull%20Investigator%20Name%5D%20OR%20wei%20xu%5BAuthor%5D%20OR%20wei%20xu%5BInvestigator%5D)%20AND%20((princess%5BAll%20Fields%5D%20AND%20margaret%5BAll%20Fields%5D)%20AND%20toronto%5BAll%20Fields%5D)",
     "pubs": [
+      "36653915",
+      "36631713",
       "36594564",
       "36439025",
       "36397659",
@@ -1909,6 +1918,7 @@
     "name": "Kumar",
     "query": "Kumar+Sushant%5BAU%5D",
     "pubs": [
+      "36697832",
       "36350676",
       "36191502",
       "36183645",
@@ -1964,6 +1974,7 @@
     "name": "Schwartz",
     "query": "Schwartz+GW&cauthor_id=32123397",
     "pubs": [
+      "36712052",
       "35830791",
       "35508174",
       "35275193",
@@ -2019,6 +2030,7 @@
     "name": "Bader",
     "query": "(Bader%2C+Gary%5BAuthor%5D)+AND+(Bader%2C+Gary+D%5BAuthor%5D)",
     "pubs": [
+      "36645249",
       "36496458",
       "36417873",
       "36408415",

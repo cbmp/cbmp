@@ -1,7 +1,7 @@
 [
   {
     "name": "Cytoscape",
-    "cited": "33078"
+    "cited": "33458"
   },
   {
     "name": "ToxicoGx",
@@ -21,15 +21,15 @@
   },
   {
     "name": "PharmacoGx",
-    "cited": "207"
+    "cited": "213"
   },
   {
     "name": "mRMRe",
-    "cited": "193"
+    "cited": "196"
   },
   {
     "name": "Xeva",
-    "cited": "28"
+    "cited": "32"
   },
   {
     "name": "PymRMRe",
@@ -41,23 +41,23 @@
   },
   {
     "name": "Segtools",
-    "cited": "28"
+    "cited": "25"
   },
   {
     "name": "Segway",
-    "cited": "663"
+    "cited": "665"
   },
   {
     "name": "Genomedata",
-    "cited": "22"
+    "cited": "23"
   },
   {
     "name": "Umap and Bismap",
-    "cited": "106"
+    "cited": "110"
   },
   {
     "name": "Virchip",
-    "cited": "26"
+    "cited": "27"
   },
   {
     "name": "PeaKO",
@@ -93,7 +93,7 @@
   },
   {
     "name": "VSE",
-    "cited": "20"
+    "cited": "18"
   },
   {
     "name": "C3D",
@@ -109,7 +109,7 @@
   },
   {
     "name": "VisCap",
-    "cited": "63"
+    "cited": "64"
   },
   {
     "name": "VisCapCancer",
@@ -117,7 +117,7 @@
   },
   {
     "name": "Bamgineer",
-    "cited": "6"
+    "cited": "5"
   },
   {
     "name": "inteGREAT",
@@ -129,7 +129,7 @@
   },
   {
     "name": "TooManyCells",
-    "cited": "47"
+    "cited": "50"
   },
   {
     "name": "diversity",
@@ -149,11 +149,11 @@
   },
   {
     "name": "xlink",
-    "cited": "16"
+    "cited": "13"
   },
   {
     "name": "remss",
-    "cited": "12"
+    "cited": "11"
   },
   {
     "name": "GENmatic",

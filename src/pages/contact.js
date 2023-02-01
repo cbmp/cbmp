@@ -38,6 +38,7 @@ const StyledContact = styled.div`
       flex-wrap: wrap;
       flex-shrink: 0;
     }
+  
     .members {
       width: 48%;
       min-width: 400px;
@@ -196,20 +197,20 @@ const Contact = () => (
               </a>
             </span>
             <span className="name">
-              <b>Andrew Hope</b>
-              <a href="mailto:Andrew.Hope@uhn.ca">
-                <StyledEmail>
-                  <img alt="email" src={Email} />
-                  <div className="email"><div className="text">Andrew.Hope@uhn.ca</div></div>
-                </StyledEmail>
-              </a>
-            </span>
-            <span className="name">
               <b>Michael Hoffman (Chair)</b>
               <a href="mailto:michael.hoffman@utoronto.ca">
                 <StyledEmail>
                   <img alt="email" src={Email} />
                   <div className="email"><div className="text">michael.hoffman@utoronto.ca</div></div>
+                </StyledEmail>
+              </a>
+            </span>
+            <span className="name">
+              <b>Andrew Hope</b>
+              <a href="mailto:Andrew.Hope@uhn.ca">
+                <StyledEmail>
+                  <img alt="email" src={Email} />
+                  <div className="email"><div className="text">Andrew.Hope@uhn.ca</div></div>
                 </StyledEmail>
               </a>
             </span>
