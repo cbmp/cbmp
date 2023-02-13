@@ -143,14 +143,14 @@ const Members = ({ id }) => (
         <span className="title">{labs.Leighl.group}</span>
       </div>
       <div className="member">
-        <a href={labs.LiuF.website}><img alt="member" src={FeiFei} /></a>
-        <span><a href={labs.LiuF.website}>Fei-Fei Liu</a></span>
-        <span className="title">{labs.LiuF.group}</span>
+        <a href={labs['Liu F.'].website}><img alt="member" src={FeiFei} /></a>
+        <span><a href={labs['Liu F.'].website}>Fei-Fei Liu</a></span>
+        <span className="title">{labs['Liu F.'].group}</span>
       </div>
       <div className="member">
-        <a href={labs.LiuG.website}><img alt="member" src={Geoffrey} /></a>
-        <span><a href={labs.LiuG.website}>Geoffrey Liu</a></span>
-        <span className="title">{labs.LiuG.group}</span>
+        <a href={labs['Liu G.'].website}><img alt="member" src={Geoffrey} /></a>
+        <span><a href={labs['Liu G.'].website}>Geoffrey Liu</a></span>
+        <span className="title">{labs['Liu G.'].group}</span>
       </div>
       <div className="member">
         <a href={labs.Minden.website}><img alt="member" src={Mark} /></a>

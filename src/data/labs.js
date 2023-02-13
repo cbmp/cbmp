@@ -97,15 +97,15 @@ const labs = {
     scholar_id: 'H0im8BwAAAAJ',
     group: 'Clinician',
   },
-  LiuF: {
-    lab: 'Liu, F',
+  'Liu F.': {
+    lab: 'Liu F.',
     PI: 'Fei-Fei Liu',
     website: 'http://wwwlabs.uhnresearch.ca/liu/',
     scholar_id: '45MCKfkAAAAJ',
     group: 'Clinician',
   },
-  LiuG: {
-    lab: 'Liu, G',
+  'Liu G.': {
+    lab: 'Liu G.',
     PI: 'Geoffrey Liu',
     website: 'https://www.uhncombiel.com/about-the-liu-lab',
     scholar_id: 'Zjy1VdkAAAAJ',
