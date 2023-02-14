@@ -36,16 +36,23 @@ const NetworkPlot = (props) => {
 
     const color = d3.scaleOrdinal(d3.schemeTableau10);
 
+
+    const scale = d3.scaleLinear()
+      .domain([0, 1])
+      .range([0, 0.5]);
+
+    const svgWidth = width + margin.left + margin.right;
+    const svgHeight = height + margin.top + margin.bottom;
     // Add the svg canvas
     const svg = d3.select(`#${plotId}`)
       .append('svg')
-      .attr('width', width + margin.left + margin.right)
-      .attr('height', height + margin.top + margin.bottom)
+      .attr('width', svgWidth)
+      .attr('height', svgHeight)
       .attr('xmlns', 'http://www.w3.org/2000/svg')
       .attr('xmlns:xlink', 'http://www.w3.org/1999/xlink')
       .append('g')
       .attr('transform',
-        `translate(${margin.left},${margin.top})`);
+        `translate(${svgWidth / 2 - scale(width / 2)},${svgHeight / 2 - scale(height)})`);
 
     // Initialize a simulation
     const simulation = d3.forceSimulation()
@@ -83,14 +90,14 @@ const NetworkPlot = (props) => {
     }
 
     function dragended(d) {
-      //   if (!d3.event.active) simulation.alphaTarget(0);
-      //   d.fx = null;
-      //   d.fy = null;
+      if (!d3.event.active) simulation.alphaTarget(0);
+      d.fx = null;
+      d.fy = null;
     }
 
     // add draggable circle for each node
     const circles = node.append('circle')
-      .attr('r', (d) => 60)
+      .attr('r', (d) => 50)
       .attr('fill', (d) => color(d.value))
       .call(d3.drag()
         .on('start', dragstarted)
@@ -102,7 +109,7 @@ const NetworkPlot = (props) => {
       .text((d) => d.name)
       .attr('x', 0)
       .attr('y', 3)
-      .attr('font-size', (d) => 17)
+      .attr('font-size', (d) => 15)
       .attr('text-anchor', 'middle')
       .attr('fill', 'white');
 
