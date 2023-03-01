@@ -403,6 +403,12 @@
         "users": "408",
         "year": "2023",
         "month": "Jan"
+      },
+      {
+        "pageviews": "1130",
+        "users": "524",
+        "year": "2023",
+        "month": "Feb"
       }
     ]
   },
@@ -606,6 +612,12 @@
         "users": "106",
         "year": "2023",
         "month": "Jan"
+      },
+      {
+        "pageviews": "184",
+        "users": "116",
+        "year": "2023",
+        "month": "Feb"
       }
     ]
   },
@@ -809,6 +821,12 @@
         "users": "116",
         "year": "2023",
         "month": "Jan"
+      },
+      {
+        "pageviews": "189",
+        "users": "134",
+        "year": "2023",
+        "month": "Feb"
       }
     ]
   },
@@ -1008,10 +1026,16 @@
         "month": "Dec"
       },
       {
-        "pageviews": "1661",
+        "pageviews": "1688",
         "users": "30",
         "year": "2023",
         "month": "Jan"
+      },
+      {
+        "pageviews": "1635",
+        "users": "33",
+        "year": "2023",
+        "month": "Feb"
       }
     ]
   },
@@ -1215,6 +1239,12 @@
         "users": "122",
         "year": "2023",
         "month": "Jan"
+      },
+      {
+        "pageviews": "319",
+        "users": "113",
+        "year": "2023",
+        "month": "Feb"
       }
     ]
   }
