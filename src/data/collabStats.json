@@ -57,6 +57,7 @@
     "name": "Haibe-Kains",
     "query": "Haibe-Kains+Benjamin%5BAU%5D",
     "pubs": [
+      "36948414",
       "36726714",
       "36688707",
       "36280687",
@@ -135,6 +136,8 @@
     "name": "Liu G.",
     "query": "Liu+G%5BAU%5D+AND+Toronto%5BAD%5D+OR+23291255%5BPMID%5D+NOT+%28Liu+GC%5BAU%5D+OR+Liu+GY%5BAU%5D+OR+Liu+GK%5BAU%5D%29",
     "pubs": [
+      "36998123",
+      "36930839",
       "36827626",
       "36811599",
       "36694401",
@@ -389,6 +392,7 @@
     "name": "Pugh",
     "query": "Pugh+T%5BAU%5D+AND+%28Marziali%5BAU%5D+OR+Marra%5BAU%5D+OR+Meyerson%5BAU%5D+OR+Getz%5BAU%5D+OR+Rehm%5BAU%5D+OR+Taylor%5BAU%5D+OR+Tsongalis%5BAU%5D%29+OR+%28Pugh+TJ%5BAU%5D+AND+Toronto%5BAD%5D%29",
     "pubs": [
+      "36860651",
       "36129469",
       "36087071",
       "35896551",
@@ -443,16 +447,13 @@
     "pubs": []
   },
   {
-    "name": "Seuntjens",
-    "query": "((Seuntjens%2C+J%5BAuthor%5D)+OR+(Seuntjens%2C+Jan%5BAuthor%5D)+OR+(Seuntjens%2C+Jan+P%5BAuthor%5D))+OR+(Seuntjens+JP%5BAuthor%5D)",
-    "pubs": [
-      "33440225"
-    ]
-  },
-  {
     "name": "Xu",
     "query": "(Xu%2C%20Wei%5BFull%20Author%20Name%5D%20OR%20Wei%2C%20Xu%5BFull%20Author%20Name%5D%20OR%20Xu%2C%20Wei%5BFull%20Investigator%20Name%5D%20OR%20wei%20xu%5BAuthor%5D%20OR%20wei%20xu%5BInvestigator%5D)%20AND%20((princess%5BAll%20Fields%5D%20AND%20margaret%5BAll%20Fields%5D)%20AND%20toronto%5BAll%20Fields%5D)",
     "pubs": [
+      "36998123",
+      "36948414",
+      "36930839",
+      "36860651",
       "36811599",
       "36780824",
       "36726714",

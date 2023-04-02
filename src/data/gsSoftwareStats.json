@@ -1,7 +1,7 @@
 [
   {
     "name": "Cytoscape",
-    "cited": "33932"
+    "cited": "34508"
   },
   {
     "name": "ToxicoGx",
@@ -21,15 +21,15 @@
   },
   {
     "name": "PharmacoGx",
-    "cited": "218"
+    "cited": "219"
   },
   {
     "name": "mRMRe",
-    "cited": "198"
+    "cited": "201"
   },
   {
     "name": "Xeva",
-    "cited": "32"
+    "cited": "34"
   },
   {
     "name": "PymRMRe",
@@ -41,11 +41,11 @@
   },
   {
     "name": "Segtools",
-    "cited": "25"
+    "cited": "26"
   },
   {
     "name": "Segway",
-    "cited": "665"
+    "cited": "668"
   },
   {
     "name": "Genomedata",
@@ -53,7 +53,7 @@
   },
   {
     "name": "Umap and Bismap",
-    "cited": "111"
+    "cited": "115"
   },
   {
     "name": "Virchip",
@@ -101,7 +101,7 @@
   },
   {
     "name": "MEMOS",
-    "cited": "42"
+    "cited": "43"
   },
   {
     "name": "ConsensusCruncher",
@@ -121,7 +121,7 @@
   },
   {
     "name": "inteGREAT",
-    "cited": "13"
+    "cited": "14"
   },
   {
     "name": "HeatITup",
@@ -129,11 +129,11 @@
   },
   {
     "name": "TooManyCells",
-    "cited": "50"
+    "cited": "51"
   },
   {
     "name": "diversity",
-    "cited": "23"
+    "cited": "24"
   },
   {
     "name": "find-clumpiness",
