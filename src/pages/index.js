@@ -88,14 +88,14 @@ const IndexPage = () => (
           for fully exploiting cancer data.
         </div>
         <div className="statement">
-          The Computational Biology and Medicine Program (CBMP)
-          is home to scientists and clinicians focused on computational
-          methods for fully exploiting cancer data. CBMP will formulate
-          and test scientific hypotheses answerable by new computational
-          methods that advance basic, translational, and clinical cancer
-          research. The program will also inform the scope of institutional
-          infrastructure projects and software to best support data science
-          efforts.
+          The Computational Biology and Medicine Program (CBMP) is home to 
+        scientists and clinicians interested in computational methods used to 
+        aggregate, analyze and share biomedical data for basic, translational 
+        and clinical research. By assessing how emerging computational technologies 
+        can be leveraged to address scientific and clinical gaps, CMBP is working 
+        towards the dissemination of multimodal data and software tools, education 
+        regarding their use, alignment with internal and external initiatives, and 
+        fostering synergies within and across programs.
         </div>
       </div>
       <StyledButton onClick={() => scrollTo('#members')}>v</StyledButton>
