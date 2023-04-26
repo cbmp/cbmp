@@ -157,7 +157,7 @@ const labs = {
     PI: 'Wei Xu',
     website: 'https://www.dlsph.utoronto.ca/faculty-profile/xu-wei/',
     scholar_id: 'bD0-KagAAAAJ',
-    group: 'Scientist',
+    group: 'Clinician',
   },
 };
 
