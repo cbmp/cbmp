@@ -68,7 +68,7 @@ const StyledMembers = styled.div`
     }
 `;
 
-const Members = ({ id }) => (
+const Members = () => (
   <StyledMembers id="members">
     <h1>Members</h1>
     <div className="member-container">
