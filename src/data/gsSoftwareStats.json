@@ -1,7 +1,7 @@
 [
   {
     "name": "Cytoscape",
-    "cited": "34508"
+    "cited": "35476"
   },
   {
     "name": "ToxicoGx",
@@ -9,7 +9,7 @@
   },
   {
     "name": "RadioGx",
-    "cited": "21"
+    "cited": "23"
   },
   {
     "name": "CREAM",
@@ -21,15 +21,15 @@
   },
   {
     "name": "PharmacoGx",
-    "cited": "219"
+    "cited": "227"
   },
   {
     "name": "mRMRe",
-    "cited": "201"
+    "cited": "209"
   },
   {
     "name": "Xeva",
-    "cited": "34"
+    "cited": "35"
   },
   {
     "name": "PymRMRe",
@@ -45,7 +45,7 @@
   },
   {
     "name": "Segway",
-    "cited": "668"
+    "cited": "676"
   },
   {
     "name": "Genomedata",
@@ -53,11 +53,11 @@
   },
   {
     "name": "Umap and Bismap",
-    "cited": "115"
+    "cited": "117"
   },
   {
     "name": "Virchip",
-    "cited": "27"
+    "cited": "28"
   },
   {
     "name": "PeaKO",
@@ -93,19 +93,19 @@
   },
   {
     "name": "VSE",
-    "cited": "18"
+    "cited": "19"
   },
   {
     "name": "C3D",
-    "cited": "13"
+    "cited": "15"
   },
   {
     "name": "MEMOS",
-    "cited": "43"
+    "cited": "47"
   },
   {
     "name": "ConsensusCruncher",
-    "cited": "62"
+    "cited": "67"
   },
   {
     "name": "VisCap",
@@ -117,7 +117,7 @@
   },
   {
     "name": "Bamgineer",
-    "cited": "5"
+    "cited": "7"
   },
   {
     "name": "inteGREAT",
@@ -129,11 +129,11 @@
   },
   {
     "name": "TooManyCells",
-    "cited": "51"
+    "cited": "54"
   },
   {
     "name": "diversity",
-    "cited": "24"
+    "cited": "25"
   },
   {
     "name": "find-clumpiness",
@@ -149,7 +149,7 @@
   },
   {
     "name": "xlink",
-    "cited": "13"
+    "cited": "14"
   },
   {
     "name": "remss",
