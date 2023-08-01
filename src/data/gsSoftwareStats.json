@@ -1,15 +1,11 @@
 [
   {
     "name": "Cytoscape",
-    "cited": "35902"
+    "cited": "36350"
   },
   {
     "name": "ToxicoGx",
     "cited": "0"
-  },
-  {
-    "name": "RadioGx",
-    "cited": "23"
   },
   {
     "name": "CREAM",
@@ -21,15 +17,11 @@
   },
   {
     "name": "PharmacoGx",
-    "cited": "229"
+    "cited": "232"
   },
   {
     "name": "mRMRe",
-    "cited": "212"
-  },
-  {
-    "name": "Xeva",
-    "cited": "35"
+    "cited": "215"
   },
   {
     "name": "PymRMRe",
@@ -45,7 +37,7 @@
   },
   {
     "name": "Segway",
-    "cited": "674"
+    "cited": "677"
   },
   {
     "name": "Genomedata",
@@ -57,7 +49,7 @@
   },
   {
     "name": "Virchip",
-    "cited": "31"
+    "cited": "32"
   },
   {
     "name": "PeaKO",
@@ -85,7 +77,7 @@
   },
   {
     "name": "SMuRF",
-    "cited": "3"
+    "cited": "4"
   },
   {
     "name": "ABC",
@@ -101,11 +93,11 @@
   },
   {
     "name": "MEMOS",
-    "cited": "48"
+    "cited": "49"
   },
   {
     "name": "ConsensusCruncher",
-    "cited": "70"
+    "cited": "71"
   },
   {
     "name": "VisCap",
@@ -122,10 +114,6 @@
   {
     "name": "inteGREAT",
     "cited": "15"
-  },
-  {
-    "name": "HeatITup",
-    "cited": "16"
   },
   {
     "name": "TooManyCells",
