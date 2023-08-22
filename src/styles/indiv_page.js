@@ -14,16 +14,16 @@ export const StyledIndivPage = styled.div`
     h1 {
         margin-top:40px;
         font-size:calc(1.8vw + 1.5em);
-        font-family: 'Rubik', sans-serif; 
+        font-family: 'Rubik', sans-serif;
     }
     h3 {
         font-size:calc(0.8vw + 0.8em);
-        font-family: 'Rubik', sans-serif; 
+        font-family: 'Rubik', sans-serif;
         margin: 30px 0 40px 0;
     }
     h4 {
         font-size:calc(0.7vw + 0.7em);
-        font-family: 'Rubik', sans-serif; 
+        font-family: 'Rubik', sans-serif;
         margin-bottom:20px;
     }
     a {
@@ -77,7 +77,7 @@ export const StyledIndivPage = styled.div`
         .section {
             width: 46%;
             position: relative;
-        } 
+        }
         .info-section {
             display:flex;
             flex-direction:column;
@@ -88,6 +88,11 @@ export const StyledIndivPage = styled.div`
             // flex-direction: column;
             // justify-content: space-between;
             // height: 80%;
+            .authors {
+              overflow-y: auto;
+              max-height: 100px;
+              margin-bottom: 5px;
+            }
         }
         .long-desc {
             overflow-y: auto;
@@ -114,7 +119,7 @@ export const StyledIndivPage = styled.div`
         h4 {
             margin:0px 0 20px 0;
         }
-        
+
         .section {
             width: 32%;
         }
@@ -124,7 +129,7 @@ export const StyledIndivPage = styled.div`
         & .section {
             width: 100%;
         }
-        
+
     }
     .links {
         display:flex;
@@ -146,7 +151,7 @@ export const StyledIndivPage = styled.div`
         font-weight: 700;
         margin-right: 10px;
     }
-    
+
     .stats {
         display: flex;
         flex-direction:column;
@@ -156,7 +161,7 @@ export const StyledIndivPage = styled.div`
         h4 {
             margin:0px 0 20px 0;
         }
-        
+
         .stats-list {
             width:100%;
             display:flex;

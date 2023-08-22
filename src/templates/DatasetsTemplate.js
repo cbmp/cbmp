@@ -58,9 +58,9 @@ const DatasetsTemplate = ({ data }) => {
           <div className="section info-section">
             <div className="info-list">
               <div className="item">
-                <span className="item-heading">Authors:</span>
+                <span className="item-heading ">Authors:</span>
                 {' '}
-                {item.authors}
+                <div className="authors">{item.authors}</div>
                 {' '}
               </div>
               <div className="item">
