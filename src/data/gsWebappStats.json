@@ -1,7 +1,7 @@
 [
   {
     "name": "PharmacoDB",
-    "cited": "128"
+    "cited": "132"
   },
   {
     "name": "SYNERGxDB",
@@ -25,14 +25,10 @@
   },
   {
     "name": "DNAmod",
-    "cited": "69"
+    "cited": "70"
   },
   {
     "name": "cBioPortal.ca",
-    "cited": "12287"
-  },
-  {
-    "name": "CReSCENT",
-    "cited": "16"
+    "cited": "12424"
   }
 ]

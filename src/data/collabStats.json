@@ -56,6 +56,8 @@
     "name": "Haibe-Kains",
     "query": "Haibe-Kains+Benjamin%5BAU%5D",
     "pubs": [
+      "37572657",
+      "37543610",
       "36688707",
       "35652221",
       "35578032",
@@ -129,6 +131,7 @@
     "name": "Minden",
     "query": "Minden+MD%5BAU%5D+OR+%28Minden+M%5BAU%5D+AND+Toronto%29+OR+8401592%5BPMID%5D",
     "pubs": [
+      "37543610",
       "36131042",
       "36087071",
       "35668135",
@@ -179,6 +182,7 @@
     "name": "Pugh",
     "query": "Pugh+T%5BAU%5D+AND+%28Marziali%5BAU%5D+OR+Marra%5BAU%5D+OR+Meyerson%5BAU%5D+OR+Getz%5BAU%5D+OR+Rehm%5BAU%5D+OR+Taylor%5BAU%5D+OR+Tsongalis%5BAU%5D%29+OR+%28Pugh+TJ%5BAU%5D+AND+Toronto%5BAD%5D%29",
     "pubs": [
+      "37572657",
       "37164978",
       "36087071",
       "35652221",
