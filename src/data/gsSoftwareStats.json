@@ -1,7 +1,7 @@
 [
   {
     "name": "Cytoscape",
-    "cited": "36904"
+    "cited": "37385"
   },
   {
     "name": "ToxicoGx",
@@ -21,15 +21,11 @@
   },
   {
     "name": "PharmacoGx",
-    "cited": "236"
+    "cited": "239"
   },
   {
     "name": "mRMRe",
-    "cited": "217"
-  },
-  {
-    "name": "Xeva",
-    "cited": "35"
+    "cited": "224"
   },
   {
     "name": "PymRMRe",
@@ -45,7 +41,7 @@
   },
   {
     "name": "Segway",
-    "cited": "679"
+    "cited": "685"
   },
   {
     "name": "Genomedata",
@@ -53,11 +49,11 @@
   },
   {
     "name": "Umap and Bismap",
-    "cited": "122"
+    "cited": "125"
   },
   {
     "name": "Virchip",
-    "cited": "32"
+    "cited": "34"
   },
   {
     "name": "PeaKO",
@@ -101,11 +97,11 @@
   },
   {
     "name": "MEMOS",
-    "cited": "49"
+    "cited": "50"
   },
   {
     "name": "ConsensusCruncher",
-    "cited": "71"
+    "cited": "73"
   },
   {
     "name": "VisCap",
@@ -117,7 +113,7 @@
   },
   {
     "name": "Bamgineer",
-    "cited": "6"
+    "cited": "7"
   },
   {
     "name": "inteGREAT",
@@ -129,7 +125,7 @@
   },
   {
     "name": "TooManyCells",
-    "cited": "59"
+    "cited": "61"
   },
   {
     "name": "diversity",
@@ -153,7 +149,7 @@
   },
   {
     "name": "remss",
-    "cited": "11"
+    "cited": "12"
   },
   {
     "name": "GENmatic",
