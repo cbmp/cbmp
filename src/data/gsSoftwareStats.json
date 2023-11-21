@@ -1,7 +1,7 @@
 [
   {
     "name": "Cytoscape",
-    "cited": "37861"
+    "cited": "38260"
   },
   {
     "name": "ToxicoGx",
@@ -9,7 +9,7 @@
   },
   {
     "name": "RadioGx",
-    "cited": "23"
+    "cited": "25"
   },
   {
     "name": "CREAM",
@@ -21,7 +21,7 @@
   },
   {
     "name": "PharmacoGx",
-    "cited": "241"
+    "cited": "242"
   },
   {
     "name": "mRMRe",
@@ -29,7 +29,7 @@
   },
   {
     "name": "Xeva",
-    "cited": "35"
+    "cited": "40"
   },
   {
     "name": "PymRMRe",
@@ -45,7 +45,7 @@
   },
   {
     "name": "Segway",
-    "cited": "689"
+    "cited": "694"
   },
   {
     "name": "Genomedata",
@@ -53,7 +53,7 @@
   },
   {
     "name": "Umap and Bismap",
-    "cited": "126"
+    "cited": "128"
   },
   {
     "name": "Virchip",
@@ -89,7 +89,7 @@
   },
   {
     "name": "ABC",
-    "cited": "22"
+    "cited": "24"
   },
   {
     "name": "VSE",
@@ -105,11 +105,11 @@
   },
   {
     "name": "ConsensusCruncher",
-    "cited": "72"
+    "cited": "73"
   },
   {
     "name": "VisCap",
-    "cited": "67"
+    "cited": "68"
   },
   {
     "name": "VisCapCancer",
@@ -121,15 +121,15 @@
   },
   {
     "name": "inteGREAT",
-    "cited": "15"
-  },
-  {
-    "name": "HeatITup",
     "cited": "16"
   },
   {
+    "name": "HeatITup",
+    "cited": "17"
+  },
+  {
     "name": "TooManyCells",
-    "cited": "61"
+    "cited": "62"
   },
   {
     "name": "diversity",
@@ -137,7 +137,7 @@
   },
   {
     "name": "find-clumpiness",
-    "cited": "9"
+    "cited": "10"
   },
   {
     "name": "fasta",
