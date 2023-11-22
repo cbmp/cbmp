@@ -1,1503 +1,1479 @@
 [
-    {
-        "name": "PharmacoDB",
-        "stats": [
-            {
-                "pageviews": "3935",
-                "users": "100",
-                "year": "2017",
-                "month": "Jul"
-            },
-            {
-                "pageviews": "7156",
-                "users": "315",
-                "year": "2017",
-                "month": "Aug"
-            },
-            {
-                "pageviews": "7964",
-                "users": "303",
-                "year": "2017",
-                "month": "Sep"
-            },
-            {
-                "pageviews": "4961",
-                "users": "310",
-                "year": "2017",
-                "month": "Oct"
-            },
-            {
-                "pageviews": "4555",
-                "users": "254",
-                "year": "2017",
-                "month": "Nov"
-            },
-            {
-                "pageviews": "2823",
-                "users": "191",
-                "year": "2017",
-                "month": "Dec"
-            },
-            {
-                "pageviews": "4235",
-                "users": "289",
-                "year": "2018",
-                "month": "Jan"
-            },
-            {
-                "pageviews": "2450",
-                "users": "229",
-                "year": "2018",
-                "month": "Feb"
-            },
-            {
-                "pageviews": "4006",
-                "users": "310",
-                "year": "2018",
-                "month": "Mar"
-            },
-            {
-                "pageviews": "4525",
-                "users": "393",
-                "year": "2018",
-                "month": "Apr"
-            },
-            {
-                "pageviews": "3873",
-                "users": "350",
-                "year": "2018",
-                "month": "May"
-            },
-            {
-                "pageviews": "4126",
-                "users": "353",
-                "year": "2018",
-                "month": "Jun"
-            },
-            {
-                "pageviews": "4668",
-                "users": "412",
-                "year": "2018",
-                "month": "Jul"
-            },
-            {
-                "pageviews": "6184",
-                "users": "345",
-                "year": "2018",
-                "month": "Aug"
-            },
-            {
-                "pageviews": "4342",
-                "users": "414",
-                "year": "2018",
-                "month": "Sep"
-            },
-            {
-                "pageviews": "5669",
-                "users": "444",
-                "year": "2018",
-                "month": "Oct"
-            },
-            {
-                "pageviews": "8328",
-                "users": "470",
-                "year": "2018",
-                "month": "Nov"
-            },
-            {
-                "pageviews": "3279",
-                "users": "340",
-                "year": "2018",
-                "month": "Dec"
-            },
-            {
-                "pageviews": "4791",
-                "users": "445",
-                "year": "2019",
-                "month": "Jan"
-            },
-            {
-                "pageviews": "3255",
-                "users": "415",
-                "year": "2019",
-                "month": "Feb"
-            },
-            {
-                "pageviews": "4287",
-                "users": "432",
-                "year": "2019",
-                "month": "Mar"
-            },
-            {
-                "pageviews": "4969",
-                "users": "438",
-                "year": "2019",
-                "month": "Apr"
-            },
-            {
-                "pageviews": "5391",
-                "users": "491",
-                "year": "2019",
-                "month": "May"
-            },
-            {
-                "pageviews": "4634",
-                "users": "482",
-                "year": "2019",
-                "month": "Jun"
-            },
-            {
-                "pageviews": "7362",
-                "users": "613",
-                "year": "2019",
-                "month": "Jul"
-            },
-            {
-                "pageviews": "4904",
-                "users": "469",
-                "year": "2019",
-                "month": "Aug"
-            },
-            {
-                "pageviews": "3857",
-                "users": "502",
-                "year": "2019",
-                "month": "Sep"
-            },
-            {
-                "pageviews": "3552",
-                "users": "525",
-                "year": "2019",
-                "month": "Oct"
-            },
-            {
-                "pageviews": "3794",
-                "users": "583",
-                "year": "2019",
-                "month": "Nov"
-            },
-            {
-                "pageviews": "3188",
-                "users": "463",
-                "year": "2019",
-                "month": "Dec"
-            },
-            {
-                "pageviews": "4008",
-                "users": "616",
-                "year": "2020",
-                "month": "Jan"
-            },
-            {
-                "pageviews": "4494",
-                "users": "410",
-                "year": "2020",
-                "month": "Feb"
-            },
-            {
-                "pageviews": "3713",
-                "users": "438",
-                "year": "2020",
-                "month": "Mar"
-            },
-            {
-                "pageviews": "4518",
-                "users": "544",
-                "year": "2020",
-                "month": "Apr"
-            },
-            {
-                "pageviews": "5302",
-                "users": "533",
-                "year": "2020",
-                "month": "May"
-            },
-            {
-                "pageviews": "6925",
-                "users": "458",
-                "year": "2020",
-                "month": "Jun"
-            },
-            {
-                "pageviews": "4786",
-                "users": "475",
-                "year": "2020",
-                "month": "Jul"
-            },
-            {
-                "pageviews": "2507",
-                "users": "385",
-                "year": "2020",
-                "month": "Aug"
-            },
-            {
-                "pageviews": "4608",
-                "users": "498",
-                "year": "2020",
-                "month": "Sep"
-            },
-            {
-                "pageviews": "4256",
-                "users": "489",
-                "year": "2020",
-                "month": "Oct"
-            },
-            {
-                "pageviews": "5019",
-                "users": "1155",
-                "year": "2020",
-                "month": "Nov"
-            },
-            {
-                "pageviews": "4486",
-                "users": "539",
-                "year": "2020",
-                "month": "Dec"
-            },
-            {
-                "pageviews": "3653",
-                "users": "553",
-                "year": "2021",
-                "month": "Jan"
-            },
-            {
-                "pageviews": "9192",
-                "users": "3902",
-                "year": "2021",
-                "month": "Feb"
-            },
-            {
-                "pageviews": "6160",
-                "users": "679",
-                "year": "2021",
-                "month": "Mar"
-            },
-            {
-                "pageviews": "5823",
-                "users": "1136",
-                "year": "2021",
-                "month": "Apr"
-            },
-            {
-                "pageviews": "7052",
-                "users": "764",
-                "year": "2021",
-                "month": "May"
-            },
-            {
-                "pageviews": "5314",
-                "users": "727",
-                "year": "2021",
-                "month": "Jun"
-            },
-            {
-                "pageviews": "6466",
-                "users": "1022",
-                "year": "2021",
-                "month": "Jul"
-            },
-            {
-                "pageviews": "5842",
-                "users": "588",
-                "year": "2021",
-                "month": "Aug"
-            },
-            {
-                "pageviews": "4119",
-                "users": "513",
-                "year": "2021",
-                "month": "Sep"
-            },
-            {
-                "pageviews": "3105",
-                "users": "433",
-                "year": "2021",
-                "month": "Oct"
-            },
-            {
-                "pageviews": "2062",
-                "users": "339",
-                "year": "2021",
-                "month": "Nov"
-            },
-            {
-                "pageviews": "2524",
-                "users": "367",
-                "year": "2021",
-                "month": "Dec"
-            },
-            {
-                "pageviews": "3701",
-                "users": "415",
-                "year": "2022",
-                "month": "Jan"
-            },
-            {
-                "pageviews": "4378",
-                "users": "396",
-                "year": "2022",
-                "month": "Feb"
-            },
-            {
-                "pageviews": "2525",
-                "users": "380",
-                "year": "2022",
-                "month": "Mar"
-            },
-            {
-                "pageviews": "1000",
-                "users": "233",
-                "year": "2022",
-                "month": "Apr"
-            },
-            {
-                "pageviews": "2052",
-                "users": "900",
-                "year": "2022",
-                "month": "May"
-            },
-            {
-                "pageviews": "1109",
-                "users": "291",
-                "year": "2022",
-                "month": "Jun"
-            },
-            {
-                "pageviews": "995",
-                "users": "469",
-                "year": "2022",
-                "month": "Jul"
-            },
-            {
-                "pageviews": "1094",
-                "users": "507",
-                "year": "2022",
-                "month": "Aug"
-            },
-            {
-                "pageviews": "1253",
-                "users": "578",
-                "year": "2022",
-                "month": "Sep"
-            },
-            {
-                "pageviews": "1191",
-                "users": "631",
-                "year": "2022",
-                "month": "Oct"
-            },
-            {
-                "pageviews": "1465",
-                "users": "586",
-                "year": "2022",
-                "month": "Nov"
-            },
-            {
-                "pageviews": "1346",
-                "users": "413",
-                "year": "2022",
-                "month": "Dec"
-            },
-            {
-                "pageviews": "1786",
-                "users": "408",
-                "year": "2023",
-                "month": "Jan"
-            },
-            {
-                "pageviews": "1130",
-                "users": "524",
-                "year": "2023",
-                "month": "Feb"
-            },
-            {
-                "pageviews": "1045",
-                "users": "368",
-                "year": "2023",
-                "month": "Mar"
-            },
-            {
-                "pageviews": "791",
-                "users": "405",
-                "year": "2023",
-                "month": "Apr"
-            },
-            {
-                "pageviews": "1121",
-                "users": "428",
-                "year": "2023",
-                "month": "May"
-            },
-            {
-                "pageviews": "1014",
-                "users": "486",
-                "year": "2023",
-                "month": "Jun"
-            },
-            {
-                "pageviews": "163",
-                "users": "68",
-                "year": "2023",
-                "month": "Jul"
-            },
-            {
-                "pageviews": "831",
-                "users": "177",
-                "year": "2023",
-                "month": "Jul"
-            },
-            {
-                "pageviews": "740",
-                "users": "168",
-                "year": "2023",
-                "month": "Aug"
-            },
-            {
-                "pageviews": "518",
-                "users": "208",
-                "year": "2023",
-                "month": "Sep"
-            },
-            {
-                "pageviews": "781",
-                "users": "230",
-                "year": "2023",
-                "month": "Oct"
-            }
-        ]
-    },
-    {
-        "name": "SYNERGxDB",
-        "stats": [
-            {
-                "pageviews": "171",
-                "users": "73",
-                "year": "2020",
-                "month": "May"
-            },
-            {
-                "pageviews": "245",
-                "users": "113",
-                "year": "2020",
-                "month": "Jun"
-            },
-            {
-                "pageviews": "166",
-                "users": "77",
-                "year": "2020",
-                "month": "Jul"
-            },
-            {
-                "pageviews": "234",
-                "users": "60",
-                "year": "2020",
-                "month": "Aug"
-            },
-            {
-                "pageviews": "227",
-                "users": "116",
-                "year": "2020",
-                "month": "Sep"
-            },
-            {
-                "pageviews": "193",
-                "users": "132",
-                "year": "2020",
-                "month": "Oct"
-            },
-            {
-                "pageviews": "219",
-                "users": "122",
-                "year": "2020",
-                "month": "Nov"
-            },
-            {
-                "pageviews": "164",
-                "users": "113",
-                "year": "2020",
-                "month": "Dec"
-            },
-            {
-                "pageviews": "243",
-                "users": "116",
-                "year": "2021",
-                "month": "Jan"
-            },
-            {
-                "pageviews": "150",
-                "users": "106",
-                "year": "2021",
-                "month": "Feb"
-            },
-            {
-                "pageviews": "331",
-                "users": "158",
-                "year": "2021",
-                "month": "Mar"
-            },
-            {
-                "pageviews": "164",
-                "users": "117",
-                "year": "2021",
-                "month": "Apr"
-            },
-            {
-                "pageviews": "380",
-                "users": "140",
-                "year": "2021",
-                "month": "May"
-            },
-            {
-                "pageviews": "291",
-                "users": "150",
-                "year": "2021",
-                "month": "Jun"
-            },
-            {
-                "pageviews": "235",
-                "users": "159",
-                "year": "2021",
-                "month": "Jul"
-            },
-            {
-                "pageviews": "256",
-                "users": "100",
-                "year": "2021",
-                "month": "Aug"
-            },
-            {
-                "pageviews": "347",
-                "users": "165",
-                "year": "2021",
-                "month": "Sep"
-            },
-            {
-                "pageviews": "201",
-                "users": "115",
-                "year": "2021",
-                "month": "Oct"
-            },
-            {
-                "pageviews": "210",
-                "users": "132",
-                "year": "2021",
-                "month": "Nov"
-            },
-            {
-                "pageviews": "185",
-                "users": "151",
-                "year": "2021",
-                "month": "Dec"
-            },
-            {
-                "pageviews": "213",
-                "users": "130",
-                "year": "2022",
-                "month": "Jan"
-            },
-            {
-                "pageviews": "206",
-                "users": "134",
-                "year": "2022",
-                "month": "Feb"
-            },
-            {
-                "pageviews": "259",
-                "users": "157",
-                "year": "2022",
-                "month": "Mar"
-            },
-            {
-                "pageviews": "196",
-                "users": "133",
-                "year": "2022",
-                "month": "Apr"
-            },
-            {
-                "pageviews": "174",
-                "users": "123",
-                "year": "2022",
-                "month": "May"
-            },
-            {
-                "pageviews": "193",
-                "users": "130",
-                "year": "2022",
-                "month": "Jun"
-            },
-            {
-                "pageviews": "133",
-                "users": "90",
-                "year": "2022",
-                "month": "Jul"
-            },
-            {
-                "pageviews": "197",
-                "users": "112",
-                "year": "2022",
-                "month": "Aug"
-            },
-            {
-                "pageviews": "289",
-                "users": "122",
-                "year": "2022",
-                "month": "Sep"
-            },
-            {
-                "pageviews": "168",
-                "users": "128",
-                "year": "2022",
-                "month": "Oct"
-            },
-            {
-                "pageviews": "586",
-                "users": "131",
-                "year": "2022",
-                "month": "Nov"
-            },
-            {
-                "pageviews": "122",
-                "users": "108",
-                "year": "2022",
-                "month": "Dec"
-            },
-            {
-                "pageviews": "135",
-                "users": "106",
-                "year": "2023",
-                "month": "Jan"
-            },
-            {
-                "pageviews": "184",
-                "users": "116",
-                "year": "2023",
-                "month": "Feb"
-            },
-            {
-                "pageviews": "127",
-                "users": "108",
-                "year": "2023",
-                "month": "Mar"
-            },
-            {
-                "pageviews": "167",
-                "users": "110",
-                "year": "2023",
-                "month": "Apr"
-            },
-            {
-                "pageviews": "193",
-                "users": "148",
-                "year": "2023",
-                "month": "May"
-            },
-            {
-                "pageviews": "832",
-                "users": "793",
-                "year": "2023",
-                "month": "Jun"
-            },
-            {
-                "pageviews": "109",
-                "users": "108",
-                "year": "2023",
-                "month": "Jul"
-            },
-            {
-                "pageviews": "881",
-                "users": "812",
-                "year": "2023",
-                "month": "Jul"
-            },
-            {
-                "pageviews": "480",
-                "users": "455",
-                "year": "2023",
-                "month": "Aug"
-            },
-            {
-                "pageviews": "163",
-                "users": "132",
-                "year": "2023",
-                "month": "Sep"
-            },
-            {
-                "pageviews": "330",
-                "users": "160",
-                "year": "2023",
-                "month": "Oct"
-            }
-        ]
-    },
-    {
-        "name": "ToxicoDB",
-        "stats": [
-            {
-                "pageviews": "155",
-                "users": "85",
-                "year": "2020",
-                "month": "May"
-            },
-            {
-                "pageviews": "132",
-                "users": "73",
-                "year": "2020",
-                "month": "Jun"
-            },
-            {
-                "pageviews": "198",
-                "users": "105",
-                "year": "2020",
-                "month": "Jul"
-            },
-            {
-                "pageviews": "151",
-                "users": "87",
-                "year": "2020",
-                "month": "Aug"
-            },
-            {
-                "pageviews": "174",
-                "users": "125",
-                "year": "2020",
-                "month": "Sep"
-            },
-            {
-                "pageviews": "229",
-                "users": "148",
-                "year": "2020",
-                "month": "Oct"
-            },
-            {
-                "pageviews": "246",
-                "users": "141",
-                "year": "2020",
-                "month": "Nov"
-            },
-            {
-                "pageviews": "666",
-                "users": "130",
-                "year": "2020",
-                "month": "Dec"
-            },
-            {
-                "pageviews": "263",
-                "users": "135",
-                "year": "2021",
-                "month": "Jan"
-            },
-            {
-                "pageviews": "247",
-                "users": "83",
-                "year": "2021",
-                "month": "Feb"
-            },
-            {
-                "pageviews": "155",
-                "users": "98",
-                "year": "2021",
-                "month": "Mar"
-            },
-            {
-                "pageviews": "194",
-                "users": "100",
-                "year": "2021",
-                "month": "Apr"
-            },
-            {
-                "pageviews": "203",
-                "users": "92",
-                "year": "2021",
-                "month": "May"
-            },
-            {
-                "pageviews": "160",
-                "users": "82",
-                "year": "2021",
-                "month": "Jun"
-            },
-            {
-                "pageviews": "100",
-                "users": "72",
-                "year": "2021",
-                "month": "Jul"
-            },
-            {
-                "pageviews": "159",
-                "users": "112",
-                "year": "2021",
-                "month": "Aug"
-            },
-            {
-                "pageviews": "230",
-                "users": "139",
-                "year": "2021",
-                "month": "Sep"
-            },
-            {
-                "pageviews": "218",
-                "users": "97",
-                "year": "2021",
-                "month": "Oct"
-            },
-            {
-                "pageviews": "165",
-                "users": "95",
-                "year": "2021",
-                "month": "Nov"
-            },
-            {
-                "pageviews": "173",
-                "users": "91",
-                "year": "2021",
-                "month": "Dec"
-            },
-            {
-                "pageviews": "192",
-                "users": "111",
-                "year": "2022",
-                "month": "Jan"
-            },
-            {
-                "pageviews": "127",
-                "users": "82",
-                "year": "2022",
-                "month": "Feb"
-            },
-            {
-                "pageviews": "197",
-                "users": "126",
-                "year": "2022",
-                "month": "Mar"
-            },
-            {
-                "pageviews": "174",
-                "users": "110",
-                "year": "2022",
-                "month": "Apr"
-            },
-            {
-                "pageviews": "197",
-                "users": "113",
-                "year": "2022",
-                "month": "May"
-            },
-            {
-                "pageviews": "194",
-                "users": "143",
-                "year": "2022",
-                "month": "Jun"
-            },
-            {
-                "pageviews": "155",
-                "users": "102",
-                "year": "2022",
-                "month": "Jul"
-            },
-            {
-                "pageviews": "157",
-                "users": "92",
-                "year": "2022",
-                "month": "Aug"
-            },
-            {
-                "pageviews": "181",
-                "users": "123",
-                "year": "2022",
-                "month": "Sep"
-            },
-            {
-                "pageviews": "193",
-                "users": "120",
-                "year": "2022",
-                "month": "Oct"
-            },
-            {
-                "pageviews": "190",
-                "users": "126",
-                "year": "2022",
-                "month": "Nov"
-            },
-            {
-                "pageviews": "135",
-                "users": "92",
-                "year": "2022",
-                "month": "Dec"
-            },
-            {
-                "pageviews": "155",
-                "users": "116",
-                "year": "2023",
-                "month": "Jan"
-            },
-            {
-                "pageviews": "189",
-                "users": "134",
-                "year": "2023",
-                "month": "Feb"
-            },
-            {
-                "pageviews": "221",
-                "users": "160",
-                "year": "2023",
-                "month": "Mar"
-            },
-            {
-                "pageviews": "364",
-                "users": "199",
-                "year": "2023",
-                "month": "Apr"
-            },
-            {
-                "pageviews": "227",
-                "users": "134",
-                "year": "2023",
-                "month": "May"
-            },
-            {
-                "pageviews": "252",
-                "users": "188",
-                "year": "2023",
-                "month": "Jun"
-            },
-            {
-                "pageviews": "13",
-                "users": "5",
-                "year": "2023",
-                "month": "Jul"
-            },
-            {
-                "pageviews": "192",
-                "users": "100",
-                "year": "2023",
-                "month": "Jul"
-            },
-            {
-                "pageviews": "139",
-                "users": "83",
-                "year": "2023",
-                "month": "Aug"
-            },
-            {
-                "pageviews": "93",
-                "users": "61",
-                "year": "2023",
-                "month": "Sep"
-            },
-            {
-                "pageviews": "180",
-                "users": "111",
-                "year": "2023",
-                "month": "Oct"
-            }
-        ]
-    },
-    {
-        "name": "XevaDB",
-        "stats": [
-            {
-                "pageviews": "70",
-                "users": "24",
-                "year": "2020",
-                "month": "May"
-            },
-            {
-                "pageviews": "44",
-                "users": "21",
-                "year": "2020",
-                "month": "Jun"
-            },
-            {
-                "pageviews": "34",
-                "users": "13",
-                "year": "2020",
-                "month": "Jul"
-            },
-            {
-                "pageviews": "14",
-                "users": "10",
-                "year": "2020",
-                "month": "Aug"
-            },
-            {
-                "pageviews": "435",
-                "users": "54",
-                "year": "2020",
-                "month": "Sep"
-            },
-            {
-                "pageviews": "244",
-                "users": "23",
-                "year": "2020",
-                "month": "Oct"
-            },
-            {
-                "pageviews": "131",
-                "users": "26",
-                "year": "2020",
-                "month": "Nov"
-            },
-            {
-                "pageviews": "207",
-                "users": "60",
-                "year": "2020",
-                "month": "Dec"
-            },
-            {
-                "pageviews": "100",
-                "users": "43",
-                "year": "2021",
-                "month": "Jan"
-            },
-            {
-                "pageviews": "310",
-                "users": "52",
-                "year": "2021",
-                "month": "Feb"
-            },
-            {
-                "pageviews": "351",
-                "users": "45",
-                "year": "2021",
-                "month": "Mar"
-            },
-            {
-                "pageviews": "128",
-                "users": "32",
-                "year": "2021",
-                "month": "Apr"
-            },
-            {
-                "pageviews": "81",
-                "users": "21",
-                "year": "2021",
-                "month": "May"
-            },
-            {
-                "pageviews": "54",
-                "users": "28",
-                "year": "2021",
-                "month": "Jun"
-            },
-            {
-                "pageviews": "52",
-                "users": "36",
-                "year": "2021",
-                "month": "Jul"
-            },
-            {
-                "pageviews": "65",
-                "users": "30",
-                "year": "2021",
-                "month": "Aug"
-            },
-            {
-                "pageviews": "98",
-                "users": "43",
-                "year": "2021",
-                "month": "Sep"
-            },
-            {
-                "pageviews": "82",
-                "users": "17",
-                "year": "2021",
-                "month": "Oct"
-            },
-            {
-                "pageviews": "111",
-                "users": "32",
-                "year": "2021",
-                "month": "Nov"
-            },
-            {
-                "pageviews": "515",
-                "users": "44",
-                "year": "2021",
-                "month": "Dec"
-            },
-            {
-                "pageviews": "1038",
-                "users": "35",
-                "year": "2022",
-                "month": "Jan"
-            },
-            {
-                "pageviews": "1358",
-                "users": "28",
-                "year": "2022",
-                "month": "Feb"
-            },
-            {
-                "pageviews": "1941",
-                "users": "34",
-                "year": "2022",
-                "month": "Mar"
-            },
-            {
-                "pageviews": "2238",
-                "users": "73",
-                "year": "2022",
-                "month": "Apr"
-            },
-            {
-                "pageviews": "790",
-                "users": "62",
-                "year": "2022",
-                "month": "May"
-            },
-            {
-                "pageviews": "1662",
-                "users": "68",
-                "year": "2022",
-                "month": "Jun"
-            },
-            {
-                "pageviews": "3870",
-                "users": "39",
-                "year": "2022",
-                "month": "Jul"
-            },
-            {
-                "pageviews": "90",
-                "users": "26",
-                "year": "2022",
-                "month": "Aug"
-            },
-            {
-                "pageviews": "501",
-                "users": "34",
-                "year": "2022",
-                "month": "Sep"
-            },
-            {
-                "pageviews": "895",
-                "users": "81",
-                "year": "2022",
-                "month": "Oct"
-            },
-            {
-                "pageviews": "165",
-                "users": "49",
-                "year": "2022",
-                "month": "Nov"
-            },
-            {
-                "pageviews": "50",
-                "users": "28",
-                "year": "2022",
-                "month": "Dec"
-            },
-            {
-                "pageviews": "1688",
-                "users": "30",
-                "year": "2023",
-                "month": "Jan"
-            },
-            {
-                "pageviews": "1635",
-                "users": "33",
-                "year": "2023",
-                "month": "Feb"
-            },
-            {
-                "pageviews": "342",
-                "users": "51",
-                "year": "2023",
-                "month": "Mar"
-            },
-            {
-                "pageviews": "48",
-                "users": "27",
-                "year": "2023",
-                "month": "Apr"
-            },
-            {
-                "pageviews": "63",
-                "users": "29",
-                "year": "2023",
-                "month": "May"
-            },
-            {
-                "pageviews": "182",
-                "users": "42",
-                "year": "2023",
-                "month": "Jun"
-            },
-            {
-                "pageviews": "2",
-                "users": "2",
-                "year": "2023",
-                "month": "Jul"
-            },
-            {
-                "pageviews": "62",
-                "users": "26",
-                "year": "2023",
-                "month": "Jul"
-            },
-            {
-                "pageviews": "29",
-                "users": "21",
-                "year": "2023",
-                "month": "Aug"
-            },
-            {
-                "pageviews": "54",
-                "users": "25",
-                "year": "2023",
-                "month": "Sep"
-            },
-            {
-                "pageviews": "53",
-                "users": "29",
-                "year": "2023",
-                "month": "Oct"
-            }
-        ]
-    },
-    {
-        "name": "Orcestra",
-        "stats": [
-            {
-                "pageviews": "171",
-                "users": "19",
-                "year": "2020",
-                "month": "May"
-            },
-            {
-                "pageviews": "547",
-                "users": "29",
-                "year": "2020",
-                "month": "Jun"
-            },
-            {
-                "pageviews": "1530",
-                "users": "41",
-                "year": "2020",
-                "month": "Jul"
-            },
-            {
-                "pageviews": "142",
-                "users": "34",
-                "year": "2020",
-                "month": "Aug"
-            },
-            {
-                "pageviews": "257",
-                "users": "43",
-                "year": "2020",
-                "month": "Sep"
-            },
-            {
-                "pageviews": "1010",
-                "users": "56",
-                "year": "2020",
-                "month": "Oct"
-            },
-            {
-                "pageviews": "567",
-                "users": "38",
-                "year": "2020",
-                "month": "Nov"
-            },
-            {
-                "pageviews": "951",
-                "users": "47",
-                "year": "2020",
-                "month": "Dec"
-            },
-            {
-                "pageviews": "268",
-                "users": "61",
-                "year": "2021",
-                "month": "Jan"
-            },
-            {
-                "pageviews": "317",
-                "users": "50",
-                "year": "2021",
-                "month": "Feb"
-            },
-            {
-                "pageviews": "318",
-                "users": "86",
-                "year": "2021",
-                "month": "Mar"
-            },
-            {
-                "pageviews": "575",
-                "users": "58",
-                "year": "2021",
-                "month": "Apr"
-            },
-            {
-                "pageviews": "712",
-                "users": "56",
-                "year": "2021",
-                "month": "May"
-            },
-            {
-                "pageviews": "719",
-                "users": "81",
-                "year": "2021",
-                "month": "Jun"
-            },
-            {
-                "pageviews": "193",
-                "users": "72",
-                "year": "2021",
-                "month": "Jul"
-            },
-            {
-                "pageviews": "495",
-                "users": "80",
-                "year": "2021",
-                "month": "Aug"
-            },
-            {
-                "pageviews": "442",
-                "users": "70",
-                "year": "2021",
-                "month": "Sep"
-            },
-            {
-                "pageviews": "527",
-                "users": "243",
-                "year": "2021",
-                "month": "Oct"
-            },
-            {
-                "pageviews": "208",
-                "users": "82",
-                "year": "2021",
-                "month": "Nov"
-            },
-            {
-                "pageviews": "665",
-                "users": "100",
-                "year": "2021",
-                "month": "Dec"
-            },
-            {
-                "pageviews": "400",
-                "users": "103",
-                "year": "2022",
-                "month": "Jan"
-            },
-            {
-                "pageviews": "367",
-                "users": "93",
-                "year": "2022",
-                "month": "Feb"
-            },
-            {
-                "pageviews": "404",
-                "users": "105",
-                "year": "2022",
-                "month": "Mar"
-            },
-            {
-                "pageviews": "1069",
-                "users": "105",
-                "year": "2022",
-                "month": "Apr"
-            },
-            {
-                "pageviews": "371",
-                "users": "121",
-                "year": "2022",
-                "month": "May"
-            },
-            {
-                "pageviews": "306",
-                "users": "86",
-                "year": "2022",
-                "month": "Jun"
-            },
-            {
-                "pageviews": "410",
-                "users": "81",
-                "year": "2022",
-                "month": "Jul"
-            },
-            {
-                "pageviews": "352",
-                "users": "103",
-                "year": "2022",
-                "month": "Aug"
-            },
-            {
-                "pageviews": "441",
-                "users": "140",
-                "year": "2022",
-                "month": "Sep"
-            },
-            {
-                "pageviews": "486",
-                "users": "164",
-                "year": "2022",
-                "month": "Oct"
-            },
-            {
-                "pageviews": "446",
-                "users": "143",
-                "year": "2022",
-                "month": "Nov"
-            },
-            {
-                "pageviews": "371",
-                "users": "119",
-                "year": "2022",
-                "month": "Dec"
-            },
-            {
-                "pageviews": "397",
-                "users": "122",
-                "year": "2023",
-                "month": "Jan"
-            },
-            {
-                "pageviews": "319",
-                "users": "113",
-                "year": "2023",
-                "month": "Feb"
-            },
-            {
-                "pageviews": "593",
-                "users": "154",
-                "year": "2023",
-                "month": "Mar"
-            },
-            {
-                "pageviews": "812",
-                "users": "87",
-                "year": "2023",
-                "month": "Apr"
-            },
-            {
-                "pageviews": "631",
-                "users": "115",
-                "year": "2023",
-                "month": "Jul"
-            },
-            {
-                "pageviews": "639",
-                "users": "110",
-                "year": "2023",
-                "month": "Aug"
-            },
-            {
-                "pageviews": "965",
-                "users": "88",
-                "year": "2023",
-                "month": "Sep"
-            },
-            {
-                "pageviews": "1023",
-                "users": "143",
-                "year": "2023",
-                "month": "Oct"
-            }
-        ]
-    }
+  {
+    "name": "PharmacoDB",
+    "stats": [
+      {
+        "pageviews": "3935",
+        "users": "100",
+        "year": "2017",
+        "month": "Jul"
+      },
+      {
+        "pageviews": "7156",
+        "users": "315",
+        "year": "2017",
+        "month": "Aug"
+      },
+      {
+        "pageviews": "7964",
+        "users": "303",
+        "year": "2017",
+        "month": "Sep"
+      },
+      {
+        "pageviews": "4961",
+        "users": "310",
+        "year": "2017",
+        "month": "Oct"
+      },
+      {
+        "pageviews": "4555",
+        "users": "254",
+        "year": "2017",
+        "month": "Nov"
+      },
+      {
+        "pageviews": "2823",
+        "users": "191",
+        "year": "2017",
+        "month": "Dec"
+      },
+      {
+        "pageviews": "4235",
+        "users": "289",
+        "year": "2018",
+        "month": "Jan"
+      },
+      {
+        "pageviews": "2450",
+        "users": "229",
+        "year": "2018",
+        "month": "Feb"
+      },
+      {
+        "pageviews": "4006",
+        "users": "310",
+        "year": "2018",
+        "month": "Mar"
+      },
+      {
+        "pageviews": "4525",
+        "users": "393",
+        "year": "2018",
+        "month": "Apr"
+      },
+      {
+        "pageviews": "3873",
+        "users": "350",
+        "year": "2018",
+        "month": "May"
+      },
+      {
+        "pageviews": "4126",
+        "users": "353",
+        "year": "2018",
+        "month": "Jun"
+      },
+      {
+        "pageviews": "4668",
+        "users": "412",
+        "year": "2018",
+        "month": "Jul"
+      },
+      {
+        "pageviews": "6184",
+        "users": "345",
+        "year": "2018",
+        "month": "Aug"
+      },
+      {
+        "pageviews": "4342",
+        "users": "414",
+        "year": "2018",
+        "month": "Sep"
+      },
+      {
+        "pageviews": "5669",
+        "users": "444",
+        "year": "2018",
+        "month": "Oct"
+      },
+      {
+        "pageviews": "8328",
+        "users": "470",
+        "year": "2018",
+        "month": "Nov"
+      },
+      {
+        "pageviews": "3279",
+        "users": "340",
+        "year": "2018",
+        "month": "Dec"
+      },
+      {
+        "pageviews": "4791",
+        "users": "445",
+        "year": "2019",
+        "month": "Jan"
+      },
+      {
+        "pageviews": "3255",
+        "users": "415",
+        "year": "2019",
+        "month": "Feb"
+      },
+      {
+        "pageviews": "4287",
+        "users": "432",
+        "year": "2019",
+        "month": "Mar"
+      },
+      {
+        "pageviews": "4969",
+        "users": "438",
+        "year": "2019",
+        "month": "Apr"
+      },
+      {
+        "pageviews": "5391",
+        "users": "491",
+        "year": "2019",
+        "month": "May"
+      },
+      {
+        "pageviews": "4634",
+        "users": "482",
+        "year": "2019",
+        "month": "Jun"
+      },
+      {
+        "pageviews": "7362",
+        "users": "613",
+        "year": "2019",
+        "month": "Jul"
+      },
+      {
+        "pageviews": "4904",
+        "users": "469",
+        "year": "2019",
+        "month": "Aug"
+      },
+      {
+        "pageviews": "3857",
+        "users": "502",
+        "year": "2019",
+        "month": "Sep"
+      },
+      {
+        "pageviews": "3552",
+        "users": "525",
+        "year": "2019",
+        "month": "Oct"
+      },
+      {
+        "pageviews": "3794",
+        "users": "583",
+        "year": "2019",
+        "month": "Nov"
+      },
+      {
+        "pageviews": "3188",
+        "users": "463",
+        "year": "2019",
+        "month": "Dec"
+      },
+      {
+        "pageviews": "4008",
+        "users": "616",
+        "year": "2020",
+        "month": "Jan"
+      },
+      {
+        "pageviews": "4494",
+        "users": "410",
+        "year": "2020",
+        "month": "Feb"
+      },
+      {
+        "pageviews": "3713",
+        "users": "438",
+        "year": "2020",
+        "month": "Mar"
+      },
+      {
+        "pageviews": "4518",
+        "users": "544",
+        "year": "2020",
+        "month": "Apr"
+      },
+      {
+        "pageviews": "5302",
+        "users": "533",
+        "year": "2020",
+        "month": "May"
+      },
+      {
+        "pageviews": "6925",
+        "users": "458",
+        "year": "2020",
+        "month": "Jun"
+      },
+      {
+        "pageviews": "4786",
+        "users": "475",
+        "year": "2020",
+        "month": "Jul"
+      },
+      {
+        "pageviews": "2507",
+        "users": "385",
+        "year": "2020",
+        "month": "Aug"
+      },
+      {
+        "pageviews": "4608",
+        "users": "498",
+        "year": "2020",
+        "month": "Sep"
+      },
+      {
+        "pageviews": "4256",
+        "users": "489",
+        "year": "2020",
+        "month": "Oct"
+      },
+      {
+        "pageviews": "5019",
+        "users": "1155",
+        "year": "2020",
+        "month": "Nov"
+      },
+      {
+        "pageviews": "4486",
+        "users": "539",
+        "year": "2020",
+        "month": "Dec"
+      },
+      {
+        "pageviews": "3653",
+        "users": "553",
+        "year": "2021",
+        "month": "Jan"
+      },
+      {
+        "pageviews": "9192",
+        "users": "3902",
+        "year": "2021",
+        "month": "Feb"
+      },
+      {
+        "pageviews": "6160",
+        "users": "679",
+        "year": "2021",
+        "month": "Mar"
+      },
+      {
+        "pageviews": "5823",
+        "users": "1136",
+        "year": "2021",
+        "month": "Apr"
+      },
+      {
+        "pageviews": "7052",
+        "users": "764",
+        "year": "2021",
+        "month": "May"
+      },
+      {
+        "pageviews": "5314",
+        "users": "727",
+        "year": "2021",
+        "month": "Jun"
+      },
+      {
+        "pageviews": "6466",
+        "users": "1022",
+        "year": "2021",
+        "month": "Jul"
+      },
+      {
+        "pageviews": "5842",
+        "users": "588",
+        "year": "2021",
+        "month": "Aug"
+      },
+      {
+        "pageviews": "4119",
+        "users": "513",
+        "year": "2021",
+        "month": "Sep"
+      },
+      {
+        "pageviews": "3105",
+        "users": "433",
+        "year": "2021",
+        "month": "Oct"
+      },
+      {
+        "pageviews": "2062",
+        "users": "339",
+        "year": "2021",
+        "month": "Nov"
+      },
+      {
+        "pageviews": "2524",
+        "users": "367",
+        "year": "2021",
+        "month": "Dec"
+      },
+      {
+        "pageviews": "3701",
+        "users": "415",
+        "year": "2022",
+        "month": "Jan"
+      },
+      {
+        "pageviews": "4378",
+        "users": "396",
+        "year": "2022",
+        "month": "Feb"
+      },
+      {
+        "pageviews": "2525",
+        "users": "380",
+        "year": "2022",
+        "month": "Mar"
+      },
+      {
+        "pageviews": "1000",
+        "users": "233",
+        "year": "2022",
+        "month": "Apr"
+      },
+      {
+        "pageviews": "2052",
+        "users": "900",
+        "year": "2022",
+        "month": "May"
+      },
+      {
+        "pageviews": "1109",
+        "users": "291",
+        "year": "2022",
+        "month": "Jun"
+      },
+      {
+        "pageviews": "995",
+        "users": "469",
+        "year": "2022",
+        "month": "Jul"
+      },
+      {
+        "pageviews": "1094",
+        "users": "507",
+        "year": "2022",
+        "month": "Aug"
+      },
+      {
+        "pageviews": "1253",
+        "users": "578",
+        "year": "2022",
+        "month": "Sep"
+      },
+      {
+        "pageviews": "1191",
+        "users": "631",
+        "year": "2022",
+        "month": "Oct"
+      },
+      {
+        "pageviews": "1465",
+        "users": "586",
+        "year": "2022",
+        "month": "Nov"
+      },
+      {
+        "pageviews": "1346",
+        "users": "413",
+        "year": "2022",
+        "month": "Dec"
+      },
+      {
+        "pageviews": "1786",
+        "users": "408",
+        "year": "2023",
+        "month": "Jan"
+      },
+      {
+        "pageviews": "1130",
+        "users": "524",
+        "year": "2023",
+        "month": "Feb"
+      },
+      {
+        "pageviews": "1045",
+        "users": "368",
+        "year": "2023",
+        "month": "Mar"
+      },
+      {
+        "pageviews": "791",
+        "users": "405",
+        "year": "2023",
+        "month": "Apr"
+      },
+      {
+        "pageviews": "1121",
+        "users": "428",
+        "year": "2023",
+        "month": "May"
+      },
+      {
+        "pageviews": "1014",
+        "users": "486",
+        "year": "2023",
+        "month": "Jun"
+      },
+      {
+        "pageviews": "831",
+        "users": "177",
+        "year": "2023",
+        "month": "Jul"
+      },
+      {
+        "pageviews": "740",
+        "users": "168",
+        "year": "2023",
+        "month": "Aug"
+      },
+      {
+        "pageviews": "518",
+        "users": "208",
+        "year": "2023",
+        "month": "Sep"
+      },
+      {
+        "pageviews": "781",
+        "users": "230",
+        "year": "2023",
+        "month": "Oct"
+      }
+    ]
+  },
+  {
+    "name": "SYNERGxDB",
+    "stats": [
+      {
+        "pageviews": "171",
+        "users": "73",
+        "year": "2020",
+        "month": "May"
+      },
+      {
+        "pageviews": "245",
+        "users": "113",
+        "year": "2020",
+        "month": "Jun"
+      },
+      {
+        "pageviews": "166",
+        "users": "77",
+        "year": "2020",
+        "month": "Jul"
+      },
+      {
+        "pageviews": "234",
+        "users": "60",
+        "year": "2020",
+        "month": "Aug"
+      },
+      {
+        "pageviews": "227",
+        "users": "116",
+        "year": "2020",
+        "month": "Sep"
+      },
+      {
+        "pageviews": "193",
+        "users": "132",
+        "year": "2020",
+        "month": "Oct"
+      },
+      {
+        "pageviews": "219",
+        "users": "122",
+        "year": "2020",
+        "month": "Nov"
+      },
+      {
+        "pageviews": "164",
+        "users": "113",
+        "year": "2020",
+        "month": "Dec"
+      },
+      {
+        "pageviews": "243",
+        "users": "116",
+        "year": "2021",
+        "month": "Jan"
+      },
+      {
+        "pageviews": "150",
+        "users": "106",
+        "year": "2021",
+        "month": "Feb"
+      },
+      {
+        "pageviews": "331",
+        "users": "158",
+        "year": "2021",
+        "month": "Mar"
+      },
+      {
+        "pageviews": "164",
+        "users": "117",
+        "year": "2021",
+        "month": "Apr"
+      },
+      {
+        "pageviews": "380",
+        "users": "140",
+        "year": "2021",
+        "month": "May"
+      },
+      {
+        "pageviews": "291",
+        "users": "150",
+        "year": "2021",
+        "month": "Jun"
+      },
+      {
+        "pageviews": "235",
+        "users": "159",
+        "year": "2021",
+        "month": "Jul"
+      },
+      {
+        "pageviews": "256",
+        "users": "100",
+        "year": "2021",
+        "month": "Aug"
+      },
+      {
+        "pageviews": "347",
+        "users": "165",
+        "year": "2021",
+        "month": "Sep"
+      },
+      {
+        "pageviews": "201",
+        "users": "115",
+        "year": "2021",
+        "month": "Oct"
+      },
+      {
+        "pageviews": "210",
+        "users": "132",
+        "year": "2021",
+        "month": "Nov"
+      },
+      {
+        "pageviews": "185",
+        "users": "151",
+        "year": "2021",
+        "month": "Dec"
+      },
+      {
+        "pageviews": "213",
+        "users": "130",
+        "year": "2022",
+        "month": "Jan"
+      },
+      {
+        "pageviews": "206",
+        "users": "134",
+        "year": "2022",
+        "month": "Feb"
+      },
+      {
+        "pageviews": "259",
+        "users": "157",
+        "year": "2022",
+        "month": "Mar"
+      },
+      {
+        "pageviews": "196",
+        "users": "133",
+        "year": "2022",
+        "month": "Apr"
+      },
+      {
+        "pageviews": "174",
+        "users": "123",
+        "year": "2022",
+        "month": "May"
+      },
+      {
+        "pageviews": "193",
+        "users": "130",
+        "year": "2022",
+        "month": "Jun"
+      },
+      {
+        "pageviews": "133",
+        "users": "90",
+        "year": "2022",
+        "month": "Jul"
+      },
+      {
+        "pageviews": "197",
+        "users": "112",
+        "year": "2022",
+        "month": "Aug"
+      },
+      {
+        "pageviews": "289",
+        "users": "122",
+        "year": "2022",
+        "month": "Sep"
+      },
+      {
+        "pageviews": "168",
+        "users": "128",
+        "year": "2022",
+        "month": "Oct"
+      },
+      {
+        "pageviews": "586",
+        "users": "131",
+        "year": "2022",
+        "month": "Nov"
+      },
+      {
+        "pageviews": "122",
+        "users": "108",
+        "year": "2022",
+        "month": "Dec"
+      },
+      {
+        "pageviews": "135",
+        "users": "106",
+        "year": "2023",
+        "month": "Jan"
+      },
+      {
+        "pageviews": "184",
+        "users": "116",
+        "year": "2023",
+        "month": "Feb"
+      },
+      {
+        "pageviews": "127",
+        "users": "108",
+        "year": "2023",
+        "month": "Mar"
+      },
+      {
+        "pageviews": "167",
+        "users": "110",
+        "year": "2023",
+        "month": "Apr"
+      },
+      {
+        "pageviews": "193",
+        "users": "148",
+        "year": "2023",
+        "month": "May"
+      },
+      {
+        "pageviews": "832",
+        "users": "793",
+        "year": "2023",
+        "month": "Jun"
+      },
+      {
+        "pageviews": "881",
+        "users": "812",
+        "year": "2023",
+        "month": "Jul"
+      },
+      {
+        "pageviews": "480",
+        "users": "455",
+        "year": "2023",
+        "month": "Aug"
+      },
+      {
+        "pageviews": "163",
+        "users": "132",
+        "year": "2023",
+        "month": "Sep"
+      },
+      {
+        "pageviews": "330",
+        "users": "160",
+        "year": "2023",
+        "month": "Oct"
+      }
+    ]
+  },
+  {
+    "name": "ToxicoDB",
+    "stats": [
+      {
+        "pageviews": "155",
+        "users": "85",
+        "year": "2020",
+        "month": "May"
+      },
+      {
+        "pageviews": "132",
+        "users": "73",
+        "year": "2020",
+        "month": "Jun"
+      },
+      {
+        "pageviews": "198",
+        "users": "105",
+        "year": "2020",
+        "month": "Jul"
+      },
+      {
+        "pageviews": "151",
+        "users": "87",
+        "year": "2020",
+        "month": "Aug"
+      },
+      {
+        "pageviews": "174",
+        "users": "125",
+        "year": "2020",
+        "month": "Sep"
+      },
+      {
+        "pageviews": "229",
+        "users": "148",
+        "year": "2020",
+        "month": "Oct"
+      },
+      {
+        "pageviews": "246",
+        "users": "141",
+        "year": "2020",
+        "month": "Nov"
+      },
+      {
+        "pageviews": "666",
+        "users": "130",
+        "year": "2020",
+        "month": "Dec"
+      },
+      {
+        "pageviews": "263",
+        "users": "135",
+        "year": "2021",
+        "month": "Jan"
+      },
+      {
+        "pageviews": "247",
+        "users": "83",
+        "year": "2021",
+        "month": "Feb"
+      },
+      {
+        "pageviews": "155",
+        "users": "98",
+        "year": "2021",
+        "month": "Mar"
+      },
+      {
+        "pageviews": "194",
+        "users": "100",
+        "year": "2021",
+        "month": "Apr"
+      },
+      {
+        "pageviews": "203",
+        "users": "92",
+        "year": "2021",
+        "month": "May"
+      },
+      {
+        "pageviews": "160",
+        "users": "82",
+        "year": "2021",
+        "month": "Jun"
+      },
+      {
+        "pageviews": "100",
+        "users": "72",
+        "year": "2021",
+        "month": "Jul"
+      },
+      {
+        "pageviews": "159",
+        "users": "112",
+        "year": "2021",
+        "month": "Aug"
+      },
+      {
+        "pageviews": "230",
+        "users": "139",
+        "year": "2021",
+        "month": "Sep"
+      },
+      {
+        "pageviews": "218",
+        "users": "97",
+        "year": "2021",
+        "month": "Oct"
+      },
+      {
+        "pageviews": "165",
+        "users": "95",
+        "year": "2021",
+        "month": "Nov"
+      },
+      {
+        "pageviews": "173",
+        "users": "91",
+        "year": "2021",
+        "month": "Dec"
+      },
+      {
+        "pageviews": "192",
+        "users": "111",
+        "year": "2022",
+        "month": "Jan"
+      },
+      {
+        "pageviews": "127",
+        "users": "82",
+        "year": "2022",
+        "month": "Feb"
+      },
+      {
+        "pageviews": "197",
+        "users": "126",
+        "year": "2022",
+        "month": "Mar"
+      },
+      {
+        "pageviews": "174",
+        "users": "110",
+        "year": "2022",
+        "month": "Apr"
+      },
+      {
+        "pageviews": "197",
+        "users": "113",
+        "year": "2022",
+        "month": "May"
+      },
+      {
+        "pageviews": "194",
+        "users": "143",
+        "year": "2022",
+        "month": "Jun"
+      },
+      {
+        "pageviews": "155",
+        "users": "102",
+        "year": "2022",
+        "month": "Jul"
+      },
+      {
+        "pageviews": "157",
+        "users": "92",
+        "year": "2022",
+        "month": "Aug"
+      },
+      {
+        "pageviews": "181",
+        "users": "123",
+        "year": "2022",
+        "month": "Sep"
+      },
+      {
+        "pageviews": "193",
+        "users": "120",
+        "year": "2022",
+        "month": "Oct"
+      },
+      {
+        "pageviews": "190",
+        "users": "126",
+        "year": "2022",
+        "month": "Nov"
+      },
+      {
+        "pageviews": "135",
+        "users": "92",
+        "year": "2022",
+        "month": "Dec"
+      },
+      {
+        "pageviews": "155",
+        "users": "116",
+        "year": "2023",
+        "month": "Jan"
+      },
+      {
+        "pageviews": "189",
+        "users": "134",
+        "year": "2023",
+        "month": "Feb"
+      },
+      {
+        "pageviews": "221",
+        "users": "160",
+        "year": "2023",
+        "month": "Mar"
+      },
+      {
+        "pageviews": "364",
+        "users": "199",
+        "year": "2023",
+        "month": "Apr"
+      },
+      {
+        "pageviews": "227",
+        "users": "134",
+        "year": "2023",
+        "month": "May"
+      },
+      {
+        "pageviews": "252",
+        "users": "188",
+        "year": "2023",
+        "month": "Jun"
+      },
+      {
+        "pageviews": "192",
+        "users": "100",
+        "year": "2023",
+        "month": "Jul"
+      },
+      {
+        "pageviews": "139",
+        "users": "83",
+        "year": "2023",
+        "month": "Aug"
+      },
+      {
+        "pageviews": "93",
+        "users": "61",
+        "year": "2023",
+        "month": "Sep"
+      },
+      {
+        "pageviews": "180",
+        "users": "111",
+        "year": "2023",
+        "month": "Oct"
+      }
+    ]
+  },
+  {
+    "name": "XevaDB",
+    "stats": [
+      {
+        "pageviews": "70",
+        "users": "24",
+        "year": "2020",
+        "month": "May"
+      },
+      {
+        "pageviews": "44",
+        "users": "21",
+        "year": "2020",
+        "month": "Jun"
+      },
+      {
+        "pageviews": "34",
+        "users": "13",
+        "year": "2020",
+        "month": "Jul"
+      },
+      {
+        "pageviews": "14",
+        "users": "10",
+        "year": "2020",
+        "month": "Aug"
+      },
+      {
+        "pageviews": "435",
+        "users": "54",
+        "year": "2020",
+        "month": "Sep"
+      },
+      {
+        "pageviews": "244",
+        "users": "23",
+        "year": "2020",
+        "month": "Oct"
+      },
+      {
+        "pageviews": "131",
+        "users": "26",
+        "year": "2020",
+        "month": "Nov"
+      },
+      {
+        "pageviews": "207",
+        "users": "60",
+        "year": "2020",
+        "month": "Dec"
+      },
+      {
+        "pageviews": "100",
+        "users": "43",
+        "year": "2021",
+        "month": "Jan"
+      },
+      {
+        "pageviews": "310",
+        "users": "52",
+        "year": "2021",
+        "month": "Feb"
+      },
+      {
+        "pageviews": "351",
+        "users": "45",
+        "year": "2021",
+        "month": "Mar"
+      },
+      {
+        "pageviews": "128",
+        "users": "32",
+        "year": "2021",
+        "month": "Apr"
+      },
+      {
+        "pageviews": "81",
+        "users": "21",
+        "year": "2021",
+        "month": "May"
+      },
+      {
+        "pageviews": "54",
+        "users": "28",
+        "year": "2021",
+        "month": "Jun"
+      },
+      {
+        "pageviews": "52",
+        "users": "36",
+        "year": "2021",
+        "month": "Jul"
+      },
+      {
+        "pageviews": "65",
+        "users": "30",
+        "year": "2021",
+        "month": "Aug"
+      },
+      {
+        "pageviews": "98",
+        "users": "43",
+        "year": "2021",
+        "month": "Sep"
+      },
+      {
+        "pageviews": "82",
+        "users": "17",
+        "year": "2021",
+        "month": "Oct"
+      },
+      {
+        "pageviews": "111",
+        "users": "32",
+        "year": "2021",
+        "month": "Nov"
+      },
+      {
+        "pageviews": "515",
+        "users": "44",
+        "year": "2021",
+        "month": "Dec"
+      },
+      {
+        "pageviews": "1038",
+        "users": "35",
+        "year": "2022",
+        "month": "Jan"
+      },
+      {
+        "pageviews": "1358",
+        "users": "28",
+        "year": "2022",
+        "month": "Feb"
+      },
+      {
+        "pageviews": "1941",
+        "users": "34",
+        "year": "2022",
+        "month": "Mar"
+      },
+      {
+        "pageviews": "2238",
+        "users": "73",
+        "year": "2022",
+        "month": "Apr"
+      },
+      {
+        "pageviews": "790",
+        "users": "62",
+        "year": "2022",
+        "month": "May"
+      },
+      {
+        "pageviews": "1662",
+        "users": "68",
+        "year": "2022",
+        "month": "Jun"
+      },
+      {
+        "pageviews": "3870",
+        "users": "39",
+        "year": "2022",
+        "month": "Jul"
+      },
+      {
+        "pageviews": "90",
+        "users": "26",
+        "year": "2022",
+        "month": "Aug"
+      },
+      {
+        "pageviews": "501",
+        "users": "34",
+        "year": "2022",
+        "month": "Sep"
+      },
+      {
+        "pageviews": "895",
+        "users": "81",
+        "year": "2022",
+        "month": "Oct"
+      },
+      {
+        "pageviews": "165",
+        "users": "49",
+        "year": "2022",
+        "month": "Nov"
+      },
+      {
+        "pageviews": "50",
+        "users": "28",
+        "year": "2022",
+        "month": "Dec"
+      },
+      {
+        "pageviews": "1688",
+        "users": "30",
+        "year": "2023",
+        "month": "Jan"
+      },
+      {
+        "pageviews": "1635",
+        "users": "33",
+        "year": "2023",
+        "month": "Feb"
+      },
+      {
+        "pageviews": "342",
+        "users": "51",
+        "year": "2023",
+        "month": "Mar"
+      },
+      {
+        "pageviews": "48",
+        "users": "27",
+        "year": "2023",
+        "month": "Apr"
+      },
+      {
+        "pageviews": "63",
+        "users": "29",
+        "year": "2023",
+        "month": "May"
+      },
+      {
+        "pageviews": "182",
+        "users": "42",
+        "year": "2023",
+        "month": "Jun"
+      },
+      {
+        "pageviews": "62",
+        "users": "26",
+        "year": "2023",
+        "month": "Jul"
+      },
+      {
+        "pageviews": "29",
+        "users": "21",
+        "year": "2023",
+        "month": "Aug"
+      },
+      {
+        "pageviews": "54",
+        "users": "25",
+        "year": "2023",
+        "month": "Sep"
+      },
+      {
+        "pageviews": "53",
+        "users": "29",
+        "year": "2023",
+        "month": "Oct"
+      }
+    ]
+  },
+  {
+    "name": "Orcestra",
+    "stats": [
+      {
+        "pageviews": "171",
+        "users": "19",
+        "year": "2020",
+        "month": "May"
+      },
+      {
+        "pageviews": "547",
+        "users": "29",
+        "year": "2020",
+        "month": "Jun"
+      },
+      {
+        "pageviews": "1530",
+        "users": "41",
+        "year": "2020",
+        "month": "Jul"
+      },
+      {
+        "pageviews": "142",
+        "users": "34",
+        "year": "2020",
+        "month": "Aug"
+      },
+      {
+        "pageviews": "257",
+        "users": "43",
+        "year": "2020",
+        "month": "Sep"
+      },
+      {
+        "pageviews": "1010",
+        "users": "56",
+        "year": "2020",
+        "month": "Oct"
+      },
+      {
+        "pageviews": "567",
+        "users": "38",
+        "year": "2020",
+        "month": "Nov"
+      },
+      {
+        "pageviews": "951",
+        "users": "47",
+        "year": "2020",
+        "month": "Dec"
+      },
+      {
+        "pageviews": "268",
+        "users": "61",
+        "year": "2021",
+        "month": "Jan"
+      },
+      {
+        "pageviews": "317",
+        "users": "50",
+        "year": "2021",
+        "month": "Feb"
+      },
+      {
+        "pageviews": "318",
+        "users": "86",
+        "year": "2021",
+        "month": "Mar"
+      },
+      {
+        "pageviews": "575",
+        "users": "58",
+        "year": "2021",
+        "month": "Apr"
+      },
+      {
+        "pageviews": "712",
+        "users": "56",
+        "year": "2021",
+        "month": "May"
+      },
+      {
+        "pageviews": "719",
+        "users": "81",
+        "year": "2021",
+        "month": "Jun"
+      },
+      {
+        "pageviews": "193",
+        "users": "72",
+        "year": "2021",
+        "month": "Jul"
+      },
+      {
+        "pageviews": "495",
+        "users": "80",
+        "year": "2021",
+        "month": "Aug"
+      },
+      {
+        "pageviews": "442",
+        "users": "70",
+        "year": "2021",
+        "month": "Sep"
+      },
+      {
+        "pageviews": "527",
+        "users": "243",
+        "year": "2021",
+        "month": "Oct"
+      },
+      {
+        "pageviews": "208",
+        "users": "82",
+        "year": "2021",
+        "month": "Nov"
+      },
+      {
+        "pageviews": "665",
+        "users": "100",
+        "year": "2021",
+        "month": "Dec"
+      },
+      {
+        "pageviews": "400",
+        "users": "103",
+        "year": "2022",
+        "month": "Jan"
+      },
+      {
+        "pageviews": "367",
+        "users": "93",
+        "year": "2022",
+        "month": "Feb"
+      },
+      {
+        "pageviews": "404",
+        "users": "105",
+        "year": "2022",
+        "month": "Mar"
+      },
+      {
+        "pageviews": "1069",
+        "users": "105",
+        "year": "2022",
+        "month": "Apr"
+      },
+      {
+        "pageviews": "371",
+        "users": "121",
+        "year": "2022",
+        "month": "May"
+      },
+      {
+        "pageviews": "306",
+        "users": "86",
+        "year": "2022",
+        "month": "Jun"
+      },
+      {
+        "pageviews": "410",
+        "users": "81",
+        "year": "2022",
+        "month": "Jul"
+      },
+      {
+        "pageviews": "352",
+        "users": "103",
+        "year": "2022",
+        "month": "Aug"
+      },
+      {
+        "pageviews": "441",
+        "users": "140",
+        "year": "2022",
+        "month": "Sep"
+      },
+      {
+        "pageviews": "486",
+        "users": "164",
+        "year": "2022",
+        "month": "Oct"
+      },
+      {
+        "pageviews": "446",
+        "users": "143",
+        "year": "2022",
+        "month": "Nov"
+      },
+      {
+        "pageviews": "371",
+        "users": "119",
+        "year": "2022",
+        "month": "Dec"
+      },
+      {
+        "pageviews": "397",
+        "users": "122",
+        "year": "2023",
+        "month": "Jan"
+      },
+      {
+        "pageviews": "319",
+        "users": "113",
+        "year": "2023",
+        "month": "Feb"
+      },
+      {
+        "pageviews": "593",
+        "users": "154",
+        "year": "2023",
+        "month": "Mar"
+      },
+      {
+        "pageviews": "812",
+        "users": "87",
+        "year": "2023",
+        "month": "Apr"
+      },
+      {
+        "pageviews": "631",
+        "users": "115",
+        "year": "2023",
+        "month": "Jul"
+      },
+      {
+        "pageviews": "639",
+        "users": "110",
+        "year": "2023",
+        "month": "Aug"
+      },
+      {
+        "pageviews": "965",
+        "users": "88",
+        "year": "2023",
+        "month": "Sep"
+      },
+      {
+        "pageviews": "1023",
+        "users": "143",
+        "year": "2023",
+        "month": "Oct"
+      }
+    ]
+  }
 ]
