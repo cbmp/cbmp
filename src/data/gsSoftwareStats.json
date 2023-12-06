@@ -1,7 +1,7 @@
 [
   {
     "name": "Cytoscape",
-    "cited": "38260"
+    "cited": "38490"
   },
   {
     "name": "ToxicoGx",
@@ -21,11 +21,11 @@
   },
   {
     "name": "PharmacoGx",
-    "cited": "242"
+    "cited": "243"
   },
   {
     "name": "mRMRe",
-    "cited": "229"
+    "cited": "230"
   },
   {
     "name": "Xeva",
@@ -45,7 +45,7 @@
   },
   {
     "name": "Segway",
-    "cited": "694"
+    "cited": "695"
   },
   {
     "name": "Genomedata",
@@ -53,11 +53,11 @@
   },
   {
     "name": "Umap and Bismap",
-    "cited": "128"
+    "cited": "129"
   },
   {
     "name": "Virchip",
-    "cited": "34"
+    "cited": "33"
   },
   {
     "name": "PeaKO",
@@ -105,7 +105,7 @@
   },
   {
     "name": "ConsensusCruncher",
-    "cited": "73"
+    "cited": "74"
   },
   {
     "name": "VisCap",
@@ -129,7 +129,7 @@
   },
   {
     "name": "TooManyCells",
-    "cited": "62"
+    "cited": "64"
   },
   {
     "name": "diversity",
