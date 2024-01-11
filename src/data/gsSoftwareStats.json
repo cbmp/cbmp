@@ -1,7 +1,7 @@
 [
   {
     "name": "Cytoscape",
-    "cited": "38490"
+    "cited": "39088"
   },
   {
     "name": "ToxicoGx",
@@ -9,7 +9,7 @@
   },
   {
     "name": "RadioGx",
-    "cited": "25"
+    "cited": "26"
   },
   {
     "name": "CREAM",
@@ -21,11 +21,11 @@
   },
   {
     "name": "PharmacoGx",
-    "cited": "243"
+    "cited": "247"
   },
   {
     "name": "mRMRe",
-    "cited": "230"
+    "cited": "233"
   },
   {
     "name": "Xeva",
@@ -45,7 +45,7 @@
   },
   {
     "name": "Segway",
-    "cited": "695"
+    "cited": "699"
   },
   {
     "name": "Genomedata",
@@ -53,11 +53,11 @@
   },
   {
     "name": "Umap and Bismap",
-    "cited": "129"
+    "cited": "134"
   },
   {
     "name": "Virchip",
-    "cited": "33"
+    "cited": "37"
   },
   {
     "name": "PeaKO",
@@ -89,7 +89,7 @@
   },
   {
     "name": "ABC",
-    "cited": "24"
+    "cited": "25"
   },
   {
     "name": "VSE",
@@ -101,15 +101,15 @@
   },
   {
     "name": "MEMOS",
-    "cited": "50"
+    "cited": "51"
   },
   {
     "name": "ConsensusCruncher",
-    "cited": "74"
+    "cited": "78"
   },
   {
     "name": "VisCap",
-    "cited": "68"
+    "cited": "69"
   },
   {
     "name": "VisCapCancer",
@@ -129,7 +129,7 @@
   },
   {
     "name": "TooManyCells",
-    "cited": "64"
+    "cited": "66"
   },
   {
     "name": "diversity",
@@ -153,7 +153,7 @@
   },
   {
     "name": "remss",
-    "cited": "12"
+    "cited": "13"
   },
   {
     "name": "GENmatic",
