@@ -3,6 +3,7 @@
     "name": "Bader",
     "query": "(Bader%2C+Gary%5BAuthor%5D)+AND+(Bader%2C+Gary+D%5BAuthor%5D)",
     "pubs": [
+      "38405837",
       "37164978",
       "35668135",
       "35263585",
@@ -50,7 +51,9 @@
   {
     "name": "Gaiti",
     "query": "Gaiti+Federico%5BAU%5D",
-    "pubs": []
+    "pubs": [
+      "38405837"
+    ]
   },
   {
     "name": "Haibe-Kains",
