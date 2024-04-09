@@ -1,7 +1,7 @@
 [
   {
     "name": "Cytoscape",
-    "cited": "40139"
+    "cited": "40615"
   },
   {
     "name": "ToxicoGx",
@@ -9,7 +9,7 @@
   },
   {
     "name": "RadioGx",
-    "cited": "26"
+    "cited": "28"
   },
   {
     "name": "CREAM",
@@ -21,11 +21,11 @@
   },
   {
     "name": "PharmacoGx",
-    "cited": "259"
+    "cited": "262"
   },
   {
     "name": "mRMRe",
-    "cited": "249"
+    "cited": "253"
   },
   {
     "name": "Xeva",
@@ -45,7 +45,7 @@
   },
   {
     "name": "Segway",
-    "cited": "713"
+    "cited": "715"
   },
   {
     "name": "Genomedata",
@@ -53,11 +53,11 @@
   },
   {
     "name": "Umap and Bismap",
-    "cited": "136"
+    "cited": "138"
   },
   {
     "name": "Virchip",
-    "cited": "38"
+    "cited": "39"
   },
   {
     "name": "PeaKO",
@@ -153,7 +153,7 @@
   },
   {
     "name": "remss",
-    "cited": "14"
+    "cited": "15"
   },
   {
     "name": "GENmatic",
