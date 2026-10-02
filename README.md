@@ -2,14 +2,17 @@
 ```
 git clone https://github.com/cbmp/cbmp
 cd cbmp
-npm install -g gatsby-cli
 npm install
-gatsby develop
+```
+## Develop
+```
+npm run develop
 ```
 
 ## Build
 ```
-gatsby build && gatsby serve
+npm run build
+npm run serve
 ```
 
 ## Deploy

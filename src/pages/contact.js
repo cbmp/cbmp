@@ -333,11 +333,11 @@ const Contact = () => (
                 <img src={CBMP} />
               </a> */}
               <span>
-                <b>For general inquiries, contact Michael Hoffman (Program Chair):</b>
-                <a href="mailto:michael.hoffman@utoronto.ca">
+                <b>For general inquiries, contact Priscilla Valentino (Program Coordinator):</b>
+                <a href="mailto:priscilla.valentino@uhn.ca">
                   <StyledEmail>
                     <img alt="email" src={Email} />
-                    <div className="email"><div className="text">michael.hoffman@utoronto.ca</div></div>
+                    <div className="email"><div className="text">priscilla.valentino@uhn.ca</div></div>
                   </StyledEmail>
                 </a>
               </span>
