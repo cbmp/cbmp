@@ -3,7 +3,7 @@ import '../styles/index.css';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from "gatsby";
 import Layout from '../components/Layout';
-import Grid from '../components/Grid';
+import Grid from '../components/WebAppsGrid';
 
 const StyledWebapps = styled.div`
     width: 100%;
@@ -50,6 +50,7 @@ const WebappsQuery = graphql`
                     licensing
                     short_desc
                     keywords
+                    resource_type
                 } 
             }
         }

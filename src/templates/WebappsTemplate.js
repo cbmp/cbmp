@@ -15,7 +15,9 @@ export const query = graphql`
         long_desc
         version
         authors
+        keywords_original
         keywords
+        resource_type
         licensing
         citation
         scholar_link
@@ -42,7 +44,7 @@ export const query = graphql`
 `;
 
 /**
- * Template for jndividual webapp pages.
+ * Template for individual webapp pages.
  */
 const WebappsTemplate = ({ data }) => {
   const item = data.webappsCsv;
@@ -82,17 +84,24 @@ const WebappsTemplate = ({ data }) => {
                 {' '}
               </div>
 
-              <div className="item">
+              {/*<div className="item">
                 <span className="item-heading">Version:</span>
                 {' '}
                 {item.version}
+                {' '}
+              </div>*/}
+
+              <div className="item">
+                <span className="item-heading">Resource Type:</span>
+                {' '}
+                {item.resource_type}
                 {' '}
               </div>
 
               <div className="item">
                 <span className="item-heading">Keywords:</span>
                 {' '}
-                {item.keywords}
+                {item.keywords_original}
                 {' '}
               </div>
 
