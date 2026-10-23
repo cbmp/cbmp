@@ -18,7 +18,9 @@ export const query = graphql`
         long_desc
         version
         authors
+        implementation_language
         keywords
+        keywords_original
         licensing
         citation
         year
@@ -44,7 +46,7 @@ export const query = graphql`
 `;
 
 /**
- * Template for jndividual software pages.
+ * Template for individual software pages.
  */
 const SoftwareTemplate = ({ data }) => {
   const item = data.softwareCsv;
@@ -80,17 +82,24 @@ const SoftwareTemplate = ({ data }) => {
                 {' '}
               </div>
 
-              <div className="item">
+              {/* <div className="item">
                 <span className="item-heading">Version:</span>
                 {' '}
                 {item.version}
                 {' '}
-              </div>
+              </div> */}
 
               <div className="item">
                 <span className="item-heading">Keywords:</span>
                 {' '}
-                {item.keywords}
+                {item.keywords_original}
+                {' '}
+
+              </div>
+               <div className="item">
+                <span className="item-heading">Implementation Language:</span>
+                {' '}
+                {item.implementation_language}
                 {' '}
               </div>
 

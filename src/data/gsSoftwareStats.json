@@ -60,6 +60,10 @@
     "cited": "39"
   },
   {
+    "name": "BEHST",
+    "cited": "0"
+  },
+  {
     "name": "PeaKO",
     "cited": "0"
   },
@@ -82,26 +86,6 @@
   {
     "name": "Bi-LSTM 1 (LDCT Report NLP Model)",
     "cited": "0"
-  },
-  {
-    "name": "SMuRF",
-    "cited": "4"
-  },
-  {
-    "name": "ABC",
-    "cited": "26"
-  },
-  {
-    "name": "VSE",
-    "cited": "19"
-  },
-  {
-    "name": "C3D",
-    "cited": "16"
-  },
-  {
-    "name": "MEMOS",
-    "cited": "52"
   },
   {
     "name": "ConsensusCruncher",

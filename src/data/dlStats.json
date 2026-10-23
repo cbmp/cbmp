@@ -4191,6 +4191,11 @@
     "lab": "Hoffman"
   },
   {
+    "name": "BEHST",
+    "stats": [],
+    "lab": "Hoffman"
+  },
+  {
     "name": "PeaKO",
     "stats": [
       {
@@ -5072,31 +5077,6 @@
     "name": "pdfcomments",
     "stats": [],
     "lab": "Hoffman"
-  },
-  {
-    "name": "SMuRF",
-    "stats": [],
-    "lab": "Lupien"
-  },
-  {
-    "name": "ABC",
-    "stats": [],
-    "lab": "Lupien"
-  },
-  {
-    "name": "VSE",
-    "stats": [],
-    "lab": "Lupien"
-  },
-  {
-    "name": "C3D",
-    "stats": [],
-    "lab": "Lupien"
-  },
-  {
-    "name": "MEMOS",
-    "stats": [],
-    "lab": "Lupien"
   },
   {
     "name": "Cytoscape",

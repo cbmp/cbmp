@@ -81,13 +81,18 @@ const Grid = ({ data, type }) => {
     }
   };
 
-  // getting keywords
-  const nestedKeywords = data.map((x) => x.node.keywords.split(', '));
-
-  const keywords = [].concat(...nestedKeywords).filter((x) => x !== '');
-
-  // getting options out of the keywords
-  const keywordOptions = keywords.map((x) => ({ value: x, label: x }));
+  // show filtered data based on selected implementation language
+  const handleImplementationLanguageChange = (event) => {
+    if (event === null || event.length === 0) {
+      setGridData(data);
+    } else {
+      const languageArr = event.map((x) => x.value);
+      const newGridData = [];
+      newGridData.push(data.filter((item) => languageArr.some((x) => item.node.implementation_language.includes(x))));
+      const sortedGridData = sortItems(newGridData.flat([2]), sortValue);
+      setGridData(sortedGridData);
+    }
+  };
 
   // making sorting options
   const sortOptions = [
@@ -96,6 +101,14 @@ const Grid = ({ data, type }) => {
     { label: 'Lab name - ascending', value: { field: 'lab', order: 'ASC' } },
     { label: 'Lab name - descending', value: { field: 'lab', order: 'DESC' } },
   ];
+
+  // getting keywords
+  const nestedKeywords = data.map((x) => x.node.keywords.split(', '));
+
+  const keywords = [...new Set([].concat(...nestedKeywords).filter((x) => x !== ''))];
+
+  // getting options out of the keywords
+  const keywordOptions = keywords.map((x) => ({ value: x, label: x }));
 
   // getting lab options
   const lab = [...new Set(data.map((x) => x.node.lab))];
@@ -114,9 +127,20 @@ const Grid = ({ data, type }) => {
       licensingOptions.push({ value: x, label: x });
     }
   });
+
+  // getting implementation language options
+  const nestedlanguage = data.map((x) => x.node.implementation_language.split(', '));
+  const language = [...new Set([].concat(...nestedlanguage).filter((x) => x !== ''))];
+  const languageOptions = language.map((x) => ({ value: x, label: x }));
   return (
     <>
       <div className="select-container">
+        <Select
+          filterOption={customFilterOption}
+          options={sortOptions}
+          placeholder="Sort by..."
+          onChange={handleSortChange}
+        />
         <Select
           isMulti
           filterOption={customFilterOption}
@@ -125,10 +149,11 @@ const Grid = ({ data, type }) => {
           onChange={handleKeywordsChange}
         />
         <Select
+          isMulti
           filterOption={customFilterOption}
-          options={sortOptions}
-          placeholder="Sort by..."
-          onChange={handleSortChange}
+          options={languageOptions}
+          placeholder="Select Language..."
+          onChange={handleImplementationLanguageChange}
         />
         <Select
           isMulti

@@ -7,7 +7,7 @@ import {
   Tab, Tabs, TabList, TabPanel,
 } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import Grid from '../components/Grid';
+import Grid from '../components/SoftwareGrid';
 import Layout from '../components/Layout';
 import LabStatsContainer from '../components/Plots/Stats/LabStatsContainer';
 
@@ -59,6 +59,7 @@ const SoftwareQuery = graphql`
                     licensing
                     short_desc
                     keywords
+                    implementation_language
                 } 
             }
         }
