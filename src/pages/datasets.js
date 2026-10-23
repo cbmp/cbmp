@@ -84,10 +84,11 @@ const DatasetsQuery = graphql`
                     slug
                     platform
                     short_desc
-                    technology
+                    datatype
                     keywords
                     num_samples
                     year_created
+                    disease_type
                 } 
             }
         }
@@ -124,7 +125,7 @@ const columns = [{
       <img className="arrow" alt="arrow" src={sortArrows} />
     </span>
   ),
-  width: 500,
+  width: 450,
   accessor: 'node.name',
   sortable: true,
   Cell: (row) => (
@@ -141,6 +142,28 @@ const columns = [{
 {
   Header: () => (
     <span>
+      Datatype
+      {' '}
+      <img className="arrow" alt="arrow" src={sortArrows} />
+    </span>
+  ),
+  accessor: 'node.datatype',
+  sortable: true,
+},
+{
+  Header: () => (
+    <span>
+      Disease
+      {''}
+      <img className="arrow" alt="arrow" src={sortArrows} />
+    </span>
+  ),
+  accessor: 'node.disease_type',
+  sortable: true,
+},
+/*{
+  Header: () => (
+    <span>
       Number of Samples
       {' '}
       <img className="arrow" alt="arrow" src={sortArrows} />
@@ -149,17 +172,7 @@ const columns = [{
   sortMethod(a, b) { return b - a; },
   accessor: 'node.num_samples',
   sortable: true,
-}, {
-  Header: () => (
-    <span>
-      Technology
-      {' '}
-      <img className="arrow" alt="arrow" src={sortArrows} />
-    </span>
-  ),
-  accessor: 'node.technology',
-  sortable: true,
-},
+},*/
 {
   Header: () => (
     <span>
@@ -168,6 +181,7 @@ const columns = [{
       <img className="arrow" alt="arrow" src={sortArrows} />
     </span>
   ),
+  width: 60,
   accessor: 'node.year_created',
   sortable: true,
   sortMethod(a, b) { return b - a; },
@@ -179,6 +193,7 @@ const columns = [{
       <img className="arrow" alt="arrow" src={sortArrows} />
     </span>
   ),
+  width: 120,
   accessor: 'node.lab',
   sortable: true,
 },

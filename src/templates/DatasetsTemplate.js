@@ -21,6 +21,7 @@ export const query = graphql`
         licensing
         num_samples
         sample_type
+        disease_type
         technology
         citation
         public
@@ -37,12 +38,12 @@ export const query = graphql`
   `;
 
 /**
- * Template for jndividual dataset pages.
+ * Template for individual dataset pages.
  */
 const DatasetsTemplate = ({ data }) => {
   const item = data.datasetsCsv;
   return (
-    <Layout page="SoftwareTemplate">
+    <Layout page="DatasetTemplate">
       <StyledIndivPage>
         <div className="container title">
           <h1>{item.name}</h1>
@@ -70,7 +71,7 @@ const DatasetsTemplate = ({ data }) => {
                 {' '}
               </div>
               <div className="item">
-                <span className="item-heading">Year:</span>
+                <span className="item-heading">Release Date:</span>
                 {' '}
                 {item.year_created}
                 {' '}
@@ -109,16 +110,16 @@ const DatasetsTemplate = ({ data }) => {
               <h4>
                 {item.num_samples}
                 {' '}
-                samples
+                Samples
               </h4>
             ) : null}
             <div className="stats-list">
               <div className="item">
-                <span className="item-heading">Sample Type:</span>
-                {item.sample_type === '-' || item.sample_type === '' ? (
+                <span className="item-heading">Datatype:</span>
+                {item.datatype === '-' || item.datatype === '' ? (
                   'N/A'
                 ) : (
-                  item.sample_type
+                  item.datatype
                 )}
               </div>
 
@@ -132,20 +133,11 @@ const DatasetsTemplate = ({ data }) => {
               </div>
 
               <div className="item">
-                <span className="item-heading">Datatype:</span>
-                {item.datatype === '-' || item.datatype === '' ? (
+                <span className="item-heading">Disease Type:</span>
+                {item.disease_type === '-' || item.disease_type === '' ? (
                   'N/A'
                 ) : (
-                  item.datatype
-                )}
-              </div>
-
-              <div className="item">
-                <span className="item-heading">Technology:</span>
-                {item.technology === '-' || item.technology === '' ? (
-                  'N/A'
-                ) : (
-                  item.technology
+                  item.disease_type
                 )}
               </div>
             </div>
