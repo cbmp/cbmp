@@ -66,7 +66,6 @@ const SoftwareQuery = graphql`
         allDlStatsJson {
             edges {
               node {
-                lab
                 stats {
                   downloads
                   month
@@ -74,7 +73,6 @@ const SoftwareQuery = graphql`
                 }
               }
             }
-            distinct(field: lab)
           }
     }
 `;
