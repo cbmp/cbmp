@@ -3,6 +3,9 @@
     "name": "Bader",
     "query": "(Bader%2C+Gary%5BAuthor%5D)+AND+(Bader%2C+Gary+D%5BAuthor%5D)",
     "pubs": [
+      "41577992",
+      "40240595",
+      "40161559",
       "38405837",
       "37164978",
       "35668135",
@@ -38,6 +41,7 @@
     "name": "Brudno",
     "query": "Brudno+Michael%5BAU%5D",
     "pubs": [
+      "40161559",
       "35072136",
       "34820133",
       "36778585",
@@ -52,6 +56,8 @@
     "name": "Gaiti",
     "query": "Gaiti+Federico%5BAU%5D",
     "pubs": [
+      "42008378",
+      "40240595",
       "38405837"
     ]
   },
@@ -59,6 +65,9 @@
     "name": "Haibe-Kains",
     "query": "Haibe-Kains+Benjamin%5BAU%5D",
     "pubs": [
+      "42593482",
+      "39178369",
+      "38960798",
       "37572657",
       "37543610",
       "36688707",
@@ -86,6 +95,7 @@
     "name": "Hoffman",
     "query": "Hoffman%20Michael%20M%5Bau%5D%20OR%20Hoffman%20Michael%20M%5Bir%5D%20OR%20International%20Chicken%20Genome%20Sequencing%20Consortium%5Bcn%5D",
     "pubs": [
+      "41714824",
       "35072136",
       "34158359",
       "33057217",
@@ -95,12 +105,15 @@
   {
     "name": "Kumar",
     "query": "Kumar+Sushant%5BAU%5D",
-    "pubs": []
+    "pubs": [
+      "40857673"
+    ]
   },
   {
     "name": "Liu G.",
     "query": "Liu+G%5BAU%5D+AND+Toronto%5BAD%5D+OR+23291255%5BPMID%5D+NOT+%28Liu+GC%5BAU%5D+OR+Liu+GY%5BAU%5D+OR+Liu+GK%5BAU%5D%29",
     "pubs": [
+      "42625601",
       "36688707",
       "36214668",
       "35383171",
@@ -120,6 +133,8 @@
     "name": "Minden",
     "query": "Minden+MD%5BAU%5D+OR+%28Minden+M%5BAU%5D+AND+Toronto%29+OR+8401592%5BPMID%5D",
     "pubs": [
+      "42008378",
+      "40857673",
       "37543610",
       "36087071",
       "35668135",
@@ -168,6 +183,12 @@
     "name": "Pugh",
     "query": "Pugh+T%5BAU%5D+AND+%28Marziali%5BAU%5D+OR+Marra%5BAU%5D+OR+Meyerson%5BAU%5D+OR+Getz%5BAU%5D+OR+Rehm%5BAU%5D+OR+Taylor%5BAU%5D+OR+Tsongalis%5BAU%5D%29+OR+%28Pugh+TJ%5BAU%5D+AND+Toronto%5BAD%5D%29",
     "pubs": [
+      "42625601",
+      "42593482",
+      "41714824",
+      "41577992",
+      "39178369",
+      "38960798",
       "37572657",
       "37164978",
       "36087071",

@@ -1,0 +1,65 @@
+[
+{
+    "name": "inteGREAT",
+    "stats": [
+    {
+      "total downloads": "901",
+      "downloads in 2026-10 ": "5"
+    }
+  ]
+  },
+  {
+    "name": "HeatITup",
+    "stats": [ 
+    {
+      "total downloads": "1796",
+      "downloads in 2026-10 ": "20"
+    }
+  ]
+  },
+  {
+    "name": "TooManyCells",
+    "stats":[ 
+    {
+      "total downloads": "12149",
+      "downloads in 2026-10 ": "112"
+    }
+  ]
+  },
+  {
+    "name": "diversity",
+    "stats": [ 
+    {
+      "total downloads": "20032",
+      "downloads in 2026-10 ": "67"
+    }
+  ]
+  },
+  {
+    "name": "find-clumpiness",
+    "stats": [
+    {
+      "total downloads": "5175",
+      "downloads in 2026-10 ": "28"
+    }
+  ]
+  },
+  {
+    "name": "fasta",
+    "stats": [
+    {
+      "total downloads": "18305",
+      "downloads in 2026-10 ": "75"
+    }
+  ]
+  },
+  {
+    "name": "ploterific",
+    "stats":[ 
+    {
+      "total downloads": "1679",
+      "downloads in 2026-10 ": "29"
+    }
+  ]
+  }
+]

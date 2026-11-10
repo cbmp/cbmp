@@ -1,15 +1,15 @@
 [
   {
     "name": "PharmacoDB",
-    "cited": "140"
+    "cited": "199"
   },
   {
     "name": "SYNERGxDB",
-    "cited": "0"
+    "cited": "61"
   },
   {
     "name": "ToxicoDB",
-    "cited": "0"
+    "cited": "33"
   },
   {
     "name": "XevaDB",
@@ -17,22 +17,22 @@
   },
   {
     "name": "DNF Explorer",
-    "cited": "42"
-  },
-  {
-    "name": "ORCESTRA",
-    "cited": "0"
+    "cited": "45"
   },
   {
     "name": "DNAmod",
-    "cited": "80"
-  },
-  {
-    "name": "CReSCENT",
-    "cited": "21"
+    "cited": "124"
   },
   {
     "name": "cBioPortal.ca",
-    "cited": "13455"
+    "cited": "17619"
+  },
+  {
+    "name": "CReSCENT",
+    "cited": "23"
+  },
+  {
+    "name": "ORCESTRA",
+    "cited": "51"
   }
 ]

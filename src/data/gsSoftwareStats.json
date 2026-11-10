@@ -1,35 +1,31 @@
 [
   {
-    "name": "Cytoscape",
-    "cited": "40615"
-  },
-  {
     "name": "ToxicoGx",
     "cited": "0"
   },
   {
     "name": "RadioGx",
-    "cited": "28"
+    "cited": "40"
   },
   {
     "name": "CREAM",
-    "cited": "10"
+    "cited": "11"
   },
   {
     "name": "SIGN",
-    "cited": "3"
+    "cited": "4"
   },
   {
     "name": "PharmacoGx",
-    "cited": "262"
+    "cited": "341"
   },
   {
     "name": "mRMRe",
-    "cited": "253"
+    "cited": "345"
   },
   {
     "name": "Xeva",
-    "cited": "40"
+    "cited": "62"
   },
   {
     "name": "PymRMRe",
@@ -37,63 +33,55 @@
   },
   {
     "name": "RLOBICO",
-    "cited": "0"
+    "cited": "10"
   },
   {
     "name": "Segtools",
-    "cited": "27"
+    "cited": "32"
   },
   {
     "name": "Segway",
-    "cited": "715"
+    "cited": "809"
   },
   {
     "name": "Genomedata",
-    "cited": "24"
+    "cited": "26"
   },
   {
     "name": "Umap and Bismap",
-    "cited": "138"
+    "cited": "230"
   },
   {
     "name": "Virchip",
-    "cited": "39"
+    "cited": "51"
   },
   {
     "name": "BEHST",
-    "cited": "0"
+    "cited": "13"
   },
   {
     "name": "PeaKO",
-    "cited": "0"
+    "cited": "1"
   },
   {
-    "name": "pdfcomments",
-    "cited": "0"
+    "name": "xlink",
+    "cited": "17"
   },
   {
-    "name": "Frustration",
-    "cited": "0"
+    "name": "remss",
+    "cited": "19"
   },
   {
-    "name": "HotCommics",
-    "cited": "0"
-  },
-  {
-    "name": "SVFX",
-    "cited": "0"
-  },
-  {
-    "name": "Bi-LSTM 1 (LDCT Report NLP Model)",
+    "name": "GENmatic",
     "cited": "0"
   },
   {
     "name": "ConsensusCruncher",
-    "cited": "83"
+    "cited": "139"
   },
   {
     "name": "VisCap",
-    "cited": "71"
+    "cited": "81"
   },
   {
     "name": "VisCapCancer",
@@ -104,24 +92,32 @@
     "cited": "7"
   },
   {
+    "name": "pdfcomments",
+    "cited": "0"
+  },
+  {
+    "name": "Cytoscape",
+    "cited": "57734"
+  },
+  {
     "name": "inteGREAT",
-    "cited": "16"
+    "cited": "20"
   },
   {
     "name": "HeatITup",
-    "cited": "17"
+    "cited": "20"
   },
   {
     "name": "TooManyCells",
-    "cited": "69"
+    "cited": "106"
   },
   {
     "name": "diversity",
-    "cited": "29"
+    "cited": "41"
   },
   {
     "name": "find-clumpiness",
-    "cited": "10"
+    "cited": "11"
   },
   {
     "name": "fasta",
@@ -132,19 +128,23 @@
     "cited": "0"
   },
   {
-    "name": "xlink",
-    "cited": "14"
+    "name": "Frustration",
+    "cited": "21"
   },
   {
-    "name": "remss",
-    "cited": "15"
+    "name": "HotCommics",
+    "cited": "45"
   },
   {
-    "name": "GENmatic",
-    "cited": "0"
+    "name": "SVFX",
+    "cited": "39"
   },
   {
     "name": "LDCT NER",
-    "cited": "0"
+    "cited": "5"
+  },
+  {
+    "name": "Bi-LSTM 1 (LDCT Report NLP Model)",
+    "cited": "5"
   }
 ]
