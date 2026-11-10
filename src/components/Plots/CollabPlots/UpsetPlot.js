@@ -5,6 +5,16 @@ import '../../../styles/index.css';
 
 const StyledUpsetPlot = styled.div`
     display: ${(props) => props.display};
+
+    .plot {
+      width: 100%;
+    }
+
+    .plot svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
 `;
 
 const UpsetPlot = (props) => {
@@ -17,20 +27,30 @@ const UpsetPlot = (props) => {
     const allSetNames = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.substr(0, soloSets.length).split('');
 
     // position and dimensions
+    const labelFontSize = 20;
+    const canvas = document.createElement('canvas');
+    const context = canvas.getContext('2d');
+    context.font = `${labelFontSize}px sans-serif`;
+    const widestLabel = d3.max(soloSets, (set) => context.measureText(set.name).width) || 0;
     const margin = {
       top: 0,
       right: 0,
       bottom: 300,
-      left: 90,
+      left: Math.max(90, Math.ceil(widestLabel + 30)),
     };
-    const width = 40 * data.length;
+    const rad = 13;
+    const columnSpacing = rad * 2.7;
+    const width = columnSpacing * data.length;
     const height = 400;
+    const svgWidth = width + margin.left + margin.right;
+    const svgHeight = height + 300 + margin.top + margin.bottom;
 
     // make the canvas
     const svg = d3.select(`#${plotId}`)
       .append('svg')
-      .attr('width', width + margin.left + margin.right)
-      .attr('height', height + 300 + margin.top + margin.bottom)
+      .attr('width', '100%')
+      .attr('viewBox', `0 0 ${svgWidth} ${svgHeight}`)
+      .attr('preserveAspectRatio', 'xMinYMin meet')
       .attr('xmlns', 'http://www.w3.org/2000/svg')
       .attr('xmlns:xlink', 'http://www.w3.org/1999/xlink')
       .append('g')
@@ -43,8 +63,6 @@ const UpsetPlot = (props) => {
       .attr('id', 'upsetCircles')
       .attr('transform', `translate(20,${height + 40})`);
 
-    const rad = 13;
-
     // making dataset labels
     soloSets.forEach((x, i) => {
       upsetCircles.append('text')
@@ -52,7 +70,7 @@ const UpsetPlot = (props) => {
         .attr('dy', 5 + i * (rad * 2.7))
         .attr('text-anchor', 'end')
         .attr('fill', 'black')
-        .style('font-size', 15)
+        .style('font-size', `${labelFontSize}px`)
         .text(x.name);
     });
 
@@ -106,7 +124,8 @@ const UpsetPlot = (props) => {
       .call(yAxis)
       .selectAll('text')
       .attr('fill', 'black')
-      .attr('stroke', 'none');
+      .attr('stroke', 'none')
+      .style('font-size', '20px');
 
 
     const chart = upsetBars.append('g')

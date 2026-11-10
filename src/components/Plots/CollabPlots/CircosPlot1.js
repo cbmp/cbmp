@@ -7,7 +7,7 @@ import '../../../styles/index.css';
 
 const StyledCircosPlot = styled.div`
   display: ${(props) => props.display};
-  margin-left: 10vw;
+  margin-left: 5vw;
 `;
 
 const CircosPlot = (props) => {

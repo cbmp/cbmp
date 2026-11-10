@@ -22,7 +22,13 @@ const StyledCollabContainer = styled.div`
 
   .toggle {
     width:15%;
-}
+
+    .MuiFormLabel-root,
+    .MuiFormControlLabel-label {
+      font-size: 1.1rem;
+    }
+  }
+
   .plot-container {
     width:85%;
   }
@@ -247,22 +253,24 @@ const CollabContainer = (props) => {
   };
 
   // choosing which plot to view
-  const views = ['Circos Plot', 'Graph Network', 'Upset Plot'];
+  const views = ['Circos Plot', 'Upset Plot'];
   return (
     <StyledCollabContainer>
       <FormControl component="fieldset" className="toggle">
-        <FormLabel component="legend">Choose the view:</FormLabel>
+        <FormLabel component="legend" >Choose the view:</FormLabel>
         <RadioGroup aria-label="pis" name="pis" value={viewSelected} onChange={handleChange}>
           {views.map((x) => <FormControlLabel key={x} value={x} control={<Radio color="primary" />} label={x} />)}
         </RadioGroup>
       </FormControl>
       <div className="plot-container">
+        {/*
         <NetworkPlot
           nodes={soloSets}
           links={networkEdges}
           plotId="networkPlot"
           hidden={viewSelected !== 'Graph Network'}
         />
+        */}
         <UpsetPlot
           data={intersections}
           soloSets={soloSets}
