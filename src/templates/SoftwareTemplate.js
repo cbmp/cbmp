@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import { StyledIndivPage } from '../styles/indiv_page';
 import StatsContainer from '../components/Plots/Stats/StatsContainer';
+import haskellDownloads from '../data/haskelldlStats.json';
 
 // This is a page query - Gatsby looks for one page
 // query per file. In components, use StaticQuery
@@ -50,7 +51,14 @@ export const query = graphql`
  */
 const SoftwareTemplate = ({ data }) => {
   const item = data.softwareCsv;
-  const { stats } = data.dlStatsJson;
+  const isHaskell = (item.implementation_language === 'Haskell');
+  const haskellPackage = haskellDownloads.find((packageStats) => packageStats.name === item.name);
+  const haskellStats = haskellPackage && Array.isArray(haskellPackage.stats)
+    ? haskellPackage.stats[0]
+    : null;
+  const stats = data.dlStatsJson && Array.isArray(data.dlStatsJson.stats)
+    ? data.dlStatsJson.stats
+    : [];
   const citedBy = data.gsSoftwareStatsJson.cited;
   return (
     <Layout page="SoftwareTemplate">
@@ -160,13 +168,25 @@ const SoftwareTemplate = ({ data }) => {
             </div>
           </div>
         </div>
-        {stats.length === 0 ? null : (
-          <StatsContainer
-            name={item.name}
-            data={stats}
-            statType="Downloads"
-          />
-        )}
+                {isHaskell ? (
+          <div className="container stats">
+            <div className="section">
+              <h4>Package downloads</h4>
+              {haskellStats && haskellStats['total downloads'] != null ? (
+                <div className="stats-list">
+                  <div className="item">
+                    <span className="item-heading">All-time downloads:</span>
+                    {Number(haskellStats['total downloads']).toLocaleString()}
+                  </div>
+                </div>
+              ) : (
+                <div>Download statistics unavailable.</div>
+              )}
+            </div>
+          </div>
+        ) : stats.length > 0 ? (
+          <StatsContainer name={item.name} data={stats} statType="Downloads" />
+        ) : null}
       </StyledIndivPage>
     </Layout>
 

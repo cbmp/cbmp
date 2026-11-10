@@ -30,6 +30,7 @@ const StyledStatsContainer = styled.div`
 const StatsContainer = (props) => {
   const { data, statType } = props;
   const stat = statType.toLowerCase();
+  const monthOrder = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   // get all years
   const years = [...new Set(data.map((x) => x.year))].sort((a, b) => a - b);
   const [yearSelected, setYearSelected] = useState(years[years.length - 1]);
@@ -51,29 +52,19 @@ const StatsContainer = (props) => {
   years.forEach((year) => {
     // adding in year data
     yearData.x.push(year);
-    let total = 0;
+    const yearStats = data
+      .filter((item) => item.year === year)
+      .sort((a, b) => monthOrder.indexOf(a.month) - monthOrder.indexOf(b.month));
 
     // month data formatting
     monthData[year] = {
-      x: [],
-      y: [],
+      x: yearStats.map((item) => item.month),
+      y: yearStats.map((item) => parseInt(item[stat], 10)),
       type: 'bar',
       marker: {},
     };
 
-    // Array.some acts like a for loop with break
-    // you break on the return statement
-    data.some((item) => {
-      if (item.year === year) {
-        // summing year data up
-        total += parseInt(item[stat]);
-
-        // adding in month data
-        monthData[year].x.push(item.month);
-        monthData[year].y.push(item[stat]);
-      }
-      return item.year > year;
-    });
+    const total = yearStats.reduce((sum, item) => sum + parseInt(item[stat], 10), 0);
 
     // making gradients for the bar charts to make it ~pretty~
     if (monthData[year].x.length < 2) {
