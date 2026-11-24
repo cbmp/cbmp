@@ -17,11 +17,11 @@
   },
   {
     "name": "PharmacoGx",
-    "cited": "341"
+    "cited": "343"
   },
   {
     "name": "mRMRe",
-    "cited": "345"
+    "cited": "346"
   },
   {
     "name": "Xeva",
@@ -41,7 +41,7 @@
   },
   {
     "name": "Segway",
-    "cited": "809"
+    "cited": "812"
   },
   {
     "name": "Genomedata",
@@ -69,7 +69,7 @@
   },
   {
     "name": "remss",
-    "cited": "19"
+    "cited": "20"
   },
   {
     "name": "GENmatic",
@@ -77,11 +77,11 @@
   },
   {
     "name": "ConsensusCruncher",
-    "cited": "139"
+    "cited": "140"
   },
   {
     "name": "VisCap",
-    "cited": "81"
+    "cited": "82"
   },
   {
     "name": "VisCapCancer",
@@ -97,7 +97,7 @@
   },
   {
     "name": "Cytoscape",
-    "cited": "57734"
+    "cited": "57961"
   },
   {
     "name": "inteGREAT",
@@ -129,7 +129,7 @@
   },
   {
     "name": "Frustration",
-    "cited": "21"
+    "cited": "22"
   },
   {
     "name": "HotCommics",
@@ -140,11 +140,39 @@
     "cited": "39"
   },
   {
-    "name": "LDCT NER",
-    "cited": "5"
+    "name": "Med-ImageTools",
+    "cited": "11"
+  },
+  {
+    "name": "Cytomod",
+    "cited": "41"
+  },
+  {
+    "name": "Polyidus",
+    "cited": "62"
+  },
+  {
+    "name": "MEDIPIPE",
+    "cited": "7"
+  },
+  {
+    "name": "CellNEST",
+    "cited": "64"
+  },
+  {
+    "name": "APA-Net",
+    "cited": "10"
+  },
+  {
+    "name": "MicroNucML",
+    "cited": "0"
   },
   {
     "name": "Bi-LSTM 1 (LDCT Report NLP Model)",
+    "cited": "5"
+  },
+  {
+    "name": "LDCT NER",
     "cited": "5"
   }
 ]

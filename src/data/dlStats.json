@@ -390,7 +390,7 @@
       {
         "year": "2026",
         "month": "Nov",
-        "downloads": "415"
+        "downloads": "584"
       }
     ]
   },
@@ -785,7 +785,7 @@
       {
         "year": "2026",
         "month": "Nov",
-        "downloads": "355"
+        "downloads": "502"
       }
     ]
   },
@@ -1338,7 +1338,7 @@
         "month": "Oct"
       },
       {
-        "downloads": "104",
+        "downloads": "425",
         "year": "2026",
         "month": "Nov"
       }
@@ -1823,7 +1823,7 @@
         "month": "Oct"
       },
       {
-        "downloads": "88",
+        "downloads": "352",
         "year": "2026",
         "month": "Nov"
       }
@@ -2445,7 +2445,7 @@
       {
         "year": "2026",
         "month": "Nov",
-        "downloads": "567"
+        "downloads": "1072"
       }
     ]
   },
@@ -3283,7 +3283,7 @@
         "month": "Oct"
       },
       {
-        "downloads": "701",
+        "downloads": "1660",
         "year": "2026",
         "month": "Nov"
       }
@@ -3750,7 +3750,7 @@
       {
         "year": "2026",
         "month": "Nov",
-        "downloads": "300"
+        "downloads": "441"
       }
     ]
   },
@@ -3759,8 +3759,13 @@
     "stats": [
       {
         "year": "2026",
+        "month": "Nov",
+        "downloads": "294"
+      },
+      {
+        "year": "2026",
         "month": "Oct",
-        "downloads": "267"
+        "downloads": "277"
       },
       {
         "year": "2026",
@@ -4690,6 +4695,11 @@
         "year": "2026",
         "month": "Sep",
         "downloads": "80"
+      },
+      {
+        "year": "2026",
+        "month": "Oct",
+        "downloads": "112"
       }
     ]
   },
@@ -5250,6 +5260,11 @@
         "year": "2026",
         "month": "Sep",
         "downloads": "120"
+      },
+      {
+        "year": "2026",
+        "month": "Oct",
+        "downloads": "422"
       }
     ]
   },
@@ -5815,6 +5830,11 @@
         "year": "2026",
         "month": "Sep",
         "downloads": "440"
+      },
+      {
+        "year": "2026",
+        "month": "Oct",
+        "downloads": "1239"
       }
     ]
   },
@@ -5835,8 +5855,13 @@
     "stats": [
       {
         "year": "2026",
+        "month": "Nov",
+        "downloads": "115"
+      },
+      {
+        "year": "2026",
         "month": "Oct",
-        "downloads": "195"
+        "downloads": "217"
       },
       {
         "year": "2026",
@@ -6714,7 +6739,7 @@
         "month": "Oct"
       },
       {
-        "downloads": "25",
+        "downloads": "73",
         "year": "2026",
         "month": "Nov"
       }
@@ -7144,7 +7169,7 @@
         "month": "Oct"
       },
       {
-        "downloads": "105",
+        "downloads": "354",
         "year": "2026",
         "month": "Nov"
       }
@@ -7196,6 +7221,335 @@
   },
   {
     "name": "SVFX",
+    "stats": []
+  },
+  {
+    "name": "Med-ImageTools",
+    "stats": [
+      {
+        "year": "2026",
+        "month": "Nov",
+        "downloads": "2240"
+      },
+      {
+        "year": "2026",
+        "month": "Oct",
+        "downloads": "2604"
+      },
+      {
+        "year": "2026",
+        "month": "Sep",
+        "downloads": "1237"
+      },
+      {
+        "year": "2026",
+        "month": "Aug",
+        "downloads": "3467"
+      },
+      {
+        "year": "2026",
+        "month": "Jul",
+        "downloads": "9667"
+      },
+      {
+        "year": "2026",
+        "month": "Jun",
+        "downloads": "4516"
+      },
+      {
+        "year": "2026",
+        "month": "May",
+        "downloads": "5719"
+      },
+      {
+        "year": "2026",
+        "month": "Apr",
+        "downloads": "5341"
+      },
+      {
+        "year": "2026",
+        "month": "Mar",
+        "downloads": "3773"
+      },
+      {
+        "year": "2026",
+        "month": "Feb",
+        "downloads": "3176"
+      },
+      {
+        "year": "2026",
+        "month": "Jan",
+        "downloads": "3778"
+      },
+      {
+        "year": "2025",
+        "month": "Dec",
+        "downloads": "2388"
+      },
+      {
+        "year": "2025",
+        "month": "Nov",
+        "downloads": "3339"
+      },
+      {
+        "year": "2025",
+        "month": "Oct",
+        "downloads": "2605"
+      },
+      {
+        "year": "2025",
+        "month": "Sep",
+        "downloads": "4785"
+      },
+      {
+        "year": "2025",
+        "month": "Aug",
+        "downloads": "3801"
+      },
+      {
+        "year": "2025",
+        "month": "Jul",
+        "downloads": "4560"
+      },
+      {
+        "year": "2025",
+        "month": "Jun",
+        "downloads": "5814"
+      },
+      {
+        "year": "2025",
+        "month": "May",
+        "downloads": "4474"
+      },
+      {
+        "year": "2025",
+        "month": "Apr",
+        "downloads": "4542"
+      },
+      {
+        "year": "2025",
+        "month": "Mar",
+        "downloads": "6091"
+      },
+      {
+        "year": "2025",
+        "month": "Feb",
+        "downloads": "6011"
+      },
+      {
+        "year": "2025",
+        "month": "Jan",
+        "downloads": "6442"
+      },
+      {
+        "year": "2024",
+        "month": "Dec",
+        "downloads": "6014"
+      },
+      {
+        "year": "2024",
+        "month": "Nov",
+        "downloads": "5795"
+      },
+      {
+        "year": "2024",
+        "month": "Oct",
+        "downloads": "27350"
+      },
+      {
+        "year": "2024",
+        "month": "Sep",
+        "downloads": "3021"
+      },
+      {
+        "year": "2024",
+        "month": "Aug",
+        "downloads": "2063"
+      },
+      {
+        "year": "2024",
+        "month": "Jul",
+        "downloads": "2083"
+      },
+      {
+        "year": "2024",
+        "month": "Jun",
+        "downloads": "2063"
+      },
+      {
+        "year": "2024",
+        "month": "May",
+        "downloads": "3070"
+      },
+      {
+        "year": "2024",
+        "month": "Apr",
+        "downloads": "1261"
+      },
+      {
+        "year": "2024",
+        "month": "Mar",
+        "downloads": "1203"
+      },
+      {
+        "year": "2024",
+        "month": "Feb",
+        "downloads": "2473"
+      },
+      {
+        "year": "2024",
+        "month": "Jan",
+        "downloads": "1315"
+      },
+      {
+        "year": "2023",
+        "month": "Dec",
+        "downloads": "1300"
+      },
+      {
+        "year": "2023",
+        "month": "Nov",
+        "downloads": "1238"
+      },
+      {
+        "year": "2023",
+        "month": "Oct",
+        "downloads": "1205"
+      },
+      {
+        "year": "2023",
+        "month": "Sep",
+        "downloads": "1151"
+      },
+      {
+        "year": "2023",
+        "month": "Aug",
+        "downloads": "2065"
+      },
+      {
+        "year": "2023",
+        "month": "Jul",
+        "downloads": "1469"
+      },
+      {
+        "year": "2023",
+        "month": "Jun",
+        "downloads": "1753"
+      },
+      {
+        "year": "2023",
+        "month": "May",
+        "downloads": "2440"
+      },
+      {
+        "year": "2023",
+        "month": "Apr",
+        "downloads": "1877"
+      },
+      {
+        "year": "2023",
+        "month": "Mar",
+        "downloads": "2686"
+      },
+      {
+        "year": "2023",
+        "month": "Feb",
+        "downloads": "3045"
+      },
+      {
+        "year": "2023",
+        "month": "Jan",
+        "downloads": "1214"
+      },
+      {
+        "year": "2022",
+        "month": "Dec",
+        "downloads": "1196"
+      },
+      {
+        "year": "2022",
+        "month": "Nov",
+        "downloads": "2397"
+      },
+      {
+        "year": "2022",
+        "month": "Oct",
+        "downloads": "2859"
+      },
+      {
+        "year": "2022",
+        "month": "Sep",
+        "downloads": "1523"
+      },
+      {
+        "year": "2022",
+        "month": "Aug",
+        "downloads": "1658"
+      },
+      {
+        "year": "2022",
+        "month": "Jul",
+        "downloads": "2088"
+      },
+      {
+        "year": "2022",
+        "month": "Jun",
+        "downloads": "2791"
+      },
+      {
+        "year": "2022",
+        "month": "May",
+        "downloads": "965"
+      },
+      {
+        "year": "2022",
+        "month": "Apr",
+        "downloads": "653"
+      },
+      {
+        "year": "2022",
+        "month": "Mar",
+        "downloads": "1214"
+      },
+      {
+        "year": "2022",
+        "month": "Feb",
+        "downloads": "698"
+      },
+      {
+        "year": "2022",
+        "month": "Jan",
+        "downloads": "815"
+      },
+      {
+        "year": "2021",
+        "month": "Dec",
+        "downloads": "2189"
+      }
+    ]
+  },
+  {
+    "name": "Cytomod",
+    "stats": []
+  },
+  {
+    "name": "Polyidus",
+    "stats": []
+  },
+  {
+    "name": "MEDIPIPE",
+    "stats": []
+  },
+  {
+    "name": "CellNEST",
+    "stats": []
+  },
+  {
+    "name": "APA-Net",
+    "stats": []
+  },
+  {
+    "name": "MicroNucML",
     "stats": []
   }
 ]
