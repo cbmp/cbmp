@@ -66,6 +66,7 @@ const SoftwareQuery = graphql`
         allDlStatsJson {
             edges {
               node {
+                name
                 stats {
                   downloads
                   month
@@ -83,27 +84,47 @@ const Software = () => (
       <div className="container">
         <StaticQuery
           query={SoftwareQuery}
-          render={(data) => (
-            <>
-              <h1>
-                Software
-                <span className="count">{data.allSoftwareCsv.edges.length}</span>
-              </h1>
-              <Tabs>
-                <TabList>
-                  <Tab>All Software</Tab>
-                  <Tab>Download Stats by Lab</Tab>
-                </TabList>
+          render={(data) => {
+            const softwareByName = new Map(
+              data.allSoftwareCsv.edges.map(({ node }) => [node.name, node]),
+            );
+            const labStatsData = data.allDlStatsJson.edges.reduce((stats, edge) => {
+              const software = softwareByName.get(edge.node.name);
+              if (software && software.lab) {
+                stats.push({
+                  node: Object.assign({}, edge.node, { lab: software.lab }),
+                });
+              }
+              return stats;
+            }, []);
+            const pisRaw = [...new Set(
+              data.allSoftwareCsv.edges
+                .map(({ node }) => node.lab)
+                .filter(Boolean),
+            )];
 
-                <TabPanel>
-                  <Grid data={data.allSoftwareCsv.edges} type="software" />
-                </TabPanel>
-                <TabPanel>
-                  <LabStatsContainer data={data.allDlStatsJson.edges} pisRaw={data.allDlStatsJson.distinct} />
-                </TabPanel>
-              </Tabs>
-            </>
-          )}
+            return (
+              <>
+                <h1>
+                  Software
+                  <span className="count">{data.allSoftwareCsv.edges.length}</span>
+                </h1>
+                <Tabs>
+                  <TabList>
+                    <Tab>All Software</Tab>
+                    <Tab>Download Stats by Lab</Tab>
+                  </TabList>
+
+                  <TabPanel>
+                    <Grid data={data.allSoftwareCsv.edges} type="software" />
+                  </TabPanel>
+                  <TabPanel>
+                    <LabStatsContainer data={labStatsData} pisRaw={pisRaw} />
+                  </TabPanel>
+                </Tabs>
+              </>
+            );
+          }}
         />
       </div>
 

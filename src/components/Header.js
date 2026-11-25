@@ -49,8 +49,8 @@ const StyledLinks = styled.div`
   & a {
     color: white;
     text-decoration: none;
-    font-weight: 400;
-    font-size: calc(0.2vw + 0.8em);
+    font-weight: 700;
+    font-size: calc(0.35vw + 0.8em);
     margin: 0px 30px;
     letter-spacing: 1px;
     font-family: 'Lato', sans-serif;

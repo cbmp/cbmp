@@ -42,7 +42,7 @@ const StyledLabStatsContainer = styled.div`
  */
 const LabStatsContainer = (props) => {
   const { data, pisRaw } = props;
-  const pis = pisRaw.sort((a, b) => a - b);
+  const pis = pisRaw.slice().sort((a, b) => a.localeCompare(b));
   const [piSelected, setPiSelected] = useState(pis[0]);
 
   const handleChange = (event) => {
@@ -60,9 +60,8 @@ const LabStatsContainer = (props) => {
       // if year hasn't been initialized
       if (piMap[x.node.lab][n.year] === undefined) {
         piMap[x.node.lab][n.year] = [];
-      } else {
-        piMap[x.node.lab][n.year].push(parseInt(n.downloads));
       }
+      piMap[x.node.lab][n.year].push(parseInt(n.downloads, 10));
     });
   });
 

@@ -27,7 +27,7 @@ import labs from '../../data/labs';
 
 const StyledMembers = styled.div`
     background: var(--contrast-bg);
-    padding: 60px 150px 200px 150px;
+    padding: 10px 150px 10px 150px;
     
     h1 {
         font-size:calc(1.8vw + 0.7em);
@@ -59,11 +59,18 @@ const StyledMembers = styled.div`
         }
 
         & span {
+            display: inline-block;
             margin-top: 20px;
-            font-size: 18px;
+            font-size: 20px;
+            font-weight: bold;
         }
+        
+        & a {
+            font-weight:bold;
+        }
+            
       .title {
-        font-size: 15px;
+        font-size: 17px;
       }
     }
 `;

@@ -5,6 +5,7 @@ import scrollTo from 'gatsby-plugin-smoothscroll';
 import Layout from '../components/Layout';
 // import Mission from '../components/Home/Mission';
 import Members from '../components/Home/Members';
+import QuickLinks from '../components/Home/Quicklinks';
 import bg from '../images/bg.jpg';
 import Header from '../components/Header';
 
@@ -36,16 +37,20 @@ const StyledHome = styled.div`
 
   .intro {
     max-width: 65%;
+    color: white;
     font-size:calc(1.5vw + 0.5em);
     font-family: 'Rubik', sans-serif; 
     letter-spacing:1px;
     line-height:calc(2vw + 1.3em);
-    padding-bottom:25px;
+    padding: 10px 15px 10px 15px;
+    font-weight: bold;
+    background: rgb(0,0,0,0.3);
+    border-radius: 30px;
   }
 
   .statement {
     margin-top: 25px;
-    padding: 30px 20px;
+    padding: 20px 20px;
     max-width: 45%;
     color: white;
     font-size: calc(0.8vw + 0.3em);
@@ -53,11 +58,12 @@ const StyledHome = styled.div`
     letter-spacing: 1px;
     background: rgb(0,0,0,0.3);
     border-radius:30px;
+    font-weight: bold;
   }
 `;
 
 const StyledButton = styled.button`
-  margin-top: 60px;
+  margin-top: 30px;
   margin-bottom: -80px;
   font-family: 'Orbitron', sans-serif;
   background: none;
@@ -83,9 +89,9 @@ const IndexPage = () => (
     <StyledHome>
       <div className="container">
         <div className="intro">
-          A home to scientists and clinicians
-          focused on computational methods
-          for fully exploiting cancer data.
+          A Home to Scientists and Clinicians
+          Focused on Computational Methods
+          for Fully Exploiting Cancer Data
         </div>
         <div className="statement">
           The Computational Biology and Medicine Program (CBMP) is home to 
@@ -100,6 +106,7 @@ const IndexPage = () => (
       </div>
       <StyledButton onClick={() => scrollTo('#members')}>v</StyledButton>
     </StyledHome>
+    <QuickLinks />
     <Members />
   </Layout>
 
