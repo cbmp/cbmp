@@ -27,7 +27,7 @@ const StyledWebapps = styled.div`
         }
     }
     .container {
-        width: 80%;
+        width: 90%;
         // padding-top: 30px;
     }
 

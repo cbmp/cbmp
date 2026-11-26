@@ -1,0 +1,20 @@
+name: Refresh PubMed publication feed
+
+on:
+  schedule:
+    - cron: '0 12 * * 1' # Refresh publication feed at 12pm UTC (7am EST) every Monday
+  workflow_dispatch:
+
+jobs:
+  trigger-netlify-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Netlify build
+        env:
+          NETLIFY_BUILD_HOOK: ${{ secrets.NETLIFY_BUILD_HOOK }}
+        run: |
+          if [ -z "$NETLIFY_BUILD_HOOK" ]; then
+            echo "::error::Add the NETLIFY_BUILD_HOOK repository secret."
+            exit 1
+          fi
+          curl --fail --silent --show-error --request POST "$NETLIFY_BUILD_HOOK"

@@ -6,6 +6,7 @@ import Layout from '../components/Layout';
 // import Mission from '../components/Home/Mission';
 import Members from '../components/Home/Members';
 import QuickLinks from '../components/Home/Quicklinks';
+import RecentPublications from '../components/RecentPublications';
 import bg from '../images/bg.jpg';
 import Header from '../components/Header';
 
@@ -108,6 +109,7 @@ const IndexPage = () => (
     </StyledHome>
     <QuickLinks />
     <Members />
+    <RecentPublications />
   </Layout>
 
 );

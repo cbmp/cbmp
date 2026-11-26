@@ -3,7 +3,7 @@
     --main-color-lighter:#1d7597;
     --main-color-darker: #025677;
     --header-bg:#11759c;
-    --contrast-bg: #f7f7f7;
+    --contrast-bg: #F5F5F5;
     --footer-bg: #11759c;
     --link-hov:#fab058;
     --link-hov-dark:#df861c;
@@ -73,32 +73,37 @@ h1, h2 {
 .grid-container {
     width: 100%;
     height: auto;
-    background: var(--contrast-bg);
+    background: white;
     display:flex;
     align-items:center;
-    /* justify-content: space-between; */
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 30px;
-    padding-top: 50px;
+    padding: 20px ;
 }
 
 .grid-item {
-    width: 33.3%;
-    height: 150px;
+    width: 30%;
+    height: 160px;
     display: inline-block;
-    /* align-items: center; */
+    /*align-items: center; */
     /* flex-direction: column; */
+    background: var(--contrast-bg);
     line-height: 30px;
-    margin: 20px 0px;
+    margin: 10px 15px;
     text-align:center;
     padding-bottom: 70px;
+    padding-top: 10px;
+    border: 2px solid #1d7597;
+    border-radius: 15px;
+    overflow: hidden
 }
 
 .grid-item > a {
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    padding: 7px 20px;
+    padding: 7px 10px;
     background: var(--main-color);
     color: white;
     border-radius: 7px;
@@ -116,10 +121,10 @@ h1, h2 {
 
 .grid-item > span {
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
     display: block;
     text-align:center;
-    font-size: calc(0.3vw + 0.7em);
+    font-size: calc(0.5vw + 0.7em);
     line-height: calc(0.8vw + 0.5em);
 }
 
@@ -143,7 +148,8 @@ h1, h2 {
 
 .lab-name, .lab-name a{
     font-weight: 700 !important;
-    font-size: calc(0.3vw + 0.6em) !important;
+    margin-top: 0px !important;
+    font-size: calc(0.4vw + 0.6em) !important;
 }
 
 /* Selects */

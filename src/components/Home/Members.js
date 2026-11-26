@@ -27,7 +27,10 @@ import labs from '../../data/labs';
 
 const StyledMembers = styled.div`
     background: var(--contrast-bg);
-    padding: 10px 150px 10px 150px;
+    padding: 20px 50px 10px 50px;
+    margin: 30px 30px 30px 30px;
+    border-radius: 30px;
+    overflow: hidden
     
     h1 {
         font-size:calc(1.8vw + 0.7em);

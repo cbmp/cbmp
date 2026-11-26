@@ -59,10 +59,11 @@
   ],
   "license": "MIT",
   "scripts": {
+    "prebuild": "node scripts/update-publications.js",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "deploy": "gatsby build && gh-pages -d public -b master",
+    "deploy": "npm run build && gh-pages -d public -b master",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",

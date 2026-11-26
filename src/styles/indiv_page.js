@@ -64,6 +64,8 @@ export const StyledIndivPage = styled.div`
             padding: 20px;
             background: var(--contrast-bg);
             line-height:2em;
+            orverflow: hidden;
+            border-radius: 30px
         }
     }
     .title {

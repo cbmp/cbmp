@@ -39,6 +39,11 @@ const StyledDatasets = styled.div`
             margin-left:10px;
         }
     }
+    
+    .ReactTable .rt-tbody .rt-td {
+        font-size: 15px;
+    }
+    
     .container {
         width: 80%;
         // padding-top: 30px;

@@ -4,6 +4,7 @@ import '../styles/index.css';
 import styled from 'styled-components';
 import Layout from '../components/Layout';
 import CollabContainer from '../components/Plots/CollabPlots/CollabContainer';
+import RecentPublications from '../components/RecentPublications';
 
 const StyledPublications = styled.div`
   width: 100%;
@@ -56,6 +57,7 @@ const Publications = () => (
             />
           )}
         />
+        <RecentPublications />
       </div>
     </StyledPublications>
   </Layout>
